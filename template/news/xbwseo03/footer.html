@@ -1,0 +1,18 @@
+<div class="main">
+<div class="rt"><span >友情链接</span></div>
+<ul class="r_box2 flink">
+	{loop type="domain"}<li><a href="{$vo.url}" target="_blank">{$vo.title}</a></li>{/loop}
+</ul>
+ {if $links_open}
+ <ul class="f5 flink">
+   {loop type="link"}
+   <li><a href="{$vo.url}" target="_blank">{$vo.title}</a></li>
+   {/loop}
+   </ul>
+   {/if}
+</div>
+<div class="footer">
+	<span >Copyright &copy; 2016 Powered by <a href="{$thisurl}">{$title}</a>,<a href="{$web_url}">{$web_name}</a>&nbsp;&nbsp;{$web_tongji} <a href="http://{$host}/sitemap.xml">sitemap</a></span>
+</div>
+{$web_share}
+{$web_bdpush}

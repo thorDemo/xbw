@@ -1,0 +1,19 @@
+<div class="flink">
+	<div class="flink_tit">--  友情链接 --</div>
+    <ul class="f5">
+		{loop type="domain"}
+       <li ><a href="{$vo.url}" target="_blank">{$vo.title}</a></li>
+	   {/loop}
+	   {if $links_open}
+	   {loop type="link"}
+       <li ><a href="{$vo.url}" target="_blank">{$vo.title}</a></li>
+	   {/loop}
+	   {/if}
+    </ul>
+</div>
+<div class="footer">
+	<p >{_runtime('loadTime','end')}s , {$usememory} kb</p>
+	<p >&copy;2017 版权所有 <a href="{$web_url}">{$web_name}</a> {$web_tongji} <a href="http://{$host}/sitemap.xml">sitemap</a></p>
+</div>
+{$web_share}
+{$web_bdpush}

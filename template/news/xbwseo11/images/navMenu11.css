@@ -1,0 +1,21 @@
+.topnav LI {
+	POSITION: relative; FLOAT: left
+}
+.topnav LI UL.subnav {
+	BORDER-BOTTOM: #a60000 1px solid; POSITION: absolute; FILTER: alpha(opacity=95); BORDER-LEFT: #a60000 1px solid; PADDING-BOTTOM: 0px; LIST-STYLE-TYPE: none; MARGIN: 0px; PADDING-LEFT: 0px; WIDTH: 85px; PADDING-RIGHT: 0px; DISPLAY: none; BACKGROUND: #b42727; FLOAT: left; BORDER-TOP: #a60000 1px solid; TOP: 30px; BORDER-RIGHT: #a60000 1px solid; PADDING-TOP: 0px; LEFT: -2px; -moz-opacity: 0.95; opacity: 0.95
+}
+.topnav LI UL.subnav LI {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; WIDTH: 85px; PADDING-RIGHT: 0px; CLEAR: both; PADDING-TOP: 0px
+}
+.topnav LI UL.subnav LI A {
+	WIDTH: 85px; BACKGROUND: #b42727; FLOAT: left; COLOR: #d6d5d5
+}
+.topnav LI UL.subnav LI A:hover {
+	BACKGROUND: #a61414; COLOR: #ffffff
+}
+#topBody .mainMenu .a {
+	TEXT-ALIGN: center; LINE-HEIGHT: 31px; WIDTH: 84px; BACKGROUND: url(top_menuOver.gif) no-repeat
+}
+#topBody .mainMenu .b {
+	TEXT-ALIGN: center; LINE-HEIGHT: 31px; WIDTH: 84px; BACKGROUND: none transparent scroll repeat 0% 0%
+}

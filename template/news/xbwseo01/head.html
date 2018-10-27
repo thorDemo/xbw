@@ -1,0 +1,39 @@
+<div class="header">
+<div class="header_top">  
+    <div class="w960 center">  
+     <span id="time" class="time">相信成功，是成功的开始！</span>
+       <div class="toplinks"><span >[<a href=""onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('{$web_url}');">设为首页</a>] [<a href="javascript:window.external.AddFavorite('{$web_url}','{$title}')">加入收藏</a>]</span></div>
+    </div> 
+</div>
+
+      <div class="logo">
+  <a href="{$web_url}"><img src="/uploads/images/logo.png?n={$encode_name}&w=180"></a> 
+      </div>
+	<div class="nav">
+		<div class="nav-col col-w" style="padding-left:10px;">
+<span class="nowrap" style="width:235px;">
+ {loop type="typename" row=6}
+    <a href='{$vo.typeurl}' >{$vo.typename}</a>
+    {/loop}
+    </span>
+		</div>
+	<div class="nav-col col-w">
+			<span class="nowrap">
+{loop type="typename" row=6}
+    <a href='{$vo.typeurl}' >{$vo.typename}</a>
+    {/loop}
+			</span>
+		</div>
+
+		<div class="nav-col col-w">
+			<span class="nowrap">
+{loop type="typename" row=6}
+    <a href='{$vo.typeurl}' >{$vo.typename}</a>
+    {/loop}
+			</span>
+		</div>
+
+    </div>       
+	<!-- //top -->
+
+</div><!-- //header -->

@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Cache-Control" content="no-siteapp" />
+	<meta http-equiv="Cache-Control" content="no-transform" />
+	<title>{$toptitle}</title>
+<meta name="description" content="{$description}" />
+<meta name="keywords" content="{$title}" />
+{include file="style.html"}
+	<meta name="applicable-device" content="pc">
+</head>
+<body>
+<div id="wrapper">
+{include file="head.html"}
+	<div class="box_con">
+		<div class="con_top cf">
+			<span class="bdlikebutton"></span>
+			<div id="bdshare" class="bdsharebuttonbox">
+				<a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tieba" data-cmd="tieba" title="分享到百度贴吧"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+			</div>
+			<a href="/">首页</a> > <a href="{$thisurl}">{$title}最新章节</a>
+		</div>
+		<div id="maininfo">
+			<div id="info">
+				<div class="booktitle cf">
+					<h1>{$title}</h1>
+				</div>
+				<p>作　　者：{getone name="diy:xs_write"/}</p>
+				<p>动　　作：加入书架,  <a href="#footer">直达底部</a></p>
+				<p>最后更新：{date('Y-m-d')}</p>
+				<p>最新章节：{loop row="1" type="typename" as='tvo2' tpl="show"}<a href="{$tvo2.typeurl}">{$tvo2.typename}</a>{/loop}</p>
+			</div>
+			<div id="intro">{getone name="content"/}</div>
+		</div>
+		<div id="sidebar">
+			<div id="fmimg">
+				<img alt="{$title}" src="{getone name="pic"/}" width="120" height="150" />
+				<span class="b"></span>			</div>
+		</div>
+		<div id="listtj">推荐阅读：{loop type="arclist" row="10" tpl="chapter"}<a href="{$vo.url}">{$vo.title}</a>&nbsp;&nbsp;{/loop}</div>
+	</div>
+	<div class="box_con">
+		<div id="list">
+			<dl>	
+				<dt>《<a href="{$thisurl}">{$title}</a>》最新章节</b></dt>
+				<div id="newchapter">
+				{loop row="100" type="typename" as='vo' tpl="show"}<dd><a href="{$vo.typeurl}">{$vo.typename}</a></dd>{/loop}</dl>
+		</div>
+	</div>
+	<script id="bdlike_shell"></script><script>bdlike();</script>
+	{include file="footer.html" }
+</div>
+</body>
+</html>

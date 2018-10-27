@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>{$toptitle}</title>
+<meta name="keywords" content="{$keywords}">
+<meta name="description" content="{$description}">
+<link href="{$theme_path}/skin/css/owl.carousel.css" rel="stylesheet">
+<link href="{$theme_path}/skin/css/grid.1.1.css" rel="stylesheet">
+<link href="{$theme_path}/skin/css/base.css" rel="stylesheet">
+<link href="{$theme_path}/skin/css/style.css" rel="stylesheet">
+<link href="{$theme_path}/skin/css/plugin-style.css" rel="stylesheet">
+<link href="{$theme_path}/skin/css/el-style.css" rel="stylesheet">
+<script src="{$theme_path}/skin/js/jquery-1.11.0.min.js"></script>
+<script src="{$theme_path}/skin/js/functions.js"></script>
+<script src="{$theme_path}/skin/js/sea.js"></script>
+<script src="{$theme_path}/skin/js/sea.run.js"></script>
+<script>
+website["dataId"]='';
+</script>
+</head>
+<body>
+{include file="wap_head.html" }
+<div id="pageOuter"> {include file="list_head.html" } 
+  
+  
+  <!--主体-->
+  <div class="row" id="el_6832582748946927" path="row">
+    <div class="rowFluid">
+      <div class="span12">
+        <div class="column" id="el_2720430539937260" path="column">
+          <div class="container">
+            <div class="row" id="el_2698799172012052" path="row">
+              <div class="rowFluid"> 
+                <!--左--> 
+                {include file="img_left.html" } 
+                <!--左--> 
+                
+                <!--右-->
+                <div class="span9 col-xm-12">
+                  <div class="column" id="el_4084217141527477" path="column">
+                    <div class="row" id="el_6806870435487887" path="row">
+                      <div class="rowFluid">
+                        <div class="span3 col-xs-4">
+                          <div class="column" id="el_5048466317547339" path="column">
+                            <div class="pluginWrapper plugin_3786332188093789" id="plugin_3786332188093789" path="plugin" data-areaid="3786332188093789" data-edit="false">
+                              <div class="pluginContent"> {$typename} </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="span9 col-xs-12">
+                          <div class="column" id="el_8548593265662460" path="column">
+                            <div class="pluginWrapper plugin_5033665755021976" id="plugin_5033665755021976" path="plugin" data-areaid="5033665755021976" data-edit="false">
+                              <div class="pluginContent"> <a href="/">首页</a> > <a href="{$typeurl}">{$typename}</a> </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pluginWrapper plugin_7447890684616079" id="plugin_7447890684616079" path="plugin" data-areaid="7447890684616079" data-edit="false">
+                      <div class="pluginContent"> {loop type="arclist" image=1 info=1}
+                        <div class="mod-list clearfix">
+                          <div class="col-lg-12">
+                            <div class="mod-item"> <a class="mod-pic" href="{$vo.url}"  title="{$vo.title}"> <img class="lazyImg" src="{$vo.pic}" data-original="{$theme_path}/skin/image/lazyLoad.jpg" alt="{$vo.title}"> </a> <a class="mod-title" href="{$vo.url}"  title="{$vo.title}">{$vo.title}</a>
+                              <div class="mod-digest"> {$vo.info}... </div>
+                              <a class="mod-read" href="{$vo.url}">阅读详情</a> </div>
+                          </div>
+                        </div>
+                        <style>
+										
+										</style>
+                        {/loop} </div>
+                      <div class="mod-pagination"> <span class="mod-yema"> {loop type="typename" }<a href="{$vo.typeurl}">[{$k+1}]</a>{/loop} </span> </div>
+                    </div>
+                  </div>
+                </div>
+                <!--右--> 
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--主体--> 
+  
+  <!--尾部--> 
+  {include file="footer.html" } </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+
+<div id="head_top">
+  <div id="header">
+    <div class="logo"><a href="{$web_url}"><img src="/uploads/images/logo.png?n={$encode_name}&w=230"></a></a>
+      <h1>{$web_name}</h1>
+    </div>
+    <div class="top_ad"><!--750*60--></div>
+  </div>
+  <div class="clearfloat"></div>
+  <div class="nav">
+    <div class="nav_primary">
+      <ul>
+        <li><a href='{$web_path}/'>主页</a></li>
+        {loop type="typename" row="7"}
+        <li><a href='{$vo.typeurl}'>{$vo.typename}</a></li>
+        {/loop}
+      </ul>
+    </div>
+  </div>
+  <div class="clear5">&nbsp;</div>
+  <div id="breadcrumb">
+    <div class="postbox">
+      <form action="{$web_path}/plus/search.php" method="post" name="formsearch" id="formsearch">
+        <input name="q" type="text" class="inputx" id="keyword" value="在这里搜索..." onfocus="if(this.value=='在这里搜索...'){this.value='';}"  onblur="if(this.value==''){this.value='在这里搜索...';}" />
+        <label>
+          <input name="button" type="submit" class="inputs" id="button" value="搜索" />
+        </label>
+      </form>
+    </div>
+    <div class="menu">
+      <ul>
+        {loop type="typename" row="7"}
+        <li><a href='{$vo.typeurl}'>{$vo.typename}</a></li>
+        {/loop}
+      </ul>
+    </div>
+  </div>
+</div>

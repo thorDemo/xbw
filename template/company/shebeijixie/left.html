@@ -1,0 +1,28 @@
+<div class="main-left">
+  <div class="left-list">
+    <div class="column-title">产品分类</div>
+    <ul>
+      {loop type="typename" tpl="product_list" fan=1}
+      <li><a href="{$vo.typeurl}">{$vo.typename}</a> </li>
+      {/loop}
+    </ul>
+  </div>
+  <div class="ml-box">
+    <div class="title"> <img src="{$theme_path}/skin/images/page-icon1.gif" alt=""/> 产品展示 </div>
+    <div class="left-cp c">
+      <ul>
+        {loop type="arclist" row="5" tpl="product_show" image=1 title="typename"}
+        <li><a href="{$vo.url}" title="{$vo.title}"><img src="{$vo.pic}" width="407" height="301" alt="{$vo.title}"/></a></li>
+        {/loop}
+      </ul>
+    </div>
+  </div>
+  <div class="ml-box">
+    <div class="title"> <img src="{$theme_path}/skin/images/page-icon2.gif" alt=""/> 联系方式 </div>
+    <div class="left-contact">
+      <p><b>邮箱:</b>{联系邮箱}</p>
+      <p><b>电话:</b>{联系电话}</p>
+      <p><b>传真:</b>{联系电话}</p>
+    </div>
+  </div>
+</div>

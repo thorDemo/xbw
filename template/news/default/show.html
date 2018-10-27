@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{$toptitle}</title>
+<meta name="keywords" content="{$keywords}" />
+<meta name="description" content="{$description}" />
+<link rel="stylesheet" href="{$theme_path}/skin/style.css" type="text/css" />
+<script type="text/javascript" src="{$theme_path}/skin/js/jquery.min.js"></script>
+<script type="text/javascript" src="{$theme_path}/skin/js/gotop.js"></script>
+</head>
+<body>
+{include file="head.html"}
+<div class="weizhi">您的当前位置：<a href="/">首页</a> > <a href="{$typeurl}">{$typename}</a> > <a href="{$thisurl}">{$title}</a> 正文</div>
+<div class="main1">
+	<div class="left_1">
+    	<div class="g_con">
+        	<h1 >{$title}</h1>
+            <div class="info">
+            	<span >来源：<a href="{$web_url}">{$web_name}</a></span>
+                <span >编辑：{typename type="name"/}</span>
+                <span >时间：{$postdate}</span>
+            	<div class="share">
+                	<div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a></div>
+					<script>
+					window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+					</script>
+				</div>
+			</div>
+            <div class="con">
+                {$body}
+            </div>
+            <div class="dede_pagess">
+           <ul class="pagelist">
+            <span><b>1</b></span>&nbsp;&nbsp;&nbsp;&nbsp;{loop type="arclist" row=10}<a href="{$vo.url}">{$k+2}</a>&nbsp;&nbsp;{/loop}
+           </ul>
+          </div>
+           <div class="b_box6">上一篇：{loop type="arclist" row=1 }<a href="{$vo.url}">{$vo.title}</a>{/loop}<br />下一篇：{loop type="arclist" row=1 }<a href="{$vo.url}">{$vo.title}</a>{/loop}</div>
+            <div class="b_box7">
+            	<p >相关文章：</p>
+                <ul class="box">
+                	{loop type="arclist" row="10"} 
+                    <li ><a href="{$vo.url}">{$vo.title}</a></li>
+                    {/loop}
+                </ul>       	
+            </div>
+            <div class="b_box7">
+            	<p >相关推荐：</p>
+                <ul class="box">
+                	{loop type="arclist" row="10"}
+                    <li ><a href="{$vo.url}">{$vo.title}</a></li>
+                    {/loop}
+                </ul>       	
+            </div>
+        </div>
+    </div>
+    <div class="right_1">
+    	<div class="g_box2 u_2">
+        	<div class="t_1">栏目分类</div>
+            <ul class="menu">
+                {loop type="typename" row="8" fan="1"}
+                  <li ><a href='{$vo.typeurl}'>{$vo.typename}</a></li>
+                  {/loop}
+                <div class="clear"></div>
+            </ul>
+        </div>
+    	<div class="g_box2 u_2">
+        	<div class="t_1">最新文章</div>
+            <ul class="b_box3 u_1">
+            	{loop type="arclist" row="10"}
+                <li ><a href="{$vo.url}">{$vo.title}</a></li>
+                {/loop}
+            </ul>
+        </div>
+    	<div class="g_box2 u_2">
+        	<div class="t_1">热门文章</div>
+            <ul class="b_box1">
+            	{loop type="link" row="10"}
+                <li ><a href="{$vo.url}">{$vo.title}</a></li>
+                {/loop}
+            </ul>
+        </div>
+    </div>
+    <div class="clear"></div>
+</div>
+{include file="footer.html" }
+</body>
+</html>

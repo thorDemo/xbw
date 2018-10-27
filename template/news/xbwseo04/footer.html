@@ -1,0 +1,20 @@
+<div class="link">
+	<div class="link-t">
+    	<h4>友情链接</h4>
+    	<span >接受PR>=1、BR>=1，流量相当，内容相关类链接。</span>
+    </div>
+    <ul>
+    	{loop type="domain"}<a href="{$vo.url}" target="_blank">{$vo.title}</a>{/loop}
+		 {if $links_open}
+   {loop type="link"}
+   <li ><a href="{$vo.url}" target="_blank">{$vo.title}</a></li>
+   {/loop}
+   {/if}
+        <div class="cl"></div>
+    </ul>
+</div>
+<div class="footer">
+	<p >Copyright &copy; 2016 Powered by <a href="{$thisurl}">{$title}</a>,<a href="{$web_url}">{$web_name}</a>&nbsp;&nbsp;{$web_tongji} <a href="http://{$host}/sitemap.xml">sitemap</a></p>
+</div>
+{$web_share}
+{$web_bdpush}

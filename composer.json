@@ -1,0 +1,6 @@
+{
+    "require": {
+        "catfan/medoo": "^1.6",
+        "twig/twig": "^2.0"
+    }
+}

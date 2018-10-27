@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>{$toptitle}</title>
+<meta name="description" content="{$description}" />
+<meta name="keywords" content="{$keywords}" />
+{include file="style.html"}
+<body>
+{include file="head.html"}
+<div class="inner met_flash"><div class="flash">
+<img src='{模板路径}/upload/201404/1397804572.jpg' width='999' alt='' height='200'></div></div>
+
+
+<div class="sidebar inner">
+
+    <div class="sb_nav">
+ 
+			<div class="sb_nav_top"><h3 class="title"><span>新闻动态</span><b>Site navigation</b></h3>
+			<div class="active1" id="sidebar" data-csnow="4" data-class3="0" data-jsok="2"><dl class="list-none navnow"><dt id='part2_17'><a href="{geturl tpl='list'/}"  title='公司新闻' class="zm"><span>公司新闻</span></a></dt></dl><dl class="list-none navnow"><dt id='part2_18'><a href="{geturl tpl='list'/}"  title='行业新闻' class="zm"><span>行业新闻</span></a></dt></dl><div class="clear"></div></div></div>
+
+			{include file="left.html" }
+		
+    <div class="sb_box sbbo ">
+	    <h3 class="title">
+			<div class="position"><a href="/" title="网站首页">网站首页</a> &gt; <a href="{$thisurl}" >新闻动态</a></div>
+			<span>新闻动态</span><b>Welcome to visit our</b>
+		</h3>
+		
+		<div class="clear"></div>
+
+        <div class="active" id="shownews">
+            <h1 class="title">{$title}</h1>
+			<div class="met_hits"><div class='metjiathis'><div class="jiathis_style"><span class="jiathis_txt">分享到：</span><a class="jiathis_button_icons_1"></a><a class="jiathis_button_icons_2"></a><a class="jiathis_button_icons_3"></a><a class="jiathis_button_icons_4"></a><a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a></div><script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=669840136" charset="utf-8"></script></div>&nbsp;&nbsp;来源：<a href="{网站地址}">{网站名称}</a>&nbsp;&nbsp;更新时间：{发布时间}&nbsp;&nbsp;【<a href="javascript:window.print()">打印此页</a>】&nbsp;&nbsp;【<a href="javascript:self.close()">关闭</a>】</div>
+            <div class="editor"> {$body}</div><div class="clear"></div></div>
+            <div class="met_page">上一篇：{loop type="arclist" row=1 }<a href="{$vo.url}">{$vo.title}</a>{/loop}<br />下一篇：{loop type="arclist" row=1 }<a href="{$vo.url}">{$vo.title}</a>{/loop}</div>		
+
+			<h4 class="related"><span>相关文章</span></h4>
+			<div class='relatedlist'><ul class='list-none metlist'>{loop type="arclist" row="10"} 
+                    <li class="list"><a href="{$vo.url}">{$vo.title}</a></li>
+                    {/loop}</ul><div class="clear"></div></div>
+				
+        </div>		
+
+    </div>
+    <div class="clear"></div>
+</div>
+
+
+{include file="footer.html" }
+</body></html>

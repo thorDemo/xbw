@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{$toptitle}</title>
+<meta name="keywords" content="{$keywords}" />
+<meta name="description" content="{$description}" />
+<link rel="stylesheet" href="{$theme_path}/style/style.css" type="text/css" />
+</head>
+<body class="home">
+{include file="head.html"}
+<!-- /header -->
+<div class="main">
+	<div class="left FL">
+    	<div class="weiz">当前位置：当前位置：<a href="/">首页</a> > <a href="{$typeurl}">{$typename}</a> > <a href="{$thisurl}">{$title}</a> 正文</div>
+        <h2 >{$title}</h2>
+        <div class="info">[{$typename}] 时间：{$postdate} 来源：<a href="{$web_url}">{$web_name}</a> 作者：{typename type="name"/} 点击：{rand(10,200)}次</div>
+        <div class="wz">
+            {$body}
+            <p style="text-align:right;">(责任编辑：{typename type="name"/})</p>
+        </div>
+        <div class="con_page">
+            	<ul>
+                {loop type="arclist" row=10}<a href="{$vo.url}">[{$k+1}]</a>{/loop}
+                </ul>
+            </div><!-- /pages -->
+        <div class="sxyp"><span >{loop type="arclist" row=1 }<a href="{$vo.url}">{$vo.title}</a>{/loop}</span>{loop type="arclist" row=1 }<a href="{$vo.url}">{$vo.title}</a>{/loop}</div>
+        <div class="xg_t">相关内容</div>
+        <ul class="xg">
+        	{loop type="arclist" row="14" fan="1"}
+            <li ><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a></li>
+            {/loop}
+            <div class="clear"></div>
+        </ul>
+    </div>
+    <div class="right FR"> 
+		<div class="rt"><span >精彩推荐</span></div>
+        <ul class="r_box2">
+        	{loop type="arclist" row="6"}
+            <li ><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a></li>
+            {/loop}
+        </ul>
+        <div class="rt"><span >热门点击</span></div>
+        <ul class="r_box2">
+        	{loop type="link" row="10"}
+             <li ><a title="{$vo.title}" href="{$vo.url}">{$vo.title}</a><span >{$vo.hits} views+</span></li>
+            {/loop}
+        </ul>
+    </div>
+    <div class="clear"></div>
+</div>
+{include file="footer.html" }
+<!-- /footer -->
+
+</body>
+</html>

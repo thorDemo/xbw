@@ -1,0 +1,36 @@
+<!--右边开始-->
+ <div class="ctr" style="_margin-top:-8px;">
+         <div class="bm">
+<div class="bm_h cl tab rel">
+<strong>热门文章</strong>
+</div>
+<div class="bm_c2 updateCont" id="tabcontent">
+<!--最近更新歌词开始-->
+<ul name="tabul">
+    {loop type="arclist" row="10" fan="1"}
+    <li ><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a></li>
+    {/loop}
+</ul>
+<!--最近更新歌词结束-->
+
+</div>
+         </div>
+         
+         <div class="bm">
+<div class="bm_h cl tab rel">
+<strong>文章排行</strong>
+</div>
+<div class="bm_c2 listm list31 rank" id="tabcontent2">
+ 
+<ul name="tabul" id="phc1">
+    {loop type="link" row="10"}
+     {$vo.i}</em><a href="{$vo.url}" target="_blank" title="{$vo.title}">{$vo.title}</a></li>
+    {/loop}
+</ul>
+
+
+</div>
+         </div>        </div>
+</div>	</div>
+    </div>
+<!--右边结束-->

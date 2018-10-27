@@ -1,0 +1,25 @@
+<div class="flink">
+	<div class="flink_tit">-- 友情链接 --</div>
+    <ul class="f5">
+        {loop type="domain"}<a href="{$vo.url}" target="_blank">{$vo.title}</a>{/loop}
+		{if $links_open}
+	   {loop type="link"}
+	   <a href="{$vo.url}" target="_blank">{$vo.title}</a>
+	   {/loop}
+	   {/if}
+    </ul>
+</div>
+<div class="footer">
+	<p >
+        <a href="#">关于网站</a>  |  
+        <a href="#">网站声明</a>  |  
+        <a href="#">用户反馈</a>  |  
+        <a href="#">合作伙伴</a>  |  
+        <a href="#">友情链接</a>  |  
+        <a href="#">联系我们</a>  |  
+        <a href="#">服务收费</a>
+    </p>
+    <p >Copyright &copy; 2016 Powered by <a href="{$thisurl}">{$title}</a>,<a href="{$web_url}">{$web_name}</a>&nbsp;&nbsp;{$web_tongji} <a href="http://{$host}/sitemap.xml">sitemap</a></p>
+</div>
+{$web_share}
+{$web_bdpush}

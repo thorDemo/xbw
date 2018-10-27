@@ -1,0 +1,37 @@
+<div class="header">
+  <div class="container ">
+    <div class="fl logo"> <a href="{网站地址}"><img src="/uploads/images/logo.png?n={$encode_name}&w=400"></a> </div>
+    <div class="fr"> 
+      <!--<div class="language"> <a href="#" target="_blank" >EN</a> | <a href="#">中文</a> </div>-->
+      <div class="search c">
+        <form  name="formsearch" action="{$web_path}/plus/search.php">
+          <input type="hidden" name="kwtype" value="0" />
+          <button type="submit" value="">搜 索</button>
+          <input type="text" class="text" name="q" id="q">
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="nav c">
+  <div class="container">
+    <ul class="navul">
+      <li><a href="/">网站首页</a> {loop type="typename" row="4" tpl="product_list"}
+      <li><a href="{$vo.typeurl}">{$vo.typename}</a>
+        <div class="inul ">
+          <div class="inul-in c">
+            <ul>
+              {loop type="typename" row="5" tpl="product_list"}
+              <li><a href="{$vo.typeurl}">{$vo.typename}</a>
+			{/loop}
+            </ul>
+          </div>
+        </div>
+      </li>
+      {/loop}
+	  <li><a href="{geturl tpl="list"/}">新闻中心</a></li>
+        <li><a href="{geturl tpl="about"/}">关于我们</a></li>
+        <li><a href="{geturl tpl="contact"/}">联系我们</a></li>
+    </ul>
+  </div>
+</div>

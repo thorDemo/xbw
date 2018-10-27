@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Cache-Control" content="no-siteapp" />
+	<meta http-equiv="Cache-Control" content="no-transform" />
+	<title>{$toptitle}</title>
+	<meta name="description" content="{$description}" />
+	<meta name="keywords" content="{$keywords}" />
+{include file="style.html"}
+	<meta name="applicable-device" content="pc">
+</head>
+<body>
+<div id="wrapper">
+{include file="head.html"}
+	<div class="content_read">
+		<script>read1();</script>
+		<div class="box_con">
+			<div class="con_top"><script>textselect();</script>
+				<a href="/">首页</a> > <a href="{$thisurl}">{当前栏目}</a>
+			</div>
+			<div class="bookname">
+				<h1>{当前栏目}</h1>
+				<div class="bottem1">
+					<a href="{geturl tpl='show'/}" rel="next">上一章</a> &larr; <a href="{geturl tpl='chapter'/}" rel="index">章节列表</a> &rarr; <a href="{geturl tpl='show'/}" rel="next">下一章</a> 转码阅读中，不进行内容存储和复制
+				</div>
+				<div class="lm">好书推荐：{loop type="arclist" row="10" tpl="chapter"}<a href="{$vo.url}">{$vo.title}</a>&nbsp;&nbsp;{/loop}</div>
+			</div>
+			<div id="content">{$body}</div>
+			<div class="bottem2">
+				<a href="{geturl tpl='show'/}" rel="next">上一章</a> &larr; <a href="{geturl tpl='chapter'/}" rel="index">章节列表</a> &rarr; <a href="{geturl tpl='show'/}" rel="next">下一章</a> 转码阅读中，不进行内容存储和复制
+			</div>
+		</div>
+	</div>
+	{include file="footer.html" }
+</body>
+</html>

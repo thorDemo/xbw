@@ -1,0 +1,36 @@
+<!-- flink -->
+<div class="flink w960 center clear">
+<dl class="tbox">
+	<dt>
+	<strong>友情链接</strong>
+	</dt>
+	<dd>
+	<ul class="f4">{loop type="domain"}<a href="{$vo.url}" target="_blank">{$vo.title}</a>&nbsp;&nbsp;{/loop}  </ul>
+	 {if $links_open}
+	 <ul class="f5">
+	   {loop type="link"}
+       <li ><a href="{$vo.url}" target="_blank">{$vo.title}</a></li>
+	   {/loop}
+	   </ul>
+	   {/if}
+	</dd>
+  </dl>
+</div>
+<!-- /flink  -->
+<!-- //底部模板 -->
+<div class="footer w960 center mt1 clear">
+
+<!-- foot -->
+<div class="fmr">
+<div class="copyright">本站部分资料来源于互联网转载和网友发布,如侵犯您的权益,请联系我站客服,我们将尽快处理,谢谢合作! 
+<br>
+Copyright &copy; 2016 Powered by <a href="{$thisurl}">{$title}</a>,<a href="{$web_url}">{$web_name}</a>&nbsp;&nbsp;{$web_tongji} <a href="http://{$host}/sitemap.xml">sitemap</a></div>
+
+<div class="pic"><img src="{$theme_path}/images/foot_beian.gif" alt=""><img src="{$theme_path}/images/foot_jubao.gif"><img src="{$theme_path}/images/foot_wljc.gif"><img src="{$theme_path}/images/foot_wm.gif"><img src="{$theme_path}/images/foot_110.gif">  </div> 
+
+      </div>
+<!-- foot -->
+{$web_share}
+{$web_bdpush}
+ 
+</div>

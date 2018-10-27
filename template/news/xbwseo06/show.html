@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{$toptitle}</title>
+<meta name="keywords" content="{$keywords}" />
+<meta name="description" content="{$description}" />
+<link href="{$theme_path}/style/dedecms.css" rel="stylesheet" media="screen" type="text/css" />
+</head>
+<body class="articleview">
+{include file="head.html"}
+<!-- /header -->
+<div class="w960 center clear mt1">
+<div class="pleft">
+ <div class="place"> <strong>当前位置:</strong><a href="/">首页</a> > <a href="{$typeurl}">{$typename}</a> > <a href="{$thisurl}">{$title}</a> </div>
+ <!-- /place -->
+ <div class="viewbox">
+  <div class="title"><h2 >{$title}</h2></div>
+  <!-- /title -->
+  <div class="info"><small>时间:</small>{$postdate}来源：<a href="{$web_url}">{$web_name}</a> <small>作者:</small>{typename type="name"/}</div>
+  <!-- /info -->
+	  <div class="content">
+	   <table width='100%'>
+		<tr>
+		 <td>
+		 {$body}
+	   </td>
+		</tr>
+	   </table>
+	  </div>
+
+  <!-- /content -->
+  <!-- /pages -->
+  <div class="handle">
+   <div class="context">
+    <ul>
+     <li >上一篇：{loop type="arclist" row=1 }<a href="{$vo.url}">{$vo.title}</a>{/loop}</li>
+     <li >下一篇：{loop type="arclist" row=1 }<a href="{$vo.url}">{$vo.title}</a>{/loop}</li>
+    </ul>
+   </div>
+   <!-- /context -->
+   
+  </div>
+  <!-- /handle -->
+ </div>
+ <!-- /viewbox -->
+</div>
+<!-- //左边内容结束 -->
+
+<!-- //右边内容开始 -->
+<div class="pright">
+  <div>
+   <dl class="tbox">
+    <dt><strong>相关内容</strong></dt>
+    <dd>
+     <ul class="c1 ico2">
+      {loop type="arclist" row="15" fan=1}
+      <li ><a href="{$vo.url}">{$vo.title}</a>
+      </li>{/loop}
+     </ul>
+    </dd>
+   </dl>
+  </div>
+  <div class="commend mt1">
+   <dl class="tbox light">
+    <dt class='light'><strong>推荐内容</strong></dt>
+    <dd class='light'>
+     <ul class="d4">
+      {loop type="link" row="6" info=1}
+      <li ><a href="{$vo.url}">{$vo.title}</a>
+      </li>
+      {/loop}
+     </ul>
+    </dd>
+   </dl>
+  </div>
+  <!-- /commend -->
+  <div class="hot mt1">
+   <dl class="tbox light">
+    <dt class='light'><strong>热点内容</strong></dt>
+    <dd class='light'>
+     <ul class="c1 ico2">
+      {loop type="arclist" row="15"}
+      <li ><a href="{$vo.url}">{$vo.title}</a></li>
+      {/loop}
+     </ul>
+    </dd>
+   </dl>
+  </div>
+</div>
+</div>
+<!-- /pright -->
+{include file="footer.html" }
+</body>
+</html>

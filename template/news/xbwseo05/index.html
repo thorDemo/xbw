@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{$toptitle}</title>
+<meta name="description" content="{$description}" />
+<meta name="keywords" content="{$keywords}" />
+<link rel="stylesheet" href="{$theme_path}/style/style.css" type="text/css" />
+</head>
+
+<body>
+{include file="header.html"}
+ 
+<div class="main1">
+	<div class="m1_left FL">
+    	<div class="m1_box1 FL">
+		{loop type="arclist" row=1 info=1}
+        	<h2 ><a href="{$vo.url}">{$vo.title}</a></h2>
+            <p >{$vo.info}…<a href="#">[详细]</a></p>
+		 {/loop}
+        </div>
+        <ul class="m1_box2 FL">
+        	{loop type="arclist" row=3 image=1}
+        	<li ><a href="{$vo.url}"><img src="{$vo.pic}" alt="{$vo.title}" /><br />{$vo.title}</a></li>
+            {/loop}
+        </ul>
+        <ul class="m1_box3 FL">
+        	{loop type="arclist" row=14}
+        	<li >·<a href="{$vo.url}">{$vo.title}</a></li>
+            {/loop}
+        </ul>
+        <div class="clear"></div>
+    </div>
+    <div class="m1_right FR">
+    	<div class="m1_box4"><img width="406" height="250" src="{loop type="arclist" row=1 image=1}{$vo.pic}{/loop}"></div>
+        <div class="m1_box5">
+        	<ul>
+            	{loop type="arclist" row=2 image=1 info=1 fan=1}
+            	<li >
+                	<a href="{$vo.url}"><img src="{$vo.pic}" alt="{$vo.title}" /></a>
+                    <h3 ><a href="{$vo.url}">{$vo.title}</a></h3>
+                    <p >{$vo.info}...</p>
+                </li>
+                {/loop}
+            </ul>
+        </div>
+    </div>
+    <div class="clear"></div>
+</div>
+<div class="ad_960">广告位</div>
+<div class="main2">
+	<div class="m2_box1">
+    	{loop type="arclist" row=3 image=1 info=1}
+    	<div class="m2_box2 FL">
+			<div class="m2_tit">
+            	<h3 ><a href="{typename type="url"/}">{typename type="name"/}</a></h3>
+            	<span ><a href="{typename type="url"/}">更多</a></span>
+            </div>
+            <div class="m2_box3">
+            	<a href="{$vo.url}"><img src="{$vo.pic}" alt="{$vo.title}" /></a>
+                <h4><a href="{$vo.url}">{$vo.title}</a></h4>
+            </div>
+            <ul class="m2_box4">
+            	{loop type="arclist" row=6 as='vvo'}
+                <li >·<a href="{$vvo.url}">{$vvo.title}</a></li>
+                {/loop}
+            </ul>
+        </div>
+        {/loop}
+        <div class="clear"></div>
+    </div>
+</div>
+<div class="ad_960"></div>
+<div class="main2">
+    <div class="m2_box5 FL">
+        <div class="m2_tit">
+            <h3 >推荐阅读</h3>
+        </div>
+		{loop type="arclist" row=1 image=1 info=1}
+        <div class="m2_box3">
+            <a href="{$vo.url}"><img src="{$vo.pic}" alt="{$vo.title}" /></a>
+            <h4><a href="{$vo.url}">{$vo.title}</a></h4>
+        </div>
+		{/loop}
+        <ul class="m2_box4">
+            {loop type="link" row=6}
+            <li >·<a href="{$vo.url}">{$vo.title}</a></li>
+            {/loop}
+        </ul>
+    </div>
+    <div class="m2_box6 FR">
+    	<div class="m2_tit FL">
+            <h3 >热门阅读</h3>
+        </div>
+    	<div class="m2_box6_pic FL">
+        	{loop type="arclist" row=1 image=1}<a href="{$vo.url}"><img src="{$vo.pic}" alt="{$vo.title}" /><br />{$vo.title}</a>{/loop}
+        </div>
+        <ul>
+        	{loop type="arclist" row=10 fan=1}
+            <li >·<a href="{$vo.url}">{$vo.title}</a></li>
+            {/loop}
+        </ul>
+    </div>
+    <div class="clear"></div>
+</div>
+
+{include file="footer.html" }
+<!-- /footer -->
+</body>
+</html>

@@ -1,0 +1,1 @@
+<?php if(!defined('IN_TXTCMS')){define('IN_TXTCMS',true);} ?>

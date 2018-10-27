@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{$toptitle}</title>
+<meta name="keywords" content="{$keywords}" />
+<meta name="description" content="{$description}" />
+<link href="{$theme_path}/style/ningmp.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+{include file="head.html"}
+<div class="dangq">
+<ul>
+  <li >当前位置：<a href="/">首页</a> > <a href="{$typeurl}">{$typename}</a> > <a href="{$thisurl}">{$title}</a></li></ul>
+</div>
+<div class="artz2">
+<div class="artt">
+<p >游客发表</p>
+</div>
+<div class="arzbt">
+<h2 >{$title}</h2>
+<p >发帖时间：{$postdate}</p>
+<ul>
+<li >{loop type="typename" row="1"}<a href="{$vo.typeurl}" target="_blank">[{$vo.typename}]</a>{/loop}  来源：<a href="{$web_url}">{$web_name}</a></li>
+</ul>
+</div>
+<div class="arznn">
+{$body}
+</div>
+<div class="arfy"><ul class="jogger2">{loop type="arclist" row=10}<a href="{$vo.url}">[{$k+1}]</a>{/loop}</ul></div>
+<!-- //顶踩 -->
+
+<!-- //顶踩部份的源码结束 -->
+<div class="sxiap">
+<p >{loop type="link" row=1 }<a href="{$vo.url}">{$vo.title}</a>{/loop}</p>
+<p >{loop type="link" row=1 }<a href="{$vo.url}">{$vo.title}</a>{/loop}</p>
+</div>
+<div class="arfx"><!-- Baidu Button BEGIN -->
+<div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare">
+<span class="bds_more">分享到：</span>
+<a class="bds_tsina">新浪微博</a>
+<a class="bds_qzone">QQ空间</a>
+<a class="bds_tqq">腾讯微博</a>
+<a class="bds_renren">人人网</a>
+<a class="bds_diandian">点点网</a>
+<a class="bds_copy">复制网址</a>
+<a class="bds_print">打印</a>
+<a class="shareCount"></a>
+</div>
+<script type="text/javascript" id="bdshare_js" data="type=tools&uid=14477" ></script>
+<script type="text/javascript" id="bdshell_js"></script>
+<script type="text/javascript">
+document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000);
+</script>
+<!-- Baidu Button END --></div>
+<div class="arxg">
+<p >相关内容</p>
+<ul>
+{loop type="arclist" row="8" fan=1} 
+<li ><a href='{$vo.url}'>{$vo.title}</a></li>
+{/loop}
+</ul>
+</div>
+</div>
+<div class="listy">
+<div class="tjnr">
+<p >随机阅读</p>
+<ul style="border-top:1px solid #000; padding-top:10px">
+{loop type="arclist" row="14"}
+<li ><a href="{$vo.url}">{$vo.title}</a></li>
+{/loop}
+</ul>
+</div>
+
+<p class="nrbt">热门排行</p>
+<div class="nrmk3">
+<ul>
+{loop type="arclist" row="10"}
+<li ><a href="{$vo.url}">{$vo.title}</a></li>
+{/loop}
+</ul>
+</div>
+</div>
+</div>
+{include file="footer.html" }
+</body>
+</html>

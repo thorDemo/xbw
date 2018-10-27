@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>{$toptitle}</title>
+<meta name="description" content="{$description}" />
+<meta name="keywords" content="{$keywords}" />
+{include file="style.html"}
+<style type="text/css">
+.imglist{ width:215px; margin-left:53px; float:left }
+</style>
+<body>
+{include file="head.html"}
+<div class="inner met_flash"><div class="flash">
+<img src='{模板路径}/upload/201404/1397804572.jpg' width='999' alt='' height='200'></div></div>
+<div class="sidebar inner">
+
+    <div class="sb_nav">
+
+			<div class="sb_nav_top"><h3 class="title"><span>产品展示</span><b>Site navigation</b></h3>
+			<div class="active1" id="sidebar" data-csnow="3" data-class3="0" data-jsok="2">
+			{loop type="typename" row="8" tpl="product_list" fan=1}
+			
+			<dl class="list-none navnow">
+			<dt><a href="{$vo.typeurl}"  title='{$vo.typename}' class="zm"><span>{$vo.typename}</span></a></dt></dl>
+			{/loop}
+			
+			</div></div>
+			{include file="left.html" }
+		
+    <div class="sb_box sbbo ">
+	    <h3 class="title">
+			<div class="position"><a href="/" title="网站首页">网站首页</a> &gt; <a href="{$thisurl}" >{当前栏目}产品展示</a></div>
+			<span>产品展示</span><b>Welcome to visit our</b>
+		</h3>
+		
+		<div class="clear"></div>
+
+        <div class="active" id="productlist">
+			<ul class='list-none metlist'>
+			{loop type="arclist" row="20" image="1" tpl="product_show" title="typename"}
+				<li class='imglist'><a href="{$vo.url}" title='{$vo.title}' target='_self' class='img'><img src='{$vo.pic}' alt='{$vo.title}' title='{$vo.title}' width='213' height='160' /></a><h3><a href="{$vo.url}" title='{$vo.title}' target='_self'>{$vo.title}</a></h3></li>
+			{/loop}
+				</ul>
+		<div class="clear"></div>
+		</div>
+		<div id="flip"><div class='digg4 metpager_8'> {loop type="typename" tpl="product_list"}<a href="{$vo.typeurl}">[{$k+1}]</a>{/loop}</div></div>
+
+    </div>
+    <div class="clear"></div>
+</div>
+
+
+{include file="footer.html" }
+</body></html>

@@ -1,0 +1,20 @@
+<div id="footer" class="w960">
+  <div class="footlink">
+	<strong>友情链接</strong>
+    <ul>
+	{loop type="domain"}<li ><a href="{$vo.url}" target="_blank">{$vo.title}</a>&nbsp;&nbsp;{/loop} </li >
+	 {if $links_open}
+	   {loop type="link"}
+       <li ><a href="{$vo.url}" target="_blank">{$vo.title}</a></li>
+	   {/loop}
+	 {/if}
+    </ul>
+  </div>
+  <div class="clear"></div>
+</div>
+<div id="copyright">
+<div class="copy">
+<div class="l">Copyright &copy; 2017 Powered by <a href="{$web_url}">{$web_name}</a>&nbsp;&nbsp;{$web_tongji} <a href="http://{$host}/sitemap.xml">sitemap</a></p>{$web_share}{$web_bdpush}</div>
+<div class="r"></div>
+</div>
+</div>

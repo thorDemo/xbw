@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{$toptitle}</title>
+<meta name="keywords" content="{$keywords}" />
+<meta name="description" content="{$description}" />
+<link href="{$theme_path}/style/index.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+{include file="head.html"}
+<div id="dqian">
+<ul>
+<li >当前位置：<a href="/">首页</a> > <a href="{$typeurl}">{$typename}</a> > <a href="{$thisurl}">{$title}</a></li>
+</ul>
+</div>
+<div id="ar">
+<ul id="bt">
+<h2 >{$title}</h2>
+<p >发布时间：{$postdate} 来源：<a href="{$web_url}">{$web_name}</a> 作者：{typename type="name"/}</p>
+</ul>
+<ul id="arzw">
+{$body}
+</ul>
+<ul id="jogger">{loop type="arclist" row=10}<a href="{$vo.url}">[{$k+1}]</a>{/loop}</ul>
+<ul id="fenx">
+<!-- Baidu Button BEGIN -->
+<div id="bdshare" class="bdshare_t bds_tools_32 get-codes-bdshare">
+<a class="bds_qzone"></a>
+<a class="bds_tsina"></a>
+<a class="bds_tqq"></a>
+<a class="bds_renren"></a>
+<a class="bds_t163"></a>
+<span class="bds_more"></span>
+<a class="shareCount"></a>
+</div>
+<script type="text/javascript" id="bdshare_js" data="type=tools&uid=0" ></script>
+<script type="text/javascript" id="bdshell_js"></script>
+<script type="text/javascript">
+document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
+</script>
+<!-- Baidu Button END -->
+</ul>
+<ul id="sxp">
+<li >上一篇：{loop type="arclist" row=1 }<a href="{$vo.url}">{$vo.title}</a>{/loop}</li>
+<li >下一篇：{loop type="arclist" row=1 }<a href="{$vo.url}">{$vo.title}</a>{/loop}</li>
+</ul>
+<ul id="xguan">
+<p >相关文章</p>
+{loop type="link" row="10"}
+<li ><a href="{$vo.url}">{$vo.title}</a></li>
+{/loop}
+</ul>
+<ul id="plun"></ul>
+</div>
+<div id="zwy">
+
+<div id="tuij">
+<ul>
+<p ></p>
+{loop type="arclist" row="10" fan=1}
+<li ><a href="{$vo.url}">{$vo.title}</a></li>
+{/loop}
+</ul>
+
+</div>
+<div id="suij">
+<ul>
+<p >随便看看</p>
+{loop type="arclist" row="10"}
+
+<li ><a href="{$vo.url}">{$vo.title}</a></li>
+{/loop}
+
+</ul>
+
+</div>
+
+</div>
+{include file="footer.html" }
+</div>
+</body>
+</html>

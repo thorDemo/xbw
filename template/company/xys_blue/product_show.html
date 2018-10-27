@@ -1,0 +1,59 @@
+<html class="uk-notouch">
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{$toptitle}</title>
+<meta name="description" content="{$description}" />
+<meta name="keywords" content="{$keywords}" />
+  <meta http-equiv="X-UA-Compatible" content="edge">
+  <link rel="stylesheet" href="{$theme_path}/css/uikit.css">
+  <link rel="stylesheet" href="{$theme_path}/css/iven.css">
+  <link rel="stylesheet" href="{$theme_path}/css/slideshow.css">
+  <link rel="stylesheet" href="{$theme_path}/css/slidenav.css">
+  <link rel="stylesheet" href="{$theme_path}/css/responsive.css">
+  <script src="{$theme_path}/js/jquery-1.11.1.min.js"></script>
+  <script src="{$theme_path}/js/uikit.min.js"></script>
+  <script src="{$theme_path}/js/slideshow.js"></script>
+  <script src="{$theme_path}/js/slideshow-fx.min.js"></script>
+ </head>
+ <body onLoad="init()">
+  <!--header-->
+  {include file="head.html" }
+  <!--banner-->
+  <div class="page_banner">
+   <img src="{$theme_path}/images/0a4d91cac1fe2554.jpg"
+   alt="产品展示">
+  </div>
+  <!--breadcrumb-->
+  <div class="uk-container-center breadcrumb">
+   <span class="breadcrumbs">
+    您现在的位置：<a href="/">首页</a> > <a href="{$typeurl}">{$typename}</a> 
+   </span>
+  </div>
+  <div class="product-info uk-container-center">
+   <div class="uk-grid uk-grid-collapse">
+    <div class="uk-width-medium-1-2">
+     <!--图片切换-->
+     <div class="uk-slidenav-position" data-uk-slideshow="">
+      <ul class="uk-slideshow" style="height: 451px; ">
+       <li class="uk-active" style="height: 451px; ">
+   
+        <img src="{$pic}" border="0" style="width: 100%; height: auto; ">
+       </li>
+      
+      </ul>
+     </div>
+     <!--图片切换结束-->
+    </div>
+    <div class="uk-width-medium-1-2 bkf1">
+     <div class="article-info">
+      <h2>{产品名称}</h2>
+      <p>{产品说明}</p>
+     </div>
+    </div>
+   </div>
+  </div>
+  <!--footer-->
+  {include file="foot.html" }
+ </body>
+</html>

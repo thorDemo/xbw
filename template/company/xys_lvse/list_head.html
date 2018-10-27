@@ -1,0 +1,111 @@
+<!--top-->
+<div class="row" id="el_4346108637757919" path="row">
+  <div class="rowFluid">
+    <div class="span12">
+      <div class="column" id="el_7151585367752427" path="column">
+        <div class="container">
+          <div class="row" id="el_5635261825761029" path="row">
+            <div class="rowFluid">
+              <div class="span3 col-xm-5 col-xs-12">
+                <div class="column" id="el_2460850518452288" path="column">
+                  <div class="pluginWrapper plugin_3898611423787967" id="plugin_3898611423787967" path="plugin" data-areaid="3898611423787967" data-edit="false">
+                    <div class="pluginContent">欢迎来到 <span style="line-height:1.5;">{$web_name}</span> </div>
+                  </div>
+                </div>
+              </div>
+              <div class="span9 col-xm-7">
+                <div class="column" id="el_1898135385315534" path="column">
+                  <div class="pluginWrapper plugin_8934434960375003" id="plugin_8934434960375003" path="plugin" data-areaid="8934434960375003" data-edit="false">
+                    <div class="pluginContent"> <span style="color:#999999;">全国咨询热线：</span> <span style="line-height:1.5;">{联系电话}</span> </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--top--> 
+<!--logo-->
+<div class="row" id="el_6789506665001319" path="row">
+  <div class="rowFluid">
+    <div class="span12">
+      <div class="column" id="el_6742193440783257" path="column">
+        <div class="container">
+          <div class="row" id="el_3201375415402662" path="row">
+            <div class="rowFluid">
+              <div class="span4 col-xm-5 col-sm-8 col-xs-6">
+                <div class="column" id="el_8980350940685013" path="column">
+                  <div class="pluginWrapper plugin_8348115039612150" id="plugin_8348115039612150" path="plugin" data-areaid="8348115039612150" data-edit="true">
+                    <div class="pluginContent"><a href="{网站地址}" title="{$web_name}" style="font-size: 30px;color: green;">{$web_name}</a> </div>
+                  </div>
+                </div>
+              </div>
+              <div class="span8 col-xm-7">
+                <div class="column" id="el_8161314318643756" path="column">
+                  <div class="pluginWrapper plugin_4706558438333787" id="plugin_4706558438333787" path="plugin" data-areaid="4706558438333787" data-edit="false">
+                    <div class="pluginContent">
+                      <style>
+    .mod-search{
+        background:url({$theme_path}/skin/image/ss.jpg) no-repeat center center;
+    }
+	.lm-next{
+		background:url({$theme_path}/skin/image/lm-next.jpg) no-repeat;
+	}
+	.lm-prev{
+		background:url({$theme_path}/skin/image/lm-prev.jpg) no-repeat;
+	}
+    </style>
+                      <form id="searchFrm" name="formsearch" method="get" action="/plus/search.php">
+                        <div class="mod-wrap clearfix">
+                          <input name="q" type="text" class="mod-keywords" id="search-keyword" value="在这里搜索..." onfocus="if(this.value=='在这里搜索...'){this.value='';}"  onblur="if(this.value==''){this.value='在这里搜索...';}" />
+                          <button class="mod-search" type="submit"><i class="fa-search"></i></button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--logo--> 
+<!--导航-->
+<div class="row" id="el_7884862386304085" path="row">
+  <div class="rowFluid">
+    <div class="span12">
+      <div class="column" id="el_5346448320708094" path="column">
+        <div class="container">
+          <div class="row" id="el_5013505347138136" path="row">
+            <div class="rowFluid">
+              <div class="span12">
+                <div class="column" id="el_7855626124697014" path="column">
+                  <div class="pluginWrapper plugin_3314644568225545" id="plugin_3314644568225545" path="plugin" data-areaid="3314644568225545" data-edit="false">
+                    <div class="pluginContent">
+                      <ul class="menu reset">
+<li class="mli"><a class="mod-first nav_home active" href="{网站地址}" title="首页">首页</a></li>
+<li class="mli"><a class="mod-first nav_home" href="{geturl tpl='list'/}" title="公司简介">公司新闻</a></li>
+<li class="mli"><a class="mod-first nav_home" href="{geturl tpl='about'/}" title="公司简介">公司简介</a></li>
+<li class="mli"><a class="mod-first nav_home" href="{geturl tpl='contact'/}" title="联系我们">联系我们</a></li>
+{loop type="typename" row="4" tpl="product_list"}
+<li class="mli"><a class="mod-first nav_11824" href="{$vo.typeurl}"  target="_blank"  title="{$vo.typename}">{$vo.typename}</a></li>
+{/loop}
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--导航-->

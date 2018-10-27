@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>聊城房产网 - 聊城房产|聊城房产信息网|聊城信息港房产频道</title>
+    <meta name="Description" content="{$description}"/>
+    <meta name="Keywords" content="{$keywords}"/>
+    <link rel="shortcut icon" href="{$theme_path}/img/favicon.ico">
+    <link rel="stylesheet" href="{$theme_path}/css/css.css" type="text/css">
+    <link rel="stylesheet" href="{$theme_path}/css/classad.css" type="text/css"/>
+    <link rel="stylesheet" href="{$theme_path}/css/house_index.css" type="text/css"/>
+</head>
+<body>
+{include file="header.html"}
+<div class="content">
+    <div class="h_l">
+        <div class="news">
+            <h5>聊城楼市风向标</h5>
+            <ul>
+                {loop type="arclist" tpl="fangchan" row="10" name="body/body.txt"}
+                <li><a href="{$vo.url}" target="_blank">{$vo.title}</a></li>
+                {/loop}
+            </ul>
+        </div>
+    </div>
+    <div class="h_r">
+        <ul class="info_list">
+            {loop type="arclist" tpl="fangchan" row="22" name="body/body.txt"}
+            <li><a href="{$vo.url}" target="_blank">{$vo.title}</a></li>
+            {/loop}
+        </ul>
+    </div>
+</div>
+<div class="news_pic">
+    <h5>楼盘展示</h5>
+    <ul>
+        {loop type="arclist" tpl="fangchan" row="6" name="common/house_title" image=1}
+        <li><a href="{$vo.url}" target="_blank"><img src='{$vo.pic}' rel="nofollow"/><br/>{getone name="common/house_name"/}</a></li>
+        {/loop}
+    </ul>
+</div>
+<div class="content">
+    <div class="h_l">
+        <div class="news">
+            <h5><a href='{geturl tpl="fangchan_list" fan=""/}'>更多&raquo;</a>聊城房产论坛</h5>
+            <ul>
+                {loop type="arclist" tpl="fangchan" row="15" name="common/house_title"/ image=0}
+                <li><a href="{$vo.url}" target="_blank">{getone name="common/house_title"/}</a></li>
+                {/loop}
+            </ul>
+        </div>
+    </div>
+    <div class="h_r">
+        <div class="cls_main">
+            <dl class="h360">
+                <dt><span><a href='{geturl tpl="fangchan_list" fan=""/}'>更多&raquo;</a></span><a href="/house/chushou" class="cls_bt">房屋出售房源</a></dt>
+                {loop type="arclist" tpl="fangchan" row="14" name="common/house_title" image=0}
+                <dd><a href="{$vo.url}" target="_blank">{$vo.title}</a></dd>
+                {/loop}
+            </dl>
+            <dl class="m_r h360">
+                <dt><span><a href='{geturl tpl="fangchan_list" fan=""/}'>更多&raquo;</a></span><a href="/house/chuzu" class="cls_bt">房屋出租房源</a>
+                </dt>
+                {loop type="arclist" tpl="fangchan" row="14" name="common/house_title" image=0}
+                <dd><a href="{$vo.url}" target="_blank">{$vo.title}</a></dd>
+                {/loop}
+            </dl>
+        </div>
+    </div>
+</div>
+<div class="content top_5">
+    <div class="h_l">
+        <div class="news">
+            <h5><a href='{geturl tpl="fangchan_list" fan=""/}'>更多&raquo;</a>房产企业展示</h5>
+            <ul>
+                {loop type="arclist" tpl="fangchan" row="15" name="common/house_title" image=0}
+                <li><a href="{$vo.url}" target="_blank">{getone name="common/house_title"/}</a></li>
+                {/loop}
+            </ul>
+        </div>
+    </div>
+    <div class="h_r">
+        <div class="cls_main">
+            <dl class="h360">
+                <dt><span><a href='{geturl tpl="fangchan_list" fan=""/}'>更多&raquo;</a></span><a href="/house/qiugou" class="cls_bt">房屋求购房源</a>
+                </dt>
+                {loop type="arclist" tpl="fangchan" row="14" name="common/house_title" image=0}
+                <dd><a href="{$vo.url}" target="_blank">{$vo.title}</a></dd>
+                {/loop}
+            </dl>
+            <dl class="m_r h360">
+                <dt><span><a href='{geturl tpl="fangchan_list" fan=""/}'   >更多&raquo;</a></span><a href="/house/qiuzu" class="cls_bt">房屋求租房源</a>
+                </dt>
+                {loop type="arclist" tpl="fangchan" row="14" name="common/house_title" image=0}
+                <dd><a href="{$vo.url}" target="_blank">{$vo.title}</a></dd>
+                {/loop}
+            </dl>
+        </div>
+    </div>
+</div>
+{include file="footer.html"}
+</body>
+</html>

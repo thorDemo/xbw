@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{$toptitle}</title>
+<meta name="description" content="{$description}" />
+<meta name="keywords" content="{$keywords}" />
+<link href="{$theme_path}/css/layout.css"  rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="{$web_path}/include/dedeajax2.js"></script>
+
+</head>
+<body>
+{include file="head.html" }
+<div id="container">
+  <div id="imainContent">
+    <div id="icontent"> 
+	
+      <div class="imainpanel">
+        <div class="imcontent" style="border:1px solid #ddd;">
+          <div class="top_div"> {loop type="arclist" info=1 row=1}
+            <a href="{$vo.url}"><strong>{$vo.title}</strong></a><br />
+            {$vo.info}...<a href="{$vo.url}">更多>></a><br /> {/loop} </div>
+          <div class="art">
+            <ul>
+              {loop type="arclist" row=2}
+              <li><a href="{$vo.url}">{$vo.title}</a></li>
+              {/loop}
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="imainimg">
+        <h2>最新推荐图片</h2>
+        <div class="imgbox"> {loop type="arclist" row="3" image=1} <a href="{$vo.url}"><img src="{$vo.pic}" /></a> {/loop} </div>
+      </div>
+      <div class="imainpanel">
+        <h2>最新推荐文章</h2>
+        <div class="imcontent"> {loop type="arclist" row="8" info=1}
+          <dl>
+            <dt><a href="{$vo.url}">{$vo.title}</a></dt>
+            <dd class="iclass">date:{$vo.postdate}　views:{$vo.hits}</dd>
+            <dd style="overflow:auto;zoom:1;"> <span style="float:right; margin-left:5px;"> {$vo.array}</span> {$vo.info}... </dd>
+          </dl>
+          {/loop} </div>
+      </div>
+    </div>
+    <div id="isidebar">
+      <div class="pic"> 
+        <script language='javascript'>
+linkarr = new Array();
+picarr = new Array();
+textarr = new Array();
+var swf_width=278;
+var swf_height=200;
+//文字颜色|文字位置|文字背景颜色|文字背景透明度|按键文字颜色|按键默认颜色|按键当前颜色|自动播放时间|图片过渡效果|是否显示按钮|打开方式
+var configtg='0x009b97|0|0xcae5f0|5|0xffffff|0xC5DDBC|0x000033|2|3|1|_blank';
+var files = "";
+var links = "";
+var texts = "";
+//这里设置调用标记
+{loop type="arclist" row="5" image=1}
+linkarr[{$vo.i}] = "{$vo.url}";
+picarr[{$vo.i}]  = "{$vo.pic}";
+textarr[{$vo.i}] = "{$vo.title}";
+{/loop}
+for(i=1;i<picarr.length;i++){
+if(files=="") files = picarr[i];
+else files += "|"+picarr[i];
+}
+for(i=1;i<linkarr.length;i++){
+if(links=="") links = linkarr[i];
+else links += "|"+linkarr[i];
+}
+for(i=1;i<textarr.length;i++){
+if(texts=="") texts = textarr[i];
+else texts += "|"+textarr[i];
+}
+document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="'+ swf_width +'" height="'+ swf_height +'">');
+document.write('<param name="movie" value="{$theme_path}/images/bcastr3.swf"><param name="quality" value="high">');
+document.write('<param name="menu" value="false"><param name=wmode value="opaque">');
+document.write('<param name="FlashVars" value="bcastr_file='+files+'&bcastr_link='+links+'&bcastr_title='+texts+'&bcastr_config='+configtg+'">');
+document.write('<embed src="{$theme_path}/images/bcastr3.swf" wmode="opaque" FlashVars="bcastr_file='+files+'&bcastr_link='+links+'&bcastr_title='+texts+'&bcastr_config='+configtg+'&menu="false" quality="high" width="'+ swf_width +'" height="'+ swf_height +'" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />'); document.write('</object>');
+</script>
+
+      </div>
+      {loop type="typename" row=3}
+      <div class="isidepanel">
+        <h4><a href="{$vo.typeurl}">{$vo.typename}</a></h4>
+        <div class="ipcontent">
+          <ul>
+            {loop type="arclist" row=10}
+            <li><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a></li>
+            {/loop}
+          </ul>
+        </div>
+      </div>
+      {/loop} </div>
+    <div id="rightbar">
+      <div class="isidepanel">
+        <h4>热门更新</h4>
+        <div class="ipcontent">
+          <ul>
+            {loop type="link" row="20"}
+            <li><a href="{$vo.url}">{$vo.title}</a></li>
+            {/loop}
+          </ul>
+        </div>
+      </div>
+      <div class="isidepanel">
+        <h4>最新更新</h4>
+        <div class="ipcontent">
+          <ul>
+           {loop type="arclist" row="20"}
+ <li><a href="{$vo.url}">{$vo.title}</a></li>
+ {/loop}
+          </ul>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+  <div class="clearfloat"></div>
+</div>
+{include file="footer.html" }
+</body>
+</html>

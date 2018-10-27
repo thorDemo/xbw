@@ -1,0 +1,978 @@
+H1 {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+H2 {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+H3 {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+H4 {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+H5 {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+H6 {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+P {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+UL {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+OL {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+DL {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+DT {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+DD {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+LI {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+BODY {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+FORM {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+INPUT {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+BUTTON {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+IMG {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+CITE {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+STRONG {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+EM {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+TD {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+TH {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+HTML {
+	OVERFLOW-Y: scroll
+}
+BODY {
+	TEXT-ALIGN: center; LINE-HEIGHT: 1.2; MARGIN: 0px auto; FONT-FAMILY: 宋体,Arial; COLOR: #000000; FONT-SIZE: 12px
+}
+IMG {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+}
+TABLE {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+}
+TD {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+}
+TH {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+}
+UL {
+	LIST-STYLE-TYPE: none
+}
+OL {
+	LIST-STYLE-TYPE: none
+}
+A {
+	COLOR: #444; FONT-SIZE: 12px
+}
+A:link {
+	TEXT-DECORATION: none
+}
+A:visited {
+	TEXT-DECORATION: none
+}
+A:hover {
+	TEXT-DECORATION: underline
+}
+A:active {
+	COLOR: #ff6600; TEXT-DECORATION: none
+}
+.input1 {
+	BORDER-BOTTOM: #b280a4 1px solid; BORDER-LEFT: #b280a4 1px solid; BORDER-TOP: #b280a4 1px solid; BORDER-RIGHT: #b280a4 1px solid
+}
+.input2 {
+	BORDER-BOTTOM: #b280a4 1px solid; BORDER-LEFT: #b280a4 1px solid; BORDER-TOP: #b280a4 1px solid; BORDER-RIGHT: #b280a4 1px solid
+}
+.textarea {
+	BORDER-BOTTOM: #45484d 1px solid; BORDER-LEFT: #45484d 1px solid; BACKGROUND: #efefef; BORDER-TOP: #45484d 1px solid; BORDER-RIGHT: #45484d 1px solid; PADDING-TOP: 2px
+}
+.button {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-TOP: medium none; CURSOR: pointer; BORDER-RIGHT: medium none
+}
+.button1 {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; WIDTH: 33px; BACKGROUND: url(button_search.gif); HEIGHT: 22px; COLOR: #ffffff; BORDER-TOP: medium none; CURSOR: pointer; BORDER-RIGHT: medium none
+}
+.button2 {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; WIDTH: 64px; BACKGROUND: url(button1.gif); HEIGHT: 21px; COLOR: #ffffff; BORDER-TOP: medium none; CURSOR: pointer; BORDER-RIGHT: medium none
+}
+.button3 {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; WIDTH: 85px; BACKGROUND: url(button2.gif); HEIGHT: 23px; COLOR: #ffffff; BORDER-TOP: medium none; CURSOR: pointer; BORDER-RIGHT: medium none
+}
+.productBtn {
+	LINE-HEIGHT: 20px; WIDTH: 42px; BACKGROUND: url(productBox_btn.gif); LETTER-SPACING: 2px; HEIGHT: 20px; COLOR: #ffffff
+}
+.none {
+	DISPLAY: none
+}
+.block {
+	DISPLAY: block
+}
+.clear {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; HEIGHT: 0px; MAX-HEIGHT: 0px; CLEAR: both; FONT-SIZE: 0px; OVERFLOW: hidden; PADDING-TOP: 0px
+}
+.left {
+	FLOAT: left
+}
+.right {
+	FLOAT: right
+}
+.pointer {
+	CURSOR: pointer
+}
+.display {
+	DISPLAY: none
+}
+.textCenter {
+	TEXT-ALIGN: center
+}
+.textLeft {
+	TEXT-ALIGN: left
+}
+.pToBr P {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+.height10 {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; HEIGHT: 10px; CLEAR: both; OVERFLOW: hidden; PADDING-TOP: 0px
+}
+.height8 {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; HEIGHT: 8px; CLEAR: both; OVERFLOW: hidden; PADDING-TOP: 0px
+}
+.height5 {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; HEIGHT: 5px; CLEAR: both; OVERFLOW: hidden; PADDING-TOP: 0px
+}
+.height1 {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; HEIGHT: 1px; CLEAR: both; OVERFLOW: hidden; PADDING-TOP: 0px
+}
+.fontB {
+	FONT-WEIGHT: bold
+}
+.fontDel {
+	TEXT-DECORATION: line-through
+}
+.list UL {
+	PADDING-BOTTOM: 0px; LIST-STYLE-TYPE: none; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+.list UL LI {
+	FLOAT: left; OVERFLOW: hidden
+}
+.fontMenu_1 {
+	FONT-FAMILY: 宋体,Arial; COLOR: #ffffff; FONT-SIZE: 14px; TEXT-DECORATION: none
+}
+A.fontMenu_1:hover {
+	FONT-FAMILY: 宋体,Arial; COLOR: #e2e0e0; FONT-SIZE: 14px; TEXT-DECORATION: none
+}
+.fontMenu_2 {
+	FONT-FAMILY: 宋体,Arial; COLOR: #ffffff; FONT-SIZE: 12px; TEXT-DECORATION: none
+}
+A.fontMenu_2:hover {
+	FONT-FAMILY: 宋体,Arial; COLOR: #e2e0e0; FONT-SIZE: 12px; TEXT-DECORATION: none
+}
+.font1_1 {
+	FONT-FAMILY: 宋体,Arial; COLOR: #000000; FONT-SIZE: 14px
+}
+A.font1_1:hover {
+	FONT-FAMILY: 宋体,Arial; COLOR: #535253; FONT-SIZE: 14px
+}
+.font1_1b {
+	FONT-FAMILY: 宋体,Arial; COLOR: #000000; FONT-SIZE: 14px; FONT-WEIGHT: bold
+}
+A.font1_1b:hover {
+	FONT-FAMILY: 宋体,Arial; COLOR: #535253; FONT-SIZE: 14px; FONT-WEIGHT: bold
+}
+.font1_2 {
+	FONT-FAMILY: 宋体,Arial; COLOR: #000000; FONT-SIZE: 12px
+}
+A.font1_2:hover {
+	FONT-FAMILY: 宋体,Arial; COLOR: #535253; FONT-SIZE: 12px
+}
+.font1_1d {
+	FONT-FAMILY: 宋体,Arial; COLOR: #a59ea3; FONT-SIZE: 14px
+}
+A.font1_1d:hover {
+	FONT-FAMILY: 宋体,Arial; COLOR: #b5b1b4; FONT-SIZE: 14px
+}
+.font1_2d {
+	FONT-FAMILY: 宋体,Arial; COLOR: #a59ea3; FONT-SIZE: 12px
+}
+A.font1_2d:hover {
+	FONT-FAMILY: 宋体,Arial; COLOR: #b5b1b4; FONT-SIZE: 12px
+}
+.font2_1 {
+	FONT-FAMILY: 宋体,Arial; COLOR: #bf3131; FONT-SIZE: 14px
+}
+A.font2_1:hover {
+	FONT-FAMILY: 宋体,Arial; COLOR: #f45151; FONT-SIZE: 14px
+}
+.font2_2 {
+	FONT-FAMILY: 宋体,Arial; COLOR: #bf3131; FONT-SIZE: 12px
+}
+A.font2_2:hover {
+	FONT-FAMILY: 宋体,Arial; COLOR: #f45151; FONT-SIZE: 12px
+}
+BODY {
+	BACKGROUND: url(top_bg.gif) #ffffff repeat-x
+}
+#htmlBody {
+	TEXT-ALIGN: center; MARGIN: 0px auto; WIDTH: 960px
+}
+#topBody {
+	TEXT-ALIGN: left; MARGIN: 0px auto; WIDTH: 100%; OVERFLOW: hidden
+}
+#mainBody {
+	TEXT-ALIGN: left; MARGIN: 0px auto; WIDTH: 100%; OVERFLOW: hidden
+}
+#mainBody1 {
+	TEXT-ALIGN: left; MARGIN: 0px auto; WIDTH: 961px; OVERFLOW: hidden
+}
+#bottomBody {
+	TEXT-ALIGN: left; MARGIN: 0px auto; WIDTH: 100%; OVERFLOW: hidden
+}
+.listArrow0 UL {
+	PADDING-BOTTOM: 0px; LIST-STYLE-TYPE: none; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+.listArrow0 UL LI {
+	LINE-HEIGHT: 2; HEIGHT: 25px; OVERFLOW: hidden
+}
+.listArrow1 UL {
+	PADDING-BOTTOM: 0px; LIST-STYLE-TYPE: none; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+.listArrow1 UL LI {
+	LINE-HEIGHT: 2; PADDING-LEFT: 16px; BACKGROUND: url(arrow1.gif) no-repeat 0px 4px; HEIGHT: 25px; OVERFLOW: hidden
+}
+.listArrow2 UL {
+	PADDING-BOTTOM: 0px; LIST-STYLE-TYPE: none; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+.listArrow2 UL LI {
+	LINE-HEIGHT: 2; PADDING-LEFT: 18px; BACKGROUND: url(arrow2.gif) no-repeat 0px 4px; HEIGHT: 25px; OVERFLOW: hidden
+}
+.listArrow3 UL {
+	PADDING-BOTTOM: 0px; LIST-STYLE-TYPE: none; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+.listArrow3 UL LI {
+	LINE-HEIGHT: 2; PADDING-LEFT: 16px; BACKGROUND: url(arrow3.gif) no-repeat 0px 4px; HEIGHT: 25px; OVERFLOW: hidden
+}
+.more {
+	WIDTH: 50px; FLOAT: right; HEIGHT: 100%; CURSOR: pointer
+}
+.topAd1 {
+	MARGIN-TOP: 2px
+}
+.rightAd1 {
+	MARGIN-TOP: 2px; WIDTH: 250px; OVERFLOW: hidden
+}
+.rightAd0 {
+	WIDTH: 250px; OVERFLOW: hidden
+}
+.leftAd1 {
+	WIDTH: 700px; MARGIN-BOTTOM: 2px; OVERFLOW: hidden
+}
+.leftAd0 {
+	WIDTH: 288px; MARGIN-BOTTOM: 0px; OVERFLOW: hidden
+}
+.topnav LI {
+	POSITION: relative; FLOAT: left
+}
+.topnav LI UL.subnav {
+	BORDER-BOTTOM: #a60000 1px solid; POSITION: absolute; FILTER: alpha(opacity=95); BORDER-LEFT: #a60000 1px solid; PADDING-BOTTOM: 0px; LIST-STYLE-TYPE: none; MARGIN: 0px; PADDING-LEFT: 0px; WIDTH: 94px; PADDING-RIGHT: 0px; DISPLAY: none; BACKGROUND: #b42727; FLOAT: left; BORDER-TOP: #a60000 1px solid; TOP: 30px; BORDER-RIGHT: #a60000 1px solid; PADDING-TOP: 0px; LEFT: -2px; -moz-opacity: 0.95; opacity: 0.95
+}
+.topnav LI UL.subnav LI {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; WIDTH: 94px; PADDING-RIGHT: 0px; CLEAR: both; PADDING-TOP: 0px
+}
+.topnav LI UL.subnav LI A {
+	WIDTH: 94px; BACKGROUND: #b42727; FLOAT: left; COLOR: #d6d5d5
+}
+.topnav LI UL.subnav LI A:hover {
+	BACKGROUND: #a61414; COLOR: #ffffff
+}
+.tbkFontD {
+	COLOR: #cccccc
+}
+.tbkFontD A:hover {
+	COLOR: red; TEXT-DECORATION: none
+}
+.tbkBlueFont {
+	COLOR: blue; FONT-WEIGHT: bold
+}
+.tbkBlueFont A {
+	COLOR: blue; FONT-WEIGHT: bold
+}
+.tbkBlueFont A:link {
+	COLOR: blue; FONT-WEIGHT: bold
+}
+.tbkBlueFont A:visited {
+	TEXT-DECORATION: none
+}
+.tbkBlueFont A:hover {
+	COLOR: red; TEXT-DECORATION: none
+}
+.tbkBlueFont A:active {
+	COLOR: #ff6600; TEXT-DECORATION: none
+}
+.tbkTypeFont A {
+	FONT-SIZE: 14px
+}
+.tbkTypeBox1 .typeTitle {
+	BACKGROUND: #fe9fa4; COLOR: #000000
+}
+.tbkTypeBox2 .typeTitle {
+	BACKGROUND: #fffae7; COLOR: #ff5500
+}
+.tbkRankBox {
+	HEIGHT: 120px; BORDER-TOP: #ffffff 3px solid
+}
+.tbkRankNum {
+	TEXT-ALIGN: center; PADDING-BOTTOM: 15px; PADDING-LEFT: 5px; WIDTH: 58px; PADDING-RIGHT: 5px; BACKGROUND: #ed1b23; FLOAT: left; HEIGHT: 80px; COLOR: #fff; FONT-SIZE: 58px; PADDING-TOP: 25px
+}
+.tbkRankImg {
+	PADDING-BOTTOM: 0px; MARGIN: 0px 3px; PADDING-LEFT: 5px; WIDTH: 130px; PADDING-RIGHT: 0px; BACKGROUND: #feeeee; FLOAT: left; HEIGHT: 115px; OVERFLOW: hidden; PADDING-TOP: 5px
+}
+.tbkRankImg IMG {
+	WIDTH: 125px
+}
+.tbkRankTitle {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 5px; LINE-HEIGHT: 1.6; MARGIN: 0px 3px 0px 0px; PADDING-LEFT: 5px; WIDTH: 363px; PADDING-RIGHT: 5px; BACKGROUND: #feeeee; FLOAT: left; HEIGHT: 110px; FONT-SIZE: 14px; PADDING-TOP: 5px
+}
+.tbkRankTitle A {
+	MARGIN: 0px; COLOR: #ff5757; FONT-SIZE: 15px; FONT-WEIGHT: bold
+}
+.tbkRankTitle A:hover {
+	MARGIN: 0px; COLOR: #ff5757; FONT-SIZE: 15px
+}
+.tbkRankTitle SPAN {
+	COLOR: #ff6600; FONT-WEIGHT: bold
+}
+.tbkRankSell {
+	TEXT-ALIGN: center; PADDING-BOTTOM: 5px; LINE-HEIGHT: 3.4; BACKGROUND-COLOR: #feeeee; MARGIN: 0px 3px 0px 0px; PADDING-LEFT: 5px; WIDTH: 85px; PADDING-RIGHT: 0px; FLOAT: left; HEIGHT: 107px; FONT-SIZE: 14px; PADDING-TOP: 8px
+}
+.tbkRankSell SPAN {
+	COLOR: #f60; FONT-SIZE: 14px; FONT-WEIGHT: bold
+}
+.tbkRankShop {
+	PADDING-BOTTOM: 5px; LINE-HEIGHT: 1.3; BACKGROUND-COLOR: #feeeee; PADDING-LEFT: 5px; WIDTH: 272px; PADDING-RIGHT: 5px; FLOAT: left; HEIGHT: 110px; FONT-SIZE: 14px; PADDING-TOP: 5px
+}
+.tbkRankShop A {
+	MARGIN: 0px; COLOR: #ff5757; FONT-SIZE: 15px
+}
+.tbkRankShop A:hover {
+	MARGIN: 0px; COLOR: #ff5757; FONT-SIZE: 15px
+}
+.tbkRankBg {
+	BACKGROUND: #ffffff
+}
+#topBody {
+	
+}
+#topBody .topMenu {
+	LINE-HEIGHT: 28px; HEIGHT: 28px
+}
+#topBody .topMenu .a {
+	WIDTH: 600px; FLOAT: left; COLOR: #bf3131; FONT-SIZE: 12px
+}
+#topBody .topMenu .a LI {
+	PADDING-RIGHT: 25px
+}
+#topBody .topMenu .b {
+	TEXT-ALIGN: right; WIDTH: 300px; FLOAT: right
+}
+#topBody .topLogo {
+	MIN-HEIGHT: 60px
+}
+#topBody .topLogo .a {
+	WIDTH: 254px; FLOAT: left; OVERFLOW: hidden
+}
+#topBody .topLogo .b {
+	PADDING-BOTTOM: 3px; PADDING-LEFT: 0px; WIDTH: 468px; PADDING-RIGHT: 0px; FLOAT: left; OVERFLOW: hidden; PADDING-TOP: 3px
+}
+#topBody .topLogo .c {
+	PADDING-BOTTOM: 3px; PADDING-LEFT: 0px; WIDTH: 234px; PADDING-RIGHT: 0px; FLOAT: left; OVERFLOW: hidden; PADDING-TOP: 3px
+}
+#topBody .mainMenu {
+	BACKGROUND: url(top_menuBg.gif) repeat-x 50% top; HEIGHT: 31px
+}
+#topBody .mainMenu .a {
+	TEXT-ALIGN: center; LINE-HEIGHT: 31px; WIDTH: 93px; BACKGROUND: url(top_menuOver.gif) no-repeat
+}
+#topBody .mainMenu .b {
+	TEXT-ALIGN: center; LINE-HEIGHT: 31px; WIDTH: 93px; BACKGROUND: none transparent scroll repeat 0% 0%
+}
+#topBody .mainMenu .c {
+	TEXT-ALIGN: center; WIDTH: 3px; BACKGROUND: url(top_menuDz.gif) no-repeat; HEIGHT: 31px; FONT-SIZE: 1px
+}
+#topBody .searchBox {
+	MARGIN-TOP: 5px; HEIGHT: 24px
+}
+#topBody .searchBox .a {
+	BORDER-BOTTOM: #e0e0e0 1px solid; BORDER-LEFT: #e0e0e0 1px solid; LINE-HEIGHT: 22px; TEXT-INDENT: 5px; WIDTH: 520px; HEIGHT: 22px; BORDER-TOP: #e0e0e0 1px solid; BORDER-RIGHT: #e0e0e0 1px solid
+}
+#topBody .searchBox .b {
+	WIDTH: 438px; HEIGHT: 100%
+}
+#topBody .searchBox .b DIV {
+	FLOAT: right
+}
+#topBody .searchBox .b .searchImg {
+	WIDTH: 101px; BACKGROUND: url(top_searchDz.gif); HEIGHT: 21px
+}
+#topBody .searchBox .b .searchInput {
+	BORDER-BOTTOM: #cccccc 1px solid; BORDER-LEFT: #cccccc 1px solid; LINE-HEIGHT: 19px; WIDTH: 140px; BACKGROUND: #f6f6f6; HEIGHT: 19px; BORDER-TOP: #cccccc 1px solid; BORDER-RIGHT: #cccccc 1px solid
+}
+#topBody .searchBox .b .searchBtn {
+	WIDTH: 48px; BACKGROUND: url(top_searchBtn.gif); HEIGHT: 22px; VERTICAL-ALIGN: top
+}
+#bottomBody {
+	BACKGROUND-POSITION: 0px -15px
+}
+.areaL {
+	WIDTH: 710px; FLOAT: left; OVERFLOW: hidden
+}
+.areaL1 {
+	WIDTH: 290px; FLOAT: left; OVERFLOW: hidden
+}
+.areaL2 {
+	WIDTH: 404px; FLOAT: left; MARGIN-LEFT: 8px; OVERFLOW: hidden
+}
+.areaR {
+	WIDTH: 250px; FLOAT: left; OVERFLOW: hidden
+}
+.announBox {
+	WIDTH: 290px
+}
+.announBox DL {
+	
+}
+.announBox DT {
+	BACKGROUND: url(index_announ.gif) no-repeat; HEIGHT: 31px
+}
+.announBox DD {
+	BORDER-BOTTOM: #cecece 1px solid; BORDER-LEFT: #cecece 1px solid; PADDING-BOTTOM: 5px; MIN-HEIGHT: 60px; PADDING-LEFT: 5px; WIDTH: 278px; PADDING-RIGHT: 5px; BORDER-TOP: medium none; BORDER-RIGHT: #cecece 1px solid; PADDING-TOP: 5px
+}
+.newBox {
+	WIDTH: 404px
+}
+.newBox DL {
+	
+}
+.newBox DT {
+	BACKGROUND: url(index_new.gif) no-repeat; HEIGHT: 30px
+}
+.newBox DD {
+	BORDER-BOTTOM: #cecece 1px solid; BORDER-LEFT: #cecece 1px solid; PADDING-BOTTOM: 5px; MIN-HEIGHT: 150px; PADDING-LEFT: 5px; WIDTH: 392px; PADDING-RIGHT: 5px; BORDER-TOP: medium none; BORDER-RIGHT: #cecece 1px solid; PADDING-TOP: 5px
+}
+.newBox DD .headRow {
+	BORDER-BOTTOM: #cccccc 1px dotted; PADDING-BOTTOM: 5px; LINE-HEIGHT: 1.3; MARGIN: 5px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; PADDING-TOP: 5px
+}
+.newBox DD H1 {
+	TEXT-ALIGN: center; MARGIN: 5px 0px 7px; HEIGHT: 22px; COLOR: #000000; FONT-SIZE: 16px; OVERFLOW: hidden
+}
+.newBox DD H1 A {
+	COLOR: #000000; FONT-SIZE: 16px
+}
+.newBox DD H1 A:hover {
+	COLOR: #000000; FONT-SIZE: 16px
+}
+.recomBox {
+	WIDTH: 250px
+}
+.recomBox DL {
+	
+}
+.recomBox DT {
+	BACKGROUND: url(index_recom.gif) no-repeat; HEIGHT: 30px
+}
+.recomBox DD {
+	BORDER-BOTTOM: #cecece 1px solid; BORDER-LEFT: #cecece 1px solid; PADDING-BOTTOM: 5px; MIN-HEIGHT: 80px; PADDING-LEFT: 5px; WIDTH: 238px; PADDING-RIGHT: 5px; BORDER-TOP: medium none; BORDER-RIGHT: #cecece 1px solid; PADDING-TOP: 5px
+}
+.voteItem {
+	MARGIN: 8px 0px 12px
+}
+.voteItem H3 {
+	FONT-SIZE: 12px
+}
+.voteItem DIV {
+	MARGIN: 2px 0px
+}
+.voteBtn {
+	TEXT-ALIGN: center; MARGIN-TOP: 8px
+}
+.newMessItem {
+	LINE-HEIGHT: 1.4; MARGIN: 5px 0px 8px
+}
+.newMessItem DIV {
+	
+}
+.itemBox0 {
+	WIDTH: 960px; FLOAT: left
+}
+.itemBox0 DL {
+	
+}
+.itemBox0 DT {
+	LINE-HEIGHT: 34px; TEXT-INDENT: 12px; PADDING-LEFT: 12px; BACKGROUND: url(item0.gif) no-repeat; HEIGHT: 30px; COLOR: #ffffff; FONT-SIZE: 14px; OVERFLOW: hidden; FONT-WEIGHT: bold
+}
+.itemBox0 DD {
+	BORDER-BOTTOM: #cecece 1px solid; BORDER-LEFT: #cecece 1px solid; PADDING-BOTTOM: 5px; MIN-HEIGHT: 50px; PADDING-LEFT: 5px; WIDTH: 948px; PADDING-RIGHT: 5px; BORDER-TOP: medium none; BORDER-RIGHT: #cecece 1px solid; PADDING-TOP: 5px
+}
+.itemBox {
+	MARGIN: 0px 8px 8px 0px; WIDTH: 347px; FLOAT: left
+}
+.itemBox DL {
+	
+}
+.itemBox DT {
+	LINE-HEIGHT: 34px; TEXT-INDENT: 12px; PADDING-LEFT: 12px; BACKGROUND: url(item.gif) no-repeat; HEIGHT: 30px; COLOR: #ffffff; FONT-SIZE: 14px; OVERFLOW: hidden; FONT-WEIGHT: bold
+}
+.itemBox DD {
+	BORDER-BOTTOM: #cecece 1px solid; BORDER-LEFT: #cecece 1px solid; PADDING-BOTTOM: 5px; MIN-HEIGHT: 136px; PADDING-LEFT: 5px; WIDTH: 335px; PADDING-RIGHT: 5px; BORDER-TOP: medium none; BORDER-RIGHT: #cecece 1px solid; PADDING-TOP: 5px
+}
+.itemBox .imgRow {
+	
+}
+.itemBox .imgRow .a {
+	BORDER-BOTTOM: #e6e5e5 1px solid; BORDER-LEFT: #e6e5e5 1px solid; MARGIN: 4px 4px 5px; WIDTH: 100px; FLOAT: left; HEIGHT: 84px; OVERFLOW: hidden; BORDER-TOP: #e6e5e5 1px solid; BORDER-RIGHT: #e6e5e5 1px solid
+}
+.itemBox .imgRow .a IMG {
+	WIDTH: 100px; HEIGHT: 84px
+}
+.itemBox .imgRow .b {
+	PADDING-BOTTOM: 3px; LINE-HEIGHT: 1.4; PADDING-LEFT: 3px; WIDTH: 215px; PADDING-RIGHT: 3px; FLOAT: left; HEIGHT: 84px; OVERFLOW: hidden; PADDING-TOP: 3px
+}
+.itemBox .imgRow .b H1 {
+	MARGIN-BOTTOM: 3px; HEIGHT: 18px; FONT-SIZE: 12px; OVERFLOW: hidden
+}
+.itemBox .imgRow .b SPAN A {
+	COLOR: #6f6f6f
+}
+.itemBox .imgRow .b SPAN A:hover {
+	COLOR: #868586
+}
+.itemBox3 {
+	MARGIN: 0px 5px 8px 0px; WIDTH: 317px; FLOAT: left
+}
+.itemBox3 DL {
+	
+}
+.itemBox3 DT {
+	LINE-HEIGHT: 34px; TEXT-INDENT: 12px; PADDING-LEFT: 12px; BACKGROUND: url(item_3.gif) no-repeat; HEIGHT: 30px; COLOR: #ffffff; FONT-SIZE: 14px; OVERFLOW: hidden; FONT-WEIGHT: bold
+}
+.itemBox3 DD {
+	BORDER-BOTTOM: #cecece 1px solid; BORDER-LEFT: #cecece 1px solid; PADDING-BOTTOM: 5px; MIN-HEIGHT: 136px; PADDING-LEFT: 5px; WIDTH: 303px; PADDING-RIGHT: 5px; BORDER-TOP: medium none; BORDER-RIGHT: #cecece 1px solid; PADDING-TOP: 5px
+}
+.itemBox3 .imgRow {
+	
+}
+.itemBox3 .imgRow .a {
+	BORDER-BOTTOM: #e6e5e5 1px solid; BORDER-LEFT: #e6e5e5 1px solid; MARGIN: 4px 4px 6px; WIDTH: 100px; FLOAT: left; HEIGHT: 84px; OVERFLOW: hidden; BORDER-TOP: #e6e5e5 1px solid; BORDER-RIGHT: #e6e5e5 1px solid
+}
+.itemBox3 .imgRow .a IMG {
+	WIDTH: 100px; HEIGHT: 84px
+}
+.itemBox3 .imgRow .b {
+	PADDING-BOTTOM: 3px; LINE-HEIGHT: 1.4; PADDING-LEFT: 3px; WIDTH: 183px; PADDING-RIGHT: 3px; FLOAT: left; HEIGHT: 84px; OVERFLOW: hidden; PADDING-TOP: 3px
+}
+.itemBox3 .imgRow .b H1 {
+	MARGIN-BOTTOM: 3px; HEIGHT: 18px; FONT-SIZE: 12px; OVERFLOW: hidden
+}
+.itemBox3 .imgRow .b SPAN A {
+	COLOR: #6f6f6f
+}
+.itemBox3 .imgRow .b SPAN A:hover {
+	COLOR: #868586
+}
+.pageBox {
+	MARGIN: 0px 8px 8px 0px; WIDTH: 700px; FLOAT: left
+}
+.pageBox DL {
+	
+}
+.pageBox DT {
+	LINE-HEIGHT: 32px; TEXT-INDENT: 12px; PADDING-LEFT: 12px; BACKGROUND: url(item3.gif) no-repeat; HEIGHT: 30px; COLOR: #ffffff; FONT-SIZE: 14px; OVERFLOW: hidden; FONT-WEIGHT: bold
+}
+.pageBox DD {
+	BORDER-BOTTOM: #cecece 1px solid; BORDER-LEFT: #cecece 1px solid; PADDING-BOTTOM: 5px; MIN-HEIGHT: 136px; PADDING-LEFT: 5px; WIDTH: 688px; PADDING-RIGHT: 5px; BORDER-TOP: medium none; BORDER-RIGHT: #cecece 1px solid; PADDING-TOP: 5px
+}
+.pageBoxMore {
+	MARGIN: 0px 8px 8px 0px; WIDTH: 700px; FLOAT: left
+}
+.pageBoxMore DL {
+	
+}
+.pageBoxMore DT {
+	LINE-HEIGHT: 32px; TEXT-INDENT: 12px; PADDING-LEFT: 12px; BACKGROUND: url(item3more.gif) no-repeat; HEIGHT: 30px; COLOR: #ffffff; FONT-SIZE: 14px; OVERFLOW: hidden; FONT-WEIGHT: bold
+}
+.pageBoxMore DD {
+	BORDER-BOTTOM: #cecece 1px solid; BORDER-LEFT: #cecece 1px solid; PADDING-BOTTOM: 5px; MIN-HEIGHT: 136px; PADDING-LEFT: 5px; WIDTH: 688px; PADDING-RIGHT: 5px; BORDER-TOP: medium none; BORDER-RIGHT: #cecece 1px solid; PADDING-TOP: 5px
+}
+.typeBox {
+	WIDTH: 250px; FLOAT: left
+}
+.typeBox DL {
+	
+}
+.typeBox DT {
+	LINE-HEIGHT: 32px; TEXT-INDENT: 12px; PADDING-LEFT: 12px; BACKGROUND: url(item2.gif) no-repeat; HEIGHT: 30px; COLOR: #ffffff; FONT-SIZE: 14px; OVERFLOW: hidden; FONT-WEIGHT: bold
+}
+.typeBox DD {
+	BORDER-BOTTOM: #cecece 1px solid; BORDER-LEFT: #cecece 1px solid; PADDING-BOTTOM: 5px; MIN-HEIGHT: 136px; PADDING-LEFT: 5px; WIDTH: 238px; PADDING-RIGHT: 5px; BORDER-TOP: medium none; BORDER-RIGHT: #cecece 1px solid; PADDING-TOP: 5px
+}
+.imgBox {
+	BORDER-BOTTOM: #cecece 1px solid; TEXT-ALIGN: left; BORDER-LEFT: #cecece 1px solid; PADDING-BOTTOM: 6px; PADDING-LEFT: 6px; WIDTH: 946px; PADDING-RIGHT: 6px; HEIGHT: 130px; BORDER-TOP: #cecece 1px solid; BORDER-RIGHT: #cecece 1px solid; PADDING-TOP: 6px
+}
+.imgBox .a {
+	MIN-WIDTH: 100px; TEXT-ALIGN: center; MARGIN: 5px; FLOAT: left
+}
+.imgBox .a IMG {
+	BORDER-BOTTOM: #e6e5e5 1px solid; BORDER-LEFT: #e6e5e5 1px solid; PADDING-BOTTOM: 1px; PADDING-LEFT: 1px; PADDING-RIGHT: 1px; MARGIN-BOTTOM: 3px; HEIGHT: 100px; BORDER-TOP: #e6e5e5 1px solid; BORDER-RIGHT: #e6e5e5 1px solid; PADDING-TOP: 1px
+}
+.imgBox .a DIV {
+	WIDTH: 110px; HEIGHT: 14px; OVERFLOW: hidden
+}
+.listBox1 UL {
+	PADDING-BOTTOM: 0px; LIST-STYLE-TYPE: none; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+.listBox1 UL LI {
+	BORDER-BOTTOM: #cccccc 1px dotted; PADDING-BOTTOM: 8px; LINE-HEIGHT: 1.6; PADDING-LEFT: 8px; PADDING-RIGHT: 8px; PADDING-TOP: 8px
+}
+.listBox1 UL LI .addi {
+	FLOAT: right; COLOR: #959495
+}
+.listBox1 UL LI .note {
+	TEXT-INDENT: 2em; COLOR: #484748
+}
+.listBox1 UL LI .note A {
+	TEXT-ALIGN: left; MARGIN-TOP: 8px; COLOR: #484748; FONT-SIZE: 12px
+}
+.listBox1 UL LI .note A:hover {
+	TEXT-ALIGN: left; MARGIN-TOP: 8px; COLOR: #707070; FONT-SIZE: 12px
+}
+.listBox2 UL {
+	PADDING-BOTTOM: 0px; LIST-STYLE-TYPE: none; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+.listBox2 UL LI {
+	BORDER-BOTTOM: #cccccc 1px dotted; TEXT-ALIGN: left; PADDING-BOTTOM: 2px; PADDING-LEFT: 6px; PADDING-RIGHT: 7px; PADDING-TOP: 8px
+}
+.listBox2 UL LI .a {
+	PADDING-RIGHT: 8px; FLOAT: left; OVERFLOW: hidden
+}
+.listBox2 UL LI .a .img {
+	BORDER-BOTTOM: #e6e5e5 1px solid; BORDER-LEFT: #e6e5e5 1px solid; PADDING-BOTTOM: 1px; PADDING-LEFT: 1px; WIDTH: 100px; PADDING-RIGHT: 1px; BACKGROUND: #fafafa; HEIGHT: 85px; OVERFLOW: hidden; BORDER-TOP: #e6e5e5 1px solid; BORDER-RIGHT: #e6e5e5 1px solid; PADDING-TOP: 1px
+}
+.listBox2 UL LI .a .img IMG {
+	WIDTH: 100px; HEIGHT: 85px
+}
+.listBox2 UL LI .b {
+	LINE-HEIGHT: 1.5; WIDTH: 555px; FLOAT: left; MARGIN-LEFT: 5px; OVERFLOW: hidden
+}
+.listBox2 UL LI .b .addi {
+	FLOAT: right; COLOR: #959495
+}
+.listBox2 UL LI .b .note {
+	TEXT-ALIGN: left; MARGIN-TOP: 8px; TEXT-INDENT: 2em; COLOR: #484748
+}
+.listBox2 UL LI .b .note A {
+	TEXT-ALIGN: left; MARGIN-TOP: 8px; COLOR: #484748; FONT-SIZE: 12px
+}
+.listBox2 UL LI .b .note A:hover {
+	TEXT-ALIGN: left; MARGIN-TOP: 8px; COLOR: #707070; FONT-SIZE: 12px
+}
+.listBox3 UL {
+	PADDING-BOTTOM: 0px; LIST-STYLE-TYPE: none; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+.listBox3 UL LI {
+	TEXT-ALIGN: center; MARGIN: 3px; WIDTH: 166px; FLOAT: left
+}
+.listBox3 UL LI .a {
+	BORDER-BOTTOM: #e6e5e5 1px solid; BORDER-LEFT: #e6e5e5 1px solid; PADDING-BOTTOM: 1px; PADDING-LEFT: 1px; WIDTH: 150px; PADDING-RIGHT: 1px; BACKGROUND: #fafafa; HEIGHT: 126px; OVERFLOW: hidden; BORDER-TOP: #e6e5e5 1px solid; BORDER-RIGHT: #e6e5e5 1px solid; PADDING-TOP: 1px
+}
+.listBox3 UL LI .a IMG {
+	WIDTH: 150px
+}
+.listBox3 UL LI .b {
+	PADDING-BOTTOM: 3px; LINE-HEIGHT: 1.2; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; HEIGHT: 25px; FONT-SIZE: 12px; OVERFLOW: hidden; PADDING-TOP: 10px
+}
+.listBox5 UL {
+	PADDING-BOTTOM: 0px; LIST-STYLE-TYPE: none; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+.listBox5 UL LI {
+	BORDER-BOTTOM: #cccccc 1px dotted; PADDING-BOTTOM: 5px; LINE-HEIGHT: 1.4; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; PADDING-TOP: 5px
+}
+.listBox5 UL LI .addi {
+	FLOAT: right; COLOR: #959495
+}
+.webBox .a {
+	BORDER-BOTTOM: #cccccc 1px dotted; PADDING-BOTTOM: 2px; PADDING-LEFT: 8px; PADDING-RIGHT: 8px; PADDING-TOP: 8px
+}
+.webBox .a H2 {
+	TEXT-ALIGN: center; MARGIN: 10px 0px 15px
+}
+.webBox .a .addi1 {
+	FLOAT: right; COLOR: #959495
+}
+.webBox .a .addi1 .font {
+	LINE-HEIGHT: 21px; FLOAT: left; HEIGHT: 21px; MARGIN-RIGHT: 5px
+}
+.webBox .a .addi2 {
+	TEXT-ALIGN: center; MARGIN-LEFT: 0px; MARGIN-RIGHT: 0px
+}
+.webBox .b {
+	BORDER-BOTTOM: #cccccc 1px dotted; PADDING-BOTTOM: 12px; LINE-HEIGHT: 1.8; PADDING-LEFT: 12px; PADDING-RIGHT: 12px; FONT-SIZE: 14px; PADDING-TOP: 12px
+}
+.webBox .b .note {
+	BORDER-BOTTOM: #dcdcdc 1px solid; BORDER-LEFT: #dcdcdc 1px solid; PADDING-BOTTOM: 8px; LINE-HEIGHT: 1.6; PADDING-LEFT: 8px; PADDING-RIGHT: 8px; MARGIN-BOTTOM: 10px; BACKGROUND: #fafafa; FONT-SIZE: 12px; BORDER-TOP: #dcdcdc 1px solid; BORDER-RIGHT: #dcdcdc 1px solid; PADDING-TOP: 8px
+}
+.webBox .b .nav {
+	TEXT-ALIGN: center; MARGIN-TOP: 8px
+}
+.webBox .c {
+	PADDING-BOTTOM: 8px; LINE-HEIGHT: 1.4; PADDING-LEFT: 8px; PADDING-RIGHT: 8px; FONT-SIZE: 14px; PADDING-TOP: 8px
+}
+.webBox .c A {
+	COLOR: #00528e; FONT-SIZE: 14px
+}
+.webBox .c A:hover {
+	COLOR: #00528e; FONT-SIZE: 14px; TEXT-DECORATION: underline
+}
+.webBox .d {
+	BORDER-BOTTOM: #cccccc 1px dotted; PADDING-BOTTOM: 12px; PADDING-LEFT: 12px; PADDING-RIGHT: 12px; PADDING-TOP: 12px
+}
+.webBox .d UL {
+	MARGIN-LEFT: 12px
+}
+.webBox .d LI {
+	PADDING-BOTTOM: 3px; MARGIN: 8px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; CURSOR: pointer; PADDING-TOP: 3px
+}
+.webBox .d LI IMG {
+	MARGIN: 5px 0px; HEIGHT: 50px
+}
+.webBox .d .boxBorder {
+	BORDER-BOTTOM: #dadada 1px solid; BORDER-LEFT: #dadada 1px solid; WIDTH: 15px; BACKGROUND: url(boxFull.gif); HEIGHT: 50px; BORDER-TOP: #dadada 1px solid; BORDER-RIGHT: #dadada 1px solid
+}
+.webBox .d .boxBlank {
+	WIDTH: 100%; BACKGROUND: #ffffff; HEIGHT: 49px; OVERFLOW: hidden
+}
+.webBox .d .upDown {
+	TEXT-ALIGN: center; MARGIN: auto; WIDTH: 404px
+}
+.webBox .d .upDown .up {
+	WIDTH: 192px; BACKGROUND: url(../../inc_img/vote/vote1_1.gif); FLOAT: left; HEIGHT: 48px; CURSOR: pointer
+}
+.webBox .d .upDown .up2 {
+	WIDTH: 192px; BACKGROUND: url(../../inc_img/vote/vote1_2.gif); FLOAT: left; HEIGHT: 48px; CURSOR: pointer
+}
+.webBox .d .upDown .upa {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 30px; PADDING-RIGHT: 0px; FLOAT: left; COLOR: #cc3300; FONT-SIZE: 14px; FONT-WEIGHT: bold; PADDING-TOP: 8px
+}
+.webBox .d .upDown .upb {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 6px; PADDING-RIGHT: 0px; FLOAT: left; COLOR: #d5665f; FONT-SIZE: 14px; PADDING-TOP: 8px
+}
+.webBox .d .upDown .upc {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 11px; WIDTH: 90px; PADDING-RIGHT: 0px; FLOAT: left; PADDING-TOP: 7px
+}
+.webBox .d .upDown .upd {
+	WIDTH: 100px; BACKGROUND: #e37f24; FLOAT: left; HEIGHT: 7px
+}
+.webBox .d .upDown .upe {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 25px; PADDING-RIGHT: 0px; FLOAT: left; PADDING-TOP: 4px
+}
+.webBox .d .upDown .down {
+	WIDTH: 192px; BACKGROUND: url(../../inc_img/vote/vote2_1.gif); FLOAT: left; HEIGHT: 48px; MARGIN-LEFT: 20px; CURSOR: pointer
+}
+.webBox .d .upDown .down2 {
+	WIDTH: 192px; BACKGROUND: url(../../inc_img/vote/vote2_2.gif); FLOAT: left; HEIGHT: 48px; MARGIN-LEFT: 20px; CURSOR: pointer
+}
+.webBox .d .upDown .downa {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 30px; PADDING-RIGHT: 0px; FLOAT: left; COLOR: #3366cc; FONT-SIZE: 14px; FONT-WEIGHT: bold; PADDING-TOP: 8px
+}
+.webBox .d .upDown .downb {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 6px; PADDING-RIGHT: 0px; FLOAT: left; COLOR: #5e99d5; FONT-SIZE: 14px; PADDING-TOP: 8px
+}
+.webBox .d .upDown .downc {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 11px; WIDTH: 90px; PADDING-RIGHT: 0px; FLOAT: left; PADDING-TOP: 7px
+}
+.webBox .d .upDown .downd {
+	WIDTH: 100px; BACKGROUND: #689acc; FLOAT: left; HEIGHT: 7px
+}
+.webBox .d .upDown .downe {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 25px; PADDING-RIGHT: 0px; FLOAT: left; PADDING-TOP: 4px
+}
+.webBox .pageNavBox {
+	TEXT-ALIGN: center; MARGIN: 12px auto 5px
+}
+.webBox .pageNavBox DIV {
+	BORDER-BOTTOM: #cccccc 1px solid; BORDER-LEFT: #cccccc 1px solid; LINE-HEIGHT: 20px; MARGIN: 0px 2px; DISPLAY: inline; BACKGROUND: #f9f9f9; FLOAT: left; HEIGHT: 20px; COLOR: #000000; FONT-SIZE: 12px; BORDER-TOP: #cccccc 1px solid; BORDER-RIGHT: #cccccc 1px solid
+}
+.webBox .pageNavBox DIV A {
+	PADDING-BOTTOM: 3px; PADDING-LEFT: 8px; PADDING-RIGHT: 8px; PADDING-TOP: 3px
+}
+.webBox .pageNavBox DIV SPAN {
+	PADDING-BOTTOM: 3px; PADDING-LEFT: 8px; PADDING-RIGHT: 8px; PADDING-TOP: 3px
+}
+.webBox .pageNavBox DIV SPAN {
+	COLOR: #a59ea3; FONT-SIZE: 12px
+}
+.webBox .pageNavBox DIV .sel {
+	COLOR: red; FONT-SIZE: 14px
+}
+.webBox .keyWord {
+	COLOR: #1c41ff; FONT-SIZE: 14px; TEXT-DECORATION: underline
+}
+.replyBox {
+	MARGIN: 0px 8px 8px 0px; WIDTH: 700px; FLOAT: left
+}
+.replyBox DL {
+	
+}
+.replyBox DT {
+	BACKGROUND: url(reply.gif) no-repeat; HEIGHT: 30px
+}
+.replyBox DD {
+	BORDER-BOTTOM: #cecece 1px solid; BORDER-LEFT: #cecece 1px solid; PADDING-BOTTOM: 5px; MIN-HEIGHT: 136px; PADDING-LEFT: 5px; WIDTH: 688px; PADDING-RIGHT: 5px; BORDER-TOP: medium none; BORDER-RIGHT: #cecece 1px solid; PADDING-TOP: 5px
+}
+.replyBox UL {
+	TEXT-ALIGN: center; MARGIN: 0px auto
+}
+.replyBox LI {
+	BORDER-BOTTOM: #cccccc 1px solid; TEXT-ALIGN: left; PADDING-BOTTOM: 12px; LINE-HEIGHT: 1.6; MARGIN: 0px 6px; PADDING-LEFT: 6px; PADDING-RIGHT: 6px; PADDING-TOP: 12px
+}
+.replyBox LI .username {
+	COLOR: #000000
+}
+.replyBox LI .note {
+	TEXT-INDENT: 2em
+}
+.replyBox LI .username IMG {
+	MARGIN-RIGHT: 2px
+}
+.replyBox LI .admin {
+	PADDING-BOTTOM: 3px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; COLOR: red; PADDING-TOP: 3px
+}
+.replyBox .replyBtn {
+	WIDTH: 76px; BACKGROUND: url(replyBtn.gif); HEIGHT: 21px
+}
+.replyBox #replyWrite {
+	TEXT-ALIGN: center
+}
+.logoBox {
+	WIDTH: 960px
+}
+.logoBox DL {
+	
+}
+.logoBox DT {
+	BACKGROUND: url(bottom_logo.gif) no-repeat; HEIGHT: 30px
+}
+.logoBox DD {
+	BORDER-BOTTOM: #cecece 1px solid; BORDER-LEFT: #cecece 1px solid; PADDING-BOTTOM: 10px; LINE-HEIGHT: 1.8; MIN-HEIGHT: 25px; PADDING-LEFT: 10px; WIDTH: 960px; PADDING-RIGHT: 10px; BORDER-TOP: medium none; BORDER-RIGHT: #cecece 1px solid; PADDING-TOP: 10px
+}
+.logoBox DD .img {
+	MARGIN: 5px 5px 0px 0px
+}
+.bottomLine {
+	WIDTH: 960px; BACKGROUND: #c60000; HEIGHT: 5px; OVERFLOW: hidden
+}
+.bottomMenu {
+	TEXT-ALIGN: center; PADDING-BOTTOM: 8px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+.bottomVersion {
+	TEXT-ALIGN: center; PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; COLOR: #a5a5a5; PADDING-TOP: 1px
+}
+.bottomVersion A {
+	COLOR: #a5a5a5
+}
+.bottomVersion A:hover {
+	COLOR: #504f4f
+}
+.bottomCopyright {
+	TEXT-ALIGN: center; PADDING-BOTTOM: 5px; LINE-HEIGHT: 1.6; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 3px
+}
+.messageBox UL {
+	TEXT-ALIGN: center; MARGIN: 0px auto
+}
+.messageBox LI {
+	BORDER-BOTTOM: #cccccc 1px solid; TEXT-ALIGN: left; PADDING-BOTTOM: 12px; LINE-HEIGHT: 1.6; MARGIN: 0px 6px; PADDING-LEFT: 6px; PADDING-RIGHT: 6px; PADDING-TOP: 12px
+}
+.messageBox LI .username {
+	COLOR: #000000
+}
+.messageBox LI .admin {
+	COLOR: red
+}
+.messageBox .replyBtn {
+	WIDTH: 76px; BACKGROUND: url(messageBtn.gif); HEIGHT: 21px
+}
+.messageBox #replyWrite {
+	TEXT-ALIGN: center
+}
+.f5 {
+	PADDING-BOTTOM: 10px; WIDTH: 100%; CLEAR: both; OVERFLOW: hidden
+}
+.f5 LI {
+	PADDING-BOTTOM: 0px; LINE-HEIGHT: 14px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; WHITE-SPACE: nowrap; FLOAT: left; PADDING-TOP: 8px
+}
+.f5 LI A {
+	FLOAT: left; COLOR: #666666
+}
+DIV.sabrosus {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; MARGIN: 3px; PADDING-TOP: 3px; TEXT-ALIGN: center
+}
+DIV.sabrosus A {
+	BORDER-RIGHT: #9aafe5 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #9aafe5 1px solid; PADDING-LEFT: 5px; PADDING-BOTTOM: 2px; BORDER-LEFT: #9aafe5 1px solid; COLOR: #2e6ab1; MARGIN-RIGHT: 2px; PADDING-TOP: 2px; BORDER-BOTTOM: #9aafe5 1px solid; TEXT-DECORATION: none
+}
+DIV.sabrosus A:hover {
+	BORDER-RIGHT: #2b66a5 1px solid; BORDER-TOP: #2b66a5 1px solid; BORDER-LEFT: #2b66a5 1px solid; COLOR: #000; BORDER-BOTTOM: #2b66a5 1px solid; BACKGROUND-COLOR: lightyellow
+}
+DIV.pagination A:active {
+	BORDER-RIGHT: #2b66a5 1px solid; BORDER-TOP: #2b66a5 1px solid; BORDER-LEFT: #2b66a5 1px solid; COLOR: #000; BORDER-BOTTOM: #2b66a5 1px solid; BACKGROUND-COLOR: lightyellow
+}
+DIV.sabrosus SPAN.thisclass {
+	BORDER-RIGHT: navy 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: navy 1px solid; PADDING-LEFT: 5px; FONT-WEIGHT: bold; PADDING-BOTTOM: 2px; BORDER-LEFT: navy 1px solid; COLOR: #fff; MARGIN-RIGHT: 2px; PADDING-TOP: 2px; BORDER-BOTTOM: navy 1px solid; BACKGROUND-COLOR: #2e6ab1
+}
+DIV.sabrosus SPAN.disabled {
+	BORDER-RIGHT: #929292 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #929292 1px solid; PADDING-LEFT: 5px; PADDING-BOTTOM: 2px; BORDER-LEFT: #929292 1px solid; COLOR: #929292; MARGIN-RIGHT: 2px; PADDING-TOP: 2px; BORDER-BOTTOM: #929292 1px solid
+}
+.pageinfo {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; MARGIN: 3px; PADDING-TOP: 3px; TEXT-ALIGN: center
+}
+.pageinfo A {
+	BORDER-RIGHT: #aaaadd 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #aaaadd 1px solid; PADDING-LEFT: 5px; PADDING-BOTTOM: 2px; MARGIN: 2px; BORDER-LEFT: #aaaadd 1px solid; COLOR: #000099; PADDING-TOP: 2px; BORDER-BOTTOM: #aaaadd 1px solid; TEXT-DECORATION: none
+}
+.pageinfo A:hover {
+	BORDER-RIGHT: #000099 1px solid; BORDER-TOP: #000099 1px solid; BORDER-LEFT: #000099 1px solid; COLOR: #000; BORDER-BOTTOM: #000099 1px solid
+}
+.pageinfo A:active {
+	BORDER-RIGHT: #000099 1px solid; BORDER-TOP: #000099 1px solid; BORDER-LEFT: #000099 1px solid; COLOR: #000; BORDER-BOTTOM: #000099 1px solid
+}
+.pageinfo SPAN.thisclass {
+	BORDER-RIGHT: #000099 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #000099 1px solid; PADDING-LEFT: 5px; FONT-WEIGHT: bold; PADDING-BOTTOM: 2px; MARGIN: 2px; BORDER-LEFT: #000099 1px solid; COLOR: #fff; PADDING-TOP: 2px; BORDER-BOTTOM: #000099 1px solid; BACKGROUND-COLOR: #000099
+}
+.pageinfo SPAN.disabled {
+	BORDER-RIGHT: #929292 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #929292 1px solid; PADDING-LEFT: 5px; PADDING-BOTTOM: 2px; BORDER-LEFT: #929292 1px solid; COLOR: #929292; MARGIN-RIGHT: 2px; PADDING-TOP: 2px; BORDER-BOTTOM: #929292 1px solid
+}

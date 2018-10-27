@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{$toptitle}</title>
+<meta name="keywords" content="{$keywords}" />
+<meta name="description" content="{$description}" />
+<link  rel="stylesheet" href="{$theme_path}/style/style.css" type="text/css" />
+<script type="text/javascript" src="{$theme_path}/style/js/jquery1.42.min.js"></script>
+<script type="text/javascript" src="{$theme_path}/style/js/jquery.SuperSlide.2.1.1.js"></script>
+<script type="text/javascript" src="{$theme_path}/style/js/gotoTop.js"></script>
+<script type="text/javascript">
+$(function(){
+	$(".backToTop").goToTop();
+	$(window).bind('scroll resize',function(){
+		$(".backToTop").goToTop({
+			pageWidth:960,
+			duration:0
+		});
+	});
+});
+</script>
+</head>
+<body>
+{include file="head.html"}
+<div class="weizhi-1">当前位置：<a href="/">首页</a> > <a href="{$thisurl}">{$typename}</a></div>
+<div class="main1">
+	<div class="left-3 fl">
+      	<ul class="g-list">
+        	{loop type="arclist" row=20 image=1 info=1}
+        	<li >
+            	<a href="{$vo.url}"><img src="{$vo.pic}" alt="{$vo.title}" /></a>
+                <h3 ><a href="{$vo.url}">{$vo.title}</a></h3>
+                <p >时间：{$vo.postdate}&nbsp;&nbsp;{$vo.hits}人阅读</p>
+                <p >{$vo.info}...<a href="{$vo.url}" class="u-4">[详细]</a></p>
+            </li>
+            {/loop}
+        </ul>  
+        <div class="dede_pages">
+           <ul class="pagelist">
+            {loop type="typename" }<a href="{$vo.typeurl}">[{$k+1}]</a>{/loop}
+           </ul>
+		</div>
+    </div>
+    <div class="right-1 fr">
+    	<div class="g-box8">
+            <div class="t-2">推荐文章</div>
+            <ul>
+            	{loop type="arclist" row="10" image=1 fan="1"}
+                <li >
+                    <p ><a href="{$vo.url}">{$vo.title}</a></p>
+                    <div class="dis_pi">
+                        <a href="{$vo.url}"><img src="{$vo.pic}" alt="{$vo.title}" /></a>
+                        <span class="pic_r">{$vo.info}...<a href="{$vo.url}">[详细]</a></span>
+                    </div>
+                </li>
+                {/loop}
+            </ul>
+        </div>
+        <script type="text/javascript">jQuery(".g-box8").slide({ titCell:"li",triggerTime:0 });	</script>
+        <div class="g-box3 u-3">
+        	<div class="t-1">热点阅读</div>
+            <ul class="b-box2">
+            	{loop type="arclist" row="10"}
+                <li ><a href="{$vo.url}">{$vo.title}</a></li>
+                {/loop}
+            </ul>
+        </div>
+        <div class="g-box9">
+        	<div class="t-2">随机内容</div>
+            <ul class="b-box10">
+                {loop type="link" image="1" row="2"}<!--此处调用指定栏目-5最新图文信息2条-->
+                <li ><p ><a href="{$vo.url}">{$vo.title}</a></p><a href="{$vo.url}"><img src="{$vo.pic}" alt="{$vo.title}" /></a></li>
+                {/loop}
+                <div class="cl"></div>
+            </ul>
+            <ul class="b-box7">
+            	{loop type="arclist" row=7}
+                <li ><a href="{$vo.url}">{$vo.title}</a></li>
+                {/loop}
+            </ul>
+        </div>
+    </div>
+	<div class="cl"></div>
+</div>
+{include file="footer.html" }
+</body>
+</html>

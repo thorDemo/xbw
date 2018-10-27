@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{$toptitle}</title>
+<meta name="description" content="{$description}" />
+<meta name="keywords" content="{$keywords}" />
+<link rel="stylesheet" href="{$theme_path}/style/style.css" type="text/css" />
+</head>
+<body>
+{include file="header.html"}
+<!-- /header -->
+
+<div class="main4">
+	<div class="m4_left FL">
+    	<div class="m4_t1">当前位置：<a href="/">首页</a> > <a href="{$typeurl}">{$typename}</a> > <a href="{$thisurl}">{$title}</a> 正文</div>
+        <div class="m4_box3"></div>
+        <h2 class="m4_box4">{$title}</h2>
+        <div class="m4_box5">时间：{$postdate} 来源：<a href="{$web_url}">{$web_name}</a> 作者：{typename type="name"/} 阅读：{$hit}次</div>
+        <div class="m4_box6">
+			{$body}
+            <p style="text-align:right;">(责任编辑：{typename type="name"/})</p>
+        </div>
+        <div class="dede_pagess">
+			<ul class="pagelist">
+			{loop type="arclist" row=3}
+				<a href="{$vo.url}">[{$k+1}]</a>
+			{/loop}
+			</ul>
+		</div>
+        <div class="m4_box7">
+        	{loop type="arclist" row=1}
+				上一篇：<a href="{$vo.url}">{$vo.title}</a>
+			{/loop}
+			<br />
+			{loop type="arclist" row=1}
+				下一篇：<a href="{$vo.url}">{$vo.title}</a>
+			{/loop}
+        </div>
+        <div class="m4_box21">
+        	<div class="m4_t2">相关内容</div>
+            <ul class="m4_box23">
+            	{loop type="arclist" row=8 image=1 fan=1}
+               	<li ><a href="{$vo.url}"><img src="{$vo.pic}" alt="{$vo.title}" /></a></li>
+           		{/loop}
+                <div class="clear"></div>
+            </ul>
+            <ul class="m4_box22">
+            	{loop type="link" row=8}
+               	<li >·<a href="{$vo.url}">{$vo.title}</a></li>
+           		{/loop}
+                <div class="clear"></div>
+            </ul>
+        </div>
+    </div>
+    <div class="m4_right FR">
+    	<div class="m4_box2">
+        	<div class="m4_t2">最新内容</div>
+            <ul>
+                {loop type="arclist" row=10}
+               	<li >·<a href="{$vo.url}">{$vo.title}</a></li>
+           		{/loop}
+            </ul>
+        </div>
+        <div class="m4_box20">
+        	<div class="m4_t2">推荐内容</div>
+            <ul>
+                {loop type="arclist" row=6 image=1}
+               	<li ><a href="{$vo.url}"><img src="{$vo.pic}" alt="{$vo.title}" /></a></li>
+           		{/loop}
+                <div class="clear"></div>
+            </ul>
+        </div>
+        <div class="m4_box2">
+        	<div class="m4_t2">热点内容</div>
+            <ul>
+                {loop type="arclist" row=10}
+               	<li >·<a href="{$vo.url}">{$vo.title}</a></li>
+           		{/loop}
+            </ul>
+        </div>
+    </div>
+    <div class="clear"></div>
+</div>
+{include file="footer.html" }
+<!-- /footer -->
+
+</body>
+</html>

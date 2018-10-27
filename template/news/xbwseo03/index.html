@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{$toptitle}</title>
+<meta name="description" content="{$description}" />
+<meta name="keywords" content="{$keywords}" />
+<link rel="stylesheet" href="{$theme_path}/style/style.css" type="text/css" />
+</head>
+<body class="home">
+{include file="head.html"}
+<div class="main">
+	<div class="left FL">
+    	<div class="flash FL">{loop type="arclist" row="1" image=1 }<img src='{$vo.pic}' width="300" height="205" />{/loop}</div>
+        <div class="tt FR">
+        	<div class="tt1">最新文章</div>
+            <div class="tt2">
+            	{loop type="arclist" image=1 row="1" info=1}
+            	<img src='{$vo.pic}' alt="{$vo.title}" />
+                <h2 ><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a></h2>
+                <span >{$vo.info}...</span>
+                {/loop}
+            </div>
+            <ul class="tt3">
+            	{loop type="arclist" row="3"}
+            	<li ><span >{$postdate}</span><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a></a></li>
+                {/loop}
+            </ul>
+        </div>
+        <div class="ad_banner1 FL"></div>
+        <ul class="list1">
+        	{loop type="arclist" row="10" info=1 image=1 }
+            <li >
+                <a href="{$vo.url}"><img src="{$vo.pic}" alt="{$vo.title}" /></a>
+                <div class="L1"><span >[{typename type="name"/}]</span><a href="{$vo.url}">{$vo.title}</a></div>
+                <div class="L2"><span >{$vo.hits}</span></div>
+                <div class="L3">{$vo.info}...<a href="{$vo.url}">继续阅读</a></div>
+            </li>
+            {/loop}
+        </ul>
+        <div class="dede_pages">
+            <ul class="pagelist">
+            {loop type="typename" }<a href="{$vo.typeurl}">[{$k+1}]</a>{/loop}
+            </ul>
+        </div><!-- /pages -->
+    </div>
+    <div class="right FR">
+    	<div class="rt"><span >推荐文章</span></div>
+        <ul class="r_box2">
+        	{loop type="arclist" row="6" fan="1"}
+            <li ><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a></li>
+            {/loop}
+        </ul>
+        <div class="rt"><span >热门点击</span></div>
+        <ul class="r_box2">
+        	{loop type="link" row="10"}
+             <li ><a title="{$vo.title}" href="{$vo.url}">{$vo.title}</a><span >{$vo.hits} views+</span></li>
+            {/loop}
+        </ul>
+    </div>
+    <div class="clear"></div>
+</div>
+{include file="footer.html" }
+<!-- /footer -->
+
+</body>
+</html>

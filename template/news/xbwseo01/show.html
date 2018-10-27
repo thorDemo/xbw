@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{$toptitle}</title>
+<meta name="keywords" content="{$keywords}" />
+<meta name="description" content="{$description}" />
+<link href="{$theme_path}/style/cgcyz.css" rel="stylesheet" media="screen" type="text/css" />
+<script language="javascript" type="text/javascript" src="{$web_path}/include/dedeajax2.js"></script>
+
+</head>
+<body class="articleview">
+{include file="head2.html" }
+<!-- /header -->
+<div class="w960 center clear mt1">
+ <div class="place"> <strong>当前位置:</strong> 当前位置：<a href="/">首页</a> > <a href="{$typeurl}">{$typename}</a> > <a href="{$thisurl}">{$title}</a> 正文
+ 
+</div>
+ <!-- /place -->
+
+<div class="pleft">
+
+ <div class="viewbox">
+  <div class="title">
+   <h2 >{$title}</h2>
+  </div>
+  <!-- /title -->
+<div class="info"> {$postdate} 来源：<a href="{$web_url}">{$web_name}</a> <small>作者：</small>{typename type="name"/}  <small>点击:</small>{$hit}次
+ 
+
+</div>
+  <!-- /info -->
+  <div class="content">
+{$body}
+      {$vote}
+<div class="endmore">作者:{typename type="name"/} </div>
+
+   </div>
+  <!-- /content -->
+  <div class="dede_pages">
+   <ul class="pagelist">
+    {loop type="typename" row=10}<a href="{$vo.typeurl}">[{$k+1}]</a>{/loop}
+   </ul>
+  </div>
+  <!-- /pages -->
+
+ <div class="boxoff"> <strong>------分隔线----------------------------</strong> </div>
+
+
+ </div>
+ <!-- /viewbox -->
+
+</div>
+<!-- //左边内容结束 -->
+<!-- //右边内容开始 -->
+<div class="pright"> 
+  <div>
+<dl class="tbox">
+    <dt><strong>头条新闻</strong></dt>
+    <dd>
+     <ul class="c1">
+       {loop type="arclist" row="10" fan="1"}
+      <li ><a href="{$vo.url}">{$vo.title}</a></li>
+        {/loop}
+     </ul>
+    </dd>
+   </dl>
+   <dl class="tbox">
+    <dt><strong>图片新闻</strong></dt>
+    <dd>
+     <ul class="e9">
+{loop type="arclist" row="4" image=1}
+ <li ><a href="{$vo.url}"><img src="{$vo.pic}" alt="{$vo.fulltitle}"/><span class="title">{$vo.title}</span></a></li>
+{/loop}
+     </ul>
+    </dd>
+   </dl>
+   <dl class="tbox">
+    <dt><strong>新闻排行榜</strong></dt>
+    <dd>
+   <ul class="r1">
+    {loop type="link" row="10"}
+<li ><img src="{$theme_path}/images/a({$vo.i}).gif"/><a href="{$vo.url}">{$vo.title}</a></li>
+{/loop}
+   </ul>
+    </dd>
+   </dl>
+   
+
+
+  </div>
+ </div>
+ <!-- /pright -->
+</div>
+{include file="footer.html" }
+<!-- /footer -->
+
+</body>
+</html>

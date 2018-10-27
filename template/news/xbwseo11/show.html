@@ -1,0 +1,94 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<HTML><HEAD><title>{$toptitle}</title>
+<meta content="text/html; charset=utf-8" http-equiv=Content-Type><!-- 让IE8采用IE7兼容模式 -->
+<meta content=IE=EmulateIE7 http-equiv=X-UA-Compatible>
+<meta name="keywords" content="{$keywords}" />
+<meta name="description" content="{$description}" /><LINK rel=stylesheet type=text/css 
+href="{$theme_path}/images/style.css" media=all><LINK 
+rel=stylesheet type=text/css 
+href="{$theme_path}/images/navMenu11.css" media=all>
+<meta name=robots content=all><LINK rel=icon type=image/x-icon 
+href="favicon.ico"><LINK rel="shortcut icon" type=image/x-icon 
+href="favicon.ico">
+<SCRIPT language=javascript type=text/javascript 
+src="{$theme_path}/images/common.js"></SCRIPT>
+
+<SCRIPT language=javascript type=text/javascript 
+src="{$theme_path}/images/innerhtml.js"></SCRIPT>
+
+<SCRIPT language=javascript type=text/javascript 
+src="{$theme_path}/images/ajaxrequest.js"></SCRIPT>
+
+<SCRIPT language=javascript type=text/javascript 
+src="{$theme_path}/images/jquery.js"></SCRIPT>
+
+<SCRIPT language=javascript type=text/javascript 
+src="{$theme_path}/images/ads.js"></SCRIPT>
+
+<SCRIPT language=javascript type=text/javascript 
+src="{$theme_path}/images/configJs.htm"></SCRIPT>
+
+<SCRIPT language=javascript type=text/javascript 
+src="{$theme_path}/images/configJs.js"></SCRIPT>
+
+<meta name=GENERATOR content="MSHTML 8.00.6001.18999"></HEAD>
+<BODY><A name=toTop></A>
+<DIV id=htmlBody>
+{include file="head.html" }
+<DIV class=clear></DIV>
+<DIV class=height10></DIV>
+<DIV class=clear></DIV>
+<DIV id=mainBody>
+<DIV id=newsList class=areaL>
+<div class='pageBox'><dl>
+
+  <DT>{$typename}</DT>
+<dd class='webBox'><input type='hidden' id='infoID' name='infoID' value='84' /><input type='hidden' id='voteMode' name='voteMode' value='0' /><div class='a'><h2>{$title}</h2><div class='addi2'>时间：2010-12-5 17:23:32&nbsp;&nbsp;作者：{typename type="name"/} &nbsp;&nbsp;来源：{typename type="name"/}&nbsp;&nbsp;查看：<script src="{$phpurl}/count.php?view=yes&aid={$id}&mid={$mid}" type='text/javascript' language="javascript"></script>&nbsp;&nbsp;评论：0</div><div class='clear'></div><div></div></div><div class='clear'></div><div class='b'><div class='note'><b>内容摘要：</b>{$description}</p>{$body}</div><div class='c'>{loop type="arclist" row=1 }<a href="{$vo.url}">{$vo.title}</a>{/loop}<br />{loop type="arclist" row=1 }<a href="{$vo.url}">{$vo.title}</a>{/loop}</div></dd></dl></div>
+<DIV class=clear></DIV></DIV>
+<DIV class=areaR>
+
+<DIV class=clear></DIV>
+<DIV class=typeBox>
+<DL>
+  <DT>最近更新</DT>
+  <DD class=listArrow1>
+  <UL>
+    <UL>
+ {loop type="arclist" row="8"}
+      <LI>
+      <DIV class=right>&nbsp;{$postdate}</DIV><A class=font1_2 title="{$vo.title}"
+      href="{$vo.url}" 
+      target=_blank>{$vo.title}</A></LI>
+     {/loop}	  </UL></UL></DD></DL></DIV>
+<DIV class=clear></DIV>
+<DIV class=height5></DIV>
+<DIV class=clear></DIV>
+
+
+
+<DIV class=clear></DIV>
+<DIV class=height5></DIV>
+<DIV class=clear></DIV>
+<DIV class=typeBox>
+<DL>
+  <DT>热门排行</DT>
+  <DD class=listArrow1>
+  <UL>
+    <UL>
+	  {loop type="arclist" row="8"}
+      <LI>
+      <DIV class=right>&nbsp;{$postdate}</DIV><A class=font1_2 title="{$vo.title}"
+      href="{$vo.url}" 
+      target=_blank>{$vo.title}</A></LI>
+     {/loop}
+
+</UL></UL></DD></DL></DIV>
+<DIV class=clear></DIV>
+
+<DIV class=clear></DIV></DIV>
+<DIV class=clear></DIV></DIV>
+<DIV class=clear></DIV>
+{include file="footer.html" }
+<DIV class=clear></DIV></DIV>
+</BODY></HTML>

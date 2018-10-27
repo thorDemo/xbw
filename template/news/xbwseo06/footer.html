@@ -1,0 +1,16 @@
+<div class="link w960" style="margin:0 auto;">
+	<h3 >友情链接</h3>
+    <p >
+    {loop type="domain"}<a href="{$vo.url}" target="_blank">{$vo.title}</a>{/loop}
+	{if $links_open}
+   {loop type="link"}
+   <a href="{$vo.url}" target="_blank">{$vo.title}</a>
+   {/loop}
+   {/if}
+    </p> 
+</div>    </div>
+    <div class="footer">
+   <div class="copyright"><p >Copyright &copy; 2016 Powered by <a href="{$thisurl}">{$title}</a>,<a href="{$web_url}">{$web_name}</a>&nbsp;&nbsp;{$web_tongji} <a href="http://{$host}/sitemap.xml">sitemap</a></p></div>
+    </div>
+	{$web_share}
+{$web_bdpush}

@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>{$toptitle}</title>
+<meta name="description" content="{$description}" />
+<meta name="keywords" content="{$keywords}" />
+{include file="style.html"}
+<body>
+{include file="head.html"}
+<div class="inner met_flash"><div class="flash">
+<img src='{模板路径}/upload/201404/1397804572.jpg' width='999' alt='' height='200'></div></div>
+<div class="sidebar inner">
+
+    <div class="sb_nav">
+
+			<div class="sb_nav_top"><h3 class="title"><span>产品展示</span><b>Site navigation</b></h3>
+			<div class="active1" id="sidebar" data-csnow="3" data-class3="0" data-jsok="2">
+			{loop type="typename" row="8" tpl="product_list"}
+			
+			<dl class="list-none navnow">
+			<dt><a href="{$vo.typeurl}"  title='{$vo.typename}' class="zm"><span>{$vo.typename}</span></a></dt></dl>
+			{/loop}
+			
+			</div></div>
+			{include file="left.html" }
+		
+    <div class="sb_box sbbo ">
+	    <h3 class="title">
+			<div class="position"><a href="/" title="网站首页">网站首页</a> &gt; <a href="{$thisurl}" >{产品名称}产品展示</a></div>
+			<span>产品展示</span><b>Welcome to visit our</b>
+		</h3>
+		
+		<div class="clear"></div>
+
+        <div class="active" id="showproduct">
+			<h1 class='title'>{产品名称}</h1><div class="met_hits"><div class='metjiathis'><div class="jiathis_style"><span class="jiathis_txt">分享到：</span><a class="jiathis_button_icons_1"></a><a class="jiathis_button_icons_2"></a><a class="jiathis_button_icons_3"></a><a class="jiathis_button_icons_4"></a><a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a></div><script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=669840136" charset="utf-8"></script></div>&nbsp;&nbsp;来源：<a href="{网站地址}">{网站名称}</a>&nbsp;&nbsp;更新时间：{发布时间}&nbsp;&nbsp;【<a href="javascript:window.print()">打印此页</a>】&nbsp;&nbsp;【<a href="javascript:self.close()">关闭</a>】</div>
+            <dl class='pshow'>
+                <dt style="_width:313px;"><img id='view_img' border='0' alt='型高效锅炉脉冲袋式除尘器' title='型高效锅炉脉冲袋式除尘器' width=313 height=260 src='{$pic}'></dt>
+		        <dd>
+		            <ul class="list-none">
+
+                        <li><span>型号</span>{产品名称}<div style="clear:both;"></div></li>
+
+                        <li><span>密度</span>{固定数字3} kg/m³<div style="clear:both;"></div></li>
+
+                        <li><span>长度</span>{固定数字5} mm<div style="clear:both;"></div></li>
+
+			        </ul>
+		        </dd>
+	        </dl>
+			<div style="clear:both;"></div>
+			
+
+			<h3 class="sl-ti">
+			
+			    <a href="javascript:;" title="产品说明" class="hover">产品说明</a>
+				
+			    <div class="clear"></div>
+			</h3>
+
+
+			<div class="editor" id="metbox">
+				{产品说明}
+			<div class="clear"></div>
+			</div>
+			
+			
+			<div class="met_page">&nbsp;&nbsp;下一条：{loop type="arclist" tpl="product_show" row=1 title="typename"}<a href="{$vo.url}">{$vo.title}</a>{/loop}</div>
+
+			<h4 class="related"><span>相关产品</span></h4>
+            <div class="flip">
+				 <p id="trigger"></p>
+		         <a class="prev" id="car_prev" href="javascript:void(0);"></a>
+			     <a class="next" id="car_next" href="javascript:void(0);"></a>
+			</div>	            			
+			<div class='relatedlist' id="rl-product" data-lrpronum="3">
+				<ul class='list-none metlist'>
+						{loop type="arclist" row="3" image="1" tpl="product_show" title="typename"}
+				<li class='imglist'><a href="{$vo.url}" title='{$vo.title}' target='_self' class='img'><img src='{$vo.pic}' alt='{$vo.title}' title='{$vo.title}' width='213' height='160' /></a><h3><a href="{$vo.url}" title='{$vo.title}' target='_self'>{$vo.title}</a></h3></li>
+			{/loop}
+				</ul><div class="clear"></div></div>	
+	
+	    </div>
+
+    </div>
+    <div class="clear"></div>
+</div>
+
+{include file="footer.html" }
+</body></html>

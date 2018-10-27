@@ -1,0 +1,19 @@
+<div class="Top"></div>
+<div class="Head">
+	<div class="logo FL"><h1 ><a href="{$web_url}"><img src="/uploads/images/logo.png?n={$encode_name}&w=230"></a></h1></div>
+</div>
+<div class="Nav">
+	<a href='{$web_path}/'>主页</a>
+    {loop type="typename" row="8"}
+    <a href='{$vo.typeurl}' >{$vo.typename}</a>
+    {/loop}
+</div>
+<div class="Nav_box">
+    <div class="so FR">
+    	<form action="" name="formsearch">
+           <input type="hidden" name="kwtype" value="0" />
+           <input name="keyword" type="text" class="search-keyword FL" id="search-keyword" value="在这里搜索..." onfocus="if(this.value=='在这里搜索...'){this.value='';}"  onblur="if(this.value==''){this.value='在这里搜索...';}"/>
+          <button type="submit" class="search-submit FL">搜索</button>
+        </form>
+    </div>
+</div>

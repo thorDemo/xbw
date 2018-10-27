@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Cache-Control" content="no-siteapp" />
+	<meta http-equiv="Cache-Control" content="no-transform" />
+	<title>{$toptitle}</title>
+<meta name="description" content="{$description}" />
+<meta name="keywords" content="{$keywords}" />
+{include file="style.html"}
+	<meta name="applicable-device" content="pc">
+</head>
+<body>
+<div id="wrapper">
+{include file="head.html"}
+	<div id="main">
+		<div id="hotcontent">
+			<div class="l">
+			{loop type="arclist" row="6" image="1" info=1 tpl="chapter"}
+				<div class="item">
+					<div class="image">
+						<a href="{$vo.url}" title="{$vo.title}"><img src="{$vo.pic}" alt="{$vo.title}" width="120" height="150" /></a>
+					</div>
+					<dl>
+						<dt><a href="{$vo.url}">{$vo.title}</a></dt>
+						<dd>{$vo.info}</dd>
+					</dl>
+					<div class="clear"></div>
+				</div>
+			{/loop}
+			</div>
+			<div class="r">
+				<h2>
+					人气小说榜
+				</h2>
+				<ul>
+				{loop type="arclist" row="14" tpl="chapter"}
+					<li>
+						<span class="s1">[{getone name='diy:xs_type'/}]</span>
+						<span class="s2"><a href="{$vo.url}">{$vo.title}</a></span>
+						<span class="s5"></span>
+					</li>
+				{/loop}
+				</ul>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="dahengfu"></div>
+		<div id="novelslist1" class="novelslist">
+			{loop row="3" type="typename" title='diy:xs_type'}
+			<div class="content{if $vo.i==3} border{/if}">
+				<h2><a href="{$vo.typeurl}">{$vo.typename}</a></h2>
+				<ul class="cf">
+				{loop type="arclist" row="12" as='vv' tpl="chapter"}
+					<li><a href="{$vv.url}">{$vv.title}</a></li>
+				{/loop}
+				</ul>
+			</div>
+			{/loop}
+			<div class="clear"></div>
+		</div>
+		<div id="novelslist2" class="novelslist">
+			{loop row="3" type="typename" title='diy:xs_type'}
+			<div class="content{if $vo.i==3} border{/if}">
+				<h2><a href="{$vo.typeurl}">{$vo.typename}</a></h2>
+				<ul class="cf">
+				{loop type="arclist" row="12" as='vv'}
+					<li><a href="{$vv.url}">{$vv.title}</a></li>
+				{/loop}
+				</ul>
+			</div>
+			{/loop}
+			<div class="clear"></div>
+		</div>
+		<div id="newscontent">
+			<div class="l">
+				<h2>
+					最近更新小说列表
+				</h2>
+				<ul>
+					{loop type="arclist" row="25" tpl="chapter"}
+					<li>
+						{loop row="1" type="typename" title='diy:xs_type' as='tvo'}<span class="s1">[<a href="{$tvo.typeurl}">{$tvo.typename}</a>]</span>{/loop}
+						<span class="s2"><a href="{$vo.url}">{$vo.title}</a></span>
+						{loop row="1" type="typename" as='tvo2' tpl="show"}<span class="s3"><a href="{$tvo2.typeurl}">{$tvo2.typename}</a></span>{/loop}
+						<span class="s4"></span>
+						<span class="s5">{$vo.postdate}</span>
+					</li>
+					{/loop}
+				</ul>
+			</div>
+			<div class="r">
+				<h2>
+					最新入库小说
+				</h2>
+				<ul>
+					{loop type="arclist" row="25" tpl="chapter"}
+					<li>
+						<span class="s1">[{getone name='diy:xs_type'/}]</span>
+						<span class="s2"><a href="{$vo.url}">{$vo.title}</a></span>
+						<span class="s5"></span>
+					</li>
+					{/loop}
+				</ul>
+			</div>
+			<div class="clear">
+			</div>
+		</div>
+	</div>
+	{include file="footer.html" }
+</div>
+</body>
+</html>

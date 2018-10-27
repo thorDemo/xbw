@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{$toptitle}</title>
+<meta name="keywords" content="{$keywords}" />
+<meta name="description" content="{$description}" />
+<link href="{$theme_path}/style/ningmp.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+{include file="head.html"}
+
+<div class="dangq">
+<ul>
+  <li >当前位置：<a href="/">首页</a> > <a href="{$thisurl}">{$typename}</a></li></ul>
+</div>
+<div class="xlist">
+{loop type="arclist" image=1 info=1}
+<div class="xnlist">
+   <div class="picxn"><a href="{$vo.url}"><img src="{$vo.pic}"></a></div>
+  <div class="zwlist">
+  <ul>
+  <li ><span >时间：{$vo.postdate}</span><a href='{$vo.url}'>{$vo.title}</a></li>
+  <p >{$vo.info}...</p>
+  </ul>
+  </div>
+</div>
+{/loop}
+<div class="jogger">{loop type="typename" }<a href="{$vo.typeurl}">[{$k+1}]</a>{/loop}</div>
+</div>
+<div class="listy">
+<div class="tjnr">
+<p >栏目相关</p>
+<ul style="border-top:1px solid #000; padding-top:10px">
+{loop type="arclist" row="14" fan=1}
+<li ><a href='{$vo.url}'>{$vo.title}</a></li>
+{/loop}
+</ul>
+</div>
+
+<p class="nrbt">热门排行</p>
+<div class="nrmk3">
+<ul>
+{loop type="arclist" row="10"}
+<li ><a href='{$vo.url}'>{$vo.title}</a></li>
+{/loop}
+</ul>
+</div>
+</div>
+</div>
+
+{include file="footer.html" }
+</body>
+</html>

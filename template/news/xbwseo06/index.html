@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{$toptitle}</title>
+<meta name="description" content="{$description}" />
+<meta name="keywords" content="{$keywords}" />
+<link href="{$theme_path}/style/dedecms.css" rel="stylesheet" media="screen" type="text/css" />
+</head>
+<body class="index">
+{include file="head.html"}
+<!-- /header -->
+<div class="w960 center clear mt1">
+ <div class="pleft">
+  <div class="bignews">
+   <!--头条-->
+   <div class="onenews"> {loop type="arclist" row="1" info=1}
+    <h2 ><a href="{$vo.url}">{$vo.title}</a></h2>
+    <p >{$vo.info}...<a href="{$vo.url}">[查看全文]</a></p>
+    {/loop} </div>
+   <!-- /onenews -->
+   <div class="d1"> {loop type="arclist" row="4"}
+    <div class='d1arc'><a href="{$vo.url}">{$vo.title}</a></div>
+    {/loop} </div>
+   <!--/头条-->
+   <div class='newarticle'>最新文章</div>
+   <ul class="c2 ico1">
+    <!--最新文档-->
+    {loop type="arclist" row="20"}
+    <li ><a href="{$vo.url}">{$vo.title}</a></li>
+    {/loop}
+    <!--//最新文档-->
+   </ul>
+  </div>
+<div class="flashnews">
+{loop type="arclist" row="1" image=1}<img src="{$vo.pic}" width="296" height="259">{/loop}
+</div>
+  <div class="latestnews">
+   <dl class="tbox light">
+    <dt class="light"><strong>本月热门文章</strong></dt>
+    <dd class="light">
+     <ul class="d2 ico2">
+      {loop type="arclist" row="6"}
+      <li class='dotline'><a href="{$vo.url}">{$vo.title}</a></li>
+      {/loop}
+     </ul>
+    </dd>
+   </dl>
+  </div>
+  <div class="listbox"> {loop type="typename" row=8}
+
+   <dl class="tbox">
+    <dt><strong><a href="{$vo.typeurl}">{$vo.typename}</a></strong><span class="more"><a href="{$vo.typeurl}">更多...</a></span></dt>
+    <dd>
+     <ul class="d1 ico3">
+      {loop type="arclist" row="8"}
+      <li ><span >{$vo.postdate}</span><a href="{$vo.url}">{$vo.title}</a></li>
+      {/loop}
+     </ul>
+    </dd>
+   </dl>
+  {/loop}
+</div>
+  <!-- /listbox -->
+ </div>
+ <!-- /pleft -->
+ <div class="pright">
+
+
+  <div class="hot mt1">
+   <dl class="tbox light">
+    <dt class='light'><strong>{typename type="name"/}</strong></dt>
+    <dd class='light'>
+     <ul class="c1 ico2">
+      {loop type="arclist" row="16"}
+      <li ><a href="{$vo.url}">{$vo.title}</a></li>
+      {/loop}
+     </ul>
+    </dd>
+   </dl>
+  </div>
+
+  <div class="hot mt1">
+   <dl class="tbox light">
+    <dt class='light'><strong>{typename type="name"/}</strong></dt>
+    <dd class='light'>
+     <ul class="c1 ico2">
+      {loop type="link" row="11"}
+      <li ><a href="{$vo.url}">{$vo.title}</a></li>
+      {/loop}
+     </ul>
+    </dd>
+   </dl>
+  </div>
+
+  <div class="commend mt1">
+   <dl class="tbox light">
+    <dt class='light'><strong>推荐文章</strong></dt>
+    <dd class='light'>
+     <ul class="c1 ico2">
+      {loop type="arclist" row="12" fan=1}
+      <li class='dotline'><a href="{$vo.url}">{$vo.title}</a></li>
+      {/loop}
+     </ul>
+    </dd>
+   </dl>
+  </div>
+  <!-- /commend -->
+
+  <div class="hot mt1">
+   <dl class="tbox light">
+    <dt class='light'><strong>热门文章</strong></dt>
+    <dd class='light'>
+     <ul class="c1 ico2">
+      {loop type="arclist" row="12"}
+      <li class='dotline'><a href="{$vo.url}">{$vo.title}</a></li>
+      {/loop}
+     </ul>
+    </dd>
+   </dl>
+  </div>
+
+  <div style="margin:10 auto"></div>
+ </div>
+ <!-- /pleft -->
+</div>
+{include file="footer.html" }
+</body>
+</html>

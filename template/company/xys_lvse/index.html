@@ -1,0 +1,276 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>{$toptitle}</title>
+<meta name="keywords" content="{$keywords}">
+<meta name="description" content="{$description}">
+<meta name="author" content="www.wapadd.cn">
+<!--
+<link href="skin/css/font-awesome.min.css" rel="stylesheet">-->
+<link href="{$theme_path}/skin/css/owl.carousel.css" rel="stylesheet">
+<link href="{$theme_path}/skin/css/grid.1.1.css" rel="stylesheet">
+<link href="{$theme_path}/skin/css/base.css" rel="stylesheet">
+<link href="{$theme_path}/skin/css/style.css" rel="stylesheet">
+<link href="{$theme_path}/skin/css/plugin-style.css" rel="stylesheet">
+<link href="{$theme_path}/skin/css/el-style.css" rel="stylesheet">
+<script src="{$theme_path}/skin/js/jquery-1.11.0.min.js"></script>
+<script>
+var website = {
+  'root': 'websites/923',
+  'websiteId': '923',
+  'currentNavId': 'nav_home',
+  'resourceId': '',
+  'resourceCode': '',
+  'isMobile': navigator.userAgent.match(/(iPad)|(iPhone)|(iPod)|(Android)|(PlayBook)|(BB10)|(BlackBerry)|(Opera Mini)|(IEMobile)|(webOS)|(MeeGo)/i)
+};
+</script>
+<script src="{$theme_path}/skin/js/functions.js"></script>
+<script src="{$theme_path}/skin/js/sea.js"></script>
+<script src="{$theme_path}/skin/js/sea.run.js"></script>
+<script>
+website["dataId"]='';
+</script>
+</head>
+<body>
+{include file="wap_head.html" }
+<div id="pageOuter"> {include file="index_head.html" } 
+  
+  <!--新闻滚动-->
+  <div class="row" id="el_6593886685231938" path="row">
+    <div class="rowFluid">
+      <div class="span12">
+        <div class="column" id="el_3802355481834098" path="column">
+          <div class="container">
+            <div class="row" id="el_3727778377067635" path="row">
+              <div class="rowFluid">
+                <div class="span12">
+                  <div class="column" id="el_8071576585614176" path="column">
+                    <div class="pluginWrapper plugin_7766283833286407" id="plugin_7766283833286407" data-areaid="7766283833286407" data-edit="false" path="plugin">
+                      <div class="pluginContent">
+                        <div id="owl_7766283833286407"> {loop type="arclist" row="5"}
+                          <div class="item"> <a class="title" href="{$vo.url}">{$vo.title}</a> </div>
+                          {/loop} </div>
+                        <script>seajs.use(['verticalscroll'],function(){ $('#owl_7766283833286407').lmVerticalScroll();});</script></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--新闻滚动--> 
+  
+  <!--关于我们-->
+  <div class="row" id="el_8981637518521356" path="row">
+    <div class="rowFluid">
+      <div class="span12">
+        <div class="column" id="el_3943806865307573" path="column">
+          <div class="container">
+            <div class="row" id="el_1532200710015085" path="row">
+              <div class="rowFluid">
+                <div class="span12">
+                  <div class="column" id="el_5649346135852723" path="column">
+                    <div class="pluginWrapper plugin_1657315330583014" id="plugin_1657315330583014" path="plugin" data-areaid="1657315330583014" data-edit="false">
+                      <div class="pluginContent"> <span+style="white-space:normal;">ABOUT&nbsp; <span+style="color:#333333;"> <span style="color:#333333;">US</span> <span+style="line-height:1.5;"> </span+style="line-height:1.5;"> </span+style="color:#333333;"> </span+style="white-space:normal;"> </div>
+                    </div>
+                    <div class="pluginWrapper plugin_4273389252235309" id="plugin_4273389252235309" path="plugin" data-areaid="4273389252235309" data-edit="false">
+                      <div class="pluginContent">关于我们</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row" id="el_2604353026731812" path="row">
+              <div class="rowFluid">
+                <div class="span4 col-sm-12">
+                  <div class="column" id="el_5036689919436990" path="column">
+                    <div class="pluginWrapper plugin_1918112639627807" id="plugin_1918112639627807" data-areaid="1918112639627807" data-edit="false" path="plugin">
+                      <div class="pluginContent"> <img class="lazyImg" src="{$theme_path}/skin/image/gywm.jpg"> </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="span8 col-sm-12">
+                  <div class="column" id="el_3788563676054274" path="column">
+                    <div class="pluginWrapper plugin_6135553530131538" id="plugin_6135553530131538" data-areaid="6135553530131538" data-edit="false" path="plugin">
+                      <div class="pluginContent" style="font-size:18px;">{网站名称}{公司简介短}</div>
+                    </div>
+                    <div class="pluginWrapper plugin_4807601630234428" id="plugin_4807601630234428" path="plugin" data-areaid="4807601630234428" data-edit="false">
+                      <div class="pluginContent"><a class="mod-a" href="{geturl tpl="about"/}" target="_self">了解我们</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--关于我们--> 
+  
+  <!--产品中心-->
+  <div class="row" id="el_7942673286771525" path="row">
+    <div class="rowFluid">
+      <div class="span12">
+        <div class="column" id="el_5302484287855629" path="column">
+          <div class="container">
+            <div class="row" id="el_1918774483087403" path="row">
+              <div class="rowFluid">
+                <div class="span12">
+                  <div class="column" id="el_1076534628524872" path="column">
+                    <div class="pluginWrapper plugin_1138551575553066" id="plugin_1138551575553066" path="plugin" data-areaid="1138551575553066" data-edit="false">
+                      <div class="pluginContent"><span style="white-space:normal;">PRODUCT <span style="color:#333333;">CENTER</span></span></div>
+                    </div>
+                    <div class="pluginWrapper plugin_7706633778073404" id="plugin_7706633778073404" path="plugin" data-areaid="7706633778073404" data-edit="false">
+                      <div class="pluginContent">产品中心</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row" id="el_8345828612001731" path="row">
+              <div class="rowFluid">
+                <div class="span12">
+                  <div class="column" id="el_3617289182913335" path="column">
+                    <div class="pluginWrapper plugin_2613179854954831" id="plugin_2613179854954831" data-areaid="2613179854954831" data-edit="false" path="plugin">
+                      <div class="pluginContent" >
+                        <style>
+.owl-prev,.owl-next{
+	width: 25px;
+	height: 57px;
+}
+.fa-angle-left,.fa-angle-right{
+	width: 25px;
+	height: 57px;
+	display:inline-block;
+	background:none;
+	background-image:url({$theme_path}/skin/image/button_left.png);
+}
+.fa-angle-right{
+	background-image:url({$theme_path}/skin/image/button_right.png);
+}
+</style>
+                        <div id="owl_2613179854954831" > {loop type="arclist" image=1 tpl="product_show" }
+                          <div class="item"> <a class="pic" href="{$vo.url}" title="{$vo.title}"> <img class="lazyOwl" src="{$vo.pic}" alt="{$vo.title}"></a> <a class="title" href="{$vo.url}" title="{$vo.title}">{$vo.title}</a> </div>
+                          {/loop} </div>
+                        <script>seajs.use(['owlcarousel','owlcarouselcss'],function(){ $('#owl_2613179854954831').owlCarousel({lazyLoad:true,autoPlay:true,navigation:true,pagination:false,items:4,navigationText:['<i class="fa-angle-left"></i>','<i class="fa-angle-right"></i>']});});</script></div>
+                    </div>
+                    <div class="pluginWrapper plugin_2839477549572715" id="plugin_2839477549572715" path="plugin" data-areaid="2839477549572715" data-edit="false">
+                      <div class="pluginContent"> <a class="mod-a" href="{geturl tpl='product_list'/}" target="_self">查看更多</a> </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--产品中心--> 
+  
+  <!--工程案例-->
+  <div class="row" id="el_5832282021622332" path="row">
+    <div class="rowFluid">
+      <div class="span12">
+        <div class="column" id="el_7048353641433587" path="column">
+          <div class="container">
+            <div class="row" id="el_3822238142785495" path="row">
+              <div class="rowFluid">
+                <div class="span12">
+                  <div class="column" id="el_5266106276511569" path="column">
+                    <div class="pluginWrapper plugin_6157495642856661" id="plugin_6157495642856661" path="plugin" data-areaid="6157495642856661" data-edit="false">
+                      <div class="pluginContent"><span style="white-space:normal;">PROJECT <span style="color:#333333;">CASE</span></span><br />
+                      </div>
+                    </div>
+                    <div class="pluginWrapper plugin_8128213459815172" id="plugin_8128213459815172" path="plugin" data-areaid="8128213459815172" data-edit="false">
+                      <div class="pluginContent">工程案例</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row" id="el_6126347115895959" path="row">
+              <div class="rowFluid">
+                <div class="span12">
+                  <div class="column" id="el_3056799623411321" path="column">
+                    <div class="pluginWrapper plugin_8066818075013824" id="plugin_8066818075013824" data-areaid="8066818075013824" data-edit="false" path="plugin">
+                      <div class="pluginContent">
+                        <div class="mod-list clearfix">{loop type="arclist" image=1 row=4 tpl="product_show" }
+                          <div class="col-lg-3 col-xm-6 col-xs-12">
+                            <div class="mod-item"><a class="mod-pic" href="{$vo.url}"  title="{$vo.title}"> <img class="lazyImg" src="{$vo.pic}" alt="{$vo.title}"></a><a class="mod-title" href="{$vo.url}"  title="{$vo.title}">{$vo.title}</a>
+                              <div class="mod-digest"></div>
+                            </div>
+                          </div>
+                          {/loop} </div>
+                      </div>
+                    </div>
+                    <div class="pluginWrapper plugin_4910876372808867" id="plugin_4910876372808867" path="plugin" data-areaid="4910876372808867" data-edit="false">
+                      <div class="pluginContent"><a class="mod-a" href="{geturl tpl='product_list'/}" target="_self">查看更多</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--工程案例--> 
+  
+  <!--新闻中心-->
+  <div class="row" id="el_8756646410616967" path="row">
+    <div class="rowFluid">
+      <div class="span12">
+        <div class="column" id="el_4967259225916129" path="column">
+          <div class="container">
+            <div class="row" id="el_8019595636016736" path="row">
+              <div class="rowFluid">
+                <div class="span12">
+                  <div class="column" id="el_5912291461042717" path="column">
+                    <div class="pluginWrapper plugin_2854816771832162" id="plugin_2854816771832162" path="plugin" data-areaid="2854816771832162" data-edit="false">
+                      <div class="pluginContent"><span style="white-space:normal;">NEWS&nbsp;<span style="color:#333333;">CENTER</span></span></div>
+                    </div>
+                    <div class="pluginWrapper plugin_2135895269503812" id="plugin_2135895269503812" path="plugin" data-areaid="2135895269503812" data-edit="false">
+                      <div class="pluginContent">新闻中心</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row" id="el_7208275750624760" path="row">
+              <div class="rowFluid">
+                <div class="span12">
+                  <div class="column" id="el_7495580152744609" path="column">
+                    <div class="pluginWrapper plugin_2448207444456503" id="plugin_2448207444456503" data-areaid="2448207444456503" data-edit="false" path="plugin">
+                      <div class="pluginContent">
+                        <div class="mod-list clearfix"> {loop type="arclist" row="4" image=1 info=1}
+                          <div class="col-lg-6 col-sm-12">
+                            <div class="mod-item"><a class="mod-pic" href="{$vo.url}"  title="{$vo.title}"><img class="lazyImg" src="{$vo.pic}" alt="{$vo.title}"></a><a class="mod-title" href="{$vo.url}"  title="{$vo.title}">{$vo.title}</a>
+                              <div class="mod-digest"> {$vo.info}... </div>
+                              <a class="mod-read" href="{$vo.url}">阅读详情</a></div>
+                          </div>
+                          {/loop} </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--新闻中心--> 
+  
+  {include file="footer.html" } </div>
+</body>
+</html>

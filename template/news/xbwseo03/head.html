@@ -1,0 +1,23 @@
+<div class="bg_1"></div><div class="bg_2"></div>
+<div class="top">
+</div>
+<div class="head">
+	<div class="logo FL"><h1 ><a href="{$web_url}"><img src="/uploads/images/logo.png?n={$encode_name}&w=180"></a></h1></div>
+	<div class="so FR">
+    	<form action="" name="formsearch">
+           <input type="hidden" name="kwtype" value="0" />
+           <input name="keyword" type="text" class="search-keyword FL" id="search-keyword" value="输入关键词..." onfocus="if(this.value=='输入关键词...'){this.value='';}"  onblur="if(this.value==''){this.value='输入关键词...';}"/>
+           <!--<select name="searchtype" class="search-option" id="search-option">
+               <option value="titlekeyword" selected='1'>智能模糊搜索</option>
+               <option value="title">仅搜索标题</option>
+           </select>-->
+          <button type="submit" class="search-submit FR"><!--搜索--></button>
+        </form>
+    </div>
+</div>
+<div class="nav">
+	<a href='{$web_path}/'>网站主页</a>
+    {loop type="typename" row="10"}
+    <a href='{$vo.typeurl}'>{$vo.typename}</a>
+    {/loop}
+</div>

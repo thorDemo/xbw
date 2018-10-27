@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{$toptitle}</title>
+<meta name="keywords" content="{$keywords}" />
+<meta name="description" content="{$description}" />
+<link href="{$theme_path}/style/cgcyz.css" rel="stylesheet" media="screen" type="text/css" />
+</head>
+<body class="articlelist">
+{include file="head2.html" }
+<!-- /header -->
+<div class="w960 center clear mt1">
+  <div class="place"> <strong>当前位置:</strong> <a href="/">首页</a> > <a href="{$typeurl}">{$typename}</a></div>
+  <!-- /place -->
+
+ <div class="pleft">
+  <div class="listbox">
+        <ul class="d5 ico1">
+{loop type="arclist" row=20}
+ <li > <span >时间：{$vo.postdate}</span><a href='{$vo.url}'>{$vo.title}</a> </li>
+{/loop}
+        </ul> 
+  <div class="dede_pages">
+   <ul class="pagelist">
+    {loop type="typename" }<a href="{$vo.typeurl}">[{$k+1}]</a>{/loop}
+   </ul>
+  </div>
+  <!-- /pages -->
+
+  </div>
+  <!-- /listbox -->
+ </div>
+ <!-- /pleft -->
+ <div class="pright">
+  <div class="commend">
+   <dl class="tbox">
+    <dt><strong>头条新闻</strong></dt>
+    <dd>
+     <ul class="c1">
+       {loop type="arclist" row="10"}
+      <li ><a href="{$vo.url}">{$vo.title}</a></li>
+        {/loop}
+     </ul>
+    </dd>
+   </dl>
+   <dl class="tbox">
+    <dt><strong>热门推荐</strong></dt>
+    <dd>
+     <ul class="c1">
+       {loop type="link" row="10"}
+      <li ><a href="{$vo.url}">{$vo.title}</a></li>
+        {/loop}
+     </ul>
+    </dd>
+   </dl>
+  </div>
+  <!-- /commend -->
+ </div>
+ <!-- /pright -->
+</div>
+{include file="footer.html" }
+<!-- /footer -->
+</body>
+</html>

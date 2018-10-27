@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{$toptitle}</title>
+<meta name="keywords" content="{$keywords}" />
+<meta name="description" content="{$description}" />
+<link href="{$theme_path}/css/layout.css"  rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="{$theme_path}/css/article.js" ></script>
+<script language="javascript" type="text/javascript" src="{$web_path}/include/dedeajax2.js"></script>
+<script language="javascript" type="text/javascript">
+<!--
+function CheckLogin(){
+	  var taget_obj = document.getElementById('_ajax_feedback');
+	  myajax = new DedeAjax(taget_obj,false,false,'','','');
+	  myajax.SendGet2("{$web_path}/member/ajax_feedback.php");
+	  DedeXHTTP = null;
+}
+function postBadGood(ftype,fid)
+{
+	var taget_obj = document.getElementById(ftype+fid);
+	var saveid = GetCookie('badgoodid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==fid && hasid) continue;
+			else {
+				if(saveids[i]==fid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==10 && hasid) break;
+				if(j==9 && !hasid) break;
+			}
+		}
+		if(hasid) { alert('您刚才已表决过了喔！'); return false;}
+		else saveid += ','+fid;
+		SetCookie('badgoodid',saveid,1);
+	}
+	else
+	{
+		SetCookie('badgoodid',fid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("{$phpurl}/feedback.php?aid="+fid+"&action="+ftype+"&fid="+fid);
+}
+function postDigg(ftype,aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	var saveid = GetCookie('diggid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==aid && hasid) continue;
+			else {
+				if(saveids[i]==aid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==20 && hasid) break;
+				if(j==19 && !hasid) break;
+			}
+		}
+		if(hasid) { alert("您已经顶过该帖，请不要重复顶帖 ！"); return; }
+		else saveid += ','+aid;
+		SetCookie('diggid',saveid,1);
+	}
+	else
+	{
+		SetCookie('diggid',aid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	var url = "{dede:global.cfg_phpurl/}/digg_ajax.php?action="+ftype+"&id="+aid;
+	myajax.SendGet2(url);
+}
+function getDigg(aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("{dede:global.cfg_phpurl/}/digg_ajax.php?id="+aid);
+	DedeXHTTP = null;
+}
+function check(){
+		if(document.formsearch.searchtype.value=="")
+		document.formsearch.action="http://www.google.cn/custom"
+		else
+		document.formsearch.action="{$phpurl}/search.php"
+	} 
+-->
+</script>
+</head>
+
+<body>
+{include file="head.html" }
+<div id="container">
+  <div id="mainContent">
+    <div id="content">
+      <div class="mainpanel">
+        <div class="mcontent vcontent">
+          <div id="location">当前位置： 当前位置：<a href="/">首页</a> > <a href="{typename type="url"/}">{$typename}</a> > <a href="{$thisurl}">{$title}</a>正文</div>
+          <h1>{$title}</h1>
+          <h5 id="artinfo">作者:<span>{typename type="name"/}</span>　来源:<span>{typename type="name"/}</span>　浏览:<span><script src="{$phpurl}/count.php?view=yes&aid={$id}&mid={$mid}" type='text/javascript' language="javascript"></script></span>　【<A 
+href="javascript:doZoom(16)">大</A> <A href="javascript:doZoom(14)">中</A> <A 
+href="javascript:doZoom(12)">小</A>】　发布时间:<span>{$postdate}</span> 评论数:<script type="text/javascript" src="{$web_path}/plus/feedcount.php?aid={$id}"></script></h5>
+          <div id="news"> {$body} </div>
+          <div class="page">
+            <ul>
+              {loop type="typename" row=10}<a href="{$vo.typeurl}">[{$k+1}]</a>{/loop}
+            </ul>
+          </div>
+          <div class="clear"></div>
+          
+		  
+
+          <div class="news_updown"> {loop type="arclist" row=1 }<a href="{$vo.url}">{$vo.title}</a>{/loop}<br>
+            {loop type="arclist" row=1 }<a href="{$vo.url}">{$vo.title}</a>{/loop} </div>
+        </div>
+      </div>
+      
+	  
+      
+	  
+    </div>
+    <div id="sidebarx">
+      <div class="isidepanel">
+        <h4>最近更新</h4>
+        <div class="ipcontent">
+          <ul class="list_con">
+            {loop type="arclist" row="20"}
+            <li><a href="{$vo.url}">{$vo.title}</a></li>
+            {/loop}
+          </ul>
+        </div>
+      </div>
+      <div class="isidepanel">
+        <h4>点击排行</h4>
+        <div class="ipcontent">
+          <ul class="list_con">
+            {loop type="arclist" row="10"}
+            <li><a href="{$vo.url}">{$vo.title}</a></li>
+            {/loop}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="clearfloat"></div>
+  </div>
+  {include file="footer.html" } 
+</body>
+</html>

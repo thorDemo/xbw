@@ -1,0 +1,15 @@
+<a class="mobileMenuBtn" href="#mobileNav"> <i class="fa-bars"> <img src="{$theme_path}/skin/image/nav.jpg" alt=""> </i> </a>
+<nav class="mm-menu mmenu-nav" id="mobileNav">
+  <ul>
+    <li><a href="/">网站首页</a></li>
+ <li><a href="{geturl tpl='list'/}" title="公司简介">公司新闻</a></li>
+<li><a href="{geturl tpl='about'/}" title="公司简介">公司简介</a></li>
+<li><a href="{geturl tpl='contact'/}" title="联系我们">联系我们</a></li>
+{loop type="typename" row="4" tpl="product_list"}
+    <li><a href="{$vo.typeurl}">{$vo.typename}</a></li>
+    {/loop}
+  </ul>
+</nav>
+<script>
+	seajs.use(['mmenucss','mmenu'], function(){ $('#mobileNav').mmenu();});
+</script>

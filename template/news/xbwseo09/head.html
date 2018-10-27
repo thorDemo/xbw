@@ -1,0 +1,21 @@
+<div class="home">
+<div style="margin-top:10px;"><a href="{$web_url}"><img src="/uploads/images/logo.png?n={$encode_name}&w=230"></a></div>
+<div class="dh">
+<ul>
+<li ><a href="/">网站首页</a> </li>
+{loop type="typename"}
+<li ><a href='{$vo.typeurl}'>{$vo.typename}</a> </li>
+{/loop}
+</ul>
+</div>
+<div class="fdh">
+
+<div class="ss">
+<ul class="soso">
+<form class="sou" method="post" name="search" action="">
+<input type="text" id="kuang" value="" name="keyword"class="swap_value" /> 
+<input type="image"  src="{$theme_path}/images/so.gif" width="33" height="24" class="go" alt="搜素" title="搜索">
+</form>
+</ul>
+</div>
+</div>

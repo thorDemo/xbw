@@ -1,0 +1,11 @@
+@media all and (max-width:479px) {
+h1 {
+	font-size: 2em;
+}
+h2 {
+	font-size: 1.6em;
+}
+h3, h4, h5, h6 {
+	font-size: 1.2em;
+}
+}

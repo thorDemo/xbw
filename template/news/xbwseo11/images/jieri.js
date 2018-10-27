@@ -1,0 +1,1 @@
+document.write('距『平安夜』还有6天');

@@ -1,0 +1,24 @@
+﻿.l{ float:left; width:686px;overflow:hidden;}
+.r{float:left;width:262px;overflow:hidden;}
+
+.blog_list{float:left;width:674px;margin-top:10px;overflow:hidden;}
+.blog_list dt{float:left;width:584px;padding:4px 0 4px 90px;font-size:14px;}
+.blog_list dt em{font-style: normal;font-size:12px;padding-left:10px;color:#888;}
+.blog_list dd{position:relative;float:left;margin-bottom:7px;width:584px;padding:5px 0 7px 90px;border-bottom: 1px dotted #ccc;color:#494949;} 
+.blog_list cite{position:absolute;left:0; top:-26px;font-style: normal;width:75px;height:45px;background: url(/template/liaocheng/liaocheng/img/bt_wd.gif) no-repeat scroll left 0 transparent;color: #FFFFFF;font-weight: bold;line-height:26px;text-align:center;}
+
+.box{width:258px; border: 1px solid #CBE2F8; padding:1px;overflow:hidden;}
+.box h5{line-height:24px; height:24px; background:#EBF3FC;padding-left:10px;}
+.box .ad{padding:4px;height:auto !important; height:250px; min-height:250px;text-align:center;}
+.box ul{width:258px;overflow:hidden;}
+.box ul li{float:left;width:78px;padding:4px;height:78px;text-align:center;}
+.box ul li img{}
+.box ul li p{padding-top:4px;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;}
+
+
+.page { float:left; width:100%; margin-top:10px; color: #666; text-align: center;font-size:14px;}
+    .page em,.page a,.page span{padding:3px 6px; line-height:24px;height:24px;border: 1px solid #ccc;margin:0 2px;}
+   .page em{font-style: normal;}
+   .page a{text-decoration: none;}
+   .page a:hover{text-decoration: none;border-color:#158EE5;background: #158EE5;color: #fff;}
+   .page span{border:0;font-weight:bold;color: #000;}

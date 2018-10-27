@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--[if IE]>
+<![if IE 5]><html class="ie ie5 lie9 lie8 lie7 lie6"><![endif]>
+	<![if IE 6]><html class="ie ie6 lie9 lie8 lie7"><![endif]>
+	<![if IE 7]><html class="ie ie7 lie9 lie8"><![endif]>
+	<![if IE 8]><html class="ie ie8 lie9"><![endif]>
+	<![if IE 9]><html class="ie ie9"><![endif]>
+	<![if !((IE 6)|(IE 7)|(IE 8)|(IE 9))]><html class="ie"><![endif]>
+<![endif]-->
+<!--[if !IE]><!-->
+<html lang="zh-CN" class="notie">
+<!--<![endif]-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>{$toptitle}</title>
+<meta name="keywords" content="{$keywords}" />
+<meta name="description" content="{$description}" />
+<link rel="stylesheet" type="text/css" href="{$theme_path}/skin/css/78002.css" >
+<script type="text/javascript" charset="utf-8" src="{$theme_path}/skin/js/jquery-1.9.1.min.js"></script>
+</head>
+<body>
+{include file="head.html" }
+<div class="banner-page" style="background-image: url('{$theme_path}/skin/images/nybg.jpg')">
+  <div class="banner-title">
+    <div class="container">
+      <div class="banner-title-in">
+        <div class="column-name">{$title}</div>
+        <div class="column-description"> {$description} </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="main c">
+  <div class="container"> {include file="left.html" }
+    <div class="main-right">
+      <div class="mr-in">
+        <div class="column c">
+          <div class="title fl">{$typename}</div>
+          <div class="breadcrumb fr"> <a href="/">首页</a> > <a href="{$typeurl}">{$typename}</a> </div>
+        </div>
+        <style>
+.main-right .content  p{
+    padding-bottom: 5px;
+}
+.main-right .content table p{
+   padding-bottom: 0;
+}
+.f14{
+  padding-top:20px;
+}
+</style>
+        <div class="content">
+          <h1>{$title}</h1>
+          <div> <span>{$postdate}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;点击：</span><span id="hits">{固定数字3}</span> </div>
+          <div style="min-height:600px;"> {$body} </div>
+        </div>
+        <p class="f14"> {loop type="arclist" row=1 }<a href="{$vo.url}">{$vo.title}</a>{/loop}<br />
+          {loop type="arclist" row=1 }<a href="{$vo.url}">{$vo.title}</a>{/loop} </p>
+        <script language="JavaScript" src="{$theme_path}/skin/js/api.js"></script> 
+      </div>
+    </div>
+  </div>
+</div>
+{include file="footer.html" }
+</body>
+</html>

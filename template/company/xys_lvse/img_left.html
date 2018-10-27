@@ -1,0 +1,82 @@
+<div class="span3 col-xm-12">
+                        <div class="column" id="el_6703463347817736" path="column">
+                        
+                        
+                        <!--手机端导航-->
+                        <div class="pluginWrapper plugin_5794850549638987" id="plugin_5794850549638987" path="plugin" data-areaid="5794850549638987" data-edit="false">
+                            
+                            <div class="pluginContent">
+                            <label class="mb-label" for="nav_5794850549638987">
+                            {$cid}
+                            </label>
+                            <input class="sideMenuCheckbox" id="nav_5794850549638987" type="checkbox">
+                            <div class="menu-list">
+                           
+                            <a class="mod-wr1 active" data-level="1" href="" title="1">{$cid}</a>
+                          
+                            
+                            {loop type="typename" tpl="product_list"}
+                            <a class="mod-wr2" data-level="2" href="{$vo.typeurl}" title="{$vo.typename}">{$vo.typename}</a>
+                            {/loop}
+                            </div>
+                            <script>
+                                seajs.use('',function(){sideMenu('5794850549638987',960);});
+                            </script>
+                            </div>
+                            
+                        </div>
+                        <!--手机端导航-->
+                        
+                        <!--推荐产品-->
+                        <div class="row" id="el_7016768026267999" path="row">
+                            <div class="rowFluid">
+                                <div class="span12">
+                                    
+                                    <div class="column" id="el_1866878758257213" path="column">
+                                        <div class="pluginWrapper plugin_6946630141231998" id="plugin_6946630141231998" path="plugin" data-areaid="6946630141231998" data-edit="false">
+                                            <div class="pluginContent">推荐产品</div>
+                                        </div>
+                                        <div class="pluginWrapper plugin_6845290040483090" id="plugin_6845290040483090" path="plugin" data-areaid="6845290040483090" data-edit="false">
+                                        <div class="pluginContent">
+                                            <div class="mod-list clearfix">
+                                            {loop type="arclist" row="3" tpl="product_show" image=1}
+                                            <div class="col-lg-12">
+                                                <div class="mod-item">
+                                                <a class="mod-pic" href="{$vo.url}"  title="{$vo.title}">
+                                                    <img class="lazyImg" src="{$vo.pic}" data-original="{$vo.pic}" alt="{$vo.title}">
+                                                </a>
+                                                <a class="mod-title" href="{$vo.url}"  title="{$vo.title}">{$vo.title}</a>
+                                                </div>
+                                            </div>
+                                            {/loop}
+                                            
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!--推荐产品-->
+                        
+                        <!--联系我们-->
+                        <div class="row" id="el_5492697234296904" path="row">
+    
+    <div class="rowFluid"><div class="span12"><div class="column" id="el_5940576761942389" path="column"><div class="pluginWrapper plugin_7589166268451410" id="plugin_7589166268451410" path="plugin" data-areaid="7589166268451410" data-edit="false"><div class="pluginContent">联系我们</div></div><div class="pluginWrapper plugin_4348450987947603" id="plugin_4348450987947603" path="plugin" data-areaid="4348450987947603" data-edit="false"><div class="pluginContent"><p>
+        <span style="line-height:1.5;">地址：{联系地址}</span> 
+    </p>
+    <p>
+        电话：{联系电话}
+    </p>
+    <p>
+        传真：{联系电话}
+    </p>
+    <p>
+        邮箱：<span style="white-space:normal;">{联系邮箱}</span>
+    </p>
+    </div></div></div></div></div></div>
+                        <!--联系我们-->
+                        
+                        </div>
+</div>

@@ -1,0 +1,30 @@
+<div class="index-link linkx inner">
+        <h3 class="title png"> 友情链接:</h3>
+        
+        <div class="txt"><ul class='list-none'>
+ {loop type="domain"}<li><a href="{$vo.url}" target="_blank">{$vo.title}</a></li>{/loop}
+	{if $links_open}
+   {loop type="link"}
+  <li> <a href="{$vo.url}" target="_blank">{$vo.title}</a></li>
+   {/loop}
+   {/if}
+</ul>
+</div>
+</div>
+
+
+<footer>
+		<div class="inner">
+<div class="foot-nav"><a href="{geturl tpl="about"/}" title='公司简介'>公司简介</a><span>|</span><a href="{geturl tpl='product_list'/}" title='产品展示'>产品展示</a><span>|</span><a href="{geturl tpl='list'/}" title='新闻动态'>新闻动态</a><span>|</span><a href="{geturl tpl='product_list'/}"  title='成功案例'>成功案例</a><span>|</span><a href="{geturl tpl="about"/}"  title='客户服务'>客户服务</a><span>|</span><a href="{geturl tpl="job_list"/}"  title='人才招聘'>人才招聘</a><span>|</span><a href="{geturl tpl="contact"/}"  title='联系我们'>联系我们</a></div>
+					
+				
+				<div class="foot-text"><p>Copyright &copy; 2017 Powered by <a href="{$web_url}">{网站名称}</a>&nbsp;&nbsp;{统计代码} <a href="http://{$host}/sitemap.xml">sitemap</a></p>
+				<p >{nocache}{运行时间}s , {运行内存} kb{/nocache}</p>
+				</div>
+				<div class="clear"></div>
+		</div>
+</footer>
+{分享代码}
+{百度推送代码}
+<script src="{模板路径}/images/js/fun.inc.js" type="text/javascript"></script>
+

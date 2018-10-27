@@ -1,0 +1,24 @@
+<!-- flink -->
+<div class="flink w960 center">
+<dl class="tbox">
+	<dt>
+	<strong>友情链接</strong>
+	</dt>
+	<dd>
+	<ul class="f4">{loop type="domain"}<a href="{$vo.url}" target="_blank">{$vo.title}</a>&nbsp;&nbsp;{/loop}  </ul>
+	 {if $links_open}
+	 <ul class="f5">
+	   {loop type="link"}
+       <li ><a href="{$vo.url}" target="_blank">{$vo.title}</a></li>
+	   {/loop}
+	   </ul>
+	   {/if}
+	</dd>
+  </dl>
+</div>
+<!-- /flink  -->
+<div class=bottomline></div><!-- <div class='bottomversion'></div> -->
+<div class=bottomcopyright>
+copyright &copy; 2016 powered by <a href="{$web_url}">{$web_name}</a>&nbsp;&nbsp;{$web_tongji} <a href="http://{$host}/sitemap.xml">sitemap</a>
+</div></div></div>
+{$web_share}{$web_bdpush}

@@ -1,0 +1,29 @@
+<div class="Top">
+	<span ><a href="#" target="_blank">会员登录</a> - <a href="#" target="_blank">用户注册</a> - <a href=""onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('/');">设为首页</a> - <a href="javascript:window.external.AddFavorite('/','{$title}')">加入收藏</a> - <a href="/sitemap.xml" target="_blank">网站地图</a></span>
+   {$title}！
+</div>
+<div class="Head">
+	<div class="logo FL"><h1 ><a href="{$web_url}"><img src="/uploads/images/logo.png?n={$encode_name}&w=250"></a></h1></div>
+    <div class="ad_468 FR"></div>
+</div>
+<div class="Nav">
+	<a href='{$web_path}/'>主页</a>
+    {loop type="typename" name="diqu" row=8}
+    <a href='{$vo.typeurl}' >{$vo.typename}</a>
+    {/loop}
+</div>
+<div class="Nav_box">
+	<div class="tag FL">
+    	热门搜索：
+        {loop type="keywords" row=10}
+        <a href='{$vo.url}'>{$vo.title}</a>
+        {/loop}
+    </div>
+    <div class="so FR">
+    	<form action="{typename type="url"/}" name="formsearch">
+           <input type="hidden" name="kwtype" value="0" />
+           <input name="keyword" type="text" class="search-keyword FL" id="search-keyword" value="在这里搜索..." onfocus="if(this.value=='在这里搜索...'){this.value='';}"  onblur="if(this.value==''){this.value='在这里搜索...';}"/>
+          <button type="submit" class="search-submit FL">搜索</button>
+        </form>
+    </div>
+</div>

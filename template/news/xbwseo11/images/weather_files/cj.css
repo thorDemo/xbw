@@ -1,0 +1,150 @@
+* {
+	PADDING-BOTTOM: 0px; LINE-HEIGHT: 180%; LIST-STYLE-TYPE: none; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-WEIGHT: normal; PADDING-TOP: 0px
+}
+IMG {
+	BORDER-RIGHT-WIDTH: 0px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px
+}
+BODY {
+	TEXT-ALIGN: center; BACKGROUND-COLOR: transparent; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; COLOR: #000; FONT-SIZE: 12px
+}
+A {
+	COLOR: #000; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #ff6600; TEXT-DECORATION: underline
+}
+EM {
+	FONT-STYLE: normal
+}
+STRONG {
+	
+}
+A STRONG {
+	
+}
+SELECT {
+	LINE-HEIGHT: 20px; HEIGHT: 20px
+}
+UL.row {
+	CLEAR: both
+}
+UL.row LI {
+	MARGIN: 0px 4px; FLOAT: left
+}
+UL.row LI A {
+	LINE-HEIGHT: 22px; DISPLAY: inline; HEIGHT: 22px
+}
+.more A {
+	
+}
+UL.col LI {
+	TEXT-ALIGN: center; MARGIN: 4px auto; FONT-SIZE: 14px; FONT-WEIGHT: bold
+}
+UL.col LI #city {
+	MARGIN-LEFT: 10px; FONT-WEIGHT: bold
+}
+UL.col LI A {
+	FONT-SIZE: 14px; FONT-WEIGHT: bold
+}
+UL.col .small {
+	PADDING-TOP: 6px
+}
+UL.col .small A {
+	FONT-SIZE: 12px
+}
+UL.col .line {
+	BORDER-BOTTOM: #ddd 1px dashed; PADDING-BOTTOM: 10px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; PADDING-TOP: 10px
+}
+DL {
+	MARGIN: 0px auto; CLEAR: both
+}
+DL DT {
+	FLOAT: left; HEIGHT: 65px; MARGIN-RIGHT: 10px
+}
+DL DT STRONG {
+	MARGIN-TOP: 10px; DISPLAY: block; _margin-top: 15px
+}
+DL DT A {
+	
+}
+DL DD {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 0px; LINE-HEIGHT: 18px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; HEIGHT: 18px; PADDING-TOP: 0px
+}
+DL .title {
+	MARGIN-BOTTOM: 4px; _margin-bottom: -4px
+}
+DL .title #city {
+	FONT-SIZE: 14px; FONT-WEIGHT: bold
+}
+#cj {
+	CLEAR: both
+}
+#left {
+	TEXT-ALIGN: center; FLOAT: left
+}
+#left H3 {
+	MARGIN-BOTTOM: 4px
+}
+#left H3 #city {
+	FONT-SIZE: 14px; FONT-WEIGHT: bold
+}
+#cj H4 {
+	MARGIN-BOTTOM: 5px; FONT-SIZE: 12px
+}
+#right {
+	TEXT-ALIGN: left; FLOAT: left; MARGIN-LEFT: 10px
+}
+#cjbg {
+	PADDING-BOTTOM: 10px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; BACKGROUND: url(/img/bg.gif) repeat-x left bottom; HEIGHT: 90px; PADDING-TOP: 10px
+}
+#cjbg .line {
+	BORDER-LEFT: #ddd 1px solid; PADDING-LEFT: 8px
+}
+#cjbg H4 {
+	FONT-SIZE: 12px
+}
+#right H3 #city {
+	MARGIN-BOTTOM: 4px; FONT-SIZE: 14px; FONT-WEIGHT: bold; MARGIN-RIGHT: 10px
+}
+UL.new {
+	LINE-HEIGHT: 28px; BACKGROUND-COLOR: transparent; HEIGHT: 28px
+}
+UL.new LI A IMG {
+	MARGIN-TOP: 4px
+}
+UL.new LI A EM {
+	LINE-HEIGHT: 28px; COLOR: #fff; FONT-WEIGHT: bold
+}
+UL.new LI A:hover {
+	COLOR: #000; TEXT-DECORATION: none
+}
+UL.new LI A:hover EM {
+	COLOR: #000
+}
+#eNew {
+	TEXT-ALIGN: left; MARGIN: 0px auto; WIDTH: 150px; HEIGHT: 180px
+}
+#eNew H1 {
+	MARGIN-BOTTOM: 0px; FONT-SIZE: 20px
+}
+#eNew H2 A EM {
+	FONT-SIZE: 14px; FONT-WEIGHT: normal
+}
+#eNew H4 {
+	LINE-HEIGHT: 43px; TEXT-INDENT: 1em; WIDTH: 150px; BACKGROUND: url(/img/w.gif) no-repeat left top; HEIGHT: 43px
+}
+#eNew H4 A EM {
+	LINE-HEIGHT: 43px; FONT-SIZE: 18px
+}
+#eNew P {
+	FONT-SIZE: 12px
+}
+.blue {
+	TEXT-ALIGN: right
+}
+.blue LI A {
+	COLOR: #0070c0
+}
+UL.blue LI {
+	FLOAT: right
+}

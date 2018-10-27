@@ -1,0 +1,16 @@
+	<div id="firendlink">
+		友情连接： {loop type="domain"}<a href="{$vo.url}" target="_blank">{$vo.title}</a>{/loop}
+	{if $links_open}
+   {loop type="link"}
+  <a href="{$vo.url}" target="_blank">{$vo.title}</a>
+   {/loop}
+   {/if}</div>
+	<div class="footer">
+		<div class="footer_link"></div>
+		<div class="footer_cont">
+			<p>Copyright &copy; 2017 Powered by <a href="{$web_url}">{网站名称}</a>&nbsp;&nbsp;{统计代码} <a href="http://{$host}/sitemap.xml">sitemap</a></p>
+			<p>{nocache}{运行时间}s , {运行内存} kb{/nocache}</p>
+		</div>
+	</div>
+{分享代码}
+{百度推送代码}

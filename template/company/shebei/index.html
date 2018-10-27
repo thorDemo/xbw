@@ -1,0 +1,144 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>{$toptitle}</title>
+<meta name="description" content="{$description}" />
+<meta name="keywords" content="{$keywords}" />
+{include file="style.html"}
+<body>
+{include file="head.html"}
+
+<div class="bannner">
+		<div class="indimg">
+				<div class="banner">
+						<div id="banner"> 
+								<div id="ifocus">
+										<div style="overflow: hidden" id="ifocus_pic">
+												<div style=" left: 0px" id="ifocus_piclist">
+														<ul>
+
+																<li><a href='' title='' target='_blank'> <img src="{$theme_path}/upload/201404/1398151725.jpg" alt="" width='1440' height='400'> </a></li>
+
+																<li><a href='' title='' target='_blank'> <img src="{$theme_path}/upload/201404/1397792519.jpg" alt="" width='1440' height='400'> </a></li>
+
+																<li><a href='' title='' target='_blank'> <img src="{$theme_path}/upload/201404/1398153007.jpg" alt="" width='1440' height='400'> </a></li>
+
+														</ul>
+												</div>
+												<div id="ifocus_btn">
+														<ul>
+														
+																<li class="">&nbsp;</li>
+																
+														
+																<li class="">&nbsp;</li>
+																
+														
+																<li class="">&nbsp;</li>
+																
+																
+														</ul>
+														
+											</div>
+										</div>
+								</div>
+						</div>
+				</div>
+		</div>
+</div>
+
+</div>
+
+
+
+<div class="index">
+  <div class="inner">
+    <div class="content">
+	
+ 
+      <div class="aboutus x ">
+        <div class="title"> <span><a href="{geturl tpl='about'/}" title="公司简介">公司简介</a></span> <br>
+          <b>About Us</b><a href="{geturl tpl='about'/}" title="公司简介" class="more fr"></a></div>
+        <div class="tx">
+          <div class="editor1"><span style="font-size:13px;"><span style="color: rgb(48, 48, 48);  line-height: 22px;">&nbsp; &nbsp; &nbsp; &nbsp; {网站名称}位于{联系地址}，{公司简介短}...</span></span>
+            <div class="clear"></div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="news x ">
+        <div class="title"> <span><a href="{geturl tpl='list'/}" title="新闻动态">新闻动态</a></span><br>
+          <b>News</b><a href="{geturl tpl='list'/}" title="新闻动态"class="more fr"></a></div>
+        <div class="tx">
+          <div>
+		  <ol class='list-none metlist'>
+			{loop type="arclist" row="6"}
+        	<li class='list'>
+				<span class='time'>{$vo.postdate}</span>
+            	<a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a>
+                {$vo.info}...
+            </li>
+        	{/loop}
+			</ol></div>
+          <div class="clear"></div>
+        </div>
+      </div>
+
+
+	  
+
+      <div class="Contact x ">
+        <div class="title"> <span><a href="{geturl tpl='contact'/}" title="联系我们">联系我们</a></span><br>
+          <b>Contact Us</b><a href="{geturl tpl='contact'/}" title="联系我们"class="more fr"></a></div>
+        <div class="tx">
+          <div class="editor"><p>
+	<span style="font-size:16px;"><strong>{网站名称}</strong></span><br />
+	<span style="font-family: Verdana, Arial, Helvetica, sans-serif; line-height: 20px;">地 址：{联系地址}</span><br style="font-family: Verdana, Arial, Helvetica, sans-serif; line-height: 20px;" />
+	<span style="font-family: Verdana, Arial, Helvetica, sans-serif; line-height: 20px;">电 话：{联系电话}</span><br style="font-family: Verdana, Arial, Helvetica, sans-serif; line-height: 20px;" />  
+	<span style="font-family: Verdana, Arial, Helvetica, sans-serif; line-height: 20px;">网址：{当前域名}</span><br style="font-family: Verdana, Arial, Helvetica, sans-serif; line-height: 20px;" />
+	<span style="font-family: Verdana, Arial, Helvetica, sans-serif; line-height: 20px;">邮 箱：{联系邮箱}</span></p>
+</div>
+          <div class="Contact-bottom"></div>
+          <div class="clear"></div>
+        </div>
+      </div>
+	  
+
+
+
+      <div class="product">
+        <div class="title"><span><a href="{geturl tpl='product_list'/}" title="产品展示">产品展示</a></span><br>
+          <b>Products</b><a href="{geturl tpl='product_list'/}" title="产品展示"class="more fr"></a></div>
+      </div>
+      <div class="clear"></div>
+      <div class="one">
+        <div class="index-product  style-2">
+          <div>
+            <p id="trigger"></p>
+            <a class="prev" id="car_prev" href="javascript:void(0);"></a> <a class="next" id="car_next" href="javascript:void(0);"></a> </div>
+          <div class="clear">
+            <div class="profld" id="indexcar" data-listnum="4"><ol class='list-none metlist'>
+			{loop type="arclist" row="20" image="1" tpl="product_show" title="typename"}
+			<li class='list'><a href="{$vo.url}" title='{$vo.title}' target='_self' class='img'><img src='{$vo.pic}' alt='{$vo.title}' title='{$vo.title}' width='213' height='160' /></a><h3 style='width:213px;'><a href="{$vo.url}" title='{$vo.title}' target='_self'>{$vo.title}</a></h3></li>
+			{/loop}</ol></div>
+          </div>
+        </div>
+      </div>
+   
+
+      <div class="clear"></div>
+
+      
+      
+    </div>
+    <div class="clear"></div>
+  </div>
+</div>
+</div>
+
+
+</div>
+{include file="footer.html" }
+</body></html>

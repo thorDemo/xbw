@@ -1,0 +1,339 @@
+/* 织梦58（dede58.com）做最好的织梦整站模板下载网站 */
+.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+	float: left;
+}
+.col-lg-12 {
+	width: 100%;
+}
+.col-lg-11 {
+	width: 91.66666667%;
+}
+.col-lg-10 {
+	width: 83.33333333%;
+}
+.col-lg-9 {
+	width: 75%;
+}
+.col-lg-8 {
+	width: 66.66666667%;
+}
+.col-lg-7 {
+	width: 58.33333333%;
+}
+.col-lg-6 {
+	width: 50%;
+}
+.col-lg-5 {
+	width: 41.66666667%;
+}
+.col-lg-4 {
+	width: 33.33333333%;
+}
+.col-lg-3 {
+	width: 25%;
+}
+.col-lg-2 {
+	width: 16.66666667%;
+}
+.col-lg-1 {
+	width: 8.33333333%;
+}
+.col-lg-0 {
+	display: none;
+}
+.span1, .span2, .span3, .span4, .span5, .span6, .span7, .span8, .span9, .span10, .span11, .span12 {
+	float: left;
+}
+.span12 {
+	width: 100%;
+}
+.span11 {
+	width: 91.66666667%;
+}
+.span10 {
+	width: 83.33333333%;
+}
+.span9 {
+	width: 75%;
+}
+.span8 {
+	width: 66.66666667%;
+}
+.span7 {
+	width: 58.33333333%;
+}
+.span6 {
+	width: 50%;
+}
+.span5 {
+	width: 41.66666667%;
+}
+.span4 {
+	width: 33.33333333%;
+}
+.span3 {
+	width: 25%;
+}
+.span2 {
+	width: 16.66666667%;
+}
+.span1 {
+	width: 8.33333333%;
+}
+ @media screen and (max-width: 1199px) {
+.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+	float: left;
+}
+.col-md-12 {
+	width: 100%;
+}
+.col-md-11 {
+	width: 91.66666667%;
+}
+.col-md-10 {
+	width: 83.33333333%;
+}
+.col-md-9 {
+	width: 75%;
+}
+.col-md-8 {
+	width: 66.66666667%;
+}
+.col-md-7 {
+	width: 58.33333333%;
+}
+.col-md-6 {
+	width: 50%;
+}
+.col-md-5 {
+	width: 41.66666667%;
+}
+.col-md-4 {
+	width: 33.33333333%;
+}
+.col-md-3 {
+	width: 25%;
+}
+.col-md-2 {
+	width: 16.66666667%;
+}
+.col-md-1 {
+	width: 8.33333333%;
+}
+.col-md-0 {
+	display: none;
+}
+}
+@media screen and (max-width: 960px) {
+.col-xm-1, .col-xm-2, .col-xm-3, .col-xm-4, .col-xm-5, .col-xm-6, .col-xm-7, .col-xm-8, .col-xm-9, .col-xm-10, .col-xm-11, .col-xm-12 {
+	float: left;
+}
+.col-xm-12 {
+	width: 100%;
+}
+.col-xm-11 {
+	width: 91.66666667%;
+}
+.col-xm-10 {
+	width: 83.33333333%;
+}
+.col-xm-9 {
+	width: 75%;
+}
+.col-xm-8 {
+	width: 66.66666667%;
+}
+.col-xm-7 {
+	width: 58.33333333%;
+}
+.col-xm-6 {
+	width: 50%;
+}
+.col-xm-5 {
+	width: 41.66666667%;
+}
+.col-xm-4 {
+	width: 33.33333333%;
+}
+.col-xm-3 {
+	width: 25%;
+}
+.col-xm-2 {
+	width: 16.66666667%;
+}
+.col-xm-1 {
+	width: 8.33333333%;
+}
+.col-xm-0 {
+	display: none;
+}
+}
+@media screen and (max-width: 767px) {
+.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+	float: left;
+}
+.col-sm-12 {
+	width: 100%;
+}
+.col-sm-11 {
+	width: 91.66666667%;
+}
+.col-sm-10 {
+	width: 83.33333333%;
+}
+.col-sm-9 {
+	width: 75%;
+}
+.col-sm-8 {
+	width: 66.66666667%;
+}
+.col-sm-7 {
+	width: 58.33333333%;
+}
+.col-sm-6 {
+	width: 50%;
+}
+.col-sm-5 {
+	width: 41.66666667%;
+}
+.col-sm-4 {
+	width: 33.33333333%;
+}
+.col-sm-3 {
+	width: 25%;
+}
+.col-sm-2 {
+	width: 16.66666667%;
+}
+.col-sm-1 {
+	width: 8.33333333%;
+}
+.col-sm-0 {
+	display: none;
+}
+}
+@media screen and (max-width: 479px) {
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+	float: left;
+}
+.col-xs-12 {
+	width: 100%;
+}
+.col-xs-11 {
+	width: 91.66666667%;
+}
+.col-xs-10 {
+	width: 83.33333333%;
+}
+.col-xs-9 {
+	width: 75%;
+}
+.col-xs-8 {
+	width: 66.66666667%;
+}
+.col-xs-7 {
+	width: 58.33333333%;
+}
+.col-xs-6 {
+	width: 50%;
+}
+.col-xs-5 {
+	width: 41.66666667%;
+}
+.col-xs-4 {
+	width: 33.33333333%;
+}
+.col-xs-3 {
+	width: 25%;
+}
+.col-xs-2 {
+	width: 16.66666667%;
+}
+.col-xs-1 {
+	width: 8.33333333%;
+}
+.col-xs-0 {
+	display: none;
+}
+}
+.column {
+	min-height: 1px;
+}
+.mmenu-nav {
+	display: none;
+}
+.sharebox {
+	position: fixed;
+	visibility: hidden;
+	width: 220px;
+	z-index: 300;
+	bottom: 0;
+	right: 0;
+	background-color: rgba(0,0,0,.6);
+	-webkit-transform: translateY(110%);
+	transform: translateY(110%);
+	-webkit-transition: all .3s;
+	transition: all .3s;
+}
+.sharebox.on {
+	visibility: visible;
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+}
+.sharebox .shd {
+	position: relative;
+	background-color: #333;
+	height: 34px;
+	line-height: 34px;
+	text-align: center;
+	font-size: 16px;
+	color: #fff;
+}
+.sharebox .shd span {
+	position: absolute;
+	right: 0;
+	top: 0;
+	display: block;
+	width: 30px;
+	height: inherit;
+	opacity: .8;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+.sharebox .shd span:before {
+	content: "";
+	width: 2px;
+	height: 20px;
+	background-color: #fff;
+	position: absolute;
+	left: 50%;
+	margin-left: -1px;
+	top: 50%;
+	margin-top: -10px;
+}
+.sharebox .shd span:after {
+	content: "";
+	width: 20px;
+	height: 2px;
+	background-color: #fff;
+	position: absolute;
+	left: 50%;
+	margin-left: -10px;
+	top: 50%;
+	margin-top: -1px;
+}
+.sharebox .sbd {
+	clear: both;
+	overflow: hidden;
+	padding: 1em;
+}
+.sharebox .sbd a {
+	display: block;
+	float: left;
+	margin: 1em;
+}
+@media screen and (max-width: 479px) {
+.sharebox {
+	width: 100%;
+}
+}

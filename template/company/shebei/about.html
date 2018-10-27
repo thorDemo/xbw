@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>{$toptitle}</title>
+<meta name="description" content="{$description}" />
+<meta name="keywords" content="{$keywords}" />
+{include file="style.html"}
+<body>
+{include file="head.html"}
+<div class="inner met_flash"><div class="flash">
+<img src='{模板路径}/upload/201404/1397804572.jpg' width='999' alt='' height='200'></div></div>
+
+<div class="sidebar inner">
+
+    <div class="sb_nav">
+
+			<div class="sb_nav_top"><h3 class="title"><span>企业简介</span><b>Site navigation</b></h3></div>
+
+			{include file="left.html" }
+		
+    <div class="sb_box sbbo ">
+	    <h3 class="title">
+			<div class="position"><a href="/" title="网站首页">网站首页</a> &gt; <a href="{$thisurl}" >企业简介</a></div>
+			<span>企业简介</span><b>Welcome to visit our</b>
+		</h3>
+		
+		<div class="clear"></div>
+
+        <div class="editor active" id="showtext">
+		<p>{网站名称}{公司简介长}</p>
+		</div>
+
+    </div>
+    <div class="clear"></div>
+</div>
+
+{include file="footer.html" }
+</body></html>

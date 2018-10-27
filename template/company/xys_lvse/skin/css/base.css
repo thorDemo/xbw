@@ -1,0 +1,570 @@
+/* 织梦58（dede58.com）做最好的织梦整站模板下载网站 */
+@charset "utf-8";
+* {
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+html {
+	font-size: 62.5%;
+}
+body {
+	background-color: #fff;
+	font-family: "Microsoft YaHei", "simsun", Arial;
+	font-size: 14px;
+	line-height: 1.5;
+	color: #333;
+	overflow-x: hidden;
+}
+body, form, iframe {
+	margin: 0px;
+	padding: 0px;
+}
+img {
+	border: none;
+	vertical-align: middle;
+}
+a {
+	text-decoration: none;
+	color: #333;
+	-webkit-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+a:hover {
+	color: #0084e9;
+}
+input, textarea, select, button {
+	outline: none;
+	vertical-align: middle;
+	font-size: inherit;
+	font-family: inherit;
+}
+textarea {
+	resize: none;
+	overflow-y: auto;
+}
+input[type="submit"], input[type="reset"], input[type="button"], button {
+	cursor: pointer;
+	-webkit-appearance: none;
+}
+hr {
+	height: 0;
+	border-width: 1px 0 0 0;
+	border-style: solid;
+	margin: 0;
+	color: #ddd;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	margin: 0;
+}
+h1 {
+	font-size: 60px;
+}
+h2 {
+	font-size: 36px;
+}
+h3 {
+	font-size: 24px;
+}
+h4 {
+	font-size: 18px;
+}
+h5 {
+	font-size: 16px;
+}
+h6 {
+	font-size: 14px;
+}
+.reset, .reset dt, .reset dd {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.clearfix:before {
+	content: ".";
+	display: block;
+	clear: both;
+	height: 0;
+	font-size: 0;
+	visibility: hidden;
+	overflow: hidden;
+}
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	height: 0;
+	font-size: 0;
+	visibility: hidden;
+	overflow: hidden;
+}
+.hidden {
+	visibility: hidden;
+}
+.visible {
+	visibility: visible;
+}
+.hide {
+	display: none;
+}
+.show {
+	display: block;
+}
+#dituContent img {
+	max-width: none;
+}
+.container {
+	width: 96%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.rowFluid {
+	clear: both;
+}
+.rowFluid:before, .rowFluid:after, .pluginWrapper:before, .pluginWrapper:after, .column:before, .column:after {
+	content: ".";
+	display: block;
+	clear: both;
+	height: 0;
+	font-size: 0;
+	visibility: hidden;
+	overflow: hidden;
+}
+.pluginContent {
+	height: inherit;
+}
+/* 模态对话框 */
+.dialogLockScreen {
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 600;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	filter: Alpha(Opacity=60);
+	opacity: .6;
+}
+.modalDialog {
+	position: absolute;
+	z-index: 601;
+	background: #fff;
+	box-shadow: 2px 2px 5px #000;
+	color: #666;
+}
+.modalDialog .dialogTitle {
+	height: 34px;
+	line-height: 34px;
+	padding-left: 20px;
+	font-size: 14px;
+	border-bottom: 1px solid #ccc;
+	background: #f6f6f6;
+}
+.modalDialog .dialogMain {
+	overflow-y: auto;
+}
+.modalDialog .dialogButtons {
+	height: 44px;
+	border-top: 1px solid #ccc;
+	background: #f6f6f6;
+	text-align: right;
+}
+.modalDialog .dialogButtons span {
+	display: inline-block;
+	height: 24px;
+	line-height: 24px;
+	margin-top: 9px;
+	padding: 0 20px;
+	background: #0084e9;
+	border: 1px solid #0376cd;
+	cursor: pointer;
+	color: #fff;
+	margin-right: 20px;
+}
+.modalDialog .dialogButtons span:hover {
+	background: #0174cc;
+	border-color: #0168b7;
+}
+.modalDialog .dialogLoader {
+	height: 100%;
+	min-height: 130px;
+	background: url(/public/images/loading_32_1.gif) no-repeat center center;
+}
+/* 手机版菜单 */
+.mobileMenuBtn {
+	position: fixed;
+	right: 20px;
+	top: 20px;
+	height: 30px;
+	line-height: 30px;
+	color: #999;
+	background-color: rgba(255,255,255,0.8);
+	width: 30px;
+	text-align: center;
+	cursor: pointer;
+	border: 1px solid #ddd;
+	font-size: 18px;
+	z-index: 6003;
+	border-radius: 3px;
+	display: none;
+}
+.mobileMenuBtn:hover {
+	background-color: #ddd;
+}
+.mobileMenu {
+	position: fixed;
+	left: -200px;
+	top: 0;
+	z-index: 6005;
+	font-size: 14px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	background: #333;
+	height: 100%;
+	width: 200px;
+	-webkit-transition: left .3s ease-in;
+	transition: left .3s ease-in;
+}
+.mobileMenu ul {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	left: 0;
+	height: 100%;
+	background: #333;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	-webkit-transition: left .3s ease-in;
+	transition: left .3s ease-in;
+}
+.mobileMenu ul li {
+	border-bottom: 1px solid #222;
+	overflow: hidden;
+}
+.mobileMenu ul li a {
+	display: block;
+	width: 80%;
+	float: left;
+	text-indent: 15px;
+	color: #fff;
+	height: 36px;
+	line-height: 36px;
+}
+.mobileMenu ul li a:active {
+	background-color: #222;
+}
+.mobileMenu ul li a i {
+	text-indent: 0;
+}
+.mobileMenu ul li .openChild {
+	cursor: pointer;
+	display: block;
+	height: 36px;
+	line-height: 36px;
+	box-sizing: border-box;
+	border-left: 1px solid #222;
+	width: 20%;
+	font-size: 20px;
+	text-align: center;
+	float: right;
+}
+.mobileMenu ul li .openChild:active {
+	background-color: #222;
+}
+.mobileMenu ul li ul {
+	left: 100%;
+}
+/* 表单默认样式 */
+.button {
+	border: none;
+	height: 38px;
+	padding-left: 15px;
+	padding-right: 15px;
+	font-size: 14px;
+	background: #0084e9;
+	color: #fff;
+	border-radius: 4px;
+	-webkit-transition: all .2s ease;
+	transition: all .2s ease;
+}
+.button:hover {
+	background: #428bca;
+}
+.text-btn {
+	color: #f60;
+}
+.input-text {
+	border: 1px solid #ddd;
+	background: #fff;
+	margin: 0;
+	box-sizing: border-box;
+	font-size: 14px;
+	height: 38px;
+	line-height: 2;
+	padding: 5px 5px;
+	width: 100%;
+	-webkit-transition: all .2s ease;
+	transition: all .2s ease;
+}
+.input-text:focus {
+	box-shadow: 0 0 8px rgba(102,175,233,.6);
+	border: 1px solid #66afe9;
+}
+.textarea {
+	border: 1px solid #ddd;
+	background: #fff;
+	margin: 0;
+	box-sizing: border-box;
+	font-size: 14px;
+	padding: 5px 5px;
+	width: 100%;
+	-webkit-transition: all .2s ease;
+	transition: all .2s ease;
+}
+.textarea:focus {
+	box-shadow: 0 0 8px rgba(102,175,233,.6);
+	border: 1px solid #66afe9;
+}
+.select {
+	border: 1px solid #ddd;
+	height: 36px;
+}
+.checkbox-group, .radio-group {
+	border: 1px solid #ddd;
+	height: 36px;
+}
+.input-error, .input-error:focus {
+	box-shadow: 0 0 8px rgba(255,0,0,.4);
+	border: 1px solid #c00;
+}
+.img-captcha {
+	width: 104px;
+	height: 38px;
+	cursor: pointer;
+}
+.required {
+	color: #c00;
+}
+.msg-error {
+	color: #c00;
+}
+.input-row {
+	display: table;
+	border-collapse: separate;
+}
+.input-caption {
+	box-sizing: border-box;
+}
+/* 侧边菜单 */
+.sideMenuCheckbox {
+	display: none;
+}
+.sideMenuCheckbox+.small {
+	display: none;
+}
+.sideMenuCheckbox:checked+.small {
+	display: block;
+}
+/* 回顶部 */
+#toTop {
+	position: fixed;
+	bottom: -100px;
+	right: 12px;
+	z-index: 1000;
+	width: 32px;
+	height: 32px;
+	background: #999;
+	color: #fff;
+	cursor: pointer;
+	border-radius: 3px;
+	-webkit-transition: all 0.4s;
+	transition: all 0.4s;
+}
+#toTop i {
+	display: block;
+	padding: 8px 0 0 10px;
+	font-size: 14px;
+}
+#toTop:hover {
+	background: #333;
+}
+/* 灯箱 */
+.lightWrap {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 6200;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.6);
+	overflow: hidden;
+}
+.lightWrap .closeLightBox {
+	position: absolute;
+	cursor: pointer;
+	right: 10px;
+	top: 10px;
+	font-size: 30px;
+	color: #fff;
+	line-height: 1;
+}
+.lightWrap .item {
+	text-align: center;
+	position: relative;
+}
+.lightWrap .item img {
+	max-width: 100%;
+	max-height: 100%;
+}
+.lightWrap .item .title {
+	position: absolute;
+	line-height: 1.6;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	background: rgba(0,0,0,.4);
+	color: #fff;
+	padding: 10px 0;
+}
+.lightWrap .loading {
+	background: url(/public/images/loader.gif) no-repeat center center;
+}
+.lightWrap .owl-prev, .lightWrap .owl-next {
+	position: absolute;
+	width: 40px;
+	text-align: center;
+	font-size: 46px;
+	color: #fff;
+	top: 50%;
+	margin-top: -35px;
+	background: rgba(0,0,0,.4);
+	-webkit-transition: all .3s ease;
+	transition: all .3s ease;
+}
+.lightWrap .owl-prev {
+	left: -60px;
+}
+.lightWrap .owl-next {
+	right: -60px;
+}
+.lightWrap:hover .owl-buttons .owl-prev {
+	left: 10px;
+}
+.lightWrap:hover .owl-buttons .owl-next {
+	right: 10px;
+}
+/* member register */
+.register-wrapper {
+	width: 96%;
+	max-width: 360px;
+	margin: 60px auto;
+}
+.register-wrapper .input-row {
+	width: 100%;
+	margin-top: 20px;
+}
+.register-wrapper .input-caption {
+	display: table-cell;
+	width: 1%;
+	white-space: nowrap;
+	background: #eee;
+	padding: 5px 10px;
+	vertical-align: middle;
+	border: 1px solid #ddd;
+	border-right: none;
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+}
+.register-wrapper .input-text, .register-wrapper .textarea, .register-wrapper .select, .register-wrapper .checkbox-group, .register-wrapper .radio-group {
+	display: table-cell;
+	vertical-align: middle;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+.register-wrapper .input-captcha {
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+.register-wrapper .img-captcha {
+	height: 36px;
+}
+.register-wrapper .input-captcha-img {
+	display: table-cell;
+	overflow: hidden;
+	width: 1%;
+	border: 1px solid #ddd;
+	border-left: none;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+.register-wrapper .checkbox, .register-wrapper .radio {
+	margin-left: 5px;
+}
+.register-wrapper .required {
+	margin-right: 5px;
+}
+/* member login */
+.login-wrapper {
+	width: 96%;
+	max-width: 360px;
+	margin: 60px auto;
+}
+.login-wrapper .input-row {
+	width: 100%;
+	margin-top: 20px;
+}
+.login-wrapper .input-caption {
+	display: table-cell;
+	width: 1%;
+	white-space: nowrap;
+	background: #eee;
+	padding: 5px 10px;
+	vertical-align: middle;
+	border: 1px solid #ddd;
+	border-right: none;
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+}
+.login-wrapper .input-text, .login-wrapper .textarea, .login-wrapper .select, .login-wrapper .checkbox-group, .login-wrapper .radio-group {
+	display: table-cell;
+	vertical-align: middle;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+.login-wrapper .input-captcha {
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+.login-wrapper .img-captcha {
+	height: 36px;
+}
+.login-wrapper .input-captcha-img {
+	display: table-cell;
+	overflow: hidden;
+	width: 1%;
+	border: 1px solid #ddd;
+	border-left: none;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+.login-wrapper .checkbox, .login-wrapper .radio {
+	margin-left: 5px;
+}
+.login-wrapper .required {
+	margin-right: 5px;
+}
+ @media only screen and (max-width: 1199px) {
+}
+@media only screen and (max-width: 960px) {
+.mobileMenuBtn {
+	display: block;
+}
+.sideTools {
+	display: none;
+}
+}
+@media only screen and (max-width: 767px) {
+}
+@media only screen and (max-width: 479px) {
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{$toptitle}</title>
+<meta name="description" content="{$description}" />
+<meta name="keywords" content="{$keywords}" />
+<link href="{$theme_path}/style/index.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="{$theme_path}/js/jquery-1.3.1.js"></script>
+</head>
+
+<body>
+{include file="head.html"}
+<div id="zwz">
+<div id="flash"><img src="{getone name="pic"/}" width="290" height="260" /></div>
+<div id="ggao">
+<ul>
+<p ><a href="#" target="_blank">相关资讯</a></p>
+{loop type="arclist" row="7"}
+<li ><span >{$vo.postdate}</span><a href="{$vo.url}" target="_blank">{$vo.title}</a></li>
+{/loop}
+</ul>
+</div>
+</div>
+<div id="zxin">
+<ul id="xint">
+<p ><a href="#">More</a></p>
+</ul>
+<ul id="up">
+{loop type="arclist" row="1" info=1}
+<li ><a href="{$vo.url}" target="_blank">{$vo.title}</a></li>
+<p >{$vo.info}.....<span ><a href="{$vo.url}" target="_blank">>>阅读全文<<</a></span></p>
+{/loop}
+</ul>
+<ul id="xinzw">
+{loop type="arclist" row="12"}
+<li ><span >{$vo.postdate}</span><font>【{typename type="name"/}】</font><a href="{$vo.url}">{$vo.title}</a></li>
+{/loop}
+
+</ul>
+</div>
+<div id="zwy">
+<div id="tuij">
+<ul>
+<p ></p>
+{loop type="arclist" row="14" fan=1}
+
+<li ><a href="{$vo.url}">{$vo.title}</a></li>
+{/loop}
+</ul>
+
+</div>
+</div>
+<div id="wzmk">
+{loop type="typename" row="6"}
+<div id="mk1">
+<ul>
+<p ><span ><a href="{$vo.typeurl}" target="_blank">More</a></span> <a href="{$vo.typeurl}">{$vo.typename}</a></p>
+
+{loop type="arclist" row="10"}
+<li ><span >{$vo.postdate}</span><a href="{$vo.url}">{$vo.title}</a></li>
+{/loop}
+</ul>
+</div>
+{/loop}
+{include file="footer.html" }
+</div>
+</body>
+</html>

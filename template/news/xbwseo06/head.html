@@ -1,0 +1,27 @@
+<div class="header_top">  
+    <div class="w960 center">  
+     <span id="time" class="time"></span>
+     <div class="toplinks"></div>
+    </div> 
+</div>
+<div class="header">
+    <h1 >
+  <a href="{$web_url}"><img src="/uploads/images/logo.png?n={$encode_name}&w=230"></a> </h1>
+    <div class="search">
+	  <form name="formsearch" action="">
+           <input type="hidden" name="kwtype" value="0">
+           <input name="q" type="text" class="search-keyword" id="search-keyword" value="在这里搜索..." onfocus="if(this.value=='在这里搜索...'){this.value='';}" onblur="if(this.value==''){this.value='在这里搜索...';}">
+          <button type="submit" class="search-submit">搜一下</button>
+      </form>
+      
+	</div>
+</div>
+<div class="nav_bg">
+  <ul class="nav">
+      	<a href='/' class="hvoer">首页</a>
+      	{loop type="typename"  row="8"}
+      	<a href='{$vo.typeurl}' >{$vo.typename}</a>
+      	{/loop}
+  </ul>
+</div>
+

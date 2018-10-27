@@ -1,0 +1,131 @@
+/* 织梦58（dede58.com）做最好的织梦整站模板下载网站 */
+header {
+	color: #b0120a;
+}
+.code {
+	-moz-border-radius: .3em;
+	-webkit-border-radius: .3em;
+	border-radius: .3em;
+	background-color: #e2e2e2;
+	color: #000;
+	font-family: 'Fira mono', 'Courier New', Courier, monospace;
+	font-size: 85%;
+	letter-spacing: .05em;
+	padding: 1em;
+}
+input {
+	margin: .5em;
+	border: 0;
+	min-width: 100px;
+	background-color: #b0120a;
+	color: #f8f8f8;
+	font-family: inherit;
+	font-size: inherit;
+	border-bottom: 5px solid #e84e40;
+	padding: .5em 1em;
+	-webkit-border-radius: .2em;
+	-moz-border-radius: .2em;
+	-webkit-box-shadow: 1px 1px 1px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow: 1px 1px 1px 0px rgba(50, 50, 50, 0.75);
+	box-shadow: 1px 1px 1px 0px rgba(50, 50, 50, 0.75);
+	outline: none;
+}
+input:active {
+	box-shadow: 0 0 0 0;
+	outline: none;
+}
+input:hover {
+	outline: none;
+}
+input:active, input:hover {
+	background-color: #e84e40;
+	border-color: #b0120a;
+}
+main {
+	max-width: 600px;
+	margin: 0 auto;
+	margin-top: 4em;
+}
+main a, main a:active, main a:focus, main a:hover, main a:link, main a:visited {
+	font-family: 'fira mono';
+	text-transform: uppercase;
+	font-size: 90%;
+	color: black;
+	border-bottom: 1px dotted black;
+}
+main header {
+	font-size: 80%;
+}
+section {
+	margin: 4em 0;
+}
+.aligncontent-center {
+	text-align: center;
+}
+.wrapper {
+	margin-top: 66px;
+	padding: 1em;
+	background-color: transparent;
+}
+.main-header {
+	text-align: center;
+	font-weight: 300;
+	font-size: 90%;
+}
+.toolbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: transparent;
+	line-height: 68px;
+	border-top: 2px solid #b0120a;
+}
+.menu-button {
+	position: relative;
+	margin: 5px;
+	height: 36px;
+	width: 36px;
+	cursor: pointer;
+}
+.menu-button:before {
+	content: "";
+	position: absolute;
+	top: 5px;
+	right: 3px;
+	border-bottom: 17px double #b0120a;
+	border-top: 6px solid #b0120a;
+	width: 30px;
+	height: 5px;
+}
+.menu-left {
+	float: left;
+	margin-right: 1.5em;
+}
+.sidebar {
+	margin: 0;
+	padding-top: 1em;
+	color: white;
+	background-color: #b0120a;
+}
+.sidebar h6 {
+	margin: 0 .8em;
+	padding: 0;
+	font-weight: 300;
+}
+.sidebar li {
+	margin: .5em 0;
+	padding: 0 1em;
+	line-height: 32px;
+}
+.sidebar li:hover {
+	background-color: #e84e40;
+}
+.sidebar hr {
+	margin: 2em auto;
+	border: 0;
+	padding: 0;
+	width: 80%;
+	height: 1px;
+	background-color: white;
+}

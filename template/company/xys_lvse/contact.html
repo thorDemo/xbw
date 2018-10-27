@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>{$toptitle}</title>
+<meta name="keywords" content="{$keywords}">
+<meta name="description" content="{$description}">
+<link href="{$theme_path}/skin/css/owl.carousel.css" rel="stylesheet">
+<link href="{$theme_path}/skin/css/grid.1.1.css" rel="stylesheet">
+<link href="{$theme_path}/skin/css/base.css" rel="stylesheet">
+<link href="{$theme_path}/skin/css/style.css" rel="stylesheet">
+<link href="{$theme_path}/skin/css/plugin-style.css" rel="stylesheet">
+<link href="{$theme_path}/skin/css/el-style.css" rel="stylesheet">
+<!--引用百度地图API-->
+<style type="text/css">
+    html,body{margin:0;padding:0;}
+    .iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
+    .iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
+</style>
+<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+<script src="{$theme_path}/skin/js/jquery-1.11.0.min.js"></script>
+<script>
+var website = {
+  'root': '/websites/923',
+  'websiteId': '923',
+  'currentNavId': 'nav_11828',
+  'resourceId': '18954',
+  'resourceCode': 'page',
+  'isMobile': navigator.userAgent.match(/(iPad)|(iPhone)|(iPod)|(Android)|(PlayBook)|(BB10)|(BlackBerry)|(Opera Mini)|(IEMobile)|(webOS)|(MeeGo)/i)
+};
+</script>
+<script src="{$theme_path}/skin/js/functions.js"></script>
+<script src="{$theme_path}/skin/js/sea.js"></script>
+<script src="{$theme_path}/skin/js/sea.run.js"></script>
+<script>
+website["dataId"]='4646';
+</script>
+<body class="">
+{include file="wap_head.html" }
+<div id="pageOuter" class="mm-page mm-slideout"> {include file="list_head.html" } 
+  
+  <!--广告-->
+  <div class="row" id="el_8573323734861709" path="row">
+    <div class="rowFluid">
+      <div class="span12">
+        <div class="column" id="el_5877406638476884" path="column">
+          <div class="pluginWrapper plugin_2308236375216341" id="plugin_2308236375216341" path="plugin" data-areaid="2308236375216341" data-edit="true">
+            <div class="pluginContent"> <img src="{$theme_path}/skin/image/lxwm_bj.jpg"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--广告-->
+  
+  <div class="row" id="el_2409364663047444" path="row">
+    <div class="rowFluid">
+      <div class="span12">
+        <div class="column" id="el_8439151065227512" path="column">
+          <div class="container">
+            <div class="row" id="el_2501645458682503" path="row">
+              <div class="rowFluid"> 
+                
+                <!--左--> 
+                {include file="list_left.html" } 
+                <!--左-->
+                
+                <div class="span9 col-xm-12">
+                  <div class="column" id="el_2764782457471358" path="column">
+                    <div class="row" id="el_1983128610483650" path="row">
+                      <div class="rowFluid">
+                        <div class="span3 col-xs-4">
+                          <div class="column" id="el_4360846670664358" path="column">
+                            <div class="pluginWrapper plugin_6994508354811778" id="plugin_6994508354811778" path="plugin" data-areaid="6994508354811778" data-edit="false">
+                              <div class="pluginContent"> 联系方式</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="span9 col-xs-12">
+                          <div class="column" id="el_7749551375573275" path="column">
+                            <div class="pluginWrapper plugin_2699734354812400" id="plugin_2699734354812400" path="plugin" data-areaid="2699734354812400" data-edit="false">
+                              <div class="pluginContent"> <a href="/">首页</a> > <a href="{$typeurl}">{$typename}</a> </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pluginWrapper plugin_2870550614377147" id="plugin_2870550614377147" path="plugin" data-areaid="2870550614377147" data-edit="true">
+                      <div class="pluginContent"> 
+                        
+                        <!--地图-->
+                        <div id="dituContent" style="height: 420px; width: 100%; overflow: hidden; position: relative; z-index: 0; color: rgb(0, 0, 0); text-align: left; background-image: url(http://api.map.baidu.com/images/bg.png);"> 
+                        
+                        <script type="text/javascript">
+    //创建和初始化地图函数：
+    function initMap(){
+        createMap();//创建地图
+        setMapEvent();//设置地图事件
+        addMapControl();//向地图添加控件
+        addRemark();//向地图中添加文字标注
+    }
+    
+    //创建地图函数：
+    function createMap(){
+        var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+        var point = new BMap.Point(114.327796,22.716695);//定义一个中心点坐标
+        map.centerAndZoom(point,17);//设定地图的中心点和坐标并将地图显示在地图容器中
+        window.map = map;//将map变量存储在全局
+    }
+    
+    //地图事件设置函数：
+    function setMapEvent(){
+        map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+        map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+        map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+        map.enableKeyboard();//启用键盘上下左右键移动地图
+    }
+    
+    //地图控件添加函数：
+    function addMapControl(){
+        //向地图中添加缩放控件
+	var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+	map.addControl(ctrl_nav);
+        //向地图中添加缩略图控件
+	var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:1});
+	map.addControl(ctrl_ove);
+        //向地图中添加比例尺控件
+	var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+	map.addControl(ctrl_sca);
+    }
+    
+//文字标注数组
+    var lbPoints = [{point:"114.327464|22.718529",content:"深圳市某某空调制造有限公司"}
+		 ];
+    //向地图中添加文字标注函数
+    function addRemark(){
+        for(var i=0;i<lbPoints.length;i++){
+            var json = lbPoints[i];
+            var p1 = json.point.split("|")[0];
+            var p2 = json.point.split("|")[1];
+            var label = new BMap.Label("<div style='padding:2px;'>"+json.content+"</div>",{point:new BMap.Point(p1,p2),offset:new BMap.Size(3,-6)});
+            map.addOverlay(label);
+            label.setStyle({borderColor:"#999"});
+        }
+    }
+    
+    initMap();//创建和初始化地图
+</script>
+                        </div>
+                        <br>
+                        <div>
+                        <p>
+	<strong><span style="font-size:16px;">{$web_name}</span></strong> 
+</p>
+                        	<p>
+	地址： {联系地址}
+</p>
+<p>
+	邮箱： {联系邮箱}
+</p>
+<p>
+	电话：{联系电话}
+</p>
+<p>
+	传真：{联系电话}
+</p>
+                        </div>
+                      </div>
+                    </div>
+                    <!--地图--> 
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{include file="footer.html" }
+</div>
+</body>
+</html>

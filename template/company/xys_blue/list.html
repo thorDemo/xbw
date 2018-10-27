@@ -1,0 +1,62 @@
+<html class="uk-notouch"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{$toptitle}</title>
+<meta name="description" content="{$description}" />
+<meta name="keywords" content="{$keywords}" />
+<meta http-equiv="X-UA-Compatible" content="edge">
+<link rel="stylesheet" href="{$theme_path}/css/uikit.css">
+<link rel="stylesheet" href="{$theme_path}/css/iven.css">
+<link rel="stylesheet" href="{$theme_path}/css/slideshow.css">
+<link rel="stylesheet" href="{$theme_path}/css/slidenav.css">
+<link rel="stylesheet" href="{$theme_path}/css/responsive.css">
+<script src="{$theme_path}/js/jquery-1.11.1.min.js"></script>
+<script src="{$theme_path}/js/uikit.min.js"></script>
+<script src="{$theme_path}/js/slideshow.js"></script>
+<script src="{$theme_path}/js/slideshow-fx.min.js"></script>
+<script src="{$theme_path}/js/jquery.mousewheel.min.js"></script></head>
+<body onLoad="init()">
+<!--header-->
+	{include file="head.html" } 
+<!--banner-->
+<div class="page_banner"><img src="{$theme_path}/images/d9ed45d0426d6674.jpg" alt="新闻中心"></div>
+<!--nav sub-->
+<div class="nav-sub">
+	<img src="{$theme_path}/images/news-subtitle.jpg">
+    <div class="sub-nav">
+                   {loop type="typename" row="5"}
+    	     <a href="{$vo.typeurl}" title="{$vo.typename}" >{$vo.typename}</a>
+	   {/loop}
+		    </div>
+</div>
+<div class="uk-container-center newslist">
+ {loop type="arclist" image=1 info=1}
+<!--news box start-->
+	<div class="uk-grid newslist-box">
+		<div class="uk-width-medium-3-10 uk-width-small-1-1">
+						<a href="{$vo.url}" title="{$vo.title} " class="uk-thumbnail">
+				<span class="n-img"><img src="{$vo.pic}" alt="{$vo.title} "></span>
+				</a>
+				</div>
+		<div class="uk-width-medium-7-10 uk-width-small-1-1">
+			<div class="n-info">
+				<h4><a href="{$vo.url}" title="{$vo.title} ">{$vo.title} </a></h4>
+				<span class="n-date">DATE: {$vo.postdate}</span>
+				<p>
+	【新闻摘要】：{$vo.info}…</p>
+			</div>
+		</div>
+	</div>
+	<hr>
+<!--news box end-->
+{/loop} 
+<div class="pages">
+<ul>
+		{loop type="typename" }<a href="{$vo.typeurl}">[{$k+1}]</a>{/loop} 
+	</ul>
+</div><br><br><br>
+<div class="uk-clearfix"></div>
+</div>
+<!--footer-->
+{include file="foot.html" } 
+</body></html>

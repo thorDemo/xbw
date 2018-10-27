@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--[if IE]>
+<![if IE 5]><html class="ie ie5 lie9 lie8 lie7 lie6"><![endif]>
+	<![if IE 6]><html class="ie ie6 lie9 lie8 lie7"><![endif]>
+	<![if IE 7]><html class="ie ie7 lie9 lie8"><![endif]>
+	<![if IE 8]><html class="ie ie8 lie9"><![endif]>
+	<![if IE 9]><html class="ie ie9"><![endif]>
+	<![if !((IE 6)|(IE 7)|(IE 8)|(IE 9))]><html class="ie"><![endif]>
+<![endif]-->
+<!--[if !IE]><!-->
+<html lang="zh-CN" class="notie">
+<!--<![endif]-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>{$toptitle}</title>
+<meta name="description" content="{$description}" />
+<meta name="keywords" content="{$keywords}" />
+<link rel="stylesheet" type="text/css" href="{$theme_path}/skin/css/78002.css" >
+<script type="text/javascript" charset="utf-8" src="{$theme_path}/skin/js/jquery-1.9.1.min.js"></script>
+</head>
+<body>
+{include file="head.html" }
+<div class="banner-page" style="background-image: url('{$theme_path}/skin/images/nybg.jpg')">
+  <div class="banner-title">
+    <div class="container">
+      <div class="banner-title-in">
+        <h1 class="column-name">{当前栏目}</h1>
+        <div class="column-description"> {getone name="content"/} </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="main c">
+  <div class="container"> {include file="left.html" }
+    <div class="main-right">
+      <div class="mr-in">
+        <div class="column c">
+          <div class="title fl">{当前栏目}</div>
+          <div class="breadcrumb fr"> <a href="/">首页</a> > <a href="{$typeurl}">{$typename}</a> </div>
+        </div>
+        <style>
+.list_product ul li a b {
+  white-space:nowrap; 
+text-overflow:ellipsis; 
+-o-text-overflow:ellipsis; 
+overflow: hidden; 
+}
+</style>
+        <div class="list_product c">
+          <ul>
+            {loop type="arclist" tpl="product_show" image=1 row=12}
+            <li> <a href="{$vo.url}" title="{$vo.title}"> <img src="{$vo.pic}" alt="{$vo.title}"/> <b>{$vo.title}</b> <span> </span> </a> </li>
+            {/loop}
+          </ul>
+          <div class="pages c"> {loop type="typename" tpl="product_list" }<a href="{$vo.typeurl}">[{$k+1}]</a>{/loop} </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{include file="footer.html" }
+</body>
+</html>

@@ -1,0 +1,102 @@
+/* 织梦58（dede58.com）做最好的织梦整站模板下载网站 */
+html, body {
+	font-size: 16px;
+	font-family: 'roboto', helvetica, arial, sans-serif;
+	color: black;
+	/*word-break:keep-all;*/
+	word-wrap: normal;
+}
+a, a:active, a:focus, a:hover, a:link, a:visited {
+	color: inherit;
+	text-decoration: none;
+	font-weight: inherit;
+}
+abbr, acronym {
+	border-bottom: 1px dotted #000;
+}
+blockquote {
+	border-left: 2px solid #4db6ac;
+	margin-bottom: 1em;
+	padding-left: 1em;
+}
+cite:before, q:before {
+	content: '\201C';
+}
+cite:after, q:after {
+	content: '\201D';
+}
+code, samp, kbd, command, var {
+	-moz-border-radius: .3em;
+	-webkit-border-radius: .3em;
+	border-radius: .3em;
+	background-color: #e2e2e2;
+	color: #000;
+	font-family: 'Fira mono', 'Courier New', Courier, monospace;
+	font-size: 85%;
+	letter-spacing: .05em;
+	padding: 0 .5em;
+}
+dl dd {
+	margin: .5em;
+	padding-bottom: 1em;
+	padding-left: 1em;
+}
+b, strong, dl dt {
+	font-weight: 700;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin-bottom: .3em;
+}
+h1 {
+	font-size: 3.5em;
+}
+h2 {
+	font-size: 3em;
+}
+h3 {
+	font-size: 2.5em;
+}
+h4 {
+	font-size: 2em;
+}
+h5 {
+	font-size: 1.5em;
+}
+h6 {
+	font-size: 1.2em;
+}
+hr {
+	margin: 1em;
+	border: 0;
+	height: 1px;
+	background-color: lightgrey;
+}
+iframe {
+	margin: 0 auto;
+	max-width: 100%;
+}
+p {
+	line-height: 20px;
+	margin-bottom: 1em;
+}
+pre {
+	margin-bottom: 1em;
+	overflow-x: auto;
+}
+small {
+	font-size: 70%;
+}
+sub {
+	font-size: 80%;
+	vertical-align: sub;
+}
+sup {
+	font-size: 80%;
+	vertical-align: super;
+}
+u {
+	text-decoration: underline;
+}
+address, cite, i, em {
+	font-style: italic;
+}

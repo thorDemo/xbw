@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{$toptitle}</title>
+<meta name="keywords" content="{$keywords}" />
+<meta name="description" content="{$description}" />
+<link href="{$theme_path}/css/layout.css"  rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+{include file="head.html" }
+<div id="container">
+  <div id="mainContent">
+    <div id="content">
+      <div class="mainpanel">
+        <div class="mcontent">
+          <div id="location">当前位置： 当前位置：<a href="/">首页</a> > <a href="{typename type="url"/}">{$typename}</a> > <a href="{$thisurl}">{$title}</a>
+		  <div style="clear:both;"></div>
+          </div>
+          {loop type="arclist" info=1}
+          <dl>
+            <dt><a href="{$vo.url}" class="title">{$vo.title}</a></dt>
+            <dd style="overflow:auto;zoom:1;"> {$vo.info}... </dd>
+            <dd class="linfo">date:<span>{$vo.postdate}</span>　 praise:<span>{$vo.scores}</span>　 views:<span>{$vo.hits}</span> </dd>
+          </dl>
+          {/loop} 
+          <!--分页-->
+          <div class="page">
+            <ul>
+              {loop type="typename" }<a href="{$vo.typeurl}">[{$k+1}]</a>{/loop}
+            </ul>
+            <div style="clear:both;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="sidebarx">
+      <div class="isidepanel">
+        <h4>最新排行</h4>
+        <div class="ipcontent">
+          <ul class="list_con">
+            {loop type="link" row="20"}
+            <li><a href="{$vo.url}">{$vo.title}</a></li>
+            {/loop}
+          </ul>
+        </div>
+      </div>
+      <div class="isidepanel">
+        <h4>点击排行</h4>
+        <div class="ipcontent">
+          <ul class="list_con">
+            {loop type="arclist" row="10"}
+            <li><a href="{$vo.url}" target="_blank">{$vo.title}</a></li>
+            {/loop}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="clearfloat"></div>
+  </div>
+  {include file="footer.html" } 
+<script language="javascript" type="text/javascript">
+
+var obj=null;
+
+var As=document.getElementById('menu').getElementsByTagName('a');
+
+obj = As[0];
+
+for(i=1;i<As.length;i++){if(window.location.href.indexOf(As[i].href)>=0)
+
+obj=As[i];}
+
+obj.id='menu_active'
+
+</script>
+</body>
+</html>

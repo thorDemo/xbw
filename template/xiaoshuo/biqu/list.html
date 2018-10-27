@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Cache-Control" content="no-siteapp" />
+	<meta http-equiv="Cache-Control" content="no-transform" />
+	<title>{$toptitle}</title>
+<meta name="description" content="{$description}" />
+<meta name="keywords" content="{$keywords}" />
+{include file="style.html"}
+	<meta name="applicable-device" content="pc">
+</head>
+<body>
+<div id="wrapper">
+{include file="head.html"}
+	<div id="main">
+		<div id="hotcontent">
+			<div class="ll">
+				{loop type="arclist" row="6" image="1" info=1 tpl="chapter"}
+				<div class="item">
+					<div class="image">
+						<a href="{$vo.url}" title="{$vo.title}"><img src="{$vo.pic}" alt="{$vo.title}" width="120" height="150" /></a>
+					</div>
+					<dl>
+						<dt><a href="{$vo.url}">{$vo.title}</a></dt>
+						<dd>{$vo.info}</dd>
+					</dl>
+					<div class="clear"></div>
+				</div>
+			{/loop}</div>
+		</div>
+		<div id="newscontent">
+			  <div class="l">
+				<h2>{getone name='diy:xs_type' cacheid="$thisurl"/}小说最近更新列表</h2>
+				<ul>
+				{loop type="arclist" row="30" image="1" tpl="chapter"}
+					<li class="item-cover">
+						<a href="{$vo.url}" title="{$vo.title}">
+							<img src="{$vo.pic}" alt="{$vo.title}" />
+							<h3>{$vo.title}</h3>
+						</a>
+					</li>
+				{/loop}
+				</ul>
+				<div class="pages">
+					<ul>{loop type="typename" }<li><a href="{$vo.typeurl}">[{$k+1}]</a></li>{/loop}</ul>				</div>
+			</div>
+			<div class="r">
+				<h2>好看的{getone name='diy:xs_type' cacheid="$thisurl"/}小说</h2>
+				<ul>
+					{loop type="arclist" row="37" tpl="chapter"}
+					<li>
+						<span class="s1">[{getone name='diy:xs_type' cacheid="$thisurl"/}]</span>
+						<span class="s2"><a href="{$vo.url}">{$vo.title}</a></span>
+						<span class="s5"></span>
+					</li>
+				{/loop}</ul>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+	{include file="footer.html" }
+</div>
+</body>
+</html>

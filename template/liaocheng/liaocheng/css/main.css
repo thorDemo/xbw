@@ -1,0 +1,92 @@
+/*div{filter:gray;} //ÍøÒ³±ä»Ò*/
+/*body{padding-top:75px;background:url(/template/liaocheng/liaocheng/img/main_chun.jpg) center top no-repeat;}
+#login a,#login a:link,#login h5 a:visited{color:#fff;}*/
+
+.main_dzb{margin:0px auto 5px auto;width: 948px;height:22px; line-height:22px;overflow:hidden;}
+.main_dzb a{padding:0 7px;}
+.l{ float:left; width:686px;overflow:hidden;}
+.r{float:left;width:262px;overflow:hidden;}
+
+#jdt {position:relative;float:left;padding:5px;border: 1px solid #ccc;margin:0 10px 5px 0;background-color:#f7f7f7;overflow:hidden;}
+#jdt img{width:240px;height:180px;}
+#jdt p{display:none;overflow:hidden;}
+#jdt_page{position: absolute;left:0;width:243px;margin-top:-23px;filter:alpha(opacity=80);text-align:right;}
+#jdt_page strong{background:#009A91;color:#fff;padding:1px 4px;margin:0 2px;}
+#jdt_page a{border:1px solid #B6CFCD;padding:0px 3px;margin:0 2px;color:#009A91;background:#fff;text-decoration:none;}
+
+#jd{float:left;width:404px;height:423px;border:1px solid #ccc;background:url(/template/liaocheng/liaocheng/img/jd.gif) no-repeat;padding:4px;overflow:hidden;}
+#jd h3{font-size:16px;text-align: center;padding:4px 0 0 40px;white-space:nowrap;overflow:hidden;}
+#jd h3 a{color:#f60;}
+#jd p{text-align:left;height:53px;line-height:17px;color:#888;text-indent: 2em;margin:3px;border-bottom:1px dotted #ccc;overflow:hidden;}
+#jd ul{width:414px;height:340px;overflow:hidden;}
+#jd ul li{float:left;width:192px;padding-left:10px;height:20px;line-height:20px;background:url(/template/liaocheng/liaocheng/img/ico_0.gif) no-repeat 3px 7px;overflow:hidden;}
+
+
+.news_pic{float:left;width:683px;height:108px;border: 1px solid #ccc;margin-top:5px;overflow:hidden;}
+.news_pic h5{float: left;padding:8px 4px;width:18px;height:95px;text-align:center;line-height:24px;background:#f5f5f5;color:#333;}
+.news_pic h5 a:link,.news_pic h5 a:visited{color:#333;}
+.news_pic ul{float:left;width:650px;padding:4px 2px;overflow:hidden;}
+.news_pic ul li{ float:left; width:128px;margin:0 1px;height:105px; text-align:center; white-space:nowrap; text-overflow:ellipsis; overflow:hidden;}
+.news_pic ul li img{width:113px;height:85px;}
+
+.chanpin{float:left;width:674px;height:231px;border: 1px solid #ccc;margin-right:10px;overflow:hidden;}
+.chanpin h5{float: left;padding:4px 4px;width:18px;height:223px;text-align:center;line-height:24px;background:#f5f5f5;color:#333;}
+.chanpin h5 a,.chanpin h5 a:link,.news_pic h5 a:visited,.news_pic h5 a:hover{color:#333;}
+.chanpin ul{float:left;width:640px;padding:4px 2px;overflow:hidden;}
+.chanpin ul li{ float:left; width:125px;margin:0 1px;height:115px; text-align:center; white-space:nowrap; text-overflow:ellipsis; overflow:hidden;}
+.chanpin ul li img{width:80px;height:80px;padding:4px;border: 1px solid #ddd;}
+
+.box_l{margin-left:10px;}
+.box1{float:left;width:331px;border: 1px solid #ccc;overflow:hidden;}
+.box1 h5{position:relative;height:24px;line-height:24px;padding-left:10px;background:url(/template/liaocheng/liaocheng/img/box_bj0.gif);border-bottom: 1px solid #ccc;}
+.box1 h5 a{position:absolute;left:10px;bottom:-1px;background: #fff; border: 1px solid #ccc;border-bottom:0;text-align:center;height:21px;line-height:21px;padding:0 10px;text-decoration:none;}
+.box1 h5 .more{ position:relative; float:right; margin-right:10px; background: none; border:0; font-weight: normal;height:24px;line-height:24px;}
+.box1 h5 a:link,.box1 h5 a:visited{color:#333;}
+.box1 ul{margin:3px 4px;overflow:hidden;}
+.box1 ul li{width:311px;padding:0 0 0 10px;height:20px;line-height:20px;background:url(/template/liaocheng/liaocheng/img/ico_0.gif) no-repeat 0px 9px;overflow:hidden;}
+.box1 ul li span{float:right;color:#999;} 
+.box1 .news{width:321px;margin:0 0 0 5px;padding:2px 0 0 0;border-top: 1px dotted #ccc;overflow:hidden;}
+.box1 .news li{width:311px;padding:0 0 0 10px;height:20px;line-height:20px;background:url(/template/liaocheng/liaocheng/img/ico_0.gif) no-repeat 0px 9px;overflow:hidden;}
+.box1 .news li span{float:right;color:#999;} 
+.box1 .pic{float: left;padding:5px 0 2px 10px;overflow:hidden; }
+.box1 .pic img{width:100px;height:75px;}
+.box1 .hot{float:left;width:200px;height:79px;padding:5px 5px 0px 10px;border:0;margin:0;overflow:hidden;}
+.box1 .hot li{width:205px;padding:0px;line-height:20px; white-space:nowrap; text-overflow:ellipsis; overflow:hidden; background:none;}
+.box2{width:259px;border: 1px solid #ccc;overflow:hidden;}
+.box2 h5{position:relative;height:24px;line-height:24px;padding-left:10px;background:url(/template/liaocheng/liaocheng/img/box_bj0.gif);border-bottom: 1px solid #ccc;}
+.box2 h5 a{position:absolute;left:10px;bottom:-1px;background: #fff; border: 1px solid #ccc;border-bottom:0;text-align:center;height:21px;line-height:21px;padding:0 10px;color:#333;text-decoration:none;}
+.box2 h5 a:link,.box2 h5 a:visited{color:#333;}
+.box2 h5 .more{ position:relative; float:right; margin-right:10px; background: none; border:0; font-weight: normal;height:24px;line-height:24px;}
+.box2 .txt{height:80px;padding:2px 4px;overflow:hidden;}
+.box2 .txt li{height:20px;line-height:20px;margin-left:2px;}
+
+.box2 .ad{padding:0 4px;height:250px;clear:both;overflow:hidden;}
+.box2 .ico{padding:3px 4px;overflow:hidden;}
+.box2 .ico2{padding:5px 4px;overflow:hidden;}
+.box2 .ico li,.box2 .ico2 li{width:240px;padding:0 0 0 10px;height:20px;line-height:20px;background:url(/template/liaocheng/liaocheng/img/ico_0.gif) no-repeat 0px 9px;overflow:hidden;}
+.box2 .ico li span{float:right;color:#999;}
+.bm{width:250px;}
+.main_ggw{margin-bottom:5px;width:252px;height:35px;background-color: #99CCCC; overflow:hidden; }
+.main_search{margin-bottom:5px;padding:7px 0 0 4px; width:246px; background:url(/template/liaocheng/liaocheng/img/top-bj.gif) repeat-x 0 6px; height:26px; border:1px solid #ccc; overflow:hidden; }
+.main_vod{margin-bottom:6px;padding-left:40px;width:212px; background:#eee url(/template/liaocheng/liaocheng/img/vod_bj.gif); height:34px;line-height:34px;color:#666;overflow:hidden;}
+
+.qilist{margin:0px auto 5px auto; width:948px;overflow:hidden;}
+.qilist .box1,.qilist .box2{height:275px;}
+.ad_155{ margin:0px auto; width:954px;overflow:hidden;}
+.ad_155 img{float: left;width:155px;height:55px;padding:5px 2px;}
+.ad728{margin:5px auto; width:940px;border: 1px solid #ccc;padding: 2px;}
+
+.bm_tel{margin:0 auto 5px auto; width: 948px;height:150px;border: 1px solid #ccc;}
+.bm_tel h5{position:relative;height:24px;line-height:24px;padding-left:10px;background:url(/template/liaocheng/liaocheng/img/box_bj0.gif);border-bottom: 1px solid #ccc;}
+.bm_tel h5 strong{position:absolute;left:10px;bottom:-1px;background: #fff; border: 1px solid #ccc;border-bottom:0;text-align:center;height:21px;line-height:21px;padding:0 10px;text-decoration:none;}
+.bm_tel h5 span{ position:relative; float:right; margin-right:10px; background: none; border:0; font-weight: normal;height:24px;line-height:24px;color:#666;}
+.bm_tel ul{padding:3px 3px 0 13px;width: 930px;}
+.bm_tel ul li{float:left;width:155px;height:20px;line-height:20px;overflow:hidden;color:#333;}
+
+.ad728 p{float:right;line-height:145%;width:185px;height:90px;overflow:hidden;}
+#bottom{margin:0 auto;width:948px;text-align:center;overflow:hidden;}
+#bottom p{padding-bottom:5px;}
+#gg_txt{margin:0 auto 5px auto;width:940px;padding:3px 0px 3px 6px;border:1px solid #ccc;overflow:hidden;}
+#gg_txt li{float:left;padding-right:5px;width:230px;height:20px;line-height:20px;color:#ccc;overflow:hidden;}
+#gg_txt li a{padding-left:3px;}
+#gg_txt li font{height:20px;line-height:20px;}

@@ -1,0 +1,52 @@
+
+<div class="uk-container-center header">
+  <div class="uk-grid">
+    <div class="uk-width-2-3 uk-width-large-3-5 uk-width-medium-1-2 uk-width-small-1-3"><a href="{$web_url}" title="" class="logo"><img src="/uploads/images/logo.png?n={$encode_name}&w=400"></a></div>
+    <div class="uk-hidden-small uk-width-large-1-5 uk-width-medium-1-4 uk-width-small-1-3">
+      <div class="tel"></div>
+    </div>
+    <div class="uk-width-1-3 uk-width-large-1-5 uk-width-medium-1-4 uk-width-small-1-3">
+      <div class="language"><span class="uk-hidden-small">Language：</span><a href="#" class="active">中文</a> <a href="#">En</a></div>
+    </div>
+  </div>
+</div>
+<!--nav-->
+<nav class="uk-navbar uk-visible-large">
+  <div class="uk-container-center menu">
+    <ul class="uk-navbar-nav">
+      <li><a href="{网站地址}" title="首页" target="_self">首页 <span>HOME</span></a></li>
+	  <li><a href="{geturl tpl="list"/}">新闻中心</a></li>
+        <li><a href="{geturl tpl="about"/}">关于我们</a></li>
+        <li><a href="{geturl tpl="contact"/}">联系我们</a></li>
+	  {loop type="typename" row="4" tpl="product_list"}
+			<li><a href='{$vo.typeurl}'>{$vo.typename}</a></li>
+			{/loop}
+    </ul>
+  </div>
+</nav>
+<nav class="uk-navbar uk-hidden-large mobile-nav"> 
+  <!-- 这是开关抽屉式边栏的锚 --> 
+  <a href="#my-id" data-uk-offcanvas ></a> 
+  
+  <!-- 这是开关抽屉式边栏的按钮 -->
+  <button class="uk-button" data-uk-offcanvas="{target:'#my-id'}">网站栏目</button>
+  
+  <!-- 抽屉式边栏 -->
+  <div id="my-id" class="uk-offcanvas">
+    <div class="uk-offcanvas-bar">
+      <ul class="uk-nav uk-nav-offcanvas" data-uk-nav="">
+        <li><a href="{网站地址}" title="首页" target="_self">首页</a></li>
+	  <li><a href="{geturl tpl="list"/}">新闻中心</a></li>
+        <li><a href="{geturl tpl="about"/}">关于我们</a></li>
+        <li><a href="{geturl tpl="contact"/}">联系我们</a></li>
+	  {loop type="typename" row="4" tpl="product_list"}
+			<li><a href='{$vo.typeurl}'>{$vo.typename}</a></li>
+			{/loop}
+      </ul>
+    </div>
+  </div>
+  </div>
+</nav>
+<!-- 弹出式边栏 -->
+<div id="my-id" class="uk-offcanvas"> </div>
+</div>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!--[if IE]>
+<![if IE 5]><html class="ie ie5 lie9 lie8 lie7 lie6"><![endif]>
+	<![if IE 6]><html class="ie ie6 lie9 lie8 lie7"><![endif]>
+	<![if IE 7]><html class="ie ie7 lie9 lie8"><![endif]>
+	<![if IE 8]><html class="ie ie8 lie9"><![endif]>
+	<![if IE 9]><html class="ie ie9"><![endif]>
+	<![if !((IE 6)|(IE 7)|(IE 8)|(IE 9))]><html class="ie"><![endif]>
+<![endif]-->
+<!--[if !IE]><!-->
+<html lang="zh-CN" class="notie">
+<!--<![endif]-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>{$toptitle}</title>
+<meta name="description" content="{$description}" />
+<meta name="keywords" content="{$keywords}" />
+<link rel="stylesheet" type="text/css" href="{$theme_path}/skin/css/78002.css" >
+<script type="text/javascript" charset="utf-8" src="{$theme_path}/skin/js/jquery-1.9.1.min.js"></script>
+</head>
+<body>
+{include file="head.html" }
+<div class="banner">
+  <ul id="slides">
+    {loop type="typename" row="3"}
+    <li style="background:url('{getone name="common/banner"/}') no-repeat center top;z-index:1;"> <a href="javascript:"><span>{$vo.typename}</span></a> </li>
+    {/loop}
+  </ul>
+</div>
+<div class="main1">
+  <div class="container">
+    <div class="column-title c">
+      <div class="fl title">产品展示</div>
+      <div class="fr"> <a href="#" class="m1-cpzs-prev"></a>
+        <ul class="m1-cpzs-pages">
+        </ul>
+        <a href="#" class="m1-cpzs-next"></a> </div>
+    </div>
+    <div class="m1-cpzs c">
+      <ul>
+        {loop type="arclist" row="8" image="1" tpl='product_show' title="typename"}
+        <li>
+          <div class="img" ><a href="{$vo.url}" title="{$vo.title}"> <img src="{$vo.pic}" alt="{$vo.title}"/></a> </div>
+          <div class="title">{$vo.title}</div>
+          <div class="view"><a href="{$vo.url}" title="查看详情">查看详情</a></div>
+        </li>
+        {/loop}
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="main2">
+  <div class="container">
+    <div class="m2-2">
+      <div class="title">{网站名称}</div>
+      <p>{网站名称}{公司简介短}</p>
+      <div> <a href=" {geturl tpl="about"/}" class="m2-more">MORE>></a></div>
+    </div>
+    <div class="m2-1"> <img src="{$theme_path}/skin/images/img2.jpg" alt=""/> </div>
+    <div class="m2-3">
+      <div class="title"> 联系我们 </div>
+      <p><img src="{$theme_path}/skin/images/icon1.png" alt="{$web_name}"/><a href="Mailto:{联系邮箱}" style="color:#fff">{联系邮箱}</a></p>
+      <p><img src="{$theme_path}/skin/images/icon2.png" alt="{$web_name}"/>{联系电话}</p>
+      <p><img src="{$theme_path}/skin/images/icon3.png" alt="{$web_name}"/>{联系电话}</p>
+      <p><img src="{$theme_path}/skin/images/icon4.png" alt="{$web_name}"/>{全局固定数字10} </p>
+      <p><img src="{$theme_path}/skin/images/icon6.png" alt="{$web_name}"/>alibaban</p>
+      <p><img src="{$theme_path}/skin/images/icon5.png" alt="{$web_name}"/>{联系地址}</p>
+    </div>
+  </div>
+</div>
+<div class="main3">
+  <div class="container">
+    <div class="m3-in c">
+      <div class="m3-fl fl">
+        <div class="column-title c">
+          <div class="fl"><img src="{$theme_path}/skin/images/title_anli.jpg" alt="案例"></div>
+          <div class="fr" style="padding-right: 40px;"> <a href="{geturl tpl='product_list'/}"><img src="{$theme_path}/skin/images/more.jpg" alt="更多"/></a></div>
+        </div>
+        <ul class="m3-anli">
+          {loop type="arclist" row="3" image="1" tpl='product_show' title="typename" info=1}
+          <li>
+            <div class="fl"><a href="{$vo.url}" title="{$vo.title}"><img src="{$vo.pic}" alt="{$vo.title}" /></a></div>
+            <div class="fr">
+              <div class="title"><a href="{$vo.url}">{$vo.title}</a></div>
+              <p>{$vo.info}...</p>
+              <a href="{$vo.url}" class="more" title="more">[MORE>>]</a> </div>
+          </li>
+          {/loop}
+        </ul>
+      </div>
+      <div class="m3-fr fr">
+        <div class="column-title c">
+          <div class="fl"><img src="{$theme_path}/skin/images/title_xinwen.jpg" alt="新闻"></div>
+          <div class="fr"><a href="{geturl tpl='list'/}"><img src="{$theme_path}/skin/images/more.jpg" alt="更多"/></a></div>
+        </div>
+        <ul class="m3-xinwen">
+          {loop type="arclist" row="9"}
+          <li><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a>{$vo.postdate}</li>
+          {/loop}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+{include file="footer.html" }
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+
+<html><head><title>{$toptitle}</title>
+<meta content="text/html; charset=utf-8" http-equiv=content-type><!-- 让ie8采用ie7兼容模式 -->
+<meta content=ie=emulateie7 http-equiv=x-ua-compatible>
+<meta name="description" content="{$description}" />
+<meta name="keywords" content="{$keywords}" /><link 
+rel=stylesheet type=text/css 
+href="{$theme_path}/images/style.css" media=all><link 
+rel=stylesheet type=text/css 
+href="{$theme_path}/images/navmenu11.css" media=all>
+<meta name=robots content=all><link rel=icon type=image/x-icon 
+href="favicon.ico"><link rel="shortcut icon" type=image/x-icon 
+href="favicon.ico">
+<script language=javascript type=text/javascript 
+src="{$theme_path}/images/common.js"></script>
+
+<script language=javascript type=text/javascript 
+src="{$theme_path}/images/innerhtml.js"></script>
+
+<script language=javascript type=text/javascript 
+src="{$theme_path}/images/ajaxrequest.js"></script>
+
+<script language=javascript type=text/javascript 
+src="{$theme_path}/images/jquery.js"></script>
+
+<script language=javascript type=text/javascript 
+src="{$theme_path}/images/ads.js"></script>
+
+<script language=javascript type=text/javascript 
+src="{$theme_path}/images/configjs.htm"></script>
+
+<script language=javascript type=text/javascript 
+src="{$theme_path}/images/configjs.js"></script>
+
+
+
+<meta name=generator content="mshtml 8.00.6001.18999"></head>
+<body><a name=totop></a>
+<div id=htmlbody>
+{include file="head.html" }
+<div class=clear></div>
+
+<!-- [otcms] -->
+
+
+<div class=topad1>
+
+</div>
+<div class=clear></div>
+<div class=height5></div>
+<div class=clear></div>
+<div id=mainbody1>
+{loop type="typename" row=9}
+<div class=itembox3 style="margin-right:3px;">
+<dl>
+  <dt><a href='{$vo.typeurl}'>{$vo.typename}</a></dt>
+  <dd class=listarrow3>
+  <ul>
+
+
+    <div class=clear></div>
+    <ul>  
+	 {loop type="arclist" row=10}
+      <li>
+      <div class=right>&nbsp;{$vo.postdate}</div><a class=font1_2 title="{$vo.title}" 
+      href="{$vo.url}" 
+      target=_blank>{$vo.title}</a></li>
+     
+     {/loop}
+  
+  </ul></ul></dd></dl></div>
+{/loop}
+
+
+<div class=clear></div></div>
+<div class=clear></div>
+{include file="footer.html" }
+
+<div class=clear></div></div></body></html>

@@ -1,0 +1,28 @@
+<header>
+  <div class="inner headtop">
+  <div class="pp"><a href="{网站地址}" title="{网站名称}" id="web_logo">{网站名称}</a>
+  </div> <div class="top-nav list-none">
+      <li class="t"></li>
+	  <li class="b"></li>
+    </div>
+   <nav>
+	<ul class="list-none">
+		<li style='width:125px;' class='navdown'><a href='{网站地址}' title='网站首页' class='nav'><span>网站首页</span></a></li>
+		<li class="line"></li>
+		<li id='nav_1' style='width:125px;' ><a href="{geturl tpl="about"/}" 0 title='公司简介' class='hover-none nav'><span>公司简介</span></a><dl><dd><a href='{geturl tpl="about"/}' title='公司简介' >公司简介</a></dd><dd><a href="{geturl tpl="about"/}" title='企业文化' >企业文化</a></dd></dl></li>
+		<li class="line"></li>
+		
+		<li id='nav_3' style='width:125px;' ><a href="{geturl tpl='product_list'/}" title='产品展示' class='hover-none nav'><span>产品展示</span></a>
+			<dl>
+			{loop type="typename" row="8" tpl="product_list"}
+			<dd><a href='{$vo.typeurl}'>{$vo.typename}</a></dd>
+			{/loop}
+			</dl>
+		</li><li class="line"></li><li id='nav_4' style='width:125px;' ><a href="{geturl tpl='list'/}" title='新闻动态' class='hover-none nav'><span>新闻动态</span></a><dl><dd><a href="{geturl tpl='list'/}" title='公司新闻' >公司新闻</a></dd><dd><a href="{geturl tpl='list'/}" title='行业新闻' >行业新闻</a></dd></dl></li>
+		
+		<li class="line"></li><li id='nav_16' style='width:125px;' ><a href="{geturl tpl='product_list'/}"  title='成功案例' class='hover-none nav'><span>成功案例</span></a><dl><dd><a href='{geturl tpl='product_list'/}' title='成功案例' >成功案例</a></dd></dl></li>
+		
+		<li class="line"></li><li id='nav_5' style='width:125px;' ><a href="{geturl tpl='contact'/}"  title='客户服务' class='hover-none nav'><span>客户服务</span></a><dl><dd><a href="{geturl tpl='contact'/}" title='售后服务' >售后服务</a></dd><dd><a href="{geturl tpl='contact'/}" title='技术支持' >技术支持</a></dd></dl></li><li class="line"></li><li id='nav_6' style='width:125px;' ><a href="{geturl tpl='job_list'/}"  title='人才招聘' class='hover-none nav'><span>人才招聘</span></a></li><li class="line"></li><li id='nav_27' style='width:125px;' ><a href="{geturl tpl='contact'/}"  title='联系我们' class='hover-none nav'><span>联系我们</span></a><dl><dd><a href="{geturl tpl='contact'/}" title='联系我们' >联系我们</a></dd><dd><a href="{geturl tpl='contact'/}" title='在线留言' >在线留言</a></dd></dl></li></ul></nav>
+
+  </div>
+</header>

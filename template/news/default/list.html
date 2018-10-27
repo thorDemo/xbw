@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{$toptitle}</title>
+<meta name="keywords" content="{$keywords}" />
+<meta name="description" content="{$description}" />
+<link rel="stylesheet" href="{$theme_path}/skin/style.css" type="text/css" />
+<script type="text/javascript" src="{$theme_path}/skin/js/jquery.min.js"></script>
+<script type="text/javascript" src="{$theme_path}/skin/js/gotop.js"></script>
+</head>
+<body>
+{include file="head.html"}
+<div class="weizhi">您的当前位置：<a href="/">首页</a> > <a href="{$thisurl}">{$typename}</a></div>
+<div class="main1">
+	<div class="left_1">
+    	<div class="g_list">
+            <div class="t_4"><h3 >{$typename}</h3></div>
+            <ul class="list2">
+            	{loop type="arclist" row=20 image=1 info=1}
+                <li >
+                    <a href="{$vo.url}"><img src="{$vo.pic}" alt="{$vo.title}" /></a>
+                    <h3 ><a href="{$vo.url}">{$vo.title}</a></h3>
+                    <p >{$vo.info}...</p>
+                    <span >时间：{$vo.postdate}</span>
+                </li>
+                {/loop}
+            </ul>
+            <div class="dede_pages">
+                <ul class="pagelist">
+                    {loop type="typename" }<a href="{$vo.typeurl}">[{$k+1}]</a>{/loop}
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="right_1">
+    	<div class="g_box2 u_2">
+        	<div class="t_1">栏目分类</div>
+            <ul class="menu">
+                {loop type="typename" row=8}
+                  <li ><a href='{$vo.typeurl}'>{$vo.typename}</a></li>
+                  {/loop}
+                <div class="clear"></div>
+            </ul>
+        </div>
+    	<div class="g_box2 u_2">
+        	<div class="t_1">最新文章</div>
+            <ul class="b_box3 u_1">
+            	{loop type="arclist" row="10"}
+                <li ><a href="{$vo.url}">{$vo.title}</a></li>
+                {/loop}
+            </ul>
+        </div>
+    	<div class="g_box2 u_2">
+        	<div class="t_1">热门文章</div>
+            <ul class="b_box1">
+            	{loop type="link" row="10"}
+                <li ><a href="{$vo.url}">{$vo.title}</a></li>
+                {/loop}
+            </ul>
+        </div>
+    </div>
+    <div class="clear"></div>
+</div>
+{include file="footer.html" }
+</body>
+</html>

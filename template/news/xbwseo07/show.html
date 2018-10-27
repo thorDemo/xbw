@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{$toptitle}</title>
+<meta name="keywords" content="{$keywords}" />
+<meta name="description" content="{$description}" />
+<link rel="stylesheet" href="{$theme_path}/css/style.css" type="text/css" />
+<link rel="stylesheet" href="{$theme_path}/css/page.css" type="text/css" />
+<link rel="stylesheet" href="{$theme_path}/css/layout.css" type="text/css" />
+</head>
+<body class="home">
+{include file="head.html"}
+<!-- /header -->
+<div class="main4">
+	<div class="m4_left FL">
+    	<div class="m4_t1">当前位置：<a href="/">首页</a> > <a href="{$typeurl}">{$typename}</a> > <a href="{$thisurl}">{$title}</a> 正文</div>
+        <div class="m4_box3">
+        	<!-- Baidu Button BEGIN -->
+            <div id="bdshare" class="bdshare_b" style="line-height: 12px;"><img src="http://bdimg.share.baidu.com/static/images/type-button-5.jpg" />
+            </div>
+			<script type="text/javascript" id="bdshare_js" data="type=button&amp;uid=336026" ></script>
+            <script type="text/javascript" id="bdshell_js"></script>
+            <script type="text/javascript">
+                document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + new Date().getHours();
+            </script>
+            <!-- Baidu Button END -->
+        </div>
+        <h2 class="m4_box4">{$title}</h2>
+        <div class="m4_box5">时间：{$postdate} 来源：<a href="{$web_url}">{$web_name}</a> 作者：{typename type="name"/}</div>
+        <div class="m4_box6">
+        	{$body}
+            <p style="text-align:right;">(责任编辑：{typename type="name"/})</p>
+        </div>
+        <div class="dede_pagess">
+			<ul class="pagelist">
+        	{loop type="arclist" row=10}<a href="{$vo.typeurl}">[{$k+1}]</a>{/loop}
+			</ul>
+		</div>
+        
+        <div class="m4_box7">
+        	上一篇：{loop type="arclist" row=1 }<a href="{$vo.url}">{$vo.title}</a>{/loop}<br />
+			下一篇：{loop type="arclist" row=1 }<a href="{$vo.url}">{$vo.title}</a>{/loop}
+        </div>
+        <div class="m4_box8">
+        	<div class="m4_t2">相关内容</div>
+            <ul>
+            	{loop type="arclist" row="16" fan=1}
+               	<li >·<a href="{$vo.url}">{$vo.title}</a></li>
+           		{/loop}
+                <div class="clear"></div>
+            </ul>
+        </div>
+    </div>
+    <div class="m4_right FR">
+        <div class="m4_box2">
+        	<div class="m4_t2">最新内容</div>
+            <ul>
+                {loop type="arclist" row="10"}
+                <li >·<a href="{$vo.url}">{$vo.title}</a></li>
+                {/loop}
+            </ul>
+        </div>
+        <div class="m4_box2">
+        	<div class="m4_t2">推荐内容</div>
+            <ul>
+                {loop type="link" row="10"}
+                <li >·<a href="{$vo.url}">{$vo.title}</a></li>
+                {/loop}
+            </ul>
+        </div>
+        <div class="m4_box2">
+        	<div class="m4_t2">热点内容</div>
+            <ul>
+                {loop type="arclist" row="10"}
+                <li >·<a href="{$vo.url}">{$vo.title}</a></li>
+                {/loop}
+            </ul>
+        </div>
+    </div>
+    <div class="clear"></div>
+</div>
+{include file="footer.html" }
+<!-- /footer -->
+
+</body>
+</html>

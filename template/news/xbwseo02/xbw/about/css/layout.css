@@ -1,0 +1,106 @@
+
+/* CSS Document */
+body{font:12px/150% "宋体",arial,verdana,sans-serif;color:#777;background:#fff;margin:0;padding:0;}
+p,dl,dt,dd,ul,li,form,h1,h2,h3,h4,h5,h6{margin:0;padding:0;}
+img{border:0;}
+li{list-style:none;}
+.cfix:after{content:".";visibility:hidden;display:block;clear:both;height:0;}
+.cfix{zoom:1;}
+.clear{clear:both;height:0;overflow:hidden;}
+.tar{text-align:right;}
+.tac{text-align:center;}
+.fl{float:left;}
+.fr{float:right;}
+.rel{position:relative;}
+.mb10{margin-bottom:10px;}
+.pad15{padding:15px;}
+.border{border:1px solid #BFE6F4;}
+.area{width:960px;margin:0 auto 10px;}
+.cont{width:960px;margin:0 auto;}
+
+a{color:#1a65b6;text-decoration:none;}
+a:hover{text-decoration:underline; }
+
+.cGrey,.cGrey a{color:#777;}
+.cGrey1,.cGrey1 a{color:#999;}
+
+.topNav{background:#EFEFEF;height:21px;line-height:21px;overflow:hidden;color:#474747;}
+.topNav a{color:#474747;}
+.topNav a:hover{color:#69AB11;text-decoration:none;}
+.topNav .login{width:260px;overflow:hidden;text-align:right;}
+.topNav .login .username{display:block;width:90px;word-break:break-all;height:18px;overflow:hidden;float:right;text-align:right;}
+
+/* module.css */
+#header .wrap , #nav , .content , #footer { width: 960px; margin: 80px auto; }
+/* module.css */
+#header .wrap{width:960px;margin:0 auto;position: relative;height:88px;overflow:hidden;}
+#header h1 { position: absolute; top: 0; left: 0; }
+#header h1 a { display: block; width: 240px; height: 88px; }
+
+#header .search .text { border: 0; width: 362px; height: 23px; padding: 8px 0 0 12px; font: 14px Arial; color: #727073; background: none; }
+#header .search p { color: #a3ecfd; width: 372px; padding-left: 2px; height: 20px; line-height: 20px; overflow: hidden; word-spacing: 5px; }
+#header .search p a { color: #fff; text-decoration: none; }
+#header .search p a:hover { text-decoration: underline; }
+
+.mainNav ul{padding-left:36px;}
+.mainNav li{float:left;}
+.mainNav li a.home{margin:0;;z-index:500;}
+.mainNav .adorn1{left:-5px; }
+.mainNav .adorn2{right:-5px;background-position:0 -31px;}
+
+#footer { padding-top: 10px; text-align: center; color: #727272; word-spacing: 2px; word-spacing: 5px\9; }
+#footer p { padding-bottom: 10px; }
+#footer span { position: relative; bottom: 20px; }
+
+
+#topbar .wrap { width: 960px; height: 34px; margin: 0 auto; position: relative;overflow:hidden;}
+#topbar h1 { position: absolute; top: 0; left: 0; }
+#topbar .nav { position: absolute; top: 9px; left: 230px; word-spacing: 4px; }
+#topbar .topbox { float: right; }
+#topbar .search .text { border: 0; width: 166px; height: 18px; padding-left: 12px; font: 14px Arial; color: #727073; background: none; position: relative; top: -1px; }
+#small_btn { position: relative; left: 6px; top: 0; }
+
+#topbar .user { float: left; height: 35px; line-height: 35px; }
+
+#topbar .navLeft{width:600px;float:left;padding-top:6px;overflow:hidden;}
+#topbar .navLeft li{float:left;line-height:24px;width:65px;height:24px;}
+
+.box_q{width:960px; margin:0px auto 10px auto; display:block; overflow:hidden; zoom:1;}
+.menu_q strong{width:87px; text-align:center; float:left; display:inline; overflow:hidden; zoom:1; color:#1B67B2; margin-right:10px;}
+.menu_q a{margin:0px 15px;}
+.menu_q a.on_q{font-weight:bold; color:#343434;}
+
+
+.logo_ln { width:196px; height:35px; position:absolute; top:15px; left:10px;}
+.ssnr_ln { width:100%; height:70px; display:block; overflow:hidden; margin:0px; padding:33px 0px 0px;}
+.ssnr_ln .ul01_ln { width:440px; height:30px; display:inline; float:right; margin:2px 0px 0px; padding:0px; list-style:none;}
+.ssnr_ln .ul01_ln li a { font-size:14px; color:#666; font-weight:bold;}
+.ssnr_ln .ul01_ln .on a { font-size:14px; color:#FFF; font-weight:bold;}
+
+.navLab .logoLab{width:196px;height:35px;float:left;}
+.navLab .uls1{padding:13px 15px 0 0;}
+.navLab .uls1 li a{font-size:14px;color:#666;font-weight:bold;display:block;}
+.navLab .uls1 li.sel a{color:#fff;}
+.navLab .uls1 li a:hover{text-decoration:none;}
+
+.linkbox{
+	padding:10px 8px;
+	border-bottom:1px solid #EEE;
+}
+.linkbox ul{
+	margin-left:30px;
+}
+.linkbox li{
+	float:left; width:70px; padding-left:10px; 
+}
+.linkbox li a{
+	font-size:13px;
+	color:#693;
+	font-weight:bold;
+}
+.linkbox h3,.linkbox h3 a{
+	clear:left;
+	font-size:16px;
+	color:#693;
+}
+

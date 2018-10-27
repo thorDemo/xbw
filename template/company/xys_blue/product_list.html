@@ -1,0 +1,56 @@
+<html class="uk-notouch"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{$toptitle}</title>
+<meta name="description" content="{$description}" />
+<meta name="keywords" content="{$keywords}" />
+<meta http-equiv="X-UA-Compatible" content="edge">
+<link rel="stylesheet" href="{$theme_path}/css/uikit.css">
+<link rel="stylesheet" href="{$theme_path}/css/iven.css">
+<link rel="stylesheet" href="{$theme_path}/css/slideshow.css">
+<link rel="stylesheet" href="{$theme_path}/css/slidenav.css">
+<link rel="stylesheet" href="{$theme_path}/css/responsive.css">
+<script src="{$theme_path}/js/jquery-1.11.1.min.js"></script>
+<script src="{$theme_path}/js/uikit.min.js"></script>
+<script src="{$theme_path}/js/slideshow.js"></script>
+<script src="{$theme_path}/js/slideshow-fx.min.js"></script>
+</head>
+<body onLoad="init()">
+<!--header-->
+	{include file="head.html" } 
+<!--banner-->
+<div class="page_banner"><img src="{$theme_path}/images/0a4d91cac1fe2554.jpg" alt="产品展示"></div>
+<!--nav sub-->
+<div class="nav-sub">
+	<img src="{$theme_path}/images/pro-subtitle.jpg">
+    <div class="sub-nav">
+      {loop type="typename" tpl="product_list" row="6"}
+    	     <a href="{$vo.typeurl}" title="{$vo.typename}" >{$vo.typename}</a>
+	   {/loop}
+		    </div>
+</div>
+<!--products-->
+<div class="uk-container-center pro-page">
+	<div class="uk-grid uk-grid-medium">
+      {loop type="arclist" tpl="product_show" image=1 info=1 row=12}
+    
+		<div class="uk-width-large-1-4 uk-width-medium-1-3 uk-width-small-1-2">
+		<div class="pro-box">
+			<a href="{$vo.url}" title="{$vo.title}"><img src="{$vo.pic}" alt="{$vo.title}" width="276" height="206"></a>
+		  <h4 class="pro-title">{$vo.title}</h4>
+			<p>{$vo.info}...</p>
+		</div>
+	</div>
+		{/loop} 
+        
+		
+	</div><!--uk-grid end-->
+    <div class="pages">
+<ul>
+		{loop type="typename" tpl="product_list" }<a href="{$vo.typeurl}">[{$k+1}]</a>{/loop} 
+	</ul>
+</div><br>
+</div>
+<!--footer-->
+{include file="foot.html" } 
+</body></html>

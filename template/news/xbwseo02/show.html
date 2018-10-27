@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{$toptitle}</title>
+<meta name="keywords" content="{$keywords}" />
+<meta name="description" content="{$description}" />
+
+<link rel="stylesheet" type="text/css" href="{$theme_path}/data/cache/style_11_common.css" />
+<link rel="stylesheet" type="text/css" href="{$theme_path}/data/cache/style_11_forum_viewthread.css" />
+<script src="{$theme_path}/static/js/common.js" type="text/javascript"></script>
+<script src="{$theme_path}/static/js/forum.js" type="text/javascript"></script>
+<script src="{$theme_path}/static/js/forum_viewthread.js" type="text/javascript"></script>
+
+</head>
+<body id="nv_portal" class="pg_index">
+{include file="head.html"}
+<!-- /header -->
+    <div class="moke-main">
+<div id="wp" class="wp">
+
+<div id="pt" class="bm cl">
+
+ <div class="place">当前位置：<a href="/">首页</a> > <a href="{$typeurl}">{$typename}</a> > <a href="{$thisurl}">{$title}</a> </div>
+</div>
+<style id="diy_style" type="text/css"></style>
+
+<div class="wp">
+
+<!--[diy=diy1]--><div id="diy1" class="area"></div><!--[/diy]-->
+
+</div>
+<div id="ct" class="wp cl">
+<div class="ctl">
+<div id="postlist" class="pl">
+<div id="post_35903">
+
+<table id="pid35903" summary="pid35903" cellspacing="0" cellpadding="0">
+<tr>
+<td id="plc_35903" class="plc">
+        <div class="plcinfo">
+<div class="mtm pbm bbda" style="text-align:center; border-bottom:0px;">
+<h1 >{$title}</h2>
+</div>
+
+<div class="line pi">          
+<div class="pti">
+<div class="authi xg1" style="text-align:center">
+<em id="authorposton35903">发表于 <span title="{$postdate}">{$postdate}</span></em>
+来源：<a href="{$web_url}">{$web_name}</a>
+</div>
+
+</div>
+
+</div><div class="pct">
+
+<style type="text/css">.pcb{margin-right:0}</style>
+
+<div class="pcb">            
+<div class="t_fsz">
+
+<table cellspacing="0" cellpadding="0" align="center"><tr><td class="t_f">
+{$body}
+</table>
+</div>
+
+</div></div>
+        
+        <div class="contxt">
+    <ul>
+     <li >上一篇：{loop type="arclist" row=1 }<a href="{$vo.url}">{$vo.title}</a>{/loop}</li>
+     <li >下一篇：{loop type="arclist" row=1 }<a href="{$vo.url}">{$vo.title}</a>{/loop}</li>
+    </ul>
+        </div>
+  <!-- //顶踩 -->
+
+<div id="p_btn">
+
+
+<div class="newdigg" id="newdigg">
+<a  rel="nofollow" id="recommend_add" onclick="javascript:postDigg('good',{$id})" onmouseover="this.title = $('recommendv_add').innerHTML + ' 人喜欢'"><i><img src="{$theme_path}/static/image/common/rec_add.gif" alt="喜欢" />喜欢<span id="recommendv_add">{rand(0,100)}</span></i></a>
+
+
+<a  rel="nofollow" id="recommend_subtract" onclick="javascript:postDigg('bad',{$id})" onmouseover="this.title = $('recommendv_subtract').innerHTML + ' 人讨厌'"><i><img src="{$theme_path}/static/image/common/rec_subtract.gif" alt="讨厌" />讨厌<span id="recommendv_subtract">{rand(0,100)}</span></i></a>
+</div>
+</div> 
+      </div>
+</td>
+</tr>
+</table>
+</div>
+<div id="postlistreply"><div id="post_new" class="viewthread_table" style="display: none"></div></div>
+</div>
+<!--[随机筛选开始]-->     
+<div id="related_article" class="bm">
+<div class="bm_h cl tab rel">
+<strong>随机为您推荐</strong>
+</div>
+<div class="bm_c list10">
+<ul name="tabul">
+      {loop type="arclist" row="6"}
+
+
+    <li > <span class="name"><a href="{$vo.url}"  target="_blank">{$vo.title}</a></span></li> 
+
+      {/loop}
+</ul>
+</div>
+</div>
+
+</div>
+
+{include file="right.html" }
+{include file="footer.html" }
+</body>
+</html>

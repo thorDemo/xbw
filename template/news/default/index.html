@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{$toptitle}</title>
+<meta name="description" content="{$description}" />
+<meta name="keywords" content="{$keywords}" />
+<link rel="stylesheet" href="{$theme_path}/skin/style.css" type="text/css" />
+<script type="text/javascript" src="{$theme_path}/skin/js/jquery.min.js"></script>
+<script type="text/javascript" src="{$theme_path}/skin/js/jquery.SuperSlide.2.1.1.js"></script>
+<script type="text/javascript" src="{$theme_path}/skin/js/gotop.js"></script>
+<style>.home{background:#008d49;}</style>
+</head>
+<body>
+{include file="head.html"}
+
+<div class="main1">
+	<div class="g_box6 fl">
+    	<div id="slideBox" class="slideBox">
+            <div class="hd">
+                <ul>
+                    {loop type="arclist" row="5"}
+                    <li ><a href="{$vo.url}">{$vo.title}</a></li>
+                    {/loop}
+                </ul>
+            </div>
+            <div class="bd">
+                <ul>
+                    {loop type="arclist" row="5" image=1}
+                    <li >
+                        <div class="pic"><a href="{$vo.url}"><img src="{$vo.pic}" alt="{$vo.title}" /></a></div>
+                        <div class="tit"><a href="{$vo.url}">{$vo.title}</a></div>
+                        <div class="bg"></div>
+                    </li>
+                    {/loop}
+                </ul>
+            </div>
+        </div>
+        <script type="text/javascript">
+            jQuery("#slideBox").slide({ mainCell:".bd ul",autoPlay:true,effect:"left",
+                endFun:function(i,c){
+                    jQuery("#slideBox .tit").css({"bottom":-40}).eq(i).animate({"bottom":0});
+                    jQuery("#slideBox .bg").css({"bottom":-40}).eq(i).animate({"bottom":0});
+                }
+            });
+        </script>
+        <div class="g_box2">
+        	<div class="t_1">编辑推荐</div>
+            <ul class="b_box3">
+            	{loop type="arclist" row="10"}
+                <li ><a href="{$vo.url}">{$vo.title}</a></li>
+                {/loop}
+            </ul>
+        </div>
+    </div>
+    <div class="g_box1 fl">
+    	<div class="t_1">最新文章</div>
+        {loop type="arclist" info=1 row=1}
+        <h1 ><a href="{$vo.url}">{$vo.title}</a></h1>
+		<p >{$vo.info}……</p>
+        {/loop}
+        <ul>
+        	{loop type="arclist" row=6}
+        	<li ><a href="{$vo.url}">{$vo.title}</a></li>
+        	{/loop}
+            <div class="clear"></div>
+        </ul>
+        {loop type="arclist" row=1 info=1}
+        <h1 ><a href="{$vo.url}">{$vo.title}</a></h1>
+		<p >{$vo.info}……</p>
+        {/loop}
+        <ul>
+        	{loop type="arclist" row=6}
+        	<li ><a href="{$vo.url}">{$vo.title}</a></li>
+        	{/loop}
+            <div class="clear"></div>
+        </ul>
+        {loop type="arclist" row=1 info=1}
+        <h1 ><a href="{$vo.url}">{$vo.title}</a></h1>
+		<p >{$vo.info}……</p>
+        {/loop}
+        <ul>
+        	{loop type="arclist" row=6}
+        	<li ><a href="{$vo.url}">{$vo.title}</a></li>
+        	{/loop}
+            <div class="clear"></div>
+        </ul>
+    </div>
+    <div class="right_1 fr">
+    	<div class="g_box2">
+        	<div class="t_1">热门文章</div>
+            <ul class="b_box1">
+            	{loop type="link" row="10"}
+                <li ><a href="{$vo.url}">{$vo.title}</a></li>
+                {/loop}
+            </ul>
+        </div>
+    </div>
+    <div class="clear"></div>
+</div>
+{loop type="typename" row=3}
+<div class="main2">
+	<div class="t_2">
+    	<span >
+        	<a href='{$vo.typeurl}'>{$vo.typename}</a>
+           	<a href="{$vo.typeurl}">更多>></a> 
+        </span>
+    	<h3 ><a href="{$vo.typeurl}">{$vo.typename}</a></h3>
+    </div>
+    <div class="g_box3 fl">
+        <ul class="b_box2">
+        	{loop type="arclist" row="2" info=1}
+        	<li >
+            	<a href="{$vo.url}">{$vo.title}</a>
+                {$vo.info}...
+            </li>
+        	{/loop}
+        </ul>
+        <ul class="b_box3">
+        	{loop type="arclist" row="6"}
+			<li ><a href="{$vo.url}">{$vo.title}</a></li>
+			{/loop}
+        </ul>
+    </div>
+    <div class="g_box4 fl">
+    	{loop type="arclist" row="1" info=1}
+        <h3 ><a href="{$vo.url}">{$vo.title}</a></h3>
+		<p >{$vo.info}…</p>
+        {/loop}
+        <ul class="b_box8">
+        	{loop type="arclist" row="3" info=1 image=1}
+			<li >
+                <a href="{$vo.url}"><img src="{$vo.pic}" alt="{$vo.title}" /></a>
+                <h4><em>【推荐】</em><a href="{$vo.url}">{$vo.title}</a></h4>
+                <p >{$vo.info}...</p>
+            </li>
+			{/loop}
+        </ul>
+    </div>
+    <div class="g_box3 fl">
+    	<div class="t_3">热门文章</div>
+        <ul class="b_box4">
+        	{loop type="arclist" row="10"}
+			<li ><a href="{$vo.url}">{$vo.title}</a></li>
+			{/loop}
+        </ul>
+    </div>
+    <div class="clear"></div>
+</div>
+{/loop}
+<div class="main2">
+	<div class="t_2">
+    	<span >
+        	{loop type="typename"}<a href='{$vo.typeurl}'>{$vo.typename}</a>|{/loop}
+           	<a href="#">更多>></a> 
+        </span>
+    	<h3 ><a href="#">图片</a></h3>
+    </div>
+    <ul class="b_box9">
+    	{loop type="arclist" row="10" image=1}
+        <li ><a href="{$vo.url}"><img src="{$vo.pic}" alt="{$vo.title}" /><p >{$vo.title}</p></a></li>
+        {/loop}
+        <div class="clear"></div>
+    </ul>
+</div>
+
+{include file="footer.html" }
+</body>
+</html>
