@@ -69,13 +69,10 @@
             <img src="<?=randPic('face')?>" height="100px" width="100px" alt=""/>
         </p>
         <span class="mobileyz" title="手机已认证"></span><br/>
-<<<<<<< HEAD
         <img src="<?php echo $this->_var['theme_path']; ?>/ico/<?=rand(1, 22);?>.gif" alt=""/><br/>积分：<?=rand(100,1000);?><br/>注册：> <?=randTime();?><br/>
         <img src="<?php echo $this->_var['theme_path']; ?>/img/jst_offline.gif" alt=""  style="cursor:pointer"/>
-=======
-        <img src="<?php echo $this->_var['theme_path']; ?>/img/<?=rand(1, 22);?>.gif"/><br/>积分：<?=rand(100,1000);?><br/>注册：> <?=randTime();?><br/>
+        <img src="<?php echo $this->_var['theme_path']; ?>/ico/<?=rand(1, 22);?>.gif"/><br/>积分：<?=rand(100,1000);?><br/>注册：> <?=randTime();?><br/>
         <img src="<?php echo $this->_var['theme_path']; ?>/img/jst_offline.gif" title="会员『<?=randName()?>』离线点击发送短信留言" align="absmiddle" style="cursor:pointer"/>
->>>>>>> 1f053514c1cfbff20ca82c952b8024dc4b86015a
     </div>
     <div class="r">
         <div class="xx"><span class="t">第2楼</span><a href="">信息</a><a
@@ -94,8 +91,8 @@
     <div class="p_list"><a href="/bbs/" class="arw_l">返回列表</a><span>1</span></div>
 </div>
 <div class="mainbox"><h3><a href="#top">↑返回顶部</a> * 快速发表贴子</h3>
-    <div style="margin:15px;">提示：您尚未注册或登录。会员请 [<a href="/huiyuan/login.aspx">登录</a>] ,不是会员？ [<a
-            href="/huiyuan/reg.aspx">免费注册</a>]
+    <div style="margin:15px;">提示：您尚未注册或登录。会员请 [<a href="/huiyuan/login.php">登录</a>] ,不是会员？ [<a
+            href="/huiyuan/reg.php">免费注册 </a>]
     </div>
 </div>
 <?php echo $this->fetch('show_footer.html'); ?>

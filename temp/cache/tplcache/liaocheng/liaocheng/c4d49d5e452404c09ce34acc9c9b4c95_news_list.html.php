@@ -21,7 +21,7 @@
         <div class="news_pic">
             <h5>图片文章</h5>
             <ul>
-                <?php $pic = randPic('liaocheng/liaocheng/images',5)?>
+                <?php $pic = randPic('news',5)?>
 	            <?php $article = randArticle('news_article',5)?>
 	            <?php for($i=0; $i<5; $i++):?>
                 <li><a href="<?=$article[$i]['url'];?>" target="_blank"><img src="<?=$pic[$i];?>" alt="<?=$article[$i]['title']; ?>"/><br/><?=$article[$i]['title']; ?></a></li>
@@ -35,7 +35,7 @@
                 <div class="pic">
                     <?php $article = randArticle('news_article')?>
                     <a href="<?= $article['url']?>" target="_blank">
-	                    <img src="<?=randPic()?>" alt="<?= $article['title']?>"/>
+	                    <img src="<?=randPic('news')?>" alt="<?= $article['title']?>"/>
                     </a>
                 </div>
                 <ul class="hot">
@@ -57,7 +57,7 @@
 	            <div class="pic">
                     <?php $article = randArticle('news_article')?>
 		            <a href="<?= $article['url']?>" target="_blank">
-			            <img src="<?=randPic()?>" alt="<?= $article['title']?>"/>
+			            <img src="<?=randPic('news')?>" alt="<?= $article['title']?>"/>
 		            </a>
 	            </div>
 	            <ul class="hot">
@@ -79,7 +79,7 @@
 	            <div class="pic">
                     <?php $article = randArticle('news_article')?>
 		            <a href="<?= $article['url']?>" target="_blank">
-			            <img src="<?=randPic()?>" alt="<?= $article['title']?>"/>
+			            <img src="<?=randPic('news')?>" alt="<?= $article['title']?>"/>
 		            </a>
 	            </div>
 	            <ul class="hot">
@@ -101,7 +101,7 @@
 	            <div class="pic">
                     <?php $article = randArticle('news_article')?>
 		            <a href="<?= $article['url']?>" target="_blank">
-			            <img src="<?=randPic()?>" alt="<?= $article['title']?>"/>
+			            <img src="<?=randPic('news')?>" alt="<?= $article['title']?>"/>
 		            </a>
 	            </div>
 	            <ul class="hot">
@@ -123,7 +123,7 @@
 	            <div class="pic">
                     <?php $article = randArticle('news_article')?>
 		            <a href="<?= $article['url']?>" target="_blank">
-			            <img src="<?=randPic()?>" alt="<?= $article['title']?>"/>
+			            <img src="<?=randPic('news')?>" alt="<?= $article['title']?>"/>
 		            </a>
 	            </div>
 	            <ul class="hot">
@@ -145,7 +145,7 @@
 	            <div class="pic">
                     <?php $article = randArticle('news_article')?>
 		            <a href="<?= $article['url']?>" target="_blank">
-			            <img src="<?=randPic()?>" alt="<?= $article['title']?>"/>
+			            <img src="<?=randPic('news')?>" alt="<?= $article['title']?>"/>
 		            </a>
 	            </div>
 	            <ul class="hot">
@@ -167,7 +167,7 @@
 	            <div class="pic">
                     <?php $article = randArticle('news_article')?>
 		            <a href="<?= $article['url']?>" target="_blank">
-			            <img src="<?=randPic()?>" alt="<?= $article['title']?>"/>
+			            <img src="<?=randPic('news')?>" alt="<?= $article['title']?>"/>
 		            </a>
 	            </div>
 	            <ul class="hot">
@@ -189,7 +189,7 @@
 	            <div class="pic">
                     <?php $article = randArticle('news_article')?>
 		            <a href="<?= $article['url']?>" target="_blank">
-			            <img src="<?=randPic()?>" alt="<?= $article['title']?>"/>
+			            <img src="<?=randPic('news')?>" alt="<?= $article['title']?>"/>
 		            </a>
 	            </div>
 	            <ul class="hot">
@@ -211,7 +211,7 @@
 	            <div class="pic">
                     <?php $article = randArticle('news_article')?>
 		            <a href="<?= $article['url']?>" target="_blank">
-			            <img src="<?=randPic()?>" alt="<?= $article['title']?>"/>
+			            <img src="<?=randPic('news')?>" alt="<?= $article['title']?>"/>
 		            </a>
 	            </div>
 	            <ul class="hot">
@@ -233,7 +233,7 @@
 	            <div class="pic">
                     <?php $article = randArticle('news_article')?>
 		            <a href="<?= $article['url']?>" target="_blank">
-			            <img src="<?=randPic()?>" alt="<?= $article['title']?>"/>
+			            <img src="<?=randPic('news')?>" alt="<?= $article['title']?>"/>
 		            </a>
 	            </div>
 	            <ul class="hot">
@@ -257,7 +257,7 @@
         <div class="box2">
             <div class="search">
                 <form action="/news_search.aspx" method="get" name="form">
-                    文章搜索：<input name="key" size="15" maxlength="10"/>
+                    文章搜索：<input name="key" size="15" maxlength="10" title="搜索"/>
                     <input name="submit" type="submit" value="搜索"/>
                 </form>
             </div>

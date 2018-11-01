@@ -84,7 +84,6 @@ function getArticle($table)
 	return $article;
 }
 
-//print_r(getArticle(''));
 
 /**
  * 获取随机3年内时间 Y-m-d
@@ -180,6 +179,13 @@ function randPic($type, $num=1){
     else {
         return array_splice($data,0, $num);
     }
+}
+
+function randLevel(){
+    $db = new myDatabase();
+    $mysql = $db->database;
+    $data = $mysql->rand('pic','path',['type'=>'level',]);
+    return $data[0];
 }
 
 //print_r(randPic('news',10));

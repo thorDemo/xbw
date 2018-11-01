@@ -24,7 +24,7 @@ function insertPic($path, $type){
  * @param $dirName
  * @return array|string
  */
-function getPic($dirName='liaocheng/liaocheng/face'){
+function getPic($dirName='liaocheng/liaocheng/ico'){
     $vendorDir = dirname(dirname(__FILE__));
     $baseDir = dirname($vendorDir);
     $target = array();
@@ -41,7 +41,7 @@ function getPic($dirName='liaocheng/liaocheng/face'){
         $target =  '/template/'.$dirName.'/'.$it;
         echo $target;
         echo chr(10);
-        insertPic($target,'face');
+        insertPic($target,'level');
     }
     return '';
 }
@@ -49,6 +49,4 @@ function getPic($dirName='liaocheng/liaocheng/face'){
 
 getPic();
 
-function scanPic(){
 
-}

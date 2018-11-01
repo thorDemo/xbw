@@ -41,8 +41,8 @@
                 <?php for($i=0; $i< count($article); $i++): ?>
 				<li>
 					<a href="<?= $article[$i]['url']; ?>" target="_blank">
-						<img src="<?=randPic('liaocheng/liaocheng/face')?>" style="width:60px;height:60px;" alt="<?= $article[$i]['title']; ?>"/>
-						<p><?= randName();?></>
+						<img src="<?=randPic('face')?>" style="width:60px;height:60px;" alt="<?= $article[$i]['title']; ?>"/>
+						<p><?= randName();?><p/>
 					</a>
 				</li>
                 <?php endfor;?>
@@ -51,7 +51,13 @@
 		<div class="box t_10">
 			<h5>赞助商推广链接</h5>
 			<div class="ad">
-
+                <?php $article = randArticle('bbs_article', 34);?>
+                <?php for($i=0; $i< 34; $i++): ?>
+                        <?php $article = randArticle('bbs_article', 33);?>
+                        <?php for($i=0; $i< 34; $i++): ?>
+		                    <li><a href="<?=$article[$i]['url'];?>" target="_blank"><?=$article[$i]['title'];?></a></li>
+                        <?php endfor;?>
+                <?php endfor;?>
 			</div>
 		</div>
 	</div>

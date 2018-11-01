@@ -6,7 +6,7 @@ return array (
     'cid' => '64',
     'dirname' => 'news',
   ),
-  '127.0.0.1:8000' => 
+  'localhost:8888' => 
   array (
     'id' => 5,
     'cid' => '64',
