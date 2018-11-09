@@ -22,7 +22,7 @@
             <h5>图片文章</h5>
             <ul>
                 <?php $pic = randPic('news',5)?>
-	            <?php $article = randArticle('news_article',5)?>
+	            <?php $article = randArticle('news',5)?>
 	            <?php for($i=0; $i<5; $i++):?>
                 <li><a href="<?=$article[$i]['url'];?>" target="_blank"><img src="<?=$pic[$i];?>" alt="<?=$article[$i]['title']; ?>"/><br/><?=$article[$i]['title']; ?></a></li>
                 <?php endfor;?>
@@ -31,21 +31,21 @@
         <div class="juhe">
 
             <div class="box1">
-                <div class="title"><h5>娱乐资讯</h5> <a href='<?php echo $this->tag_function_geturl(array( 'type'=>"show_list", 'tpl'=>"show_list", 'fan'=>"", )); ?>'>更多 >></a></div>
+                <div class="title"><h5>娱乐资讯</h5> <a href='<?=randList('news')?>'>更多 >></a></div>
                 <div class="pic">
-                    <?php $article = randArticle('news_article')?>
+                    <?php $article = randArticle('news')?>
                     <a href="<?= $article['url']?>" target="_blank">
 	                    <img src="<?=randPic('news')?>" alt="<?= $article['title']?>"/>
                     </a>
                 </div>
                 <ul class="hot">
-                    <?php $article = randArticle('news_article',4)?>
+                    <?php $article = randArticle('news',4)?>
                     <?php for($i=0; $i<4; $i++):?>
                     <li><a href="<?=$article[$i]['url']?>" target="_blank"><?=$article[$i]['title']?></a></li>
                     <?php endfor;?>
                 </ul>
                 <ul>
-                    <?php $article = randArticle('news_article',8)?>
+                    <?php $article = randArticle('news',8)?>
                     <?php for($i=0; $i<8; $i++):?>
 	                <li><span><?php echo date("m-d")?></span><a href="<?=$article[$i]['url']?>" target="_blank"><?=$article[$i]['title']?></a></li>
                     <?php endfor;?>
@@ -53,21 +53,21 @@
             </div>
 
             <div class="box1">
-                <div class="title"><h5>热点聚集</h5><a href='<?php echo $this->tag_function_geturl(array( 'type'=>"show_list", 'tpl'=>"show_list", 'fan'=>"", )); ?>'>更多 >></a></div>
+                <div class="title"><h5>热点聚集</h5><a href='<?=randList('news')?>''>更多 >></a></div>
 	            <div class="pic">
-                    <?php $article = randArticle('news_article')?>
+                    <?php $article = randArticle('news')?>
 		            <a href="<?= $article['url']?>" target="_blank">
 			            <img src="<?=randPic('news')?>" alt="<?= $article['title']?>"/>
 		            </a>
 	            </div>
 	            <ul class="hot">
-                    <?php $article = randArticle('news_article',4)?>
+                    <?php $article = randArticle('news',4)?>
                     <?php for($i=0; $i<4; $i++):?>
 			            <li><a href="<?=$article[$i]['url']?>" target="_blank"><?=$article[$i]['title']?></a></li>
                     <?php endfor;?>
 	            </ul>
 	            <ul>
-                    <?php $article = randArticle('news_article',8)?>
+                    <?php $article = randArticle('news',8)?>
                     <?php for($i=0; $i<8; $i++):?>
 			            <li><span><?php echo date("m-d")?></span><a href="<?=$article[$i]['url']?>" target="_blank"><?=$article[$i]['title']?></a></li>
                     <?php endfor;?>
@@ -75,21 +75,21 @@
             </div>
 
             <div class="box1">
-                <div class="title"><h5>民俗名胜</h5><a href='<?php echo $this->tag_function_geturl(array( 'type'=>"show_list", 'tpl'=>"show_list", 'fan'=>"", )); ?>'>更多 >></a></div>
+                <div class="title"><h5>民俗名胜</h5><a href='<?=randList('news')?>''>更多 >></a></div>
 	            <div class="pic">
-                    <?php $article = randArticle('news_article')?>
+                    <?php $article = randArticle('news')?>
 		            <a href="<?= $article['url']?>" target="_blank">
 			            <img src="<?=randPic('news')?>" alt="<?= $article['title']?>"/>
 		            </a>
 	            </div>
 	            <ul class="hot">
-                    <?php $article = randArticle('news_article',4)?>
+                    <?php $article = randArticle('news',4)?>
                     <?php for($i=0; $i<4; $i++):?>
 			            <li><a href="<?=$article[$i]['url']?>" target="_blank"><?=$article[$i]['title']?></a></li>
                     <?php endfor;?>
 	            </ul>
 	            <ul>
-                    <?php $article = randArticle('news_article',8)?>
+                    <?php $article = randArticle('news',8)?>
                     <?php for($i=0; $i<8; $i++):?>
 			            <li><span><?php echo date("m-d")?></span><a href="<?=$article[$i]['url']?>" target="_blank"><?=$article[$i]['title']?></a></li>
                     <?php endfor;?>
@@ -97,21 +97,21 @@
             </div>
 
             <div class="box1">
-                <div class="title"><h5>房产家居</h5><a href='<?php echo $this->tag_function_geturl(array( 'type'=>"show_list", 'tpl'=>"show_list", 'fan'=>"", )); ?>'>更多 >></a></div>
+                <div class="title"><h5>房产家居</h5><a href='<?=randList('news')?>''>更多 >></a></div>
 	            <div class="pic">
-                    <?php $article = randArticle('news_article')?>
+                    <?php $article = randArticle('news')?>
 		            <a href="<?= $article['url']?>" target="_blank">
 			            <img src="<?=randPic('news')?>" alt="<?= $article['title']?>"/>
 		            </a>
 	            </div>
 	            <ul class="hot">
-                    <?php $article = randArticle('news_article',4)?>
+                    <?php $article = randArticle('news',4)?>
                     <?php for($i=0; $i<4; $i++):?>
 			            <li><a href="<?=$article[$i]['url']?>" target="_blank"><?=$article[$i]['title']?></a></li>
                     <?php endfor;?>
 	            </ul>
 	            <ul>
-                    <?php $article = randArticle('news_article',8)?>
+                    <?php $article = randArticle('news',8)?>
                     <?php for($i=0; $i<8; $i++):?>
 			            <li><span><?php echo date("m-d")?></span><a href="<?=$article[$i]['url']?>" target="_blank"><?=$article[$i]['title']?></a></li>
                     <?php endfor;?>
@@ -119,21 +119,21 @@
             </div>
 
             <div class="box1">
-                <div class="title"><h5>聊城汽车</h5><a href='<?php echo $this->tag_function_geturl(array( 'type'=>"show_list", 'tpl'=>"show_list", 'fan'=>"", )); ?>'>更多 >></a></div>
+                <div class="title"><h5>聊城汽车</h5><a href='<?=randList('news')?>''>更多 >></a></div>
 	            <div class="pic">
-                    <?php $article = randArticle('news_article')?>
+                    <?php $article = randArticle('news')?>
 		            <a href="<?= $article['url']?>" target="_blank">
 			            <img src="<?=randPic('news')?>" alt="<?= $article['title']?>"/>
 		            </a>
 	            </div>
 	            <ul class="hot">
-                    <?php $article = randArticle('news_article',4)?>
+                    <?php $article = randArticle('news',4)?>
                     <?php for($i=0; $i<4; $i++):?>
 			            <li><a href="<?=$article[$i]['url']?>" target="_blank"><?=$article[$i]['title']?></a></li>
                     <?php endfor;?>
 	            </ul>
 	            <ul>
-                    <?php $article = randArticle('news_article',8)?>
+                    <?php $article = randArticle('news',8)?>
                     <?php for($i=0; $i<8; $i++):?>
 			            <li><span><?php echo date("m-d")?></span><a href="<?=$article[$i]['url']?>" target="_blank"><?=$article[$i]['title']?></a></li>
                     <?php endfor;?>
@@ -141,21 +141,21 @@
             </div>
 
             <div class="box1">
-                <div class="title"><h5>时尚生活</h5><a href='<?php echo $this->tag_function_geturl(array( 'type'=>"show_list", 'tpl'=>"show_list", 'fan'=>"", )); ?>'>更多 >></a></div>
+                <div class="title"><h5>时尚生活</h5><a href='<?=randList('news')?>''>更多 >></a></div>
 	            <div class="pic">
-                    <?php $article = randArticle('news_article')?>
+                    <?php $article = randArticle('news')?>
 		            <a href="<?= $article['url']?>" target="_blank">
 			            <img src="<?=randPic('news')?>" alt="<?= $article['title']?>"/>
 		            </a>
 	            </div>
 	            <ul class="hot">
-                    <?php $article = randArticle('news_article',4)?>
+                    <?php $article = randArticle('news',4)?>
                     <?php for($i=0; $i<4; $i++):?>
 			            <li><a href="<?=$article[$i]['url']?>" target="_blank"><?=$article[$i]['title']?></a></li>
                     <?php endfor;?>
 	            </ul>
 	            <ul>
-                    <?php $article = randArticle('news_article',8)?>
+                    <?php $article = randArticle('news',8)?>
                     <?php for($i=0; $i<8; $i++):?>
 			            <li><span><?php echo date("m-d")?></span><a href="<?=$article[$i]['url']?>" target="_blank"><?=$article[$i]['title']?></a></li>
                     <?php endfor;?>
@@ -163,21 +163,21 @@
             </div>
 
             <div class="box1">
-                <div class="title"><h5>健康养生</h5><a href='<?php echo $this->tag_function_geturl(array( 'type'=>"show_list", 'tpl'=>"show_list", 'fan'=>"", )); ?>'>更多 >></a></div>
+                <div class="title"><h5>健康养生</h5><a href='<?=randList('news')?>''>更多 >></a></div>
 	            <div class="pic">
-                    <?php $article = randArticle('news_article')?>
+                    <?php $article = randArticle('news')?>
 		            <a href="<?= $article['url']?>" target="_blank">
 			            <img src="<?=randPic('news')?>" alt="<?= $article['title']?>"/>
 		            </a>
 	            </div>
 	            <ul class="hot">
-                    <?php $article = randArticle('news_article',4)?>
+                    <?php $article = randArticle('news',4)?>
                     <?php for($i=0; $i<4; $i++):?>
 			            <li><a href="<?=$article[$i]['url']?>" target="_blank"><?=$article[$i]['title']?></a></li>
                     <?php endfor;?>
 	            </ul>
 	            <ul>
-                    <?php $article = randArticle('news_article',8)?>
+                    <?php $article = randArticle('news',8)?>
                     <?php for($i=0; $i<8; $i++):?>
 			            <li><span><?php echo date("m-d")?></span><a href="<?=$article[$i]['url']?>" target="_blank"><?=$article[$i]['title']?></a></li>
                     <?php endfor;?>
@@ -185,21 +185,21 @@
             </div>
 
             <div class="box1">
-                <div class="title"><h5>明星八卦</h5><a href='<?php echo $this->tag_function_geturl(array( 'type'=>"show_list", 'tpl'=>"show_list", 'fan'=>"", )); ?>'>更多 >></a></div>
+                <div class="title"><h5>明星八卦</h5><a href='<?=randList('news')?>''>更多 >></a></div>
 	            <div class="pic">
-                    <?php $article = randArticle('news_article')?>
+                    <?php $article = randArticle('news')?>
 		            <a href="<?= $article['url']?>" target="_blank">
 			            <img src="<?=randPic('news')?>" alt="<?= $article['title']?>"/>
 		            </a>
 	            </div>
 	            <ul class="hot">
-                    <?php $article = randArticle('news_article',4)?>
+                    <?php $article = randArticle('news',4)?>
                     <?php for($i=0; $i<4; $i++):?>
 			            <li><a href="<?=$article[$i]['url']?>" target="_blank"><?=$article[$i]['title']?></a></li>
                     <?php endfor;?>
 	            </ul>
 	            <ul>
-                    <?php $article = randArticle('news_article',8)?>
+                    <?php $article = randArticle('news',8)?>
                     <?php for($i=0; $i<8; $i++):?>
 			            <li><span><?php echo date("m-d")?></span><a href="<?=$article[$i]['url']?>" target="_blank"><?=$article[$i]['title']?></a></li>
                     <?php endfor;?>
@@ -207,21 +207,21 @@
             </div>
 
             <div class="box1">
-                <div class="title"><h5>财经频道</h5><a href='<?php echo $this->tag_function_geturl(array( 'type'=>"show_list", 'tpl'=>"show_list", 'fan'=>"", )); ?>'>更多 >></a></div>
+                <div class="title"><h5>财经频道</h5><a href='<?=randList('news')?>''>更多 >></a></div>
 	            <div class="pic">
-                    <?php $article = randArticle('news_article')?>
+                    <?php $article = randArticle('news')?>
 		            <a href="<?= $article['url']?>" target="_blank">
 			            <img src="<?=randPic('news')?>" alt="<?= $article['title']?>"/>
 		            </a>
 	            </div>
 	            <ul class="hot">
-                    <?php $article = randArticle('news_article',4)?>
+                    <?php $article = randArticle('news',4)?>
                     <?php for($i=0; $i<4; $i++):?>
 			            <li><a href="<?=$article[$i]['url']?>" target="_blank"><?=$article[$i]['title']?></a></li>
                     <?php endfor;?>
 	            </ul>
 	            <ul>
-                    <?php $article = randArticle('news_article',8)?>
+                    <?php $article = randArticle('news',8)?>
                     <?php for($i=0; $i<8; $i++):?>
 			            <li><span><?php echo date("m-d")?></span><a href="<?=$article[$i]['url']?>" target="_blank"><?=$article[$i]['title']?></a></li>
                     <?php endfor;?>
@@ -229,21 +229,21 @@
             </div>
 
             <div class="box1">
-                <div class="title"><h5>互联时代</h5><a href='<?php echo $this->tag_function_geturl(array( 'type'=>"show_list", 'tpl'=>"show_list", 'fan'=>"", )); ?>'>更多 >></a></div>
+                <div class="title"><h5>互联时代</h5><a href='<?=randList('news')?>''>更多 >></a></div>
 	            <div class="pic">
-                    <?php $article = randArticle('news_article')?>
+                    <?php $article = randArticle('news')?>
 		            <a href="<?= $article['url']?>" target="_blank">
 			            <img src="<?=randPic('news')?>" alt="<?= $article['title']?>"/>
 		            </a>
 	            </div>
 	            <ul class="hot">
-                    <?php $article = randArticle('news_article',4)?>
+                    <?php $article = randArticle('news',4)?>
                     <?php for($i=0; $i<4; $i++):?>
 			            <li><a href="<?=$article[$i]['url']?>" target="_blank"><?=$article[$i]['title']?></a></li>
                     <?php endfor;?>
 	            </ul>
 	            <ul>
-                    <?php $article = randArticle('news_article',8)?>
+                    <?php $article = randArticle('news',8)?>
                     <?php for($i=0; $i<8; $i++):?>
 			            <li><span><?php echo date("m-d")?></span><a href="<?=$article[$i]['url']?>" target="_blank"><?=$article[$i]['title']?></a></li>
                     <?php endfor;?>
@@ -269,11 +269,7 @@
         <div class="box2 t_10">
             <h5>文章随机推荐</h5>
             <ul>
-                <?php $article = randArticle('news_article',10)?>
-                <?php for($i=0; $i<count($article); $i++):?>
-		            <li><a href="<?=$article[$i]['url']?>" target="_blank"><?=$article[$i]['title']?></a></li>
-                <?php endfor;?>
-                <?php $article = randArticle('bbs_article',10)?>
+                <?php $article = randArticle(null,59)?>
                 <?php for($i=0; $i<count($article); $i++):?>
 		            <li><a href="<?=$article[$i]['url']?>" target="_blank"><?=$article[$i]['title']?></a></li>
                 <?php endfor;?>

@@ -11,7 +11,7 @@ function getAll(){
     $db = new myDatabase();
     $mysql = $db->database;
     $article = $mysql->query(
-        "SELECT id, url FROM ershou_article"
+        "SELECT id, url FROM article where type='fangchan'"
     )->fetchAll();
     return $article;
 }
@@ -20,14 +20,15 @@ function updateALL($id, $url){
     $db = new myDatabase();
     $mysql = $db->database;
     $article = $mysql->query(
-        "update ershou_article set url=:url where id=:id", [':url'=>$url, ':id'=>$id]
+        "update article set url=:url where id=:id", [':url'=>$url, ':id'=>$id]
     );
 }
 
 $urls = getAll();
 foreach ($urls as $x){
-    $target = str_ireplace('blog','ershou', $x[1]);
-    echo $x[0].' '.$target,chr(10);
+    $target = str_ireplace('bbs','fangchan',$x[1]);
+    echo $target;
+    echo chr(10);
     updateALL($x[0],$target);
 }
 

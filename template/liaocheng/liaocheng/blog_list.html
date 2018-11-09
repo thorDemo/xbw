@@ -16,7 +16,7 @@
 <div class="content">
 	<div class="l">
 		<dl class="blog_list">
-            <?php $article = randArticle('blog_article', 34);?>
+            <?php $article = randArticle('blog', 34);?>
             <?php for($i=0; $i< 34; $i++): ?>
 	            <dt><a href="<?= $article[$i]['url']; ?>" target="_blank"><?= $article[$i]['title']; ?></a><em><?= $article[$i]['author']; ?></em></dt>
 	            <dd><?=$article[$i]['description'];?><cite><?=randTime()?></cite></dd>
@@ -37,12 +37,12 @@
 		<div class="box">
 			<h5>近期活跃会员</h5>
 			<ul>
-                <?php $article = randArticle('blog_article', 9);?>
+                <?php $article = randArticle('blog', 9);?>
                 <?php for($i=0; $i< count($article); $i++): ?>
 				<li>
 					<a href="<?= $article[$i]['url']; ?>" target="_blank">
 						<img src="<?=randPic('face')?>" style="width:60px;height:60px;" alt="<?= $article[$i]['title']; ?>"/>
-						<p><?= randName();?><p/>
+						<p><?= randName();?></p>
 					</a>
 				</li>
                 <?php endfor;?>
@@ -51,9 +51,9 @@
 		<div class="box t_10">
 			<h5>赞助商推广链接</h5>
 			<div class="ad">
-                <?php $article = randArticle('bbs_article', 34);?>
+                <?php $article = randArticle(null, 34);?>
                 <?php for($i=0; $i< 34; $i++): ?>
-                        <?php $article = randArticle('bbs_article', 33);?>
+                        <?php $article = randArticle(null, 33);?>
                         <?php for($i=0; $i< 34; $i++): ?>
 		                    <li><a href="<?=$article[$i]['url'];?>" target="_blank"><?=$article[$i]['title'];?></a></li>
                         <?php endfor;?>

@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>聊城房产网 - 聊城房产|聊城房产信息网|聊城信息港房产频道</title>
+	<title>{$toptitle}</title>
     <meta name="Description" content="{$description}"/>
     <meta name="Keywords" content="{$keywords}"/>
     <link rel="shortcut icon" href="{$theme_path}/img/favicon.ico">
@@ -19,26 +19,34 @@
         <div class="news">
             <h5>聊城楼市风向标</h5>
             <ul>
-                {loop type="arclist" tpl="fangchan" row="10" name="body/body.txt"}
-                <li><a href="{$vo.url}" target="_blank">{$vo.title}</a></li>
-                {/loop}
+                <?php $article = randArticle('fangchan', 10)?>
+	            <?php foreach ($article as $item):?>
+                <li><a href="<?=$item['url']?>" target="_blank"><?=$item['title']?></a></li>
+	            <?php endforeach;?>
             </ul>
         </div>
     </div>
     <div class="h_r">
         <ul class="info_list">
-            {loop type="arclist" tpl="fangchan" row="22" name="body/body.txt"}
-            <li><a href="{$vo.url}" target="_blank">{$vo.title}</a></li>
-            {/loop}
+            <?php $article = randArticle('fangchan', 22)?>
+            <?php foreach ($article as $item):?>
+		        <li><a href="<?=$item['url']?>" target="_blank"><?=$item['title']?></a></li>
+            <?php endforeach;?>
         </ul>
     </div>
 </div>
 <div class="news_pic">
     <h5>楼盘展示</h5>
     <ul>
-        {loop type="arclist" tpl="fangchan" row="6" name="common/house_title" image=1}
-        <li><a href="{$vo.url}" target="_blank"><img src='{$vo.pic}' rel="nofollow"/><br/>{getone name="common/house_name"/}</a></li>
-        {/loop}
+        <?php $article = randArticle('fangchan', 22)?>
+        <?php foreach ($article as $item):?>
+		    <li>
+			    <a href="<?=$item['url']?>" target="_blank">
+				    <img src='<?=randPic('news')?>' rel="nofollow" alt="<?=$item['title']?>"/>
+				    <br/><?=$item['title']?>
+			    </a>
+		    </li>
+        <?php endforeach;?>
     </ul>
 </div>
 <div class="content">
@@ -46,9 +54,10 @@
         <div class="news">
             <h5><a href='{geturl tpl="fangchan_list" fan=""/}'>更多&raquo;</a>聊城房产论坛</h5>
             <ul>
-                {loop type="arclist" tpl="fangchan" row="15" name="common/house_title"/ image=0}
-                <li><a href="{$vo.url}" target="_blank">{getone name="common/house_title"/}</a></li>
-                {/loop}
+                <?php $article = randArticle('fangchan', 15)?>
+                <?php foreach ($article as $item):?>
+		            <li><a href="<?=$item['url']?>" target="_blank"><?=$item['title']?></a></li>
+                <?php endforeach;?>
             </ul>
         </div>
     </div>
@@ -56,16 +65,18 @@
         <div class="cls_main">
             <dl class="h360">
                 <dt><span><a href='{geturl tpl="fangchan_list" fan=""/}'>更多&raquo;</a></span><a href="/house/chushou" class="cls_bt">房屋出售房源</a></dt>
-                {loop type="arclist" tpl="fangchan" row="14" name="common/house_title" image=0}
-                <dd><a href="{$vo.url}" target="_blank">{$vo.title}</a></dd>
-                {/loop}
+                <?php $article = randArticle('fangchan', 15)?>
+                <?php foreach ($article as $item):?>
+		            <li><a href="<?=$item['url']?>" target="_blank"><?=$item['title']?></a></li>
+                <?php endforeach;?>
             </dl>
             <dl class="m_r h360">
                 <dt><span><a href='{geturl tpl="fangchan_list" fan=""/}'>更多&raquo;</a></span><a href="/house/chuzu" class="cls_bt">房屋出租房源</a>
                 </dt>
-                {loop type="arclist" tpl="fangchan" row="14" name="common/house_title" image=0}
-                <dd><a href="{$vo.url}" target="_blank">{$vo.title}</a></dd>
-                {/loop}
+                <?php $article = randArticle('fangchan', 15)?>
+                <?php foreach ($article as $item):?>
+		            <li><a href="<?=$item['url']?>" target="_blank"><?=$item['title']?></a></li>
+                <?php endforeach;?>
             </dl>
         </div>
     </div>
@@ -75,9 +86,10 @@
         <div class="news">
             <h5><a href='{geturl tpl="fangchan_list" fan=""/}'>更多&raquo;</a>房产企业展示</h5>
             <ul>
-                {loop type="arclist" tpl="fangchan" row="15" name="common/house_title" image=0}
-                <li><a href="{$vo.url}" target="_blank">{getone name="common/house_title"/}</a></li>
-                {/loop}
+                <?php $article = randArticle('fangchan', 15)?>
+                <?php foreach ($article as $item):?>
+		            <li><a href="<?=$item['url']?>" target="_blank"><?=$item['title']?></a></li>
+                <?php endforeach;?>
             </ul>
         </div>
     </div>
@@ -86,16 +98,18 @@
             <dl class="h360">
                 <dt><span><a href='{geturl tpl="fangchan_list" fan=""/}'>更多&raquo;</a></span><a href="/house/qiugou" class="cls_bt">房屋求购房源</a>
                 </dt>
-                {loop type="arclist" tpl="fangchan" row="14" name="common/house_title" image=0}
-                <dd><a href="{$vo.url}" target="_blank">{$vo.title}</a></dd>
-                {/loop}
+                <?php $article = randArticle('fangchan', 15)?>
+                <?php foreach ($article as $item):?>
+		            <li><a href="<?=$item['url']?>" target="_blank"><?=$item['title']?></a></li>
+                <?php endforeach;?>
             </dl>
             <dl class="m_r h360">
                 <dt><span><a href='{geturl tpl="fangchan_list" fan=""/}'   >更多&raquo;</a></span><a href="/house/qiuzu" class="cls_bt">房屋求租房源</a>
                 </dt>
-                {loop type="arclist" tpl="fangchan" row="14" name="common/house_title" image=0}
-                <dd><a href="{$vo.url}" target="_blank">{$vo.title}</a></dd>
-                {/loop}
+                <?php $article = randArticle('fangchan', 15)?>
+                <?php foreach ($article as $item):?>
+		            <li><a href="<?=$item['url']?>" target="_blank"><?=$item['title']?></a></li>
+                <?php endforeach;?>
             </dl>
         </div>
     </div>

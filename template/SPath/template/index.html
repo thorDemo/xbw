@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>{$toptitle}</title>
+    <meta name="description" content="{$description}" />
+    <meta name="keywords" content="{$keywords}" />
+    <link href="{$theme_path}/style/cgcyz.css" rel="stylesheet" media="screen" type="text/css" />
+    <script language="javascript" type="text/javascript" src="{$web_path}/include/dedeajax2.js"></script>
+    <script language="javascript" type="text/javascript" src="{$web_path}/images/js/j.js" ></script>
+    <script language="javascript" type="text/javascript" src="{$theme_path}/js/pic_scroll.js"></script>
+
+</head>
+<body class="index">
+<!--{include file="head.html"}-->
+<!-- /header -->
+<!-- 新闻开始 -->
+<div id="content" class="w960 center clear mt1">
+    <!-- 整体左边开始 -->
+    <div class="indexl">
+        <div class="main">
+            <!-- 主体左边开始 -->
+            <div class="ml">
+                <dl class="tbox">
+                    <dd>
+                        <ul class="d1 ico2">
+                            {loop type="arclist" row="10"}
+                            <li ><a href="{$vo.url}" target="_blank">{$vo.url}</a></li>
+                            {/loop}
+                        </ul>
+                    </dd>
+                </dl>
+            </div>
+            <!-- 主体左边结束 -->
+        </div>
+    </div>
+</div>
+</body>
+</html>

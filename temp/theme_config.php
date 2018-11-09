@@ -21,5 +21,6 @@ return array (
   'video/movie' => '',
   'bbs/xiuno' => '',
   'liaocheng/liaocheng' => 'www.example1.com',
+  'SPath/template' => '',
 );
 ?>

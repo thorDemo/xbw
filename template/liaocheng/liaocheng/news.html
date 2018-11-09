@@ -1,5 +1,5 @@
 <?php require 'core/mylib/tag.php'?>
-<?php $article = getArticle('news_article');?>
+<?php $article = getArticle();?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -18,7 +18,7 @@
 <div class="content">
     <div class="l">
         <div class="news_dh">您所在的位置：<a href="/">聊城信息港</a> &gt; <a href="/news/">资讯中心</a> &gt; <a
-                href='{geturl tpl="news_list" fan=""/}'>热点聚集</a></div>
+                href='<?=randList('news')?>'>热点聚集</a></div>
         <div class="box">
             <h1><?=$article['title'];?></h1>
             <div class="info">发布：<?=$article['pub_time'];?>&nbsp;&nbsp;来源:转载&nbsp;&nbsp;浏览 {随机数字} 次&nbsp;&nbsp;编辑：佚名
@@ -26,8 +26,8 @@
             <div class="nr">
                 <?=$article['content'];?>
             </div>
-            <div class="info_bottom">【<a href="/huiyuan/blog.php?abc=addblog" rel="nofollow">写进Blog</a>】 【<a
-                    href="/ping.php?abc=news&amp;id=88915" rel="nofollow">点评留言</a>】 【<a href="/inc/tougao.php" rel="nofollow">在线投稿</a>】 【<a
+            <div class="info_bottom">【<a href="<?=randList('news')?>" rel="nofollow">写进Blog</a>】 【<a
+                    href="<?=randList('news')?>" rel="nofollow">点评留言</a>】 【<a href="<?=randList('news')?>" rel="nofollow">在线投稿</a>】 【<a
                     href="javascript:window.print();" rel="nofollow">打印页面</a>】
             </div>
             <!-- Baidu Button BEGIN -->
@@ -45,13 +45,11 @@
                 <a class="bds_qq"></a>
                 <a class="shareCount"></a>
             </div>
-
-
-            <div class="tC"><a target="_blank" href="/life/index.htm"><img alt="" src="/html/mb/news_image/news.gif"/></a>
+            <div class="tC"><a target="_blank" href="<?=randList('news')?>"><img alt="" src="{$theme_path}/img/news.gif"/></a>
             </div>
             <h3>相关文章</h3>
             <ul>
-                <?php $article = randArticle('news_article',10)?>
+                <?php $article = randArticle('news',10)?>
                 <?php for($i=0; $i<count($article); $i++):?>
 		            <li><span><?php echo date("m-d")?></span><a href="<?=$article[$i]['url']?>" target="_blank"><?=$article[$i]['title']?></a></li>
                 <?php endfor;?>
@@ -62,11 +60,7 @@
         <div class="box2 t_10">
              <h5>文章随机推荐</h5>
             <ul>
-                <?php $article = randArticle('news_article',10)?>
-                <?php for($i=0; $i<count($article); $i++):?>
-		            <li><a href="<?=$article[$i]['url']?>" target="_blank"><?=$article[$i]['title']?></a></li>
-                <?php endfor;?>
-                <?php $article = randArticle('bbs_article',10)?>
+                <?php $article = randMeta(null,['url','title'],30)?>
                 <?php for($i=0; $i<count($article); $i++):?>
 		            <li><a href="<?=$article[$i]['url']?>" target="_blank"><?=$article[$i]['title']?></a></li>
                 <?php endfor;?>
@@ -76,6 +70,4 @@
 </div>
 {include file='news_footer.html'}
 </body>
-<html>
-
 </html>

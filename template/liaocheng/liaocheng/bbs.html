@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-	<?php $article = getArticle('bbs_article');?>
+	<?php $article = getArticle();?>
     <title><?=$article['title'];?></title>
     <meta name="description" content="<?=$article['description'] ;?>">
     <meta name="keywords" content="<?=$article['type'].','.$article['keywords'] ;?>">
@@ -62,7 +62,7 @@
         </div>
     </div>
 </div>
-<?php for ($i=0;$i<rand(4,8);$i++): ?>
+<?php for ($i=0;$i<rand(4,20);$i++): ?>
 <div class="x_list">
     <div class="l">靓妹：<a href="/bbs_{随机数字}/" class="cBlack"><?=randName()?></a>
         <p style="margin:2px 0 5px 0;">
@@ -71,8 +71,6 @@
         <span class="mobileyz" title="手机已认证"></span><br/>
         <img src="{$theme_path}/ico/<?=rand(1, 22);?>.gif" alt=""/><br/>积分：<?=rand(100,1000);?><br/>注册：> <?=randTime();?><br/>
         <img src="{$theme_path}/img/jst_offline.gif" alt=""  style="cursor:pointer"/>
-        <img src="{$theme_path}/ico/<?=rand(1, 22);?>.gif"/><br/>积分：<?=rand(100,1000);?><br/>注册：> <?=randTime();?><br/>
-        <img src="{$theme_path}/img/jst_offline.gif" title="会员『<?=randName()?>』离线点击发送短信留言" align="absmiddle" style="cursor:pointer"/>
     </div>
     <div class="r">
         <div class="xx"><span class="t">第2楼</span><a href="">信息</a><a
@@ -86,8 +84,8 @@
 <?php endfor; ?>
 
 <div class="page">
-    <div class="p_goto"><a href="<?=randMeta('bbs_article', 'url',1)?>" >&lt;&lt;上一主题</a>|<a
-            href="<?=randMeta('bbs_article', 'url', 1)?>" >下一主题&gt;&gt;</a></div>
+    <div class="p_goto"><a href="<?=randMeta('bbs','url')?>" >&lt;&lt;上一主题</a>|<a
+            href="<?=randMeta('bbs','url')?>" >下一主题&gt;&gt;</a></div>
     <div class="p_list"><a href="/bbs/" class="arw_l">返回列表</a><span>1</span></div>
 </div>
 <div class="mainbox"><h3><a href="#top">↑返回顶部</a> * 快速发表贴子</h3>

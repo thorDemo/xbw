@@ -21,7 +21,7 @@
         <div class="abc">
             <h5>聊城论坛,新贴</h5>
             <ul>
-                <?php $article = randArticle('bbs_article', 34);?>
+                <?php $article = randArticle('bbs', 34);?>
                 <?php for($i=0; $i< 34; $i++): ?>
                 <li><a href="<?=$article[$i]['url'];?>" target="_blank"><?=$article[$i]['title'];?></a></li>
                 <?php endfor;?>
@@ -39,7 +39,7 @@
                 href=topnews.aspx?abc=03>版务</a>-<a href=sh.aspx>未审<span style="color: red">0</span>贴</a>-<a
                 href=search.aspx>搜索</a>-<a href="iframe.aspx" target="_parent" rel="nofollow">？分栏</a></div>
         <div id="news_list">
-            <?php $article = randArticle('bbs_article', 34);?>
+            <?php $article = randArticle('bbs', 34);?>
             <?php for($i=0; $i< 34; $i++): ?>
 		        <ul>
 			        <li class="num"><?=rand(2,15)?><em>/<?=rand(100,200)?></em></li>

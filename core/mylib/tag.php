@@ -10,89 +10,86 @@ require 'database.php';
 /**
  * 随机获取指定类型指定数量的文章信息
  * $num 选填默认为1
- * @param $table
  * @param $type
+ * @param $meta
  * @param $num
  * @return mixed
  */
-function randMeta($table, $type, $num=1){
+function randMeta($type=null, $meta=['title', 'description', 'author', 'url', 'type', 'pub_time'], $num=1){
     $db = new myDatabase();
     $mysql = $db->database;
-    $article = $mysql->query(
-        "SELECT $type FROM $table
-				WHERE id >= (SELECT FLOOR( RAND()*((SELECT MAX(id) FROM $table)-(SELECT MIN(id) FROM $table))+(SELECT MIN(id) FROM $table)))
-				ORDER BY id LIMIT :num;",[':num'=>$num]
-	)->fetchAll();
-    if($num == 1){
-        return $article[0][$type];
+    if ($type == null){
+        $data = $mysql->rand('article', $meta, ['LIMIT'=>$num]);
+    }else{
+        $data = $mysql->rand('article', $meta, ['type'=>$type, 'LIMIT'=>$num]);
     }
-	return $article;
+    if ($num > 1) {
+        return $data;
+    }
+    return $data[0];
 }
-
-
-
-//print_r(randMeta('bbs_article','title', 10));
-
+//print_r(randMeta('zhaopin',['title','url'],20));
 /**
  * 随机获取指定数量的文章
  * $num 选填 默认为1
- * @param $table
+ * @param $type
  * @param int $num
  * @return array
  */
-function randArticle($table,$num=1){
-	$db = new myDatabase();
-	$mysql = $db->database;
-	$article = $mysql->query(
-		"SELECT * FROM $table
-				WHERE id >= (SELECT FLOOR( RAND()*((SELECT MAX(id) FROM $table)-(SELECT MIN(id) FROM $table))+(SELECT MIN(id) FROM $table)))
-				ORDER BY id LIMIT :num;",[':num'=>$num]
-	)->fetchAll();
-	if($num==1){
-	    return $article[0];
+function randArticle($type=null, $num=1){
+    $db = new myDatabase();
+    $mysql = $db->database;
+    if ($type == null){
+        $data = $mysql->rand('article', '*', ['LIMIT'=>$num]);
+    }else{
+        $data = $mysql->rand('article', '*', ['type' => $type, 'LIMIT'=>$num]);
     }
-	return $article;
+    if ($num > 1) {
+        return $data;
+    }
+    return $data[0];
 }
-
 
 /**
  *
  * 根据页面url 获取指定文章
  * 如不存在则随机返回一篇新闻文章
- * @param $table
- * @param $url
  * @return mixed
  */
-function getArticle($table)
+function getArticle()
 {
     $url = $_SERVER["REQUEST_URI"];
-	$db = new myDatabase();
-	$mysql = $db->database;
-	$article = $mysql->query(
-		"select * from $table where url=:url",[':url'=>$url]
-	)->fetchAll()[0];
-	if (count($article) == 0 ){
-        $article = $mysql->query(
-            "SELECT * FROM news_article
-				WHERE id >= (SELECT FLOOR( RAND()*((SELECT MAX(id) FROM news_article)-(SELECT MIN(id) FROM news_article))+(SELECT MIN(id) FROM news_article)))
-				ORDER BY id LIMIT :num;",[':num'=>1]
-        )->fetchAll()[0];
+    $db = new myDatabase();
+    $mysql = $db->database;
+    $article = $mysql->select('article','*',['url'=>$url]);
+    if (count($article) == 0 ){
+        $article = $mysql->rand('article','*',['LIMIT'=>1]);
     }
-	$content = $article['content'];
-	$content = str_replace('<img','<img rel=\'nofollow\'',$content);
-	$article['content'] = $content;
-	return $article;
+    if (strpos($article[0]['content'], '</p>') != null){
+        $description = $article[0]['description'];
+        $article[0]['description'] = preg_replace("/[a-z,A-Z,0-9,<,>,=,\/,?,\:,\",\.]/","",$description);
+        return $article[0];
+    }
+    $content = explode("\n",$article[0]['content']);
+    $target = '';
+    for($i = 0; $i < count($content); $i ++){
+        $target = $target.'<p>'.$content[$i].'</p>';
+    }
+    $article[0]['content'] = $target;
+    return $article[0];
 }
 
+echo strpos("You love php, I love php too!","1");
 
 /**
  * 获取随机3年内时间 Y-m-d
  * @return false|string
+ * @param $format
  */
-function randTime(){
+function randTime($format='Y-m-d'){
     $start_time = strtotime('2015-01-01');
     $end_time = strtotime('2017-01-01');
-    return date('Y-m-d', mt_rand($start_time,$end_time));
+    return date($format, mt_rand($start_time,$end_time));
 }
 
 /**
@@ -102,49 +99,46 @@ function randTime(){
  * @param $num
  * @return mixed
  */
-function TypeName($type=null, $num){
+function typeName($type=null, $num=1){
     $db = new myDatabase();
     $mysql = $db->database;
-    $type = $mysql->query(
-        "SELECT name FROM typename where type = :temp ORDER BY rand() LIMIT :num", [
-            ":temp" => $type,
-            ":num" => $num,
-        ]
-    )->fetchAll();
-    return $type;
+    $data = $mysql->rand('typename',['name'],['$type'=>$type, 'LIMIT'=>$num]);
+    if ($num == 1){
+        return $data[0]['name'];
+    }
+    return $data;
 }
-
-//print_r(TypeName('company', 10));
 
 /**
  * 获取随机人名
+ * @param $num
  * @return mixed
  */
-function randName(){
-	$db = new myDatabase();
-	$mysql = $db->database;
-	$type = $mysql->query(
-		"SELECT * FROM username  ORDER BY rand() LIMIT :num", [
-			":num" => 1,
-		]
-	)->fetchAll();
-	return $type[0]['name'];
+function randName($num = 1){
+    $db = new myDatabase();
+    $mysql = $db->database;
+    $data = $mysql->rand('username','name',['LIMIT'=>$num]);
+    if ($num == 1){
+        return $data[0];
+    }
+    return $data;
 }
 
 /**
  * 获取随机评论
  * 可指定类别 bbs news...
  * @param $type
+ * @param $num
  * @return mixed
  */
-function randComment($type){
-	$db = new myDatabase();
-	$mysql = $db->database;
-	$article = $mysql->query(
-		"SELECT content FROM comment WHERE type=:type and id >=(select floor(rand() * ((select max(id) from comment) - (select min(id) from comment)) + (select min(id) from comment))) order by id limit 1",
-		[':type'=>$type]
-	)->fetchAll()[0][0];
-	return $article;
+function randComment($type, $num = 1){
+    $db = new myDatabase();
+    $mysql = $db->database;
+    $data = $mysql->rand('comment','content',['type'=>$type, 'LIMIT'=>$num]);
+    if ($num == 1){
+        return $data[0];
+    }
+    return $data;
 }
 
 /**
@@ -169,24 +163,82 @@ function randChars($length)
  * @param $num
  * @return array
  */
-function randPic($type, $num=1){
+function randPic($type='news', $num=1){
     $db = new myDatabase();
     $mysql = $db->database;
-    $data = $mysql->rand('pic','path',['type'=>$type,]);
-    if ($num == 1 ){
+    $data = $mysql->rand('pic','path',['type'=>$type,'LIMIT'=>$num]);
+    if ($num == 1){
         return $data[0];
     }
-    else {
-        return array_splice($data,0, $num);
-    }
+    return $data;
 }
 
+/**
+ * 随机获取一个会员等级图片
+ * @return mixed
+ */
 function randLevel(){
     $db = new myDatabase();
     $mysql = $db->database;
-    $data = $mysql->rand('pic','path',['type'=>'level',]);
+    $data = $mysql->rand('pic','path',['type'=>'level','LIMIT'=>1]);
     return $data[0];
 }
 
-//print_r(randPic('news',10));
+/**
+ * 返回随机列表url
+ * @param $type
+ * @return string
+ */
+function randList($type = null){
+    $listType = ['bbs','fangchan','news','blog','ershou','jiaoyou','keji','qiye','zhaopin','lvyou','shenghuo'];
+    if ($type == null){
+        return '/'.$listType[mt_rand(0,count($listType))].'_'.mt_rand(10000, 99999).'/';
+    }
+    return '/'.$type.'_'.mt_rand(10000, 99999).'/';
+}
+
+/**
+ * 随机获取地名
+ * @param int $num
+ * @return array|bool
+ */
+function randPlace($num = 1){
+    $db = new myDatabase();
+    $mysql = $db->database;
+    $data = $mysql->rand('place','name',['LIMIT'=>$num]);
+    if ($num == 1){
+        return $data[0];
+    }
+    return $data;
+}
+
+/**
+ * 获取某种类型
+ * @param $type
+ * @return array|bool
+ */
+function lastArticle($type){
+    $db = new myDatabase();
+    $mysql = $db->database;
+    $data = $mysql->select('article',['url','title'],['ORDER'=>['id'=>'DESC'],'LIMIT'=>100,'type'=>$type]);
+    return $data;
+}
+
+/**
+ *
+ * @param string $type
+ * @return string
+ */
+function randType($type='show'){
+    if ($type == 'show'){
+        $chars1 = randChars(5);
+        $chars2 = randChars(5);
+        $times = randTime('Ymd');
+        return 'http://www.61k.com/clu'.$chars1.'/'.$times.$chars2.'.html';
+    }
+    else{
+        $chars1 = randChars(5);
+        return 'http://www.61k.com/clu'.$chars1.'/';
+    }
+}
 

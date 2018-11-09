@@ -1,10 +1,91 @@
-<?php if(!defined('IN_TXTCMS')){define('IN_TXTCMS',true);} ?><!DOCTYPE html>
-<html lang="en">
+<?php if(!defined('IN_TXTCMS')){define('IN_TXTCMS',true);} ?><?php require 'core/mylib/tag.php'?>
+<?php $article = getArticle();?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="UTF-8">
-    <title>旅游</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title><?=$article['title'];?></title>
+	<meta name="description" content="<?=$article['description'] ;?>">
+	<meta name="keywords" content="<?=$article['type'].','.$article['keywords'] ;?>">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<link rel="shortcut icon" href="<?php echo $this->_var['theme_path']; ?>/img/favicon.ico">
+	<link rel="stylesheet" href="<?php echo $this->_var['theme_path']; ?>/css/css.css" type="text/css">
+	<link rel="stylesheet" href="<?php echo $this->_var['theme_path']; ?>/css/info.css" type="text/css"/>
 </head>
 <body>
-    <h1>旅游内容</h1>
+<?php echo $this->fetch('header.html'); ?>
+<div class="content">
+	<div class="p_l">
+		<div class="p_xinxi">
+			<div id="player">
+			
+			</div>
+			<dl>
+				<dt><?=$article['title']?></dt>
+				<dd class="t_10">类别：<a href="<?=randList('lvyou')?>"><?=typeName()?></a> &raquo; <a href="<?=randList('lvyou')?>"><?=typeName()?></a></dd>
+				<dd>地区：<?=randPlace()?></dd>
+				<dd>地址：<?php echo $this->tag_function_getone(array( 'name'=>"common/chengshi", 'cacheid'=>"{$this->_var['host']}", 'global'=>"1", )); ?><?php echo $this->tag_function_getone(array( 'name'=>"common/daolu", 'cacheid'=>"{$this->_var['host']}", 'global'=>"1", )); ?><?php echo $this->tag_function_function(array( 'name'=>"get_num_gd", 'args'=>"3,1", )); ?>号</dd>
+				<dd>电话：0<?php echo $this->tag_function_function(array( 'name'=>"get_num_gd", 'args'=>"2,1", )); ?>-<?php echo $this->tag_function_function(array( 'name'=>"get_num_gd", 'args'=>"8,1", )); ?></dd>
+				<dd>人气：<?=rand(100,9999)?></dd>
+				
+				<dd>会员：<?=randName()?>
+					<img alt="即时通" src="<?php echo $this->_var['theme_path']; ?>/img/jst_offline.gif" style="cursor:pointer;vertical-align:middle;" onclick="openWindow('');">
+				</dd>
+				<dd class="t_10 tR">
+					<a href="<?php randList('lvyou')?>" rel="nofollow">分享/转发</a> | <a href="javascript:window.print()">打印</a> | <a
+							href="" target="_blank">纠错</a> | <a
+							href="">我要加盟</a></dd>
+			</dl>
+		</div>
+		<div class="p_ts"><img alt="ico" src="<?php echo $this->_var['theme_path']; ?>/img/ico_03.gif"/>商户简介</div>
+		<div class="p_nr">
+            <?=$article['content']?>
+		</div>
+		<div id="myMap" style="width:698px;height:300px;display:none;"></div>
+		<div class="p_ts"><img alt="ico" src="<?php echo $this->_var['theme_path']; ?>/img/ico_03.gif"/>网友点评</div>
+        <?php $comment = randComment('bbs', rand(4,10))?>
+        <?php $comment = randComment('bbs', rand(4,10))?>
+        <?php foreach ($comment as $item):?>
+			<dl class="p_list">
+				<dt>
+					<img alt="<?=randName()?>" src="<?=randPic('face')?>"/><cite>
+                        <?=randName()?>
+						点评时间：<?=randTime('Y-m-d H:i:s')?></cite></dt>
+				<dd><?=$item?></dd>
+			</dl>
+        <?php endforeach;?>
+		<div class="p_page t_5"><span id="Label1">分页： 上一页  |  下一页</span></div>
+		<div class="p_nr">
+			发表评论前，请先 <a href="<?=randList('lvyou')?>">注册</a> 或 <a href="<?=randList('lvyou')?>">登陆</a>
+		</div>
+	</div>
+	<div class="p_r">
+		<div class="p_box tC">
+			<div id="wx_qrcode"></div>
+		
+		</div>
+		<div class="p_box t_10">
+			<h5>商家最新信息</h5>
+			<ul>
+                <?php $article = randMeta(null,['url','title'],30)?>
+                <?php for($i=0; $i<count($article); $i++):?>
+					<li><a href="<?=$article[$i]['url']?>" target="_blank"><?=$article[$i]['title']?></a></li>
+                <?php endfor;?>
+			</ul>
+		</div>
+		<a href="<?=randList('lvyou')?>"><img alt="诚商通" src="<?php echo $this->_var['theme_path']; ?>/img/ad_240.gif" class="t_10"/></a>
+		<div class="p_box t_10">
+			<h5>您可能感兴趣的商户</h5>
+			<ul>
+                <?php $article = randMeta(null,['url','title'],30)?>
+                <?php for($i=0; $i<count($article); $i++):?>
+					<li><a href="<?=$article[$i]['url']?>" target="_blank"><?=$article[$i]['title']?></a></li>
+                <?php endfor;?>
+			</ul>
+		</div>
+	</div>
+</div>
+<?php echo $this->fetch('show_footer.html'); ?>
 </body>
 </html>
+

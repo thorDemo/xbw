@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=gb2312"/>
-    <?php $article = getArticle('blog_article');?>
+    <?php $article = getArticle();?>
 	<title><?=$article['title'];?></title>
 	<meta name="description" content="<?=$article['description'] ;?>">
 	<meta name="keywords" content="<?=$article['type'].','.$article['keywords'] ;?>">
@@ -54,38 +54,26 @@
 			<li class="face"><img src="<?=randPic('face')?>" alt="<?=$myname?>" width="180px"/></li>
 			<li class="name"><?=$myname?></li>
 			<li><span class="mobileyz" title="手机已认证"></span></li>
-			<li><img src="<?=randPic('level')?>" title="会员等级"/></li>
+			<li><img src="<?=randPic('level')?>" alt="会员等级"/></li>
 			<li>积分：120</li>
 			<li>性别：<?=array('男','女','保密')[rand(0,2)]?></li>
 			<li>注册：<?php echo randTime()?></li>
 			<li>登陆：<?=rand(1,999)?>天次</li>
 			<li>活动：<?=randTime()?></li>
-			<li class="mg_5"><img src="<?php echo $this->_var['theme_path']; ?>/img/jst_offline.gif" title="会员『mmp990860』离线
-点击发送短信留言" align="absmiddle" style="cursor:pointer" onclick="openWindow('/jst/duanxin.aspx?abc=send&name1=mmp990860');" alt="" rel="nofollow"/>
+			<li class="mg_5">
+				<img src="<?php echo $this->_var['theme_path']; ?>/img/jst_offline.gif" alt="会员『mmp990860』离线点击发送短信留言" style="cursor:pointer"/>
 			</li>
 		</ul>
 		<div class="search">
-			<form name="search_form" action="/u/" method="get"><input name="huiyuan" type="hidden"
-			                                                          value="mmp990860"/><input name="key" type="text"
-			                                                                                    class="wenbenkuang"
-			                                                                                    size="15"
-			                                                                                    maxlength="10"/> <input
-						type="submit" class="go-wenbenkuang" value="搜我"/></form>
+			<form name="search_form" action="/u/" method="get">
+				<input name="huiyuan" type="hidden" value="mmp990860"/>
+				<input name="key" type="text" title="" class="wenbenkuang" size="15" maxlength="10"/>
+				<input type="submit" class="go-wenbenkuang" value="搜我"/>
+			</form>
 		</div>
 	</div>
 </div>
 <?php echo $this->fetch('show_footer.html'); ?>
-<div id="goTopBtn"><a href="#top"><img src="<?php echo $this->_var['theme_path']; ?>/img/top.gif"/></a></div>
-<script type="text/javascript">
-    if (huiyuan.length > 0) {
-        $("login").innerHTML = "欢迎会员 <a href=\"/huiyuan/\">" + huiyuan + "</a>";
-    } else {
-        $("login").innerHTML = "欢迎您：网友，请 <a href=\"/huiyuan/login.aspx\">登录</a> 不是会员？<a href=\"/huiyuan/reg.aspx\">免费注册</a>";
-    }
-    window.onscroll = function () {
-        (document.documentElement.scrollTop || document.body.scrollTop) > 0 ? $("goTopBtn").style.display = "block" : $("goTopBtn").style.display = "none";
-    }
-    setTimeout("getjst(0,75*1000,1)", 1250);
-</script>
+<div id="goTopBtn"><a href="#top"><img src="<?php echo $this->_var['theme_path']; ?>/img/top.gif" alt="回顶部"/></a></div>
 </body>
 </html>

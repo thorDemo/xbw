@@ -19,42 +19,40 @@
 <?php echo $this->fetch('header.html'); ?>
 <div class="banner">
     <div class="banner">
-        <p align="center"><a href='<?php echo $this->tag_function_geturl(array( 'tpl'=>"zhaopin_list", 'fan'=>"", )); ?>' title="招聘信息" target="_blank"><img src="<?php echo $this->_var['theme_path']; ?>/img/0926048450.gif"
-                                                                              alt="网络招聘" width="948" height="70"
-                                                                              border="0"></a></p>
+        <p align="center"><a href='<?=randList('zhaopin')?>' title="招聘信息" target="_blank"><img src="<?php echo $this->_var['theme_path']; ?>/img/0926048450.gif" alt="网络招聘" width="948" height="70" border="0"></a></p>
     </div>
     <div class="banner">
-        <p align="center"><a href='<?php echo $this->tag_function_geturl(array( 'tpl'=>"fangchan_list", 'fan'=>"", )); ?>' target="_blank"><img src="<?php echo $this->_var['theme_path']; ?>/img/0954533473.jpg"
-                                                                                alt="房产" width="948" height="70"
-                                                                                border="0"></a></p>
+        <p align="center"><a href='<?=randList('fangchan')?>' target="_blank"><img src="<?php echo $this->_var['theme_path']; ?>/img/0954533473.jpg" alt="房产" width="948" height="70" border="0"></a></p>
     </div>
     <div class="banner">
     </div>
     <div class="ad155">
-        <a href='<?php echo $this->tag_function_geturl(array( 'tpl'=>"qiye_list", 'fan'=>"", )); ?>' target="_blank" onfocus="this.blur()"><img src="<?php echo $this->_var['theme_path']; ?>/img/2237597237.jpg" width="155" height="55"></a><a
-            href='<?php echo $this->tag_function_geturl(array( 'tpl'=>"ershou_list", 'fan'=>"", )); ?>' target="_blank" onfocus="this.blur()"><img src="<?php echo $this->_var['theme_path']; ?>/img/1533344547.gif" width="155" height="55"></a><a
-            href='<?php echo $this->tag_function_geturl(array( 'tpl'=>"zhidao_list", 'fan'=>"", )); ?>' target="_blank" onfocus="this.blur()"><img src="<?php echo $this->_var['theme_path']; ?>/img/2239549247.gif" width="155" height="55"></a><a
-            href='<?php echo $this->tag_function_geturl(array( 'tpl'=>"news_list", 'fan'=>"", )); ?>' target="_blank" onfocus="this.blur()"><img src="<?php echo $this->_var['theme_path']; ?>/img/0919590237.gif" width="155" height="55"></a><a
-            href='<?php echo $this->tag_function_geturl(array( 'tpl'=>"keji_list", 'fan'=>"", )); ?>' target="_blank" onfocus="this.blur()"><img src="<?php echo $this->_var['theme_path']; ?>/img/0920098240.gif" width="155" height="55"></a><a
-            href='<?php echo $this->tag_function_geturl(array( 'tpl'=>"bbs_list", 'fan'=>"", )); ?>' target="_blank" onfocus="this.blur()"><img src="<?php echo $this->_var['theme_path']; ?>/img/1018214360.gif" width="155" height="55"></a>
+        <a href='<?=randList('qiye')?>' target="_blank" onfocus="this.blur()"><img src="<?php echo $this->_var['theme_path']; ?>/img/2237597237.jpg" width="155" height="55" alt="企业"></a><a
+            href='<?=randList('ershou')?>' target="_blank" onfocus="this.blur()"><img src="<?php echo $this->_var['theme_path']; ?>/img/1533344547.gif" width="155" height="55" alt="二手"></a><a
+            href='<?=randList('lvyou')?>' target="_blank" onfocus="this.blur()"><img src="<?php echo $this->_var['theme_path']; ?>/img/2239549247.gif" width="155" height="55" alt="旅游"></a><a
+            href='<?=randList('news')?>' target="_blank" onfocus="this.blur()"><img src="<?php echo $this->_var['theme_path']; ?>/img/0919590237.gif" width="155" height="55" alt="新闻"></a><a
+            href='<?=randList('keji')?>' target="_blank" onfocus="this.blur()"><img src="<?php echo $this->_var['theme_path']; ?>/img/0920098240.gif" width="155" height="55" alt="科技"></a><a
+            href='<?=randList('bbs')?>' target="_blank" onfocus="this.blur()"><img src="<?php echo $this->_var['theme_path']; ?>/img/1018214360.gif" width="155" height="55" alt="论坛"></a>
     </div>
     <ul id="gg_txt" style="display: block;">
-        <?php $this->_tags_data=$this->tag_block_loop(array('type'=>'arclist','row'=>'12',));if($this->_tags_data){ foreach($this->_tags_data as $this->_var["k"]=>$this->_var["vo"]){ ?>
-        <li><?php echo $this->_var['vo']['i']; ?>
-            <a href="<?php echo $this->_var['vo']['url']; ?>" title="<?php echo $this->_var['vo']['title']; ?>" target="_blank"></a><?php echo $this->_var['vo']['title']; ?>
+        <?php $article = randArticle(null,11)?>
+	    <?php for($i=1;$i<12;$i++):?>
+        <li><?=$i?>
+            <a href="<?=$article[$i-1]['url']?>" title="<?=$article[$i-1]['title']?>" target="_blank"></a><?=$article[$i-1]['title']?>
         </li>
-        <?php }} ?>
+        <?php endfor;?>
     </ul>
     <div class="content bottom_5">
         <div class="r">
             <div id="jdt">
-                <?php $this->_tags_data=$this->tag_block_loop(array('type'=>'arclist','row'=>'5','info'=>'','image'=>'1',));if($this->_tags_data){ foreach($this->_tags_data as $this->_var["k"]=>$this->_var["vo"]){ ?>
-                <p id="jdt_<?php echo $this->_var['vo']['i']; ?>" style="display: none;">
-                    <a href="<?php echo $this->_var['vo']['url']; ?>" target="_blank" onfocus="this.blur()">
-                        <img src="<?php echo $this->_var['vo']['pic']; ?>" alt="<?php echo $this->_var['vo']['title']; ?>">
+                <?php $article = randArticle(null,5)?>
+                <?php for($i=1;$i<12;$i++):?>
+                <p id="jdt_<?=$i?>" style="display: none;">
+                    <a href="<?=$article[$i-1]['url']?>" target="_blank" onfocus="this.blur()">
+                        <img src="<?=randPic()?>" alt="<?=$article[$i-1]['title']?>">
                     </a>
                 </p>
-                <?php }} ?>
+                <?php endfor;?>
                 <div id="jdt_page"><strong>1</strong>
                     <a href="javascript:setFocus(2);" target="_self">2</a>
                     <a href="javascript:setFocus(3);" target="_self">3</a>
@@ -82,31 +80,33 @@
         </div>
         <div class="l">
             <div id="jd">
-                <?php $this->_tags_data=$this->tag_block_loop(array('type'=>'arclist','row'=>'1','info'=>'1',));if($this->_tags_data){ foreach($this->_tags_data as $this->_var["k"]=>$this->_var["vo"]){ ?>
-                <h3><a href="<?php echo $this->_var['vo']['url']; ?>" target="_blank"><strong><?php echo $this->_var['vo']['title']; ?></strong></a></h3>
-                <p><?php echo $this->_var['vo']['info']; ?></p>
-                <?php }} ?>
+                <?php $article = randArticle('news')?>
+                <h3><a href="<?=$article['url']?>" target="_blank"><strong><?=$article['title']?></strong></a></h3>
+                <p><?=$article['description']?></p>
                 <ul class="hot_news">
-                    <?php $this->_tags_data=$this->tag_block_loop(array('type'=>'arclist','tpl'=>'show','row'=>'34',));if($this->_tags_data){ foreach($this->_tags_data as $this->_var["k"]=>$this->_var["vo"]){ ?>
-                    <li><a href="<?php echo $this->_var['vo']['url']; ?>" target="_blank" title="<?php echo $this->_var['vo']['title']; ?>"><?php echo $this->_var['vo']['title']; ?></a></li>
-                    <?php }} ?>
+                    <?php $article = randArticle('news',34)?>
+	                <?php foreach ($article as $item):?>
+                    <li><a href="<?=$item['url']?>" target="_blank" title="<?=$item['title']?>"><?=$item['title']?></a></li>
+                    <?php endforeach;?>
                 </ul>
             </div>
             <div class="box2 right">
                 <h5><a href="<?php echo $this->_var['web_url']; ?>bbs/" class="more">更多&gt;&gt;</a>
                     <span>聊城论坛快眼看贴</span></h5>
                 <ul class="ico">
-                    <?php for($i=0; $i< 34; $i++): ?>
-                    <li><a href="<?php echo $this->_var['vo']['url']; ?>"><?php echo $this->tag_function_getone(array( 'name'=>"liaocheng/bbs/title/title", 'cacheid'=>"rand", )); ?></a></li>
-                    <? endfor; ?>
+                    <?php $article = randArticle('bbs',20)?>
+                    <?php foreach ($article as $item):?>
+		                <li><a href="<?=$item['url']?>" target="_blank" title="<?=$item['title']?>"><?=$item['title']?></a></li>
+                    <?php endforeach;?>
                 </ul>
             </div>
             <div class="news_pic">
                 <h5><a href="<?php echo $this->_var['web_url']; ?>qiye/">商家展示</a></h5>
                 <ul>
-                    <?php $this->_tags_data=$this->tag_block_loop(array('type'=>'arclist','tpl'=>'qiye','row'=>'5','image'=>'1',));if($this->_tags_data){ foreach($this->_tags_data as $this->_var["k"]=>$this->_var["vo"]){ ?>
-                    <li><a href="<?php echo $this->_var['vo']['url']; ?>"><img src="<?php echo $this->_var['vo']['pic']; ?>" alt="<?php echo $this->_var['vo']['title']; ?>"><br></a></li>
-                    <?php }} ?>
+                    <?php $article = randArticle('qiye',5)?>
+                    <?php foreach ($article as $item):?>
+                    <li><a href="<?=$item['url']?>"><img src="<?=randPic()?>" alt="<?=$item['title']?>"><br></a></li>
+                    <?php endforeach;?>
                 </ul>
             </div>
         </div>
@@ -117,17 +117,19 @@
                 <h5><a href="/fangchan/" class="more">更多&gt;&gt;</a><span>房产信息</span>
                 </h5>
                 <ul>
-                    <?php $this->_tags_data=$this->tag_block_loop(array('type'=>'arclist','row'=>'12','tpl'=>'fangchan','image'=>'1','info'=>'',));if($this->_tags_data){ foreach($this->_tags_data as $this->_var["k"]=>$this->_var["vo"]){ ?>
-                    <li><span><?php echo $this->_var['vo']['postdate']; ?></span><a href="<?php echo $this->_var['vo']['url']; ?>"><?php echo $this->tag_function_getone(array( 'name'=>"liaocheng/fangchan/title/title", 'cacheid'=>"rand", )); ?></a></li>
-                    <?php }} ?>
+                    <?php $article = randArticle('fangchan',12)?>
+                    <?php foreach ($article as $item):?>
+		                <li><span><?=date("m-d")?></span><a href="<?=$item['url']?>"><?=$item['title']?></a></li>
+                    <?php endforeach;?>
                 </ul>
             </div>
             <div class="box1 box_l">
                 <h5><a href="/ershou/" class="more">更多&gt;&gt;</a><span>二手信息</span></h5>
                 <ul>
-                    <?php $this->_tags_data=$this->tag_block_loop(array('type'=>'arclist','row'=>'12','tpl'=>'ershou','image'=>'1','info'=>'',));if($this->_tags_data){ foreach($this->_tags_data as $this->_var["k"]=>$this->_var["vo"]){ ?>
-                    <li><span><?php echo $this->_var['vo']['postdate']; ?></span><a href="<?php echo $this->_var['vo']['url']; ?>"><?php echo $this->tag_function_getone(array( 'name'=>"liaocheng/ershou/title/title", 'cacheid'=>"rand", )); ?></a></li>
-                    <?php }} ?>
+                    <?php $article = randArticle('ershou',12)?>
+                    <?php foreach ($article as $item):?>
+                    <li><span><?=date("m-d")?></span><a href="<?=$item['url']?>"><?=$item['title']?></a></li>
+                    <?php endforeach;?>
                 </ul>
             </div>
         </div>
@@ -135,9 +137,10 @@
             <div class="box2">
                 <h5><a href="/shenhuo/" class="more">更多&gt;&gt;</a><span>生活服务</span></h5>
                 <ul class="ico">
-                    <?php $this->_tags_data=$this->tag_block_loop(array('type'=>'arclist','row'=>'12','tpl'=>'shenhuo','image'=>'1','info'=>'',));if($this->_tags_data){ foreach($this->_tags_data as $this->_var["k"]=>$this->_var["vo"]){ ?>
-                    <li><span><?php echo date("m-d")?></span><a href="<?php echo $this->_var['vo']['url']; ?>"><?php echo $this->tag_function_getone(array( 'name'=>"liaocheng/shenghuo/title/title", 'cacheid'=>"rand", )); ?></a></li>
-                    <?php }} ?>
+                    <?php $article = randArticle('shenghuo',12)?>
+                    <?php foreach ($article as $item):?>
+		                <li><span><?=date("m-d")?></span><a href="<?=$item['url']?>"><?=$item['title']?></a></li>
+                    <?php endforeach;?>
                 </ul>
             </div>
         </div>
@@ -146,17 +149,19 @@
         <div class="box1">
             <h5><a href="/zhaopin/" class="more">更多&gt;&gt;</a><span>企业招聘</span></h5>
             <ul>
-                <?php $this->_tags_data=$this->tag_block_loop(array('type'=>'arclist','row'=>'12','tpl'=>'zhaopin','image'=>'1','info'=>'',));if($this->_tags_data){ foreach($this->_tags_data as $this->_var["k"]=>$this->_var["vo"]){ ?>
-                <li><span><?php echo $this->_var['vo']['postdate']; ?></span><a href="<?php echo $this->_var['vo']['url']; ?>"><?php echo $this->tag_function_getone(array( 'name'=>"liaocheng/zhaopin/title/title", 'cacheid'=>"rand", )); ?></a></li>
-                <?php }} ?>
+                <?php $article = randArticle('zhaopin',12)?>
+                <?php foreach ($article as $item):?>
+		            <li><span><?=date("m-d")?></span><a href="<?=$item['url']?>"><?=$item['title']?></a></li>
+                <?php endforeach;?>
             </ul>
         </div>
         <div class="box1 box_l">
             <h5><a href="/keji/" class="more">更多&gt;&gt;</a><span>科技前沿</span></h5>
             <ul>
-                <?php $this->_tags_data=$this->tag_block_loop(array('type'=>'arclist','row'=>'12','tpl'=>'keji','image'=>'1','info'=>'',));if($this->_tags_data){ foreach($this->_tags_data as $this->_var["k"]=>$this->_var["vo"]){ ?>
-                <li><span><?php echo $this->_var['vo']['postdate']; ?></span><a href="<?php echo $this->_var['vo']['url']; ?>"><?php echo $this->tag_function_getone(array( 'name'=>"liaocheng/keji/title/title", 'cacheid'=>"rand", )); ?></a></li>
-                <?php }} ?>
+                <?php $article = randArticle('keji',12)?>
+                <?php foreach ($article as $item):?>
+		            <li><span><?=date("m-d")?></span><a href="<?=$item['url']?>"><?=$item['title']?></a></li>
+                <?php endforeach;?>
             </ul>
         </div>
     </div>
@@ -164,10 +169,10 @@
         <div class="box2">
             <h5><a href="/jiaoyou/" class="more">更多&gt;&gt;</a><span>交友征婚</span></h5>
             <ul class="ico">
-
-                <?php $this->_tags_data=$this->tag_block_loop(array('type'=>'arclist','row'=>'12','tpl'=>'jiaoyou','image'=>'1','info'=>'',));if($this->_tags_data){ foreach($this->_tags_data as $this->_var["k"]=>$this->_var["vo"]){ ?>
-                <li><span><?php echo date("m-d")?></span><a href="<?php echo $this->_var['vo']['url']; ?>"><?php echo $this->tag_function_getone(array( 'name'=>"liaocheng/jiaoyou/title/title", 'cacheid'=>"rand", )); ?></a></li>
-                <?php }} ?>
+                <?php $article = randArticle('jiaoyou',12)?>
+                <?php foreach ($article as $item):?>
+		            <li><span><?=date("m-d")?></span><a href="<?=$item['url']?>"><?=$item['title']?></a></li>
+                <?php endforeach;?>
             </ul>
         </div>
     </div>
@@ -178,104 +183,105 @@
         <div class="box1">
             <h5><a href="/news/" class="more">更多&gt;&gt;</a><span>新闻资讯</span></h5>
             <div class="pic">
-                <?php $this->_tags_data=$this->tag_block_loop(array('type'=>'arclist','row'=>'1','tpl'=>'news','image'=>'1','info'=>'1',));if($this->_tags_data){ foreach($this->_tags_data as $this->_var["k"]=>$this->_var["vo"]){ ?>
-                <a href="<?php echo $this->_var['vo']['url']; ?>"><img src="<?php echo $this->_var['vo']['pic']; ?>" alt='<?php echo $this->_var['vo']['title']; ?>'></a>
-                <?php }} ?>
+                <?php $article = randMeta('news')?>
+                <a href="<?=$article['url']?>"><img src="<?=randPic()?>" alt='<?=$article['title']?>'></a>
             </div>
             <ul class="hot">
-                <?php $this->_tags_data=$this->tag_block_loop(array('type'=>'arclist','row'=>'4','tpl'=>'news','image'=>'','info'=>'',));if($this->_tags_data){ foreach($this->_tags_data as $this->_var["k"]=>$this->_var["vo"]){ ?>
-                <li><a href="<?php echo $this->_var['vo']['url']; ?>"><?php echo $this->tag_function_getone(array( 'name'=>"liaocheng/news/title/title", 'cacheid'=>"rand", )); ?></a>
-                    <?php }} ?>
+                <?php $article = randArticle('news',4)?>
+                <?php foreach ($article as $item):?>
+		            <li><a href="<?=$item['url']?>" title="<?=$item['title']?>"><?=$item['title']?></a></li>
+                <?php endforeach;?>
             </ul>
             <ul class="news">
-                <?php $this->_tags_data=$this->tag_block_loop(array('type'=>'arclist','row'=>'12','tpl'=>'news','image'=>'','info'=>'',));if($this->_tags_data){ foreach($this->_tags_data as $this->_var["k"]=>$this->_var["vo"]){ ?>
-
-                <li><span><?php echo $this->_var['vo']['postdate']; ?></span><a href="<?php echo $this->_var['vo']['url']; ?>"><?php echo $this->tag_function_getone(array( 'name'=>"liaocheng/news/title/title", 'cacheid'=>"rand", )); ?></a></li>
-                <?php }} ?>
+                <?php $article = randArticle('news',12)?>
+                <?php foreach ($article as $item):?>
+		            <li><span><?=date("m-d")?></span><a href="<?=$item['url']?>"><?=$item['title']?></a></li>
+                <?php endforeach;?>
             </ul>
         </div>
 
         <div class="box1 box_l">
             <h5><a href="/qiye/" class="more">更多&gt;&gt;</a><span>企业</span></h5>
-            <div class="pic">
-                <?php $this->_tags_data=$this->tag_block_loop(array('type'=>'arclist','row'=>'1','tpl'=>'qiye','image'=>'1','info'=>'1',));if($this->_tags_data){ foreach($this->_tags_data as $this->_var["k"]=>$this->_var["vo"]){ ?>
-                <a href="<?php echo $this->_var['vo']['url']; ?>"><img src="<?php echo $this->_var['vo']['pic']; ?>" alt="{vo.title}"></a>
-                <?php }} ?>
-            </div>
-            <ul class="hot">
-                <?php $this->_tags_data=$this->tag_block_loop(array('type'=>'arclist','row'=>'4','tpl'=>'qiye','image'=>'','info'=>'',));if($this->_tags_data){ foreach($this->_tags_data as $this->_var["k"]=>$this->_var["vo"]){ ?>
-                <li><a href="<?php echo $this->_var['vo']['url']; ?>"><?php echo $this->tag_function_getone(array( 'name'=>"liaocheng/qiye/title/title", 'cacheid'=>"rand", )); ?> -- <?php echo $this->tag_function_getone(array( 'name'=>"liaocheng/qiye/title/name", 'cacheid'=>"rand", )); ?></a>
-                <?php }} ?>
-            </ul>
-            <ul class="news">
-                <?php $this->_tags_data=$this->tag_block_loop(array('type'=>'arclist','row'=>'12','tpl'=>'qiye','image'=>'','info'=>'',));if($this->_tags_data){ foreach($this->_tags_data as $this->_var["k"]=>$this->_var["vo"]){ ?>
-                <li>
-                    <span><?php echo $this->_var['vo']['postdate']; ?></span>
-                    <a href="<?php echo $this->_var['vo']['url']; ?>"><?php echo $this->tag_function_getone(array( 'name'=>"liaocheng/qiye/title/title", 'cacheid'=>"rand", )); ?> -- <?php echo $this->tag_function_getone(array( 'name'=>"liaocheng/qiye/title/name", 'cacheid'=>"rand", )); ?></a>
-                </li>
-                <?php }} ?>
-            </ul>
+	        <div class="pic">
+                <?php $article = randMeta('qiye')?>
+		        <a href="<?=$article['url']?>"><img src="<?=randPic()?>" alt='<?=$article['title']?>'></a>
+	        </div>
+	        <ul class="hot">
+                <?php $article = randArticle('qiye',4)?>
+                <?php foreach ($article as $item):?>
+			        <li><a href="<?=$item['url']?>" title="<?=$item['title']?>"><?=$item['title']?></a></li>
+                <?php endforeach;?>
+	        </ul>
+	        <ul class="news">
+                <?php $article = randArticle('qiye',12)?>
+                <?php foreach ($article as $item):?>
+			        <li><span><?=date("m-d")?></span><a href="<?=$item['url']?>"><?=$item['title']?></a></li>
+                <?php endforeach;?>
+	        </ul>
         </div>
     </div>
     <div class="r">
         <div class="box2">
             <h5><a href="/blog/" class="more">更多&gt;&gt;</a><span>聊城博客</span></h5>
             <ul class="ico">
-                <?php $this->_tags_data=$this->tag_block_loop(array('type'=>'arclist','row'=>'12','tpl'=>'blog','image'=>'','info'=>'',));if($this->_tags_data){ foreach($this->_tags_data as $this->_var["k"]=>$this->_var["vo"]){ ?>
-                <li><span><?php echo date("m-d")?></span><a href="<?php echo $this->_var['vo']['url']; ?>"><?php echo $this->tag_function_getone(array( 'name'=>"liaocheng/blog/title/title", 'cacheid'=>"rand", )); ?></a></li>
-                <?php }} ?>
+                <?php $article = randArticle('blog',12)?>
+                <?php foreach ($article as $item):?>
+		            <li><span><?=date("m-d")?></span><a href="<?=$item['url']?>"><?=$item['title']?></a></li>
+                <?php endforeach;?>
             </ul>
         </div>
     </div>
     <div class="qilist">
         <div class="l">
             <div class="box1">
-                <h5><a href="/zhidao/" class="more">更多&gt;&gt;</a><span>知道</span></h5>
-                <div class="pic">
-                    <?php $this->_tags_data=$this->tag_block_loop(array('type'=>'arclist','row'=>'1','tpl'=>'zhidao','image'=>'1','info'=>'1',));if($this->_tags_data){ foreach($this->_tags_data as $this->_var["k"]=>$this->_var["vo"]){ ?>
-                    <a href="<?php echo $this->_var['vo']['url']; ?>"><img src="<?php echo $this->_var['vo']['pic']; ?>" alt="{vo.title}"></a>
-                    <?php }} ?>
-                </div>
-                <ul class="hot">
-                    <?php $this->_tags_data=$this->tag_block_loop(array('type'=>'arclist','row'=>'4','tpl'=>'zhidao','image'=>'','info'=>'',));if($this->_tags_data){ foreach($this->_tags_data as $this->_var["k"]=>$this->_var["vo"]){ ?>
-                    <li><a href="<?php echo $this->_var['vo']['url']; ?>"><?php echo $this->tag_function_getone(array( 'name'=>"liaocheng/zhidao/title/title", 'cacheid'=>"rand", )); ?></a>
-                        <?php }} ?>
-                </ul>
-                <ul class="news">
-                    <?php $this->_tags_data=$this->tag_block_loop(array('type'=>'arclist','row'=>'12','tpl'=>'zhidao','image'=>'','info'=>'',));if($this->_tags_data){ foreach($this->_tags_data as $this->_var["k"]=>$this->_var["vo"]){ ?>
-                    <li><span><?php echo $this->_var['vo']['postdate']; ?></span><a href="<?php echo $this->_var['vo']['url']; ?>"><?php echo $this->tag_function_getone(array( 'name'=>"liaocheng/zhidao/title/title", 'cacheid'=>"rand", )); ?></a></li>
-                    <?php }} ?>
-                </ul>
+	            <h5><a href="/lvyou/" class="more">更多&gt;&gt;</a><span>旅游资讯</span></h5>
+	            <div class="pic">
+                    <?php $article = randMeta('lvyou')?>
+		            <a href="<?=$article['url']?>"><img src="<?=randPic()?>" alt='<?=$article['title']?>'></a>
+	            </div>
+	            <ul class="hot">
+                    <?php $article = randArticle('lvyou',4)?>
+                    <?php foreach ($article as $item):?>
+			            <li><a href="<?=$item['url']?>" title="<?=$item['title']?>"><?=$item['title']?></a></li>
+                    <?php endforeach;?>
+	            </ul>
+	            <ul class="news">
+                    <?php $article = randArticle('lvyou',12)?>
+                    <?php foreach ($article as $item):?>
+			            <li><span><?=date("m-d")?></span><a href="<?=$item['url']?>"><?=$item['title']?></a></li>
+                    <?php endforeach;?>
+	            </ul>
             </div>
+	        <div class="box1 box_l">
 
-            <div class="box1 box_l">
-                <h5><a href="/lvyou/" class="more">更多&gt;&gt;</a><span>旅游资讯</span></h5>
-                <div class="pic">
-                    <?php $this->_tags_data=$this->tag_block_loop(array('type'=>'arclist','row'=>'1','tpl'=>'lvyou','image'=>'1','info'=>'1',));if($this->_tags_data){ foreach($this->_tags_data as $this->_var["k"]=>$this->_var["vo"]){ ?>
-                    <a href="<?php echo $this->_var['vo']['url']; ?>"><img src="<?php echo $this->_var['vo']['pic']; ?>" alt="{vo.title}"></a>
-                    <?php }} ?>
-                </div>
-                <ul class="hot">
-                    <?php $this->_tags_data=$this->tag_block_loop(array('type'=>'arclist','row'=>'4','tpl'=>'lvyou','image'=>'','info'=>'',));if($this->_tags_data){ foreach($this->_tags_data as $this->_var["k"]=>$this->_var["vo"]){ ?>
-                    <li><a href="<?php echo $this->_var['vo']['url']; ?>"><?php echo $this->tag_function_getone(array( 'name'=>"liaocheng/lvyou/title/title", 'cacheid'=>"rand", )); ?></a>
-                        <?php }} ?>
-                </ul>
-                <ul class="news">
-                    <?php $this->_tags_data=$this->tag_block_loop(array('type'=>'arclist','row'=>'12','tpl'=>'lvyou','image'=>'','info'=>'',));if($this->_tags_data){ foreach($this->_tags_data as $this->_var["k"]=>$this->_var["vo"]){ ?>
-                    <li><span><?php echo $this->_var['vo']['postdate']; ?></span><a href="<?php echo $this->_var['vo']['url']; ?>"><?php echo $this->tag_function_getone(array( 'name'=>"liaocheng/lvyou/title/title", 'cacheid'=>"rand", )); ?></a></li>
-                    <?php }} ?>
-                </ul>
-            </div>
-
+		        <h5><a href="/" class="more">更多&gt;&gt;</a><span>随机推荐</span></h5>
+		        <div class="pic">
+                    <?php $article = randMeta(null)?>
+			        <a href="<?=$article['url']?>"><img src="<?=randPic()?>" alt='<?=$article['title']?>'></a>
+		        </div>
+		        <ul class="hot">
+                    <?php $article = randArticle(null,4)?>
+                    <?php foreach ($article as $item):?>
+				        <li><a href="<?=$item['url']?>" title="<?=$item['title']?>"><?=$item['title']?></a></li>
+                    <?php endforeach;?>
+		        </ul>
+		        <ul class="news">
+                    <?php $article = randArticle(null,12)?>
+                    <?php foreach ($article as $item):?>
+				        <li><span><?=date("m-d")?></span><a href="<?=$item['url']?>"><?=$item['title']?></a></li>
+                    <?php endforeach;?>
+		        </ul>
+	        </div>
         </div>
         <div class="r">
             <div class="box2">
                 <h5><a href="/news/" class="more">更多&gt;&gt;</a><span>热点推荐</span>
                 </h5>
                 <ul class="ico">
-                    <?php $this->_tags_data=$this->tag_block_loop(array('type'=>'arclist','row'=>'12','tpl'=>'','image'=>'','info'=>'','fan'=>'1',));if($this->_tags_data){ foreach($this->_tags_data as $this->_var["k"]=>$this->_var["vo"]){ ?>
-                    <li><span><?php echo date("m-d")?></span><a href="<?php echo $this->_var['vo']['url']; ?>"><?php echo $this->_var['vo']['title']; ?></a></li>
-                    <?php }} ?>
+                    <?php $article = randArticle(null,12)?>
+                    <?php foreach ($article as $item):?>
+		                <li><span><?=date("m-d")?></span><a href="<?=$item['url']?>"><?=$item['title']?></a></li>
+                    <?php endforeach;?>
                 </ul>
             </div>
         </div>
