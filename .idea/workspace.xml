@@ -3,60 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="0f6a54be-2130-45b3-95e4-cc0b0850bcf3" name="Default" comment="追加">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/mylib/DBtools_1.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/mylib/DBtools_1.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/mylib/DBtools_2.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/mylib/DBtools_2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/mylib/tag.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/mylib/tag.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/arctype_config.php" beforeDir="false" afterPath="$PROJECT_DIR$/temp/arctype_config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/cache/tplcache/liaocheng/liaocheng/0c8d3fed734a5fd8e32379e3b7e1dc25_blog_list.html.php" beforeDir="false" afterPath="$PROJECT_DIR$/temp/cache/tplcache/liaocheng/liaocheng/0c8d3fed734a5fd8e32379e3b7e1dc25_blog_list.html.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/cache/tplcache/liaocheng/liaocheng/1b0a50d94698db1b9ef822805de80843_lvyou.html.php" beforeDir="false" afterPath="$PROJECT_DIR$/temp/cache/tplcache/liaocheng/liaocheng/1b0a50d94698db1b9ef822805de80843_lvyou.html.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/cache/tplcache/liaocheng/liaocheng/285b91f39df5c996d58a2d9969dc91a3_news.html.php" beforeDir="false" afterPath="$PROJECT_DIR$/temp/cache/tplcache/liaocheng/liaocheng/285b91f39df5c996d58a2d9969dc91a3_news.html.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/cache/tplcache/liaocheng/liaocheng/5c4ffad22d38827a5cf4fbe6b9c1a0d5_fangchan.html.php" beforeDir="false" afterPath="$PROJECT_DIR$/temp/cache/tplcache/liaocheng/liaocheng/5c4ffad22d38827a5cf4fbe6b9c1a0d5_fangchan.html.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/cache/tplcache/liaocheng/liaocheng/676359e95a4ddf110bf11617a88cf501_bbs_list.html.php" beforeDir="false" afterPath="$PROJECT_DIR$/temp/cache/tplcache/liaocheng/liaocheng/676359e95a4ddf110bf11617a88cf501_bbs_list.html.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/cache/tplcache/liaocheng/liaocheng/7c177158bc2d94628c75cb0357494bbc_header.html.php" beforeDir="false" afterPath="$PROJECT_DIR$/temp/cache/tplcache/liaocheng/liaocheng/7c177158bc2d94628c75cb0357494bbc_header.html.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/cache/tplcache/liaocheng/liaocheng/82b8dee68bbf555de086ac0733d559ad_bbs.html.php" beforeDir="false" afterPath="$PROJECT_DIR$/temp/cache/tplcache/liaocheng/liaocheng/82b8dee68bbf555de086ac0733d559ad_bbs.html.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/cache/tplcache/liaocheng/liaocheng/9ea4870d7a98d8a5ad893346dc65b91a_index.html.php" beforeDir="false" afterPath="$PROJECT_DIR$/temp/cache/tplcache/liaocheng/liaocheng/9ea4870d7a98d8a5ad893346dc65b91a_index.html.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/cache/tplcache/liaocheng/liaocheng/c4d49d5e452404c09ce34acc9c9b4c95_news_list.html.php" beforeDir="false" afterPath="$PROJECT_DIR$/temp/cache/tplcache/liaocheng/liaocheng/c4d49d5e452404c09ce34acc9c9b4c95_news_list.html.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/temp/cache/tplcache/liaocheng/liaocheng/dbd99012b97bc9e46123bf7fc9dafe0e_blog.html.php" beforeDir="false" afterPath="$PROJECT_DIR$/temp/cache/tplcache/liaocheng/liaocheng/dbd99012b97bc9e46123bf7fc9dafe0e_blog.html.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/cache/tplcache/liaocheng/liaocheng/e23ec2283c5cc114b48af63c2d4eb1fe_bbs_news_list.html.php" beforeDir="false" afterPath="$PROJECT_DIR$/temp/cache/tplcache/liaocheng/liaocheng/e23ec2283c5cc114b48af63c2d4eb1fe_bbs_news_list.html.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/temp/cache/tplcache/liaocheng/liaocheng/md5.php" beforeDir="false" afterPath="$PROJECT_DIR$/temp/cache/tplcache/liaocheng/liaocheng/md5.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/temp/collect-run.lock" beforeDir="false" afterPath="$PROJECT_DIR$/temp/collect-run.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/db/aclogs.FRM" beforeDir="false" afterPath="$PROJECT_DIR$/temp/db/aclogs.FRM" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/db/aclogs.MYD" beforeDir="false" afterPath="$PROJECT_DIR$/temp/db/aclogs.MYD" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/db/arctype.FRM" beforeDir="false" afterPath="$PROJECT_DIR$/temp/db/arctype.FRM" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/db/arctype.MYD" beforeDir="false" afterPath="$PROJECT_DIR$/temp/db/arctype.MYD" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/db/domain.MYD" beforeDir="false" afterPath="$PROJECT_DIR$/temp/db/domain.MYD" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/db/master.MYD" beforeDir="false" afterPath="$PROJECT_DIR$/temp/db/master.MYD" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/temp/logs/scantheme.log" beforeDir="false" afterPath="$PROJECT_DIR$/temp/logs/scantheme.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/temp/9703a215602d312a8a8d37be488bd50b.log" beforeDir="false" afterPath="$PROJECT_DIR$/temp/temp/9703a215602d312a8a8d37be488bd50b.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/theme_config.php" beforeDir="false" afterPath="$PROJECT_DIR$/temp/theme_config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/liaocheng/liaocheng/bbs.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/liaocheng/liaocheng/bbs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/liaocheng/liaocheng/bbs_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/liaocheng/liaocheng/bbs_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/liaocheng/liaocheng/bbs_news_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/liaocheng/liaocheng/bbs_news_list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/template/liaocheng/liaocheng/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/liaocheng/liaocheng/blog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/liaocheng/liaocheng/blog_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/liaocheng/liaocheng/blog_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/liaocheng/liaocheng/ershou.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/liaocheng/liaocheng/ershou.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/liaocheng/liaocheng/ershou_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/liaocheng/liaocheng/ershou_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/liaocheng/liaocheng/fangchan.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/liaocheng/liaocheng/fangchan.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/liaocheng/liaocheng/fangchan_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/liaocheng/liaocheng/fangchan_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/liaocheng/liaocheng/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/liaocheng/liaocheng/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/liaocheng/liaocheng/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/liaocheng/liaocheng/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/liaocheng/liaocheng/jiaoyou.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/liaocheng/liaocheng/jiaoyou.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/liaocheng/liaocheng/jiaoyou_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/liaocheng/liaocheng/jiaoyou_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/liaocheng/liaocheng/keji.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/liaocheng/liaocheng/keji.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/liaocheng/liaocheng/keji_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/liaocheng/liaocheng/keji_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/liaocheng/liaocheng/lvyou.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/liaocheng/liaocheng/lvyou.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/liaocheng/liaocheng/lvyou_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/liaocheng/liaocheng/lvyou_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/liaocheng/liaocheng/news.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/liaocheng/liaocheng/news.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/liaocheng/liaocheng/news_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/liaocheng/liaocheng/news_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/liaocheng/liaocheng/qiye.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/liaocheng/liaocheng/qiye.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/liaocheng/liaocheng/qiye_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/liaocheng/liaocheng/qiye_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/liaocheng/liaocheng/shenhuo.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/liaocheng/liaocheng/shenhuo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/liaocheng/liaocheng/shenhuo_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/liaocheng/liaocheng/shenhuo_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/liaocheng/liaocheng/zhaopin.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/liaocheng/liaocheng/zhaopin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/liaocheng/liaocheng/zhaopin_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/liaocheng/liaocheng/zhaopin_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/liaocheng/liaocheng/zhidao.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/liaocheng/liaocheng/zhidao_list.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/sitemap.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/sitemap.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -120,41 +71,8 @@
       <file leaf-file-name="qiye.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/template/liaocheng/liaocheng/qiye.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="632">
+            <state relative-caret-position="765">
               <caret line="51" column="27" selection-start-line="42" selection-start-column="8" selection-end-line="51" selection-end-column="27" />
-              <folding>
-                <element signature="e#443#450#0#HTML" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#dd#5;n#dl#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tag.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/mylib/tag.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2880">
-              <caret line="192" column="108" selection-start-line="192" selection-start-column="108" selection-end-line="192" selection-end-column="108" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="keji_list.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/template/liaocheng/liaocheng/keji_list.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="55" selection-start-line="13" selection-start-column="55" selection-end-line="13" selection-end-column="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="keji.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/template/liaocheng/liaocheng/keji.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -162,7 +80,7 @@
       <file leaf-file-name="lvyou_list.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/template/liaocheng/liaocheng/lvyou_list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
+            <state relative-caret-position="1755">
               <caret line="117" column="51" selection-start-line="117" selection-start-column="51" selection-end-line="117" selection-end-column="51" />
             </state>
           </provider>
@@ -171,16 +89,16 @@
       <file leaf-file-name="lvyou.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/template/liaocheng/liaocheng/lvyou.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="369">
+            <state relative-caret-position="825">
               <caret line="55" column="27" selection-start-line="55" selection-start-column="27" selection-end-line="55" selection-end-column="27" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/template/liaocheng/liaocheng/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
+            <state relative-caret-position="3795">
               <caret line="253" selection-start-line="253" selection-end-line="253" />
               <folding>
                 <marker date="1541750583984" expanded="false" signature="1048:1132" ph="..." />
@@ -202,20 +120,51 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="小霸王标签.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/template/liaocheng/liaocheng/小霸王标签.txt">
+      <file leaf-file-name="footer.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/template/liaocheng/liaocheng/footer.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="635">
-              <caret line="43" column="6" lean-forward="true" selection-start-line="43" selection-start-column="6" selection-end-line="43" selection-end-column="6" />
+            <state relative-caret-position="345">
+              <caret line="23" column="15" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="15" />
+              <folding>
+                <element signature="e#1446#1452#0#HTML" expanded="true" />
+                <element signature="e#1452#1458#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="news_list.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/template/liaocheng/liaocheng/news_list.html">
+      <file leaf-file-name="blog.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/template/liaocheng/liaocheng/blog.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-166">
-              <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+            <state relative-caret-position="25">
+              <caret line="45" column="66" selection-start-line="45" selection-start-column="66" selection-end-line="45" selection-end-column="66" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tag.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/core/mylib/tag.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2451">
+              <caret line="192" column="108" selection-start-line="192" selection-start-column="108" selection-end-line="192" selection-end-column="108" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="blog_list.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/template/liaocheng/liaocheng/blog_list.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="482">
+              <caret line="51" column="12" selection-start-line="51" selection-start-column="12" selection-end-line="60" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="小霸王标签.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/template/liaocheng/liaocheng/小霸王标签.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="645">
+              <caret line="43" column="6" selection-start-line="43" selection-start-column="6" selection-end-line="43" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -299,7 +248,6 @@
         <option value="$PROJECT_DIR$/template/SPath/template/index.html" />
         <option value="$PROJECT_DIR$/core/mylib/randtest.php" />
         <option value="$PROJECT_DIR$/template/liaocheng/liaocheng/bbs_news_list.html" />
-        <option value="$PROJECT_DIR$/template/liaocheng/liaocheng/blog.html" />
         <option value="$PROJECT_DIR$/template/liaocheng/liaocheng/bbs_list.html" />
         <option value="$PROJECT_DIR$/template/liaocheng/liaocheng/bbs.html" />
         <option value="$PROJECT_DIR$/core/mylib/DBtools_1.php" />
@@ -333,6 +281,7 @@
         <option value="$PROJECT_DIR$/template/liaocheng/liaocheng/qiye.html" />
         <option value="$PROJECT_DIR$/template/liaocheng/liaocheng/lvyou.html" />
         <option value="$PROJECT_DIR$/template/liaocheng/liaocheng/index.html" />
+        <option value="$PROJECT_DIR$/template/liaocheng/liaocheng/blog.html" />
       </list>
     </option>
   </component>
@@ -370,13 +319,23 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="xbw" type="b2602c69:ProjectViewProjectNode" />
               <item name="xbw" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="xbw" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xbw" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="core" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="xbw" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xbw" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="core" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="mylib" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="xbw" type="b2602c69:ProjectViewProjectNode" />
@@ -400,6 +359,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -482,7 +442,8 @@
       <workItem from="1540549160828" duration="7654000" />
       <workItem from="1540782108410" duration="14512000" />
       <workItem from="1541126863173" duration="43458000" />
-      <workItem from="1541580981023" duration="14214000" />
+      <workItem from="1541580981023" duration="15626000" />
+      <workItem from="1541819967346" duration="336000" />
     </task>
     <task id="LOCAL-00001" summary="基本功能实现">
       <created>1540478539870</created>
@@ -544,7 +505,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="134053000" />
+    <option name="totallyTimeSpent" value="135801000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -559,17 +520,16 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20386267" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49928468" weight="0.32969698" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5028612" side_tool="true" weight="0.28969696" />
+      <window_info anchor="right" id="Database" order="3" weight="0.19027181" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49713877" weight="0.28969696" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32969698" />
-      <window_info anchor="bottom" id="Database Console" order="7" sideWeight="0.4985694" weight="0.35393938" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20100144" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" order="3" weight="0.19027181" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32969698" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -579,30 +539,31 @@
       <window_info anchor="bottom" id="Messages" order="7" weight="0.32969698" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Database Console" order="7" sideWeight="0.4985694" weight="0.35393938" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32969698" />
     </layout>
     <layout-to-restore>
-      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50214595" side_tool="true" weight="0.39515153" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Database Console" order="8" sideWeight="0.4985694" weight="0.32848486" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49785408" visible="true" weight="0.29333332" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2274678" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32969698" />
       <window_info anchor="right" id="Database" order="3" weight="0.19027181" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32969698" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50214595" side_tool="true" weight="0.39515153" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="13" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Messages" order="0" weight="0.32969698" />
-      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -619,6 +580,54 @@
     <option name="LAST_COMMIT_MESSAGE" value="追加" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/template/liaocheng/liaocheng/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3795">
+          <caret line="253" selection-start-line="253" selection-end-line="253" />
+          <folding>
+            <marker date="1541750583984" expanded="false" signature="1048:1132" ph="..." />
+            <marker date="1541750583984" expanded="false" signature="1260:1343" ph="..." />
+            <marker date="1541750583984" expanded="false" signature="1463:1500" ph="..." />
+            <marker date="1541750583984" expanded="false" signature="1507:1578" ph="..." />
+            <marker date="1541750583984" expanded="false" signature="1629:1665" ph="..." />
+            <marker date="1541750583984" expanded="false" signature="1671:1743" ph="..." />
+            <marker date="1541750583984" expanded="false" signature="1793:1830" ph="..." />
+            <marker date="1541750583984" expanded="false" signature="1835:1907" ph="..." />
+            <marker date="1541750583984" expanded="false" signature="1956:1992" ph="..." />
+            <marker date="1541750583984" expanded="false" signature="1998:2070" ph="..." />
+            <marker date="1541750583984" expanded="false" signature="2118:2155" ph="..." />
+            <marker date="1541750583984" expanded="false" signature="2161:2233" ph="..." />
+            <marker date="1541750583984" expanded="false" signature="2281:2317" ph="..." />
+            <marker date="1541750583984" expanded="false" signature="2323:2395" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/liaocheng/liaocheng/小霸王标签.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="43" column="6" lean-forward="true" selection-start-line="43" selection-start-column="6" selection-end-line="43" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/liaocheng/liaocheng/news_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/liaocheng/liaocheng/footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="15" lean-forward="true" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="15" />
+          <folding>
+            <element signature="e#1446#1452#0#HTML" expanded="true" />
+            <element signature="e#1452#1458#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/core/mylib/randtest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -658,9 +667,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="71" column="49" selection-start-line="71" selection-start-column="49" selection-end-line="71" selection-end-column="49" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -694,13 +700,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="737">
           <caret line="53" column="53" selection-start-line="53" selection-start-column="53" selection-end-line="53" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template/liaocheng/liaocheng/blog.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="66" column="28" selection-end-line="78" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -743,10 +742,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="6" lean-forward="true" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
-          <folding>
-            <element signature="e#2687#2691#0#HTML" expanded="true" />
-            <element signature="e#2717#2721#0#HTML" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -785,12 +780,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/mylib/test_getone.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template/liaocheng/liaocheng/list.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/template/sitemap.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -826,24 +815,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template/liaocheng/liaocheng/blog_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="461">
-          <caret line="60" selection-start-line="60" selection-end-line="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/template/liaocheng/liaocheng/css/job_index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="423">
           <caret line="46" column="40" lean-forward="true" selection-start-line="46" selection-start-column="40" selection-end-line="46" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template/liaocheng/liaocheng/footer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="15" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
         </state>
       </provider>
     </entry>
@@ -860,12 +835,6 @@
           <caret selection-end-line="3" selection-end-column="43" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template/liaocheng/liaocheng/zhidao_list.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template/liaocheng/liaocheng/zhidao.html">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/33f8390a-bb0f-47eb-8ac3-e7519cffc4b6/console.sql">
       <provider selected="true" editor-type-id="text-editor">
@@ -885,9 +854,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="735">
           <caret line="49" selection-start-line="49" selection-end-line="49" />
-          <folding>
-            <marker date="1541670000133" expanded="false" signature="742:838" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -898,16 +864,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/mylib/tag.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2880">
-          <caret line="192" column="108" selection-start-line="192" selection-start-column="108" selection-end-line="192" selection-end-column="108" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/template/liaocheng/liaocheng/news_list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-166">
+        <state relative-caret-position="225">
           <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
         </state>
       </provider>
@@ -928,7 +887,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/template/liaocheng/liaocheng/lvyou_list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
+        <state relative-caret-position="1755">
           <caret line="117" column="51" selection-start-line="117" selection-start-column="51" selection-end-line="117" selection-end-column="51" />
         </state>
       </provider>
@@ -942,34 +901,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/template/liaocheng/liaocheng/qiye.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="632">
+        <state relative-caret-position="765">
           <caret line="51" column="27" selection-start-line="42" selection-start-column="8" selection-end-line="51" selection-end-column="27" />
-          <folding>
-            <element signature="e#443#450#0#HTML" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#dd#5;n#dl#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/template/liaocheng/liaocheng/lvyou.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
+        <state relative-caret-position="825">
           <caret line="55" column="27" selection-start-line="55" selection-start-column="27" selection-end-line="55" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/template/liaocheng/liaocheng/小霸王标签.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="635">
-          <caret line="43" column="6" lean-forward="true" selection-start-line="43" selection-start-column="6" selection-end-line="43" selection-end-column="6" />
+        <state relative-caret-position="645">
+          <caret line="43" column="6" selection-start-line="43" selection-start-column="6" selection-end-line="43" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/template/liaocheng/liaocheng/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
+        <state relative-caret-position="3795">
           <caret line="253" selection-start-line="253" selection-end-line="253" />
           <folding>
             <marker date="1541750583984" expanded="false" signature="1048:1132" ph="..." />
@@ -987,6 +940,38 @@
             <marker date="1541750583984" expanded="false" signature="2281:2317" ph="..." />
             <marker date="1541750583984" expanded="false" signature="2323:2395" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/liaocheng/liaocheng/footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="15" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="15" />
+          <folding>
+            <element signature="e#1446#1452#0#HTML" expanded="true" />
+            <element signature="e#1452#1458#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/liaocheng/liaocheng/blog_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="482">
+          <caret line="51" column="12" selection-start-line="51" selection-start-column="12" selection-end-line="60" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/liaocheng/liaocheng/blog.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="45" column="66" selection-start-line="45" selection-start-column="66" selection-end-line="45" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/mylib/tag.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2451">
+          <caret line="192" column="108" selection-start-line="192" selection-start-column="108" selection-end-line="192" selection-end-column="108" />
         </state>
       </provider>
     </entry>

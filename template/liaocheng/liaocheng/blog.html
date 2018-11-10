@@ -42,7 +42,8 @@
 </div>
 <div class="content">
 	<div class="l">
-		<div class="url">个人网址：<a href="http://www.liaocheng.cc/u/?huiyuan=mmp990860">http://www.liaocheng.cc/u/?huiyuan=mmp990860</a>
+		<?php $item = randMeta()?>
+		<div class="url">个人网址：<a href="<?=$item['url']?>"><?=$item['title']?></a>
 		</div>
 		<h2 class="bt"><?=$article['title']?><em><?=$article['pub_time']?></em></h2>
 		<div class="nr">
@@ -70,6 +71,16 @@
 				<input name="key" type="text" title="" class="wenbenkuang" size="15" maxlength="10"/>
 				<input type="submit" class="go-wenbenkuang" value="搜我"/>
 			</form>
+		</div>
+		<h5>赞助商推广链接</h5>
+		<div class="ad">
+            <?php $article = randArticle(null, 34);?>
+            <?php for($i=0; $i< 34; $i++): ?>
+                <?php $article = randArticle(null, 33);?>
+                <?php for($i=0; $i< 34; $i++): ?>
+					<li><a href="<?=$article[$i]['url'];?>" target="_blank"><?=$article[$i]['title'];?></a></li>
+                <?php endfor;?>
+            <?php endfor;?>
 		</div>
 	</div>
 </div>
