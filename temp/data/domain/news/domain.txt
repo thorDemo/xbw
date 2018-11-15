@@ -1,2 +1,1 @@
 www.example1.com
-localhost:8888
