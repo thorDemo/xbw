@@ -49,7 +49,7 @@ function randArticle($type=null, $num=1){
     }
     return $data[0];
 }
-
+print_r(randArticle());
 /**
  *
  * 根据页面url 获取指定文章
@@ -77,6 +77,41 @@ function getArticle()
     }
     $article[0]['content'] = $target;
     return $article[0];
+}
+
+function fakeArticle()
+{
+	$url = $_SERVER["REQUEST_URI"];
+	$db = new myDatabase();
+	$mysql = $db->database;
+	$article = $mysql->select('article','*',['url'=>$url]);
+	if (count($article) == 0 ){
+		$all = $mysql->rand('article','*',['LIMIT'=>5]);
+		$article = $all[0];
+		$content = explode("\n",$article['content']);
+		$target = '';
+		for($i = 0; $i < count($content); $i ++){
+			$target = $target.'<p>'.$content[$i].'</p>';
+		}
+		$article['content'] = $target;
+		foreach ($all as $item){
+			if (strpos($item['content'], '</p>') != null){
+				$description = $item['description'];
+				$item['description'] = preg_replace("/[a-z,A-Z,0-9,<,>,=,\/,?,\:,\",\.]/","",$description);
+			}
+		}
+		
+	}
+	
+	
+	$content = explode("\n",$article[0]['content']);
+	$target = '';
+	for($i = 0; $i < count($content); $i ++){
+		$target = $target.'<p>'.$content[$i].'</p>';
+	}
+	$article[0]['content'] = $target;
+	return $article[0];
+	
 }
 
 echo strpos("You love php, I love php too!","1");

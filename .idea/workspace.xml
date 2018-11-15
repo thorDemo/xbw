@@ -2,20 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0f6a54be-2130-45b3-95e4-cc0b0850bcf3" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/core/mylib/DBtools_5.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/mylib/remoteDatabase.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/cache/tplcache/liaocheng/liaocheng/4124d134b547040e181a6f8325d8bfea_show.html.php" beforeDir="false" afterPath="$PROJECT_DIR$/temp/cache/tplcache/liaocheng/liaocheng/4124d134b547040e181a6f8325d8bfea_show.html.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/mylib/tag.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/mylib/tag.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/cache/tplcache/admin/md5.php" beforeDir="false" afterPath="$PROJECT_DIR$/temp/cache/tplcache/admin/md5.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/temp/cache/tplcache/liaocheng/liaocheng/md5.php" beforeDir="false" afterPath="$PROJECT_DIR$/temp/cache/tplcache/liaocheng/liaocheng/md5.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/temp/collect-run.lock" beforeDir="false" afterPath="$PROJECT_DIR$/temp/collect-run.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/temp/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/db/aclogs.FRM" beforeDir="false" afterPath="$PROJECT_DIR$/temp/db/aclogs.FRM" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/db/aclogs.MYD" beforeDir="false" afterPath="$PROJECT_DIR$/temp/db/aclogs.MYD" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/logs/scantheme.log" beforeDir="false" afterPath="$PROJECT_DIR$/temp/logs/scantheme.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/session/sess_2tb88i5spgac5m2m2kukbtj3fi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/temp/449451a869b3a7c1a2bca40ad84a89d0.log" beforeDir="false" afterPath="$PROJECT_DIR$/temp/temp/449451a869b3a7c1a2bca40ad84a89d0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/liaocheng/liaocheng/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/liaocheng/liaocheng/list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/liaocheng/liaocheng/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/liaocheng/liaocheng/show.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/liaocheng/liaocheng/test.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/liaocheng/liaocheng/time.php" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -42,6 +38,15 @@
     <expand>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="xbw@23.110.211.170" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="xbw@23.110.211.170" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="xbw@localhost" type="feb32156:DbDataSourceImpl" />
       </path>
       <path>
@@ -54,69 +59,35 @@
         <item name="xbw@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="xbw: schema" type="c314c289:MysqlImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="xbw@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="xbw: schema" type="c314c289:MysqlImplModel$Schema" />
-        <item name="article: table" type="98d5ac3d:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="blog.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/template/liaocheng/liaocheng/blog.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="45" column="66" selection-start-line="45" selection-start-column="66" selection-end-line="45" selection-end-column="66" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bbs.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/template/liaocheng/liaocheng/bbs.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="news.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/template/liaocheng/liaocheng/news.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="7" selection-end-line="72" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sitemap.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/template/sitemap.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="list.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/template/liaocheng/liaocheng/list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
+            <state relative-caret-position="57">
               <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="show.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/template/liaocheng/liaocheng/show.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="17" lean-forward="true" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+            <state relative-caret-position="57">
+              <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/8fd61562-81e4-4afc-8553-61e22f656208/console.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="45" selection-start-column="45" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -124,26 +95,60 @@
       <file leaf-file-name="tag.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/mylib/tag.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="871">
-              <caret line="192" column="108" selection-start-line="192" selection-start-column="108" selection-end-line="192" selection-end-column="108" />
+            <state relative-caret-position="133">
+              <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="blog_list.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/template/liaocheng/liaocheng/blog_list.html">
+      <file leaf-file-name="DBtools_5.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/core/mylib/DBtools_5.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="51" column="12" selection-start-line="51" selection-start-column="12" selection-end-line="60" selection-end-column="18" />
+            <state relative-caret-position="418">
+              <caret line="39" column="4" lean-forward="true" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="news_list.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/template/liaocheng/liaocheng/news_list.html">
+      <file leaf-file-name="article" pinned="false" current-in-tab="false">
+        <entry file="das://8fd61562-81e4-4afc-8553-61e22f656208/schema/xbw/table/article">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="database.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/mylib/database.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="7" selection-end-line="281" selection-end-column="7" />
+            <state relative-caret-position="-228" />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="remoteDatabase.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/mylib/remoteDatabase.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="28" column="39" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DBtools_1.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/mylib/DBtools_1.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DBtools_4.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/mylib/DBtools_4.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="21" column="15" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -210,9 +215,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/core/mylib/DBtools.php" />
-        <option value="$PROJECT_DIR$/template/liaocheng/liaocheng/about.html" />
-        <option value="$PROJECT_DIR$/template/liaocheng/liaocheng/show_footer.html" />
         <option value="$PROJECT_DIR$/template/liaocheng/liaocheng/footer.html" />
         <option value="$PROJECT_DIR$/template/liaocheng/liaocheng/css/blog.css" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/578f5278-24c0-455c-94cd-958c89394b34/console.sql" />
@@ -249,7 +251,6 @@
         <option value="$PROJECT_DIR$/template/liaocheng/liaocheng/css/info.css" />
         <option value="$PROJECT_DIR$/template/liaocheng/liaocheng/sitemapp.html" />
         <option value="$PROJECT_DIR$/template/liaocheng/liaocheng/header.html" />
-        <option value="$PROJECT_DIR$/core/mylib/tag.php" />
         <option value="$PROJECT_DIR$/core/mylib/DBtools_2.php" />
         <option value="$PROJECT_DIR$/template/liaocheng/liaocheng/keji_list.html" />
         <option value="$PROJECT_DIR$/template/liaocheng/liaocheng/keji.html" />
@@ -261,6 +262,10 @@
         <option value="$PROJECT_DIR$/template/liaocheng/show.html" />
         <option value="$PROJECT_DIR$/template/liaocheng/liaocheng/list.html" />
         <option value="$PROJECT_DIR$/template/liaocheng/liaocheng/show.html" />
+        <option value="$PROJECT_DIR$/core/mylib/tag.php" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/8fd61562-81e4-4afc-8553-61e22f656208/console.sql" />
+        <option value="$PROJECT_DIR$/core/mylib/remoteDatabase.php" />
+        <option value="$PROJECT_DIR$/core/mylib/DBtools_5.php" />
       </list>
     </option>
   </component>
@@ -279,7 +284,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.1">
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.0">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
       <path value="$PROJECT_DIR$/vendor/twig/twig" />
@@ -288,9 +293,11 @@
       <path value="$PROJECT_DIR$/vendor/catfan/medoo" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1440" />
-    <option name="height" value="900" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="664" />
+    <option name="y" value="4" />
+    <option name="width" value="1940" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -298,48 +305,37 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="xbw" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xbw" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="xbw" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="xbw" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xbw" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="core" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="xbw" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="xbw" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xbw" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="template" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="xbw" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xbw" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="template" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="liaocheng" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="xbw" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xbw" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="template" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="liaocheng" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="liaocheng" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="xbw" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="mylib" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="database.console.LAST_STATE" value="false" />
+    <property name="last_opened_file_path" value="C:/phpStudy/PHPTutorial/php/php-7.0.12-nts/php.exe" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -351,18 +347,18 @@
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\workspace\xbw\core\mylib" />
+      <recent name="$PROJECT_DIR$/core/mylib" />
+      <recent name="$PROJECT_DIR$/template/liaocheng/liaocheng/img/profile" />
+      <recent name="$PROJECT_DIR$/temp/data/title/liaocheng" />
+      <recent name="$PROJECT_DIR$/template/liaocheng/liaocheng" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/template/liaocheng/liaocheng/images" />
       <recent name="$PROJECT_DIR$/template/liaocheng/liaocheng" />
       <recent name="$PROJECT_DIR$/template/liaocheng/liaocheng/img/ico" />
       <recent name="$PROJECT_DIR$/core/mylib" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/core/mylib" />
-      <recent name="$PROJECT_DIR$/template/liaocheng/liaocheng/img/profile" />
-      <recent name="$PROJECT_DIR$/temp/data/title/liaocheng" />
-      <recent name="$PROJECT_DIR$/template/liaocheng/liaocheng" />
-      <recent name="$PROJECT_DIR$/core" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -377,26 +373,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHP Script.tag.php">
+  <component name="RunManager" selected="PHP Script.DBtools_5.php">
     <configuration name="DBtools_1.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/core/mylib/DBtools_1.php" />
     <configuration name="DBtools_2.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/core/mylib/DBtools_2.php" />
     <configuration name="DBtools_4.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/core/mylib/DBtools_4.php" />
-    <configuration name="randtest.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/core/mylib/randtest.php" />
+    <configuration name="DBtools_5.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/core/mylib/DBtools_5.php" />
     <configuration name="tag.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/core/mylib/tag.php" />
     <list>
       <item itemvalue="PHP Script.tag.php" />
       <item itemvalue="PHP Script.DBtools_1.php" />
-      <item itemvalue="PHP Script.randtest.php" />
       <item itemvalue="PHP Script.DBtools_4.php" />
       <item itemvalue="PHP Script.DBtools_2.php" />
+      <item itemvalue="PHP Script.DBtools_5.php" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="PHP Script.DBtools_5.php" />
         <item itemvalue="PHP Script.tag.php" />
         <item itemvalue="PHP Script.DBtools_2.php" />
         <item itemvalue="PHP Script.DBtools_4.php" />
         <item itemvalue="PHP Script.DBtools_1.php" />
-        <item itemvalue="PHP Script.randtest.php" />
       </list>
     </recent_temporary>
   </component>
@@ -418,6 +414,7 @@
       <workItem from="1541580981023" duration="15626000" />
       <workItem from="1541819967346" duration="1663000" />
       <workItem from="1541844702999" duration="1530000" />
+      <workItem from="1542266640930" duration="7073000" />
     </task>
     <task id="LOCAL-00001" summary="基本功能实现">
       <created>1540478539870</created>
@@ -486,7 +483,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="138658000" />
+    <option name="totallyTimeSpent" value="145731000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -498,21 +495,22 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2067239" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49928468" weight="0.32969698" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5028612" side_tool="true" weight="0.28969696" />
-      <window_info anchor="right" id="Database" order="3" weight="0.19027181" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49713877" visible="true" weight="0.3870246" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49713877" weight="0.28969696" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32969698" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Database Console" order="7" sideWeight="0.4985694" weight="0.35234898" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16899142" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.27306867" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -520,30 +518,29 @@
       <window_info anchor="bottom" id="Messages" order="7" weight="0.32969698" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Database Console" order="7" sideWeight="0.4985694" weight="0.35393938" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32969698" />
     </layout>
     <layout-to-restore>
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
       <window_info anchor="bottom" id="Database Console" order="8" sideWeight="0.4985694" weight="0.32848486" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2274678" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="13" />
       <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49785408" visible="true" weight="0.29333332" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32969698" />
       <window_info anchor="right" id="Database" order="3" weight="0.19027181" />
-      <window_info anchor="bottom" id="Messages" order="0" weight="0.32969698" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32969698" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50214595" side_tool="true" weight="0.39515153" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Messages" order="0" weight="0.32969698" />
       <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
   </component>
@@ -562,62 +559,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="blog内容页 添加链轮 去除部分URL" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/template/liaocheng/liaocheng/blog_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="51" column="12" selection-start-line="51" selection-start-column="12" selection-end-line="60" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template/liaocheng/liaocheng/news_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="7" selection-end-line="281" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template/liaocheng/liaocheng/list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4140">
-          <caret line="276" column="14" lean-forward="true" selection-start-line="276" selection-start-column="14" selection-end-line="276" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://33f8390a-bb0f-47eb-8ac3-e7519cffc4b6/schema/xbw/table/username">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template/liaocheng/liaocheng/bbs_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4">
-          <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://33f8390a-bb0f-47eb-8ac3-e7519cffc4b6/schema/xbw/table/pic">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template/liaocheng/liaocheng/fangchan.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="71" column="49" selection-start-line="71" selection-start-column="49" selection-end-line="71" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://33f8390a-bb0f-47eb-8ac3-e7519cffc4b6/schema/xbw/table/typename">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/temp/data/typename/news/diqu.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-7640" />
@@ -721,27 +662,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/mylib/DBtools_3.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="49" column="9" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/mylib/DBtools_1.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="32" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/mylib/DBtools_4.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="21" column="15" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/template/liaocheng/liaocheng/css/job_index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="423">
@@ -756,13 +676,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/33f8390a-bb0f-47eb-8ac3-e7519cffc4b6/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="47" selection-start-line="2" selection-start-column="47" selection-end-line="2" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/33f8390a-bb0f-47eb-8ac3-e7519cffc4b6/console.sql" />
     <entry file="file://$PROJECT_DIR$/template/liaocheng/liaocheng/sitemapp.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
@@ -774,16 +688,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="735">
           <caret line="49" selection-start-line="49" selection-end-line="49" />
-          <folding>
-            <marker date="1541670000133" expanded="false" signature="742:838" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/mylib/DBtools_2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="28" column="61" selection-start-line="28" selection-start-column="61" selection-end-line="28" selection-end-column="61" />
         </state>
       </provider>
     </entry>
@@ -840,22 +744,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3795">
           <caret line="253" selection-start-line="253" selection-end-line="253" />
-          <folding>
-            <marker date="1541750583984" expanded="false" signature="1048:1132" ph="..." />
-            <marker date="1541750583984" expanded="false" signature="1260:1343" ph="..." />
-            <marker date="1541750583984" expanded="false" signature="1463:1500" ph="..." />
-            <marker date="1541750583984" expanded="false" signature="1507:1578" ph="..." />
-            <marker date="1541750583984" expanded="false" signature="1629:1665" ph="..." />
-            <marker date="1541750583984" expanded="false" signature="1671:1743" ph="..." />
-            <marker date="1541750583984" expanded="false" signature="1793:1830" ph="..." />
-            <marker date="1541750583984" expanded="false" signature="1835:1907" ph="..." />
-            <marker date="1541750583984" expanded="false" signature="1956:1992" ph="..." />
-            <marker date="1541750583984" expanded="false" signature="1998:2070" ph="..." />
-            <marker date="1541750583984" expanded="false" signature="2118:2155" ph="..." />
-            <marker date="1541750583984" expanded="false" signature="2161:2233" ph="..." />
-            <marker date="1541750583984" expanded="false" signature="2281:2317" ph="..." />
-            <marker date="1541750583984" expanded="false" signature="2323:2395" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -868,71 +756,143 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/template/liaocheng/liaocheng/blog_list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
+        <state relative-caret-position="969">
           <caret line="51" column="12" selection-start-line="51" selection-start-column="12" selection-end-line="60" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/template/liaocheng/liaocheng/blog.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
+        <state relative-caret-position="855">
           <caret line="45" column="66" selection-start-line="45" selection-start-column="66" selection-end-line="45" selection-end-column="66" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/template/liaocheng/liaocheng/bbs.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
+        <state relative-caret-position="133">
           <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/template/liaocheng/liaocheng/news_list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
+        <state relative-caret-position="285">
           <caret line="15" column="7" selection-end-line="281" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/template/liaocheng/liaocheng/news.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
+        <state relative-caret-position="266">
           <caret line="14" column="7" selection-end-line="72" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/template/sitemap.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
+        <state relative-caret-position="475">
           <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template/liaocheng/show.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
+    <entry file="file://$PROJECT_DIR$/template/liaocheng/show.html" />
+    <entry file="das://33f8390a-bb0f-47eb-8ac3-e7519cffc4b6/schema/xbw/table/article">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/mylib/tag.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="871">
-          <caret line="192" column="108" selection-start-line="192" selection-start-column="108" selection-end-line="192" selection-end-column="108" />
+    <entry file="das://8fd61562-81e4-4afc-8553-61e22f656208/schema/xbw/table/bbs_article">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template/liaocheng/liaocheng/list.html">
+    <entry file="file://$PROJECT_DIR$/core/mylib/DBtools_2.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+        <state relative-caret-position="386">
+          <caret line="28" column="61" selection-start-line="28" selection-start-column="61" selection-end-line="28" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/mylib/DBtools_3.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="49" column="9" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/mylib/DBtools_4.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="21" column="15" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/8067b27d-35d0-40d2-9c87-1aa0488537d5/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/mylib/DBtools_1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/mylib/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-228" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/mylib/remoteDatabase.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="28" column="39" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://8fd61562-81e4-4afc-8553-61e22f656208/schema/xbw/table/article">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/8fd61562-81e4-4afc-8553-61e22f656208/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="45" selection-start-column="45" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/template/liaocheng/liaocheng/show.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="17" lean-forward="true" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+        <state relative-caret-position="57">
+          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/liaocheng/liaocheng/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/mylib/tag.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/mylib/DBtools_5.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="39" column="4" lean-forward="true" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="4" />
         </state>
       </provider>
     </entry>
