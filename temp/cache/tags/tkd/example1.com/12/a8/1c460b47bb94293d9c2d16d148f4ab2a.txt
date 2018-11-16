@@ -1,0 +1,1 @@
+a:8:{s:8:"toptitle";s:68:"逆水寒“四年好几亿经费”的武侠巨制 -锅贴鸭方网";s:5:"title";s:52:"逆水寒“四年好几亿经费”的武侠巨制 ";s:8:"keywords";s:52:"逆水寒“四年好几亿经费”的武侠巨制 ";s:11:"description";s:15:"逆水寒四年";s:7:"content";s:15:"逆水寒四年";s:8:"web_name";s:15:"锅贴鸭方网";s:7:"typeurl";s:39:"http://www.example1.com/fangchan_17997/";s:8:"typename";s:0:"";}

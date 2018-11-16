@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0f6a54be-2130-45b3-95e4-cc0b0850bcf3" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/core/mylib/DBtools_5.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/mylib/remoteDatabase.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/mylib/tag.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/mylib/tag.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/cache/tplcache/admin/md5.php" beforeDir="false" afterPath="$PROJECT_DIR$/temp/cache/tplcache/admin/md5.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/cache/tplcache/liaocheng/liaocheng/md5.php" beforeDir="false" afterPath="$PROJECT_DIR$/temp/cache/tplcache/liaocheng/liaocheng/md5.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/collect-run.lock" beforeDir="false" afterPath="$PROJECT_DIR$/temp/collect-run.lock" afterDir="false" />
-    </list>
+    <list default="true" id="0f6a54be-2130-45b3-95e4-cc0b0850bcf3" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -104,7 +93,7 @@
       <file leaf-file-name="DBtools_5.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core/mylib/DBtools_5.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
+            <state relative-caret-position="646">
               <caret line="39" column="4" lean-forward="true" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="4" />
             </state>
           </provider>
@@ -312,17 +301,6 @@
               <item name="xbw" type="b2602c69:ProjectViewProjectNode" />
               <item name="xbw" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="xbw" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xbw" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xbw" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xbw" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="mylib" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -414,7 +392,7 @@
       <workItem from="1541580981023" duration="15626000" />
       <workItem from="1541819967346" duration="1663000" />
       <workItem from="1541844702999" duration="1530000" />
-      <workItem from="1542266640930" duration="7073000" />
+      <workItem from="1542266640930" duration="7773000" />
     </task>
     <task id="LOCAL-00001" summary="基本功能实现">
       <created>1540478539870</created>
@@ -483,7 +461,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="145731000" />
+    <option name="totallyTimeSpent" value="146431000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -495,17 +473,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49928468" weight="0.32969698" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5028612" side_tool="true" weight="0.28969696" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49713877" visible="true" weight="0.3870246" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49713877" visible="true" weight="0.3870246" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32969698" />
       <window_info anchor="bottom" id="Database Console" order="7" sideWeight="0.4985694" weight="0.35234898" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16899142" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16899142" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" visible="true" weight="0.27306867" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -891,7 +868,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/mylib/DBtools_5.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
+        <state relative-caret-position="646">
           <caret line="39" column="4" lean-forward="true" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="4" />
         </state>
       </provider>
