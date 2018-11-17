@@ -49,7 +49,7 @@ function randArticle($type=null, $num=1){
     }
     return $data[0];
 }
-print_r(randArticle());
+//print_r(randArticle());
 /**
  *
  * 根据页面url 获取指定文章
@@ -58,64 +58,40 @@ print_r(randArticle());
  */
 function getArticle()
 {
-    $url = $_SERVER["REQUEST_URI"];
-    $db = new myDatabase();
-    $mysql = $db->database;
-    $article = $mysql->select('article','*',['url'=>$url]);
-    if (count($article) == 0 ){
-        $article = $mysql->rand('article','*',['LIMIT'=>1]);
-    }
-    if (strpos($article[0]['content'], '</p>') != null){
-        $description = $article[0]['description'];
-        $article[0]['description'] = preg_replace("/[a-z,A-Z,0-9,<,>,=,\/,?,\:,\",\.]/","",$description);
-        return $article[0];
-    }
-    $content = explode("\n",$article[0]['content']);
-    $target = '';
-    for($i = 0; $i < count($content); $i ++){
-        $target = $target.'<p>'.$content[$i].'</p>';
-    }
-    $article[0]['content'] = $target;
-    return $article[0];
-}
-
-function fakeArticle()
-{
 	$url = $_SERVER["REQUEST_URI"];
 	$db = new myDatabase();
 	$mysql = $db->database;
 	$article = $mysql->select('article','*',['url'=>$url]);
 	if (count($article) == 0 ){
-		$all = $mysql->rand('article','*',['LIMIT'=>5]);
-		$article = $all[0];
-		$content = explode("\n",$article['content']);
-		$target = '';
-		for($i = 0; $i < count($content); $i ++){
-			$target = $target.'<p>'.$content[$i].'</p>';
-		}
-		$article['content'] = $target;
+		$article = $mysql->rand('article','*',['LIMIT'=>1]);# 取一篇文章的属性保留
+		$keywords = $article[0]['keywords'];
+		$keyword = explode(',',$keywords)[0];
+		$all = $mysql->rand('article',['content'],['keywords[~]'=>$keyword,'LIMIT'=>4]);
+		$content = explode("\n",$article[0]['content']);
+		$array_content = '';
 		foreach ($all as $item){
-			if (strpos($item['content'], '</p>') != null){
-				$description = $item['description'];
-				$item['description'] = preg_replace("/[a-z,A-Z,0-9,<,>,=,\/,?,\:,\",\.]/","",$description);
+			$array_content = $array_content.$item['content'];
+		}
+		$array_content = explode("\n",$array_content); # 文章拆分为数组添加 p 标签
+		shuffle($array_content);
+		$array_content = array_slice($array_content,0,count($array_content)/4);
+		$array_content = array_merge($content, $array_content);
+		shuffle($array_content);
+		
+		$fake_target = '';
+		
+		for($i = 0; $i < count($array_content); $i++){
+			if (strpos($array_content[$i],'<p>') || $array_content[$i] == ''){
+				$fake_target = $fake_target.''.$array_content[$i];
+			}else{
+				$fake_target = $fake_target.'<p>'.$array_content[$i].'</p>';
 			}
 		}
-		
+		$article[0]['content'] = $fake_target;
 	}
-	
-	
-	$content = explode("\n",$article[0]['content']);
-	$target = '';
-	for($i = 0; $i < count($content); $i ++){
-		$target = $target.'<p>'.$content[$i].'</p>';
-	}
-	$article[0]['content'] = $target;
 	return $article[0];
-	
 }
-
-echo strpos("You love php, I love php too!","1");
-
+print_r(getArticle());
 /**
  * 获取随机3年内时间 Y-m-d
  * @return false|string

@@ -6,7 +6,7 @@
 	 * Time: 17:16
 	 */
 	
-	require 'remoteDatabase.php';
+	require 'database.php';
 	
 	function getAll(){
 		$db = new myDatabase();
