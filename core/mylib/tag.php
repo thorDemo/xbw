@@ -91,7 +91,7 @@ function getArticle()
 	}
 	return $article[0];
 }
-print_r(getArticle());
+//print_r(getArticle());
 /**
  * 获取随机3年内时间 Y-m-d
  * @return false|string
