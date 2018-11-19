@@ -2,20 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0f6a54be-2130-45b3-95e4-cc0b0850bcf3" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/mylib/DBtools_5.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/mylib/DBtools_5.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/mylib/remoteDatabase.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/mylib/tag.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/mylib/tag.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/temp/cache/tags/tkd/example1.com/aa/19/092f086f1abc2bbd1833c2bd533e5817.txt" beforeDir="false" afterPath="$PROJECT_DIR$/temp/cache/tags/tkd/example1.com/aa/19/092f086f1abc2bbd1833c2bd533e5817.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/temp/cache/tags/tkd/example1.com/bb/90/ffae44abea10718cb43eda9bdc69714c.txt" beforeDir="false" afterPath="$PROJECT_DIR$/temp/cache/tags/tkd/example1.com/bb/90/ffae44abea10718cb43eda9bdc69714c.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/cache/tplcache/default/md5.php" beforeDir="false" afterPath="$PROJECT_DIR$/temp/cache/tplcache/default/md5.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/temp/collect-run.lock" beforeDir="false" afterPath="$PROJECT_DIR$/temp/collect-run.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/db/aclogs.FRM" beforeDir="false" afterPath="$PROJECT_DIR$/temp/db/aclogs.FRM" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/db/aclogs.MYD" beforeDir="false" afterPath="$PROJECT_DIR$/temp/db/aclogs.MYD" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/db/master.MYD" beforeDir="false" afterPath="$PROJECT_DIR$/temp/db/master.MYD" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/temp/logs/scantheme.log" beforeDir="false" afterPath="$PROJECT_DIR$/temp/logs/scantheme.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/temp/ee7f54a6d7785d0733147c763c04cb86.log" beforeDir="false" afterPath="$PROJECT_DIR$/temp/temp/ee7f54a6d7785d0733147c763c04cb86.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/theme_config.php" beforeDir="false" afterPath="$PROJECT_DIR$/temp/theme_config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/liaocheng/liaocheng/sitemapp.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/liaocheng/liaocheng/sitemapp.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/sitemap.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/sitemap.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -51,30 +45,7 @@
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="xbw@23.110.211.170" type="feb32156:DbDataSourceImpl" />
-        <item name="collations" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="xbw@localhost" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="xbw@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="xbw@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="xbw: schema" type="c314c289:MysqlImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="xbw@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="xbw: schema" type="c314c289:MysqlImplModel$Schema" />
-        <item name="article: table" type="98d5ac3d:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -99,11 +70,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tag.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="tag.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/mylib/tag.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="83" column="51" selection-start-line="83" selection-start-column="51" selection-end-line="83" selection-end-column="51" />
+            <state relative-caret-position="1064">
+              <caret line="80" column="26" lean-forward="true" selection-start-line="80" selection-start-column="26" selection-end-line="80" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sitemap.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/template/sitemap.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="8" column="32" lean-forward="true" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sitemapp.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/template/liaocheng/liaocheng/sitemapp.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="35" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -215,12 +204,10 @@
         <option value="$PROJECT_DIR$/template/liaocheng/liaocheng/news.html" />
         <option value="$PROJECT_DIR$/template/liaocheng/liaocheng/shenhuo_list.html" />
         <option value="$PROJECT_DIR$/template/liaocheng/liaocheng/sitemap.html" />
-        <option value="$PROJECT_DIR$/template/sitemap.html" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/33f8390a-bb0f-47eb-8ac3-e7519cffc4b6/console.sql" />
         <option value="$PROJECT_DIR$/template/liaocheng/liaocheng/blog_list.html" />
         <option value="$PROJECT_DIR$/template/liaocheng/liaocheng/qiye_list.html" />
         <option value="$PROJECT_DIR$/template/liaocheng/liaocheng/css/info.css" />
-        <option value="$PROJECT_DIR$/template/liaocheng/liaocheng/sitemapp.html" />
         <option value="$PROJECT_DIR$/template/liaocheng/liaocheng/header.html" />
         <option value="$PROJECT_DIR$/core/mylib/DBtools_2.php" />
         <option value="$PROJECT_DIR$/template/liaocheng/liaocheng/keji_list.html" />
@@ -239,6 +226,8 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/8fd61562-81e4-4afc-8553-61e22f656208/console.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/8067b27d-35d0-40d2-9c87-1aa0488537d5/console.sql" />
         <option value="$PROJECT_DIR$/core/mylib/tag.php" />
+        <option value="$PROJECT_DIR$/template/liaocheng/liaocheng/sitemapp.html" />
+        <option value="$PROJECT_DIR$/template/sitemap.html" />
       </list>
     </option>
   </component>
@@ -267,10 +256,10 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="381" />
-    <option name="y" value="11" />
-    <option name="width" value="1920" />
-    <option name="height" value="1040" />
+    <option name="x" value="910" />
+    <option name="y" value="8" />
+    <option name="width" value="1369" />
+    <option name="height" value="1026" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -288,7 +277,20 @@
             <path>
               <item name="xbw" type="b2602c69:ProjectViewProjectNode" />
               <item name="xbw" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xbw" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xbw" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
+              <item name="liaocheng" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xbw" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xbw" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
+              <item name="liaocheng" type="462c0819:PsiDirectoryNode" />
+              <item name="liaocheng" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -381,7 +383,7 @@
       <workItem from="1541580981023" duration="15626000" />
       <workItem from="1541819967346" duration="1663000" />
       <workItem from="1541844702999" duration="1530000" />
-      <workItem from="1542266640930" duration="16417000" />
+      <workItem from="1542266640930" duration="18270000" />
     </task>
     <task id="LOCAL-00001" summary="基本功能实现">
       <created>1540478539870</created>
@@ -446,11 +448,25 @@
       <option name="project" value="LOCAL" />
       <updated>1541820358306</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="更新随机算法 无限页面 随机内容会取keywords类似的文章">
+      <created>1542450620770</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1542450620770</updated>
+    </task>
+    <task id="LOCAL-00011" summary="更新随机算法 无限页面 随机内容会取keywords类似的文章">
+      <created>1542450671919</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1542450671919</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="155075000" />
+    <option name="totallyTimeSpent" value="156928000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -462,19 +478,19 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-70" y="14" width="1369" height="1026" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49928468" weight="0.32969698" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5028612" side_tool="true" weight="0.28969696" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49713877" visible="true" weight="0.393736" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49713877" visible="true" weight="0.4074074" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32885906" />
       <window_info anchor="bottom" id="Database Console" order="13" sideWeight="0.4985694" weight="0.3456376" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17167382" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2467232" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.17650215" />
+      <window_info anchor="right" id="Database" order="3" weight="0.17650215" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -523,7 +539,8 @@
     <MESSAGE value="完成栏目&#10;bbs bbs_list&#10;news news_list" />
     <MESSAGE value="追加" />
     <MESSAGE value="blog内容页 添加链轮 去除部分URL" />
-    <option name="LAST_COMMIT_MESSAGE" value="blog内容页 添加链轮 去除部分URL" />
+    <MESSAGE value="更新随机算法 无限页面 随机内容会取keywords类似的文章" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新随机算法 无限页面 随机内容会取keywords类似的文章" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/template/liaocheng/liaocheng/zhaopin.html">
@@ -625,13 +642,6 @@
       </provider>
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/33f8390a-bb0f-47eb-8ac3-e7519cffc4b6/console.sql" />
-    <entry file="file://$PROJECT_DIR$/template/liaocheng/liaocheng/sitemapp.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="103" selection-start-line="103" selection-end-line="103" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/template/liaocheng/liaocheng/header.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="735">
@@ -734,13 +744,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
           <caret line="14" column="7" selection-end-line="72" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template/sitemap.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -856,10 +859,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/template/liaocheng/liaocheng/sitemapp.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="35" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/core/mylib/tag.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="83" column="51" selection-start-line="83" selection-start-column="51" selection-end-line="83" selection-end-column="51" />
+        <state relative-caret-position="1064">
+          <caret line="80" column="26" lean-forward="true" selection-start-line="80" selection-start-column="26" selection-end-line="80" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/sitemap.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="32" lean-forward="true" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
         </state>
       </provider>
     </entry>

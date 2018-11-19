@@ -1,26 +1,110 @@
+<?php include 'core/mylib/tag.php' ?>
 <urlset>
-	{loop type="arclist" row=50}
+	<?php $article = lastArticle('fangchan')?>
+	<?php for($i=0;$i<100;$i++):?>
+    <url>
+        <loc><?=$article[$i]['url']?></loc>
+        <lastmod>{date('Y-m-d')}</lastmod>
+        <changefreq>always</changefreq>
+        <priority>1.0</priority>
+    </url>
+	<?php endfor;?>
+	<?php $article = lastArticle('zhaopin')?>
+	<?php for($i=0;$i<100;$i++):?>
+        <url>
+            <loc><?=$article[$i]['url']?></loc>
+            <lastmod>{date('Y-m-d')}</lastmod>
+            <changefreq>always</changefreq>
+            <priority>1.0</priority>
+        </url>
+	<?php endfor;?>
+	<?php $article = lastArticle('ershou')?>
+	<?php for($i=0;$i<100;$i++):?>
+        <url>
+            <loc><?=$article[$i]['url']?></loc>
+            <lastmod>{date('Y-m-d')}</lastmod>
+            <changefreq>always</changefreq>
+            <priority>1.0</priority>
+        </url>
+	<?php endfor;?>
+	<?php $article = lastArticle('jiaoyou')?>
+	<?php for($i=0;$i<100;$i++):?>
+        <url>
+            <loc><?=$article[$i]['url']?></loc>
+            <lastmod>{date('Y-m-d')}</lastmod>
+            <changefreq>always</changefreq>
+            <priority>1.0</priority>
+        </url>
+	<?php endfor;?>
+	<?php $article = lastArticle('shenghuo')?>
+	<?php for($i=0;$i<100;$i++):?>
+        <url>
+            <loc><?=$article[$i]['url']?></loc>
+            <lastmod>{date('Y-m-d')}</lastmod>
+            <changefreq>always</changefreq>
+            <priority>1.0</priority>
+        </url>
+	<?php endfor;?>
+	<?php $article = lastArticle('blog')?>
+	<?php for($i=0;$i<100;$i++):?>
+        <url>
+            <loc><?=$article[$i]['url']?></loc>
+            <lastmod>{date('Y-m-d')}</lastmod>
+            <changefreq>always</changefreq>
+            <priority>1.0</priority>
+        </url>
+	<?php endfor;?>
+	<?php $article = lastArticle('qiye')?>
+	<?php for($i=0;$i<100;$i++):?>
+        <url>
+            <loc><?=$article[$i]['url']?></loc>
+            <lastmod>{date('Y-m-d')}</lastmod>
+            <changefreq>always</changefreq>
+            <priority>1.0</priority>
+        </url>
+	<?php endfor;?>
+	<?php $article = lastArticle('news')?>
+	<?php for($i=0;$i<100;$i++):?>
+        <url>
+            <loc><?=$article[$i]['url']?></loc>
+            <lastmod>{date('Y-m-d')}</lastmod>
+            <changefreq>always</changefreq>
+            <priority>1.0</priority>
+        </url>
+	<?php endfor;?>
+	<?php $article = lastArticle('keji')?>
+	<?php for($i=0;$i<100;$i++):?>
+        <url>
+            <loc><?=$article[$i]['url']?></loc>
+            <lastmod>{date('Y-m-d')}</lastmod>
+            <changefreq>always</changefreq>
+            <priority>1.0</priority>
+        </url>
+	<?php endfor;?>
+	<?php $article = lastArticle('bbs')?>
+	<?php for($i=0;$i<100;$i++):?>
+        <url>
+            <loc><?=$article[$i]['url']?></loc>
+            <lastmod>{date('Y-m-d')}</lastmod>
+            <changefreq>always</changefreq>
+            <priority>1.0</priority>
+        </url>
+	<?php endfor;?>
+	<?php $article = lastArticle('lvyou')?>
+	<?php for($i=0;$i<100;$i++):?>
+        <url>
+            <loc><?=$article[$i]['url']?></loc>
+            <lastmod>{date('Y-m-d')}</lastmod>
+            <changefreq>always</changefreq>
+            <priority>1.0</priority>
+        </url>
+	<?php endfor;?>
+	<?php for($i=0;$i<100;$i++):?>
 	<url>
-		<loc>{$vo.url}</loc>
+		<loc><?=randList(); ?></loc>
 		<lastmod>{date('Y-m-d')}</lastmod>
 		<changefreq>always</changefreq>
 		<priority>1.0</priority>
 	</url>
-	{/loop}
-	{loop type="typename" row=50}
-	<url>
-		<loc>{$vo.typeurl}</loc>
-		<lastmod>{date('Y-m-d')}</lastmod>
-		<changefreq>always</changefreq>
-		<priority>1.0</priority>
-	</url>
-	{/loop}
-	{loop type="arclist" row=50}
-	<url>
-		<loc>{$vo.url}</loc>
-		<lastmod>{date('Y-m-d')}</lastmod>
-		<changefreq>always</changefreq>
-		<priority>1.0</priority>
-	</url>
-	{/loop}
+	<?php endfor;?>
 </urlset>
