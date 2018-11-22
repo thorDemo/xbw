@@ -110,7 +110,7 @@ function randTime($format='Y-m-d'){
  * @param $num
  * @return mixed
  */
-function typeName($type=null, $num=1){
+function typeName($type='company', $num=1){
     $db = new myDatabase();
     $mysql = $db->database;
     $data = $mysql->rand('typename',['name'],['$type'=>$type, 'LIMIT'=>$num]);
@@ -119,7 +119,7 @@ function typeName($type=null, $num=1){
     }
     return $data;
 }
-
+print_r(typeName());
 /**
  * 获取随机人名
  * @param $num

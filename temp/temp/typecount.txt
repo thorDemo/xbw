@@ -1,1 +1,1 @@
-a:6:{s:7:"company";a:1:{s:3:"num";i:1;}s:4:"news";a:1:{s:3:"num";i:1;}s:8:"xiaoshuo";a:1:{s:3:"num";i:1;}s:5:"video";a:1:{s:3:"num";i:2;}s:3:"bbs";a:1:{s:3:"num";i:1;}s:9:"liaocheng";a:1:{s:3:"num";i:0;}}
+a:6:{s:7:"company";a:1:{s:3:"num";i:8;}s:4:"news";a:1:{s:3:"num";i:8;}s:8:"xiaoshuo";a:1:{s:3:"num";i:5;}s:5:"video";a:1:{s:3:"num";i:1;}s:3:"bbs";a:1:{s:3:"num";i:8;}s:9:"liaocheng";a:1:{s:3:"num";i:1;}}

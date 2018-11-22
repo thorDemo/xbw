@@ -1,0 +1,671 @@
+<?php include 'core/mylib/tag.php' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta name="applicable-device" content="pc,mobile">
+    <meta name="MobileOptimized" content="width"/>
+    <meta name="HandheldFriendly" content="true"/>
+    <title>{$toptitle}</title>
+    <meta name="description" content="{$description}" />
+    <meta name="keywords" content="{$keywords}" />
+    <script src="{$theme_path}/js/jquery-1.4.4.min.js" type="text/javascript"></script>
+    <script src="{$theme_path}/js/888.js" type="text/javascript"></script>
+    <link href="{$theme_path}/css/mzxw.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" type="image/x-icon" href="{$theme_path}/images/favicon.ico" media="screen" />
+
+    <script type="text/javascript">
+        (function(){
+            let canonicalURL, curProtocol;
+            let x=document.getElementsByTagName("link");
+            if(x.length > 0){
+                for (let i=0;i< x.length;i++){
+                    if(x[i].rel.toLowerCase() == 'canonical' && x[i].href){
+                        canonicalURL=x[i].href;
+                    }
+                }
+            }
+            if (!canonicalURL){
+                curProtocol = window.location.protocol.split(':')[0];
+            }
+            else{
+                curProtocol = canonicalURL.split(':')[0];
+            }
+            if (!canonicalURL) canonicalURL = window.location.href;
+            !function(){let e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=canonicalURL,t=document.referrer;if(!e.test(r)){let n=(String(curProtocol).toLowerCase() === 'https')?"https://sp0.baidu.com/9_Q4simg2RQJ8t7jm9iCKT-xh_/s.gif":"//api.share.baidu.com/s.gif";t?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);let i=new Image;i.src=n}}(window);})();
+    </script>
+    <script type="text/javascript">
+        (function(){
+            let bp = document.createElement('script');
+            let curProtocol = window.location.protocol.split(':')[0];
+            if (curProtocol === 'https') {
+                bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+            }
+            else {
+                bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+            }
+            let s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(bp, s);
+        })();
+    </script>
+    <style type="text/css" >
+        .scyxinjia{width:275px; margin:0 auto; padding-top:10px;}
+        .ny_hexin1xa1 p{line-height:26px;}
+    </style>
+</head>
+<body>
+<div class="dingbu1">
+    <div class="dingbu1a">
+        <ul>
+            <li class="dingbu1ali1"><a onClick="shoucang('中国作文网')" style="cursor:pointer;">收藏本站</a></li>
+            <li class="dingbu1ali2"><a onClick="SetHome(this,window.location)" style="cursor:pointer;">设为首页</a></li>
+        </ul>
+        <dl>
+            <dd class="dingbu1add1"><a href="/hotfplaw/mt855.html">English</a></dd>
+            <!-- <dd><a href="/hotaxp988/rh542.html" class="lan12h_22">邮箱</a></dd>-->
+            <dd><a href="<?=randType('list')?>">联系我们</a></dd>
+            <dd><a href="/clu/sitemap.xml">网站地图</a></dd>
+            <dd><a href="<?=randType('list')?>">邮箱</a></dd>
+            <dd><a href="<?=randType('list')?>" class="lan12h_22">旧版回顾</a></dd>
+        </dl><br class="clear"  />
+    </div>
+</div>
+<div class="dingbu2">
+    <div class="dingbu2a">
+        <div class="dingbu2a1"><img src="{$theme_path}/images/logo.jpg" width="245" height="91" alt=""/></div>
+        <div class="dingbu2a2"><img src="{$theme_path}/images/hf.jpg" width="544" height="91" alt=""/></div>
+        <div class="dingbu2a3"><img src="{$theme_path}/images/weibo_weixin.jpg" width="154" height="91" usemap="#Map_manu" border="0" alt="" />
+            <map name="Map_manu" id="Map_manu">
+                <area shape="rect" coords="21,20,80,77" href="<?=randType('list')?>" alt=""/ target="_blank">
+                <area shape="rect" coords="99,19,175,76" href="<?=randType('list')?>" alt="" id="weixin">
+            </map>
+            <div id="erweima" style=" z-index:999999;"><img src="{$theme_path}/images/zkywx_20141222.jpg" alt="" /></div>
+        </div><br class="clear"  />
+    </div>
+</div>
+<div class="dingbu3">
+    <div class="dingbu3a">
+        <style type="text/css">
+            .ny_hexin2xb h2{margin-bottom:18px;}
+            .ny_hexin2xa li{line-height:28px;}
+            .ny_hexin2xc ul{padding-bottom:0;}
+            .ny_hexin2xc li{line-height:25px;}
+            .ny_hexin2xd li{line-height:28px; *line-height:27px;}
+            .ny_hexin2xd ul{margin-bottom:0; padding-top:3px; *padding-top:3px;}
+            .ny_hexin2xd h2{*margin-bottom:0;}
+        </style>
+        
+        <div id=ny_hexin7 onMouseOver="mynav7.className='mynav7';mynav7.style.color='#10218b';" onMouseOut="mynav7.className='';mynav7.style.color='';"  class="dingbu3az">
+            <div class="ny_hexin7x">
+                <div class="ny_hexin7xa">
+                    <h2><span>工作动态</span><a href="<?=randType('list')?>">更多</a></h2>
+                    <ul>
+
+                        <li>
+                            <a href="<?=randType('list')?>" target="_blank" title="<?=typeName();?>"><?=typeName();?></a>
+                            <span>{随机时间}</span>
+                        </li>
+
+                        <li>
+                            <a href="<?=randType('list')?>" target="_blank" title="<?=typeName();?>"><?=typeName();?></a>
+                            <span>{随机时间}</span>
+                        </li>
+
+                        <li>
+                            <a href="<?=randType('list')?>" target="_blank" title="<?=typeName();?>"><?=typeName();?></a>
+                            <span>{随机时间}</span>
+                        </li>
+
+                        <li>
+                            <a href="<?=randType('list')?>" target="_blank" title="<?=typeName();?>"><?=typeName();?></a>
+                            <span>{随机时间}</span>
+                        </li>
+
+                        <li>
+                            <a href="<?=randType('list')?>" target="_blank" title="<?=typeName();?>"><?=typeName();?></a>
+                            <span>{随机时间}</span>
+                        </li>
+
+                        <li>
+                            <a href="<?=randType('list')?>" target="_blank" title="<?=typeName();?>"><?=typeName();?></a>
+                            <span>{随机时间}</span>
+                        </li>
+
+                    </ul>
+                    <a href="<?=randType('list')?>" target="_blank"><img src="{$theme_path}/images/p020170726370061664449.jpg"/></a>
+                </div>
+                <div class="ny_hexin7xb">
+                    <h2><span>反腐倡廉</span><a href="<?=randType('list')?>">更多</a></h2>
+                    <ul>
+
+                        <li>
+                            <a href="<?=randType('list')?>" target="_blank" title="<?=typeName();?>"><?=typeName();?></a>
+                            <span>{随机时间}</span>
+                        </li>
+
+                        <li>
+                            <a href="<?=randType('list')?>" target="_blank" title="<?=typeName();?>"><?=typeName();?></a>
+                            <span>{随机时间}</span>
+                        </li>
+
+                        <li>
+                            <a href="<?=randType('list')?>" target="_blank" title="<?=typeName();?>"><?=typeName();?></a>
+                            <span>{随机时间}</span>
+                        </li>
+
+                        <li>
+                            <a href="<?=randType('list')?>" target="_blank" title="<?=typeName();?>"><?=typeName();?></a>
+                            <span>{随机时间}</span>
+                        </li>
+
+                        <li>
+                            <a href="<?=randType('list')?>" target="_blank" title="<?=typeName();?>"><?=typeName();?></a>
+                            <span>{随机时间}</span>
+                        </li>
+
+                        <li>
+                            <a href="<?=randType('list')?>" target="_blank" title="<?=typeName();?>"><?=typeName();?></a>
+                            <span>{随机时间}</span>
+                        </li>
+
+                    </ul>
+                    <a href="<?=randType('list')?>" target="_blank"><img src="{$theme_path}/images/p020141016711744189119.jpg"/></a>
+                </div>
+                <div class="ny_hexin7xc">
+                    <h2><span>文明天地</span><a href="<?=randType('list')?>">更多</a></h2>
+                    <ul>
+
+                        <li>
+                            <a href="<?=randType('list')?>" target="_blank" title="<?=typeName();?>"><?=typeName();?></a>
+                            <span>{随机时间}</span>
+                        </li>
+
+                        <li>
+                            <a href="<?=randType('list')?>" target="_blank" title="<?=typeName();?>"><?=typeName();?></a>
+                            <span>{随机时间}</span>
+                        </li>
+
+                        <li>
+                            <a href="<?=randType('list')?>" target="_blank" title="<?=typeName();?>"><?=typeName();?></a>
+                            <span>{随机时间}</span>
+                        </li>
+
+                        <li>
+                            <a href="<?=randType('list')?>" target="_blank" title="<?=typeName();?>"><?=typeName();?></a>
+                            <span>{随机时间}</span>
+                        </li>
+
+                        <li>
+                            <a href="<?=randType('list')?>" target="_blank" title="<?=typeName();?>"><?=typeName();?></a>
+                            <span>{随机时间}</span>
+                        </li>
+
+                        <li>
+                            <a href="<?=randType('list')?>" target="_blank" title="<?=typeName();?>"><?=typeName();?></a>
+                            <span>{随机时间}</span>
+                        </li>
+                    </ul>
+                    <h2>副刊专题</h2>
+                    <dl>
+
+                        <dd><img src="{$theme_path}/images/p020141016714955287059.jpg"/>
+                            <span><a href="<?=randType('list')?>" title="<?=typeName();?>">诗歌</a></span>
+                        </dd>
+
+                        <dd><img src="{$theme_path}/images/p020141016715097709954.jpg"/>
+                            <span><a href="<?=randType('list')?>" title="<?=typeName();?>">书画</a></span>
+                        </dd>
+
+                        <dd><img src="{$theme_path}/images/p020141016715215742633.jpg"/>
+                            <span><a href="<?=randType('list')?>" title="<?=typeName();?>">摄影</a></span>
+                        </dd>
+
+                        <dd><img src="{$theme_path}/images/p020141016715319747217.jpg"/>
+                            <span><a href="<?=randType('list')?>" title="<?=typeName();?>">散文</a></span>
+                        </dd>
+
+                    </dl>
+                </div>
+            </div>
+        </div>
+
+        <style type="text/css">
+            .ny_hexin8xa h2 a,.ny_hexin8xb h2 a,.ny_hexin8xc h2 a{color: #066ab0; font-size: 20px; font-family: "微软雅黑";}
+
+            .hei20{font-family:"微软雅黑"; font-size:20px; color:#2b2b2b; padding-bottom:10px;}
+            .scyhei20{background:url({$theme_path}/images/ch_kpo_03_2014.jpg) no-repeat 20px;}
+            .scyhei201{background:url({$theme_path}/images/ch_kpo_03_2014.jpg) no-repeat 35px;}
+            .scyhei202{background:url({$theme_path}/images/ch_kpo_03_2014.jpg) no-repeat 38px;}
+
+            .lan16_28{font-size:16px; color:#066ab0; text-decoration:none; font-family:"微软雅黑"; line-height:28px;}
+            a:hover{text-decoration:underline;}
+            .hui12_18h{font-size:12px; line-height:18px; color:#313131; text-decoration:none;}
+            .scyxxgk1{background:url({$theme_path}/images/ch_ipa_03_2014.jpg) no-repeat 20px;}
+            .scyxxgk{background:url({$theme_path}/images/ch_ipa_03_2014.jpg) no-repeat;}
+
+        </style>
+
+        <div id=ny_hexin8 onMouseOver="mynav8.className='mynav1';mynav8.style.color='#10218b';" onMouseOut="mynav8.className='';mynav8.style.color='';" class="dingbu3az">
+            <div class="ny_hexin8x" style="padding-bottom:15px;">
+
+                <table width="987" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td width="239" height="358" align="center" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td width="56" align="right" valign="middle" class="scyhei20">&nbsp;</td>
+                                    <td width="283" align="left" valign="middle" class="hei20">信息公开工作信息</td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                                <td width="107" align="left" valign="top" class="lan16_28">相关规定</td>
+                                            </tr>
+
+
+                                            <tr>
+                                                <td align="left" valign="top"><a href="<?=randType('list')?>" class="hui12_18h" target="_blank">信息公开管理办法</a></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td align="left" valign="top"><a href="<?=randType('list')?>" class="hui12_18h" target="_blank">信息公开指南</a></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td align="left" valign="top"><a href="<?=randType('list')?>" class="hui12_18h" target="_blank">信息公开目录</a></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td align="left" valign="top"><a href="<?=randType('list')?>" class="hui12_18h" target="_blank">其他规定</a></td>
+                                            </tr>
+
+
+
+                                        </table>
+                                        <table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-top:27px">
+                                            <tr>
+                                                <td align="left" valign="top" class="lan16_28">组织机构</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td align="left" valign="top"><a href="<?=randType('list')?>" class="hui12_18h" target="_blank">工作机构</a></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td align="left" valign="top"><a href="<?=randType('list')?>" class="hui12_18h" target="_blank">监督机构</a></td>
+                                            </tr>
+
+
+                                        </table>
+                                        <table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-top:30px">
+                                            <tr>
+                                                <td align="left" valign="top" class="lan16_28">年度报告</td>
+                                            </tr>
+
+
+                                            <tr>
+                                                <td align="left" valign="top"><a href="<?=randType('list')?>" class="hui12_18h" target="_blank">2016年度报告</a></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td align="left" valign="top"><a href="<?=randType('list')?>" class="hui12_18h" target="_blank">2015年度报告</a></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td align="left" valign="top"><a href="<?=randType('list')?>" class="hui12_18h" target="_blank">2014年度报告</a></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td align="left" valign="top"><a href="<?=randType('list')?>" class="hui12_18h" target="_blank">2013年度报告</a></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td align="left" valign="top"><a href="<?=randType('list')?>" class="hui12_18h" target="_blank">2012年度报告</a></td>
+                                            </tr>
+
+
+                                        </table></td>
+                                </tr>
+                            </table></td>
+                        <td width="330" align="center" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0" class="scyxxgk">
+                                <tr>
+                                    <td width="54" align="right" valign="middle" class="scyhei201">&nbsp;</td>
+                                    <td colspan="2" align="left" valign="top" class="hei20">中国作文网学部</td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td width="141" align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                                <td width="107" align="left" valign="top" class="lan16_28">基本信息</td>
+                                            </tr>
+
+
+                                            <tr>
+                                                <td align="left" valign="top"><a href="<?=randType('list')?>" class="hui12_18h" target="_blank">学部概况</a></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td align="left" valign="top"><a href="<?=randType('list')?>" class="hui12_18h" target="_blank">院士大会</a></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td align="left" valign="top"><a href="<?=randType('list')?>" class="hui12_18h" target="_blank">院士信息</a></td>
+                                            </tr>
+
+
+
+                                        </table>
+                                        <table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-top:13px">
+                                            <tr>
+                                                <td align="left" valign="top" class="lan16_28">规章制度</td>
+                                            </tr>
+
+
+                                            <tr>
+                                                <td align="left" valign="top"><a href="<?=randType('list')?>" class="hui12_18h" target="_blank">院士章程</a></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td align="left" valign="top"><a href="<?=randType('list')?>" class="hui12_18h" target="_blank">增选工作有关规定</a></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td align="left" valign="top"><a href="<?=randType('list')?>" class="hui12_18h" target="_blank">其他工作规则与管理办法</a></td>
+                                            </tr>
+
+
+                                        </table>
+                                        <table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-top:30px">
+                                            <tr>
+                                                <td align="left" valign="top" class="lan16_28">工作进展</td>
+                                            </tr>
+
+
+                                            <tr>
+                                                <td align="left" valign="top"><a href="<?=randType('list')?>" class="hui12_18h" target="_blank">院士增选</a></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td align="left" valign="top"><a href="<?=randType('list')?>" class="hui12_18h" target="_blank">咨询评议</a></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td align="left" valign="top"><a href="<?=randType('list')?>" class="hui12_18h" target="_blank">学术科普</a></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td align="left" valign="top"><a href="<?=randType('list')?>" class="hui12_18h" target="_blank">工作动态</a></td>
+                                            </tr>
+
+
+                                        </table></td>
+                                    <td width="135" align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                                <td align="left" valign="top" class="lan16_28">学部出版物</td>
+                                            </tr>
+
+
+                                            <tr>
+                                                <td align="left" valign="top"><a href="<?=randType('list')?>" class="hui12_18h" target="_blank">咨询决策系列</a></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td align="left" valign="top"><a href="<?=randType('list')?>" class="hui12_18h" target="_blank">学术引领系列</a></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td align="left" valign="top"><a href="<?=randType('list')?>" class="hui12_18h" target="_blank">科学文化系列</a></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td align="left" valign="top"><a href="<?=randType('list')?>" class="hui12_18h" target="_blank">其他出版物</a></td>
+                                            </tr>
+
+
+                                        </table>
+                                        <table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-top:110px">
+                                            <tr>
+                                                <td align="left" valign="top" class="lan16_28">陈嘉庚科学奖</td>
+                                            </tr>
+
+
+                                            <tr>
+                                                <td align="left" valign="top"><a href="<?=randType('list')?>" class="hui12_18h" target="_blank">机构概况</a></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td align="left" valign="top"><a href="<?=randType('list')?>" class="hui12_18h" target="_blank">规章制度</a></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td align="left" valign="top"><a href="<?=randType('list')?>" class="hui12_18h" target="_blank">通知公告</a></td>
+                                            </tr>
+
+
+                                        </table></td>
+                                </tr>
+                            </table></td>
+                        <td width="418" align="center" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0" class="scyxxgk1">
+                                <tr>
+                                    <td width="56" align="right" valign="middle" class="scyhei202">&nbsp;</td>
+                                    <td colspan="3" align="left" valign="top" class="hei20">中国作文网院部</td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td width="115" align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                                <td align="left" valign="top" class="lan16_28">机构设置</td>
+                                            </tr>
+
+
+                                            <tr>
+                                                <td align="left" valign="top"><a href="<?=randType('list')?>" class="hui12_18h" target="_blank">基本情况</a></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td align="left" valign="top"><a href="<?=randType('list')?>" class="hui12_18h" target="_blank">院领导集体</a></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td align="left" valign="top"><a href="<?=randType('list')?>" class="hui12_18h" target="_blank">组织机构</a></td>
+                                            </tr>
+
+
+                                        </table>
+                                        <table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-top:11px">
+                                            <tr>
+                                                <td align="left" valign="top" class="lan16_28">财政经费</td>
+                                            </tr>
+
+
+                                            <tr>
+                                                <td align="left" valign="top"><a href="<?=randType('list')?>" class="hui12_18h" target="_blank">预算决算</a></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td align="left" valign="top"><a href="<?=randType('list')?>" class="hui12_18h" target="_blank">重大基建项目</a></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td align="left" valign="top"><a href="<?=randType('list')?>" class="hui12_18h" target="_blank">重大采购</a></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td align="left" valign="top"><a href="<?=randType('list')?>" class="hui12_18h" target="_blank">院级项目</a></td>
+                                            </tr>
+
+
+                                        </table>
+                                        <table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-top:15px">
+                                            <tr>
+                                                <td align="left" valign="top" class="lan16_28">国际合作</td>
+                                            </tr>
+
+
+                                            <tr>
+                                                <td align="left" valign="top"><a href="<?=randType('list')?>" class="hui12_18h" target="_blank">国际组织</a></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td align="left" valign="top"><a href="<?=randType('list')?>" class="hui12_18h" target="_blank">国际会议</a></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td align="left" valign="top"><a href="<?=randType('list')?>" class="hui12_18h" target="_blank">国际奖励</a></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td align="left" valign="top"><a href="<?=randType('list')?>" class="hui12_18h" target="_blank">国际奖学金</a></td>
+                                            </tr>
+
+                                        </table></td>
+                                    <td width="111" align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                                <td align="left" valign="top" class="lan16_28">规章制度</td>
+                                            </tr>
+
+
+                                            <tr>
+                                                <td align="left" valign="top"><a href="<?=randType('list')?>" class="hui12_18h" target="_blank">中国作文网章程</a></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td align="left" valign="top"><a href="<?=randType('list')?>" class="hui12_18h" target="_blank">机构管理</a></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td align="left" valign="top"><a href="<?=randType('list')?>" class="hui12_18h" target="_blank">科研活动管理</a></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td align="left" valign="top"><a href="<?=randType('list')?>" class="hui12_18h" target="_blank">人力资源管理</a></td>
+                                            </tr>
+
+
+                                        </table>
+                                        <table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-top:13px">
+                                            <tr>
+                                                <td align="left" valign="top" class="lan16_28">人事人才</td>
+                                            </tr>
+
+
+                                            <tr>
+                                                <td align="left" valign="top"><a href="<?=randType('list')?>" class="hui12_18h" target="_blank">人事任免</a></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td align="left" valign="top"><a href="<?=randType('list')?>" class="hui12_18h" target="_blank">人才专项</a></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td align="left" valign="top"><a href="<?=randType('list')?>" class="hui12_18h" target="_blank">人才招聘</a></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td align="left" valign="top"><a href="<?=randType('list')?>" class="hui12_18h" target="_blank">招生与培养</a></td>
+                                            </tr>
+
+
+                                        </table>
+                                        <table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-top:14px">
+                                            <tr>
+                                                <td align="left" valign="top" class="lan16_28">科学传播</td>
+                                            </tr>
+
+
+                                            <tr>
+                                                <td align="left" valign="top"><a href="<?=randType('list')?>" class="hui12_18h" target="_blank">科普资源</a></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td align="left" valign="top"><a href="<?=randType('list')?>" class="hui12_18h" target="_blank">科普知识</a></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td align="left" valign="top"><a href="<?=randType('list')?>" class="hui12_18h" target="_blank">网站建设</a></td>
+                                            </tr>
+
+
+                                        </table></td>
+                                    <td width="136" align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                                <td align="left" valign="top" class="lan16_28">发展规划</td>
+                                            </tr>
+
+
+                                            <tr>
+                                                <td align="left" valign="top"><a href="<?=randType('list')?>" class="hui12_18h" target="_blank">院总体规划</a></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td align="left" valign="top"><a href="<?=randType('list')?>" class="hui12_18h" target="_blank">专项规划</a></td>
+                                            </tr>
+
+
+                                        </table>
+                                        <table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-top:13px">
+                                            <tr>
+                                                <td align="left" valign="top" class="lan16_28">科学研究</td>
+                                            </tr>
+
+
+                                            <tr>
+                                                <td align="left" valign="top"><a href="<?=randType('list')?>" class="hui12_18h" target="_blank">科研创新单元</a></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td align="left" valign="top"><a href="<?=randType('list')?>" class="hui12_18h" target="_blank">科研装备</a></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td align="left" valign="top"><a href="<?=randType('list')?>" class="hui12_18h" target="_blank">先导专项</a></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td align="left" valign="top"><a href="<?=randType('list')?>" class="hui12_18h" target="_blank">科研进展</a></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td align="left" valign="top"><a href="<?=randType('list')?>" class="hui12_18h" target="_blank">科研成果</a></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td align="left" valign="top"><a href="<?=randType('list')?>" class="hui12_18h" target="_blank">成果转化</a></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td align="left" valign="top"><a href="<?=randType('list')?>" class="hui12_18h" target="_blank">科技奖励</a></td>
+                                            </tr>
+
+
+                                        </table>
+                                        <table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-top:13px">
+                                            <tr>
+                                                <td align="left" valign="top" class="lan16_28">年度统计与出版物</td>
+                                            </tr>
+
+
+                                            <tr>
+                                                <td align="left" valign="top"><a href="<?=randType('list')?>" class="hui12_18h" target="_blank">年度统计</a></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td align="left" valign="top"><a href="<?=randType('list')?>" class="hui12_18h" target="_blank">出版物</a></td>
+                                            </tr>
+
+
+
+                                        </table></td>
+                                </tr>
+                            </table></td>
+                    </tr>
+                </table>
+
+
+
+            </div>
+        </div>
+    </div>
+</div>

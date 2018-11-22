@@ -89,7 +89,7 @@ return array (
     'id' => 65,
     'name' => '二级目录',
     'dirname' => 'SPath',
-    'urlrules' => 'a:2:{s:4:"list";a:3:{s:7:"tplfile";s:4:"list";s:5:"rules";s:41:"list/{字母3}/,list/{数字字母5}.html";s:6:"system";s:1:"1";}s:4:"show";a:3:{s:7:"tplfile";s:4:"show";s:5:"rules";s:167:"clun{数字字母5}/,clun{数字字母5}/{日期}{数字字母4}.html,clun{数字字母4}/{日期}{数字字母5}.html,clun{数字字母4}/{日期}{数字字母4}.html";s:6:"system";s:1:"1";}}',
+    'urlrules' => 'a:3:{s:4:"list";a:3:{s:7:"tplfile";s:4:"list";s:5:"rules";s:41:"list/{字母3}/,list/{数字字母5}.html";s:6:"system";s:1:"1";}s:4:"show";a:3:{s:7:"tplfile";s:4:"show";s:5:"rules";s:167:"clun{数字字母5}/,clun{数字字母5}/{日期}{数字字母4}.html,clun{数字字母4}/{日期}{数字字母5}.html,clun{数字字母4}/{日期}{数字字母4}.html";s:6:"system";s:1:"1";}s:3:"bbk";a:3:{s:7:"tplfile";s:3:"bbk";s:5:"rules";s:19:"bbk{数字字母5}/";s:6:"system";N;}}',
     'tplrules' => '',
     'temp1' => '',
     'temp2' => '',

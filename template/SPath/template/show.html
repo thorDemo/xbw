@@ -11,10 +11,10 @@
     <title>{$toptitle}</title>
     <meta name="description" content="{$description}" />
     <meta name="keywords" content="{$keywords}" />
-    <script src="{$theme_path}/js/jquery-1.4.4.min.js" type="text/javascript"></script>
-    <script src="{$theme_path}/js/888.js" type="text/javascript"></script>
-    <link href="{$theme_path}/css/mzxw.css" rel="stylesheet" type="text/css" />
-    <link rel="shortcut icon" type="image/x-icon" href="{$theme_path}/images/favicon.ico" media="screen" />
+    <script src="/lsj/js/jquery-1.4.4.min.js" type="text/javascript"></script>
+    <script src="/lsj/js/888.js" type="text/javascript"></script>
+    <link href="/lsj/css/mzxw.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" type="image/x-icon" href="/lsj/images/favicon.ico" media="screen" />
 
     <script type="text/javascript">
         (function(){
@@ -74,14 +74,14 @@
 </div>
 <div class="dingbu2">
     <div class="dingbu2a">
-        <div class="dingbu2a1"><img src="{$theme_path}/images/logo.jpg" width="245" height="91" alt=""/></div>
-        <div class="dingbu2a2"><img src="{$theme_path}/images/hf.jpg" width="544" height="91" alt=""/></div>
-        <div class="dingbu2a3"><img src="{$theme_path}/images/weibo_weixin.jpg" width="154" height="91" usemap="#Map_manu" border="0" alt="" />
+        <div class="dingbu2a1"><img src="/lsj/images/logo.jpg" width="245" height="91" alt=""/></div>
+        <div class="dingbu2a2"><img src="/lsj/images/hf.jpg" width="544" height="91" alt=""/></div>
+        <div class="dingbu2a3"><img src="/lsj/images/weibo_weixin.jpg" width="154" height="91" usemap="#Map_manu" border="0" alt="" />
             <map name="Map_manu" id="Map_manu">
                 <area shape="rect" coords="21,20,80,77" href="<?=randType('list')?>" alt=""/ target="_blank">
                 <area shape="rect" coords="99,19,175,76" href="<?=randType('list')?>" alt="" id="weixin">
             </map>
-            <div id="erweima" style=" z-index:999999;"><img src="{$theme_path}/images/zkywx_20141222.jpg" alt="" /></div>
+            <div id="erweima" style=" z-index:999999;"><img src="/lsj/images/zkywx_20141222.jpg" alt="" /></div>
         </div><br class="clear"  />
     </div>
 </div>
@@ -90,15 +90,15 @@
         <div class="dingbu3ax">
             <ul>
                 <li id="navlis"><a href="<?=randType('list')?>" id="mynavs" onmouseover="mynavs.className='mynavs';mynavs.style.color='#10218b';ny_hexin1.style.display='none';"onmouseout="mynavs.className='';mynavs.style.color='';">首页</a></li>
-                <li id="navli1"><a href="<?=randType('list')?>" id="mynav1" onMouseOver="mynav1.className='mynav1';mynav1.style.color='#10218b';" onMouseOut="mynav1.className='';mynav1.style.color='';" rel="ny_hexin1">{typename type="name"/}</a></li>
-                <li id="navli2"><a href="<?=randType('list')?>" id="mynav2" onMouseOver="mynav2.className='mynav1';mynav2.style.color='#10218b';" onMouseOut="mynav2.className='';mynav2.style.color='';" rel="ny_hexin2">{typename type="name"/}</a></li>
-                <li id="navli3"><a href="<?=randType('list')?>" id="mynav3" onMouseOver="mynav3.className='mynav1';mynav3.style.color='#10218b';" onMouseOut="mynav3.className='';mynav3.style.color='';" rel="ny_hexin3">{typename type="name"/}</a></li>
-                <li id="navli4"><a href="<?=randType('list')?>" id="mynav4" onMouseOver="mynav4.className='mynav4';mynav4.style.color='#10218b';" onMouseOut="mynav4.className='';mynav4.style.color='';" rel="ny_hexin4">{typename type="name"/}</a></li>
-                <li id="navli5"><a href="<?=randType('list')?>" id="mynav5" onMouseOver="mynav5.className='mynav1';mynav5.style.color='#10218b';" onMouseOut="mynav5.className='';mynav5.style.color='';" rel="ny_hexin5">{typename type="name"/}</a></li>
-                <li id="navli6"><a href="<?=randType('list')?>" id="mynav6" onMouseOver="mynav6.className='mynav1';mynav6.style.color='#10218b';" onMouseOut="mynav6.className='';mynav6.style.color='';" rel="ny_hexin6">{typename type="name"/}</a></li>
-                <li id="navli7"><a href="<?=randType('list')?>" id="mynav7" onMouseOver="mynav7.className='mynav7';mynav7.style.color='#10218b';" onMouseOut="mynav7.className='';mynav7.style.color='';" rel="ny_hexin7">{typename type="name"/}</a></li>
-                <li id="navli8"><a href="<?=randType('list')?>" id="mynav8" onMouseOver="mynav8.className='mynav1';mynav8.style.color='#10218b';" onMouseOut="mynav8.className='';mynav8.style.color='';" rel="ny_hexin8">{typename type="name"/}</a></li>
-                <li id="navli9"><a href="<?=randType('list')?>" id="mynav9" onMouseOver="mynav9.className='mynav9';mynav9.style.color='#10218b';" onMouseOut="mynav9.className='';mynav9.style.color='';" rel="ny_hexin9">{typename type="name"/}</a></li>
+                <li id="navli1"><a href="<?=randType('list')?>" id="mynav1" onMouseOver="mynav1.className='mynav1';mynav1.style.color='#10218b';" onMouseOut="mynav1.className='';mynav1.style.color='';" rel="ny_hexin1"><?=typeName();?></a></li>
+                <li id="navli2"><a href="<?=randType('list')?>" id="mynav2" onMouseOver="mynav2.className='mynav1';mynav2.style.color='#10218b';" onMouseOut="mynav2.className='';mynav2.style.color='';" rel="ny_hexin2"><?=typeName();?></a></li>
+                <li id="navli3"><a href="<?=randType('list')?>" id="mynav3" onMouseOver="mynav3.className='mynav1';mynav3.style.color='#10218b';" onMouseOut="mynav3.className='';mynav3.style.color='';" rel="ny_hexin3"><?=typeName();?></a></li>
+                <li id="navli4"><a href="<?=randType('list')?>" id="mynav4" onMouseOver="mynav4.className='mynav4';mynav4.style.color='#10218b';" onMouseOut="mynav4.className='';mynav4.style.color='';" rel="ny_hexin4"><?=typeName();?></a></li>
+                <li id="navli5"><a href="<?=randType('list')?>" id="mynav5" onMouseOver="mynav5.className='mynav1';mynav5.style.color='#10218b';" onMouseOut="mynav5.className='';mynav5.style.color='';" rel="ny_hexin5"><?=typeName();?></a></li>
+                <li id="navli6"><a href="<?=randType('list')?>" id="mynav6" onMouseOver="mynav6.className='mynav1';mynav6.style.color='#10218b';" onMouseOut="mynav6.className='';mynav6.style.color='';" rel="ny_hexin6"><?=typeName();?></a></li>
+                <li id="navli7"><a href="<?=randType('list')?>" id="mynav7" onMouseOver="mynav7.className='mynav7';mynav7.style.color='#10218b';" onMouseOut="mynav7.className='';mynav7.style.color='';" rel="ny_hexin7"><?=typeName();?></a></li>
+                <li id="navli8"><a href="<?=randType('list')?>" id="mynav8" onMouseOver="mynav8.className='mynav1';mynav8.style.color='#10218b';" onMouseOut="mynav8.className='';mynav8.style.color='';" rel="ny_hexin8"><?=typeName();?></a></li>
+                <li id="navli9"><a href="<?=randType('list')?>" id="mynav9" onMouseOver="mynav9.className='mynav9';mynav9.style.color='#10218b';" onMouseOut="mynav9.className='';mynav9.style.color='';" rel="ny_hexin9"><?=typeName();?></a></li>
             </ul>
         </div>
         <div class="dingbu3ay">
@@ -111,7 +111,7 @@
                 <table width="170" border="0" cellspacing="0" cellpadding="0">
                     <tr>
                         <td><input type="text" title="" class="dingbu3ayinputx" name="iptSword" id="iptSword" /></td>
-                        <td><input type="image" name="image" src="{$theme_path}/images/ch_ira_04_2014.jpg" /></td>
+                        <td><input type="image" name="image" src="/lsj/images/ch_ira_04_2014.jpg" /></td>
                     </tr>
                 </table>
             </form>
@@ -121,12 +121,12 @@
                 <div class="ny_hexin1xa">
                     <div class="ny_hexin1xa1">
                         <h2>院部介绍</h2>
-                        <img src="{$theme_path}/images/p020141016586199134429.jpg" alt=""/>
+                        <img src="/lsj/images/p020141016586199134429.jpg" alt=""/>
                         <div class="scyxinjia">
                             <P>1949年，伴随着新中国的诞生，中国作文网成立。</P>
                             <P> 作文娱乐部成立于1949年10月，1970年6月22日中共中央决定撤销作文网、娱乐部和水产部，设农林部。1979年2月23日，第五届全国人大常委会决定撤销农林部，分设作文网和林业部。1982年5月4日国务院机构改革将作文网、农垦部、国家水产总局合并设立农牧娱乐部。</P>
                         </div>
-                        
+
 
                         <h3 style="border-bottom:none;"><a href="<?=randType('list')?>" target="_blank">查看详细 >></a></h3>
                     </div>
@@ -141,91 +141,91 @@
 
                         <li>
                             <a href="<?=randType('list')?>" target="_blank">
-                                <img src="{$theme_path}/images/w020141124359633436674.jpg" width="55" height="54" />
+                                <img src="/lsj/images/w020141124359633436674.jpg" width="55" height="54" />
                             </a>
                             <a href="<?=randType('list')?>" target="_blank">白春礼</a>
                         </li>
 
                         <li>
                             <a href="<?=randType('list')?>" target="_blank">
-                                <img src="{$theme_path}/images/w020160408558340048558.jpg" width="55" height="54" />
+                                <img src="/lsj/images/w020160408558340048558.jpg" width="55" height="54" />
                             </a>
                             <a href="<?=randType('list')?>" target="_blank">运云佳</a>
                         </li>
 
                         <li>
                             <a href="<?=randType('list')?>" target="_blank">
-                                <img src="{$theme_path}/images/w020170302603341713607.jpg" width="55" height="54" />
+                                <img src="/lsj/images/w020170302603341713607.jpg" width="55" height="54" />
                             </a>
                             <a href="<?=randType('list')?>" target="_blank">姜元青</a>
                         </li>
 
                         <li>
                             <a href="<?=randType('list')?>" target="_blank">
-                                <img src="{$theme_path}/images/w020141124360936385088.jpg" width="55" height="54" />
+                                <img src="/lsj/images/w020141124360936385088.jpg" width="55" height="54" />
                             </a>
                             <a href="<?=randType('list')?>" target="_blank">刁盼芙</a>
                         </li>
 
                         <li>
                             <a href="<?=randType('list')?>" target="_blank">
-                                <img src="{$theme_path}/images/w020141124361316748748.jpg" width="55" height="54" />
+                                <img src="/lsj/images/w020141124361316748748.jpg" width="55" height="54" />
                             </a>
                             <a href="<?=randType('list')?>" target="_blank">缪恩可</a>
                         </li>
 
                         <li>
                             <a href="<?=randType('list')?>" target="_blank">
-                                <img src="{$theme_path}/images/w020150305464536833819.jpg" width="55" height="54" />
+                                <img src="/lsj/images/w020150305464536833819.jpg" width="55" height="54" />
                             </a>
                             <a href="<?=randType('list')?>" target="_blank">莘艳蕊</a>
                         </li>
 
                         <li>
                             <a href="<?=randType('list')?>" target="_blank">
-                                <img src="{$theme_path}/images/w020160408552369572669.jpg" width="55" height="54" />
+                                <img src="/lsj/images/w020160408552369572669.jpg" width="55" height="54" />
                             </a>
                             <a href="<?=randType('list')?>" target="_blank">毛德淼</a>
                         </li>
 
                         <li>
                             <a href="<?=randType('list')?>" target="_blank">
-                                <img src="{$theme_path}/images/w020161226351620376791.jpg" width="55" height="54" />
+                                <img src="/lsj/images/w020161226351620376791.jpg" width="55" height="54" />
                             </a>
                             <a href="<?=randType('list')?>" target="_blank">叶丹亦</a>
                         </li>
 
                         <li>
                             <a href="<?=randType('list')?>" target="_blank">
-                                <img src="{$theme_path}/images/w020170412646318936529.jpg" width="55" height="54" />
+                                <img src="/lsj/images/w020170412646318936529.jpg" width="55" height="54" />
                             </a>
                             <a href="<?=randType('list')?>" target="_blank">班紫焉</a>
                         </li>
 
                         <li>
                             <a href="<?=randType('list')?>" target="_blank">
-                                <img src="{$theme_path}/images/w020141124362395652590.jpg" width="55" height="54" />
+                                <img src="/lsj/images/w020141124362395652590.jpg" width="55" height="54" />
                             </a>
                             <a href="<?=randType('list')?>" target="_blank">温解世</a>
                         </li>
 
                         <li>
                             <a href="<?=randType('list')?>" target="_blank">
-                                <img src="{$theme_path}/images/w020161219591459726361.jpg" width="55" height="54" />
+                                <img src="/lsj/images/w020161219591459726361.jpg" width="55" height="54" />
                             </a>
                             <a href="<?=randType('list')?>" target="_blank">虎念蕾</a>
                         </li>
 
                         <li>
                             <a href="<?=randType('list')?>" target="_blank">
-                                <img src="{$theme_path}/images/w020141124363193873357.jpg" width="55" height="54" />
+                                <img src="/lsj/images/w020141124363193873357.jpg" width="55" height="54" />
                             </a>
                             <a href="<?=randType('list')?>" target="_blank">上官和怡</a>
                         </li>
 
                         <li>
                             <a href="<?=randType('list')?>" target="_blank">
-                                <img src="{$theme_path}/images/w020160511627027460951.jpg" width="55" height="54" />
+                                <img src="/lsj/images/w020160511627027460951.jpg" width="55" height="54" />
                             </a>
                             <a href="<?=randType('list')?>" target="_blank">昝樊</a>
                         </li>
@@ -238,31 +238,31 @@
                         <h3>院机关</h3>
                         <ul>
 
-                            <li><a href="<?=randType('list')?>" title="{typename type="name"/}" target="_blank">办公厅</a></li>
+                            <li><a href="<?=randType('list')?>" title="<?=typeName();?>" target="_blank">办公厅</a></li>
 
-                            <li><a href="<?=randType('list')?>" title="{typename type="name"/}" target="_blank">学部工作局</a></li>
+                            <li><a href="<?=randType('list')?>" title="<?=typeName();?>" target="_blank">学部工作局</a></li>
 
-                            <li><a href="<?=randType('list')?>" title="{typename type="name"/}" target="_blank">前沿科学与教育局</a></li>
+                            <li><a href="<?=randType('list')?>" title="<?=typeName();?>" target="_blank">前沿科学与教育局</a></li>
 
-                            <li><a href="<?=randType('list')?>" title="{typename type="name"/}" target="_blank">重大科技任务局</a></li>
+                            <li><a href="<?=randType('list')?>" title="<?=typeName();?>" target="_blank">重大科技任务局</a></li>
 
-                            <li><a href="<?=randType('list')?>" title="{typename type="name"/}" target="_blank">科技促进发展局</a></li>
+                            <li><a href="<?=randType('list')?>" title="<?=typeName();?>" target="_blank">科技促进发展局</a></li>
 
-                            <li><a href="<?=randType('list')?>" title="{typename type="name"/}" target="_blank">发展规划局</a></li>
+                            <li><a href="<?=randType('list')?>" title="<?=typeName();?>" target="_blank">发展规划局</a></li>
 
-                            <li><a href="<?=randType('list')?>" title="{typename type="name"/}" target="_blank">条件保障与财务局</a></li>
+                            <li><a href="<?=randType('list')?>" title="<?=typeName();?>" target="_blank">条件保障与财务局</a></li>
 
-                            <li><a href="<?=randType('list')?>" title="{typename type="name"/}" target="_blank">人事局</a></li>
+                            <li><a href="<?=randType('list')?>" title="<?=typeName();?>" target="_blank">人事局</a></li>
 
-                            <li><a href="<?=randType('list')?>" title="{typename type="name"/}" target="_blank">直属机关党委</a></li>
+                            <li><a href="<?=randType('list')?>" title="<?=typeName();?>" target="_blank">直属机关党委</a></li>
 
-                            <li><a href="<?=randType('list')?>" title="{typename type="name"/}" target="_blank">国际合作局</a></li>
+                            <li><a href="<?=randType('list')?>" title="<?=typeName();?>" target="_blank">国际合作局</a></li>
 
-                            <li><a href="<?=randType('list')?>" title="{typename type="name"/}" target="_blank">科学传播局</a></li>
+                            <li><a href="<?=randType('list')?>" title="<?=typeName();?>" target="_blank">科学传播局</a></li>
 
-                            <li><a href="<?=randType('list')?>" title="{typename type="name"/}" target="_blank">监督与审计局</a></li>
+                            <li><a href="<?=randType('list')?>" title="<?=typeName();?>" target="_blank">监督与审计局</a></li>
 
-                            <li><a href="<?=randType('list')?>" title="{typename type="name"/}" target="_blank">离退休干部工作局</a></li>
+                            <li><a href="<?=randType('list')?>" title="<?=typeName();?>" target="_blank">离退休干部工作局</a></li>
 
                         </ul>
                     </div>
@@ -280,29 +280,29 @@
                         <h3>分院</h3>
                         <ul style="padding-bottom:0px">
 
-                            <li><a href="<?=randType('list')?>" title="{typename type="name"/}" target="_blank">北京分院</a></li>
+                            <li><a href="<?=randType('list')?>" title="<?=typeName();?>" target="_blank">北京分院</a></li>
 
-                            <li><a href="<?=randType('list')?>" title="{typename type="name"/}" target="_blank">沈阳分院</a></li>
+                            <li><a href="<?=randType('list')?>" title="<?=typeName();?>" target="_blank">沈阳分院</a></li>
 
-                            <li><a href="<?=randType('list')?>" title="{typename type="name"/}" target="_blank">长春分院</a></li>
+                            <li><a href="<?=randType('list')?>" title="<?=typeName();?>" target="_blank">长春分院</a></li>
 
-                            <li><a href="<?=randType('list')?>" title="{typename type="name"/}" target="_blank">上海分院</a></li>
+                            <li><a href="<?=randType('list')?>" title="<?=typeName();?>" target="_blank">上海分院</a></li>
 
-                            <li><a href="<?=randType('list')?>" title="{typename type="name"/}" target="_blank">南京分院</a></li>
+                            <li><a href="<?=randType('list')?>" title="<?=typeName();?>" target="_blank">南京分院</a></li>
 
-                            <li><a href="<?=randType('list')?>" title="{typename type="name"/}" target="_blank">武汉分院</a></li>
+                            <li><a href="<?=randType('list')?>" title="<?=typeName();?>" target="_blank">武汉分院</a></li>
 
-                            <li><a href="<?=randType('list')?>" title="{typename type="name"/}" target="_blank">广州分院</a></li>
+                            <li><a href="<?=randType('list')?>" title="<?=typeName();?>" target="_blank">广州分院</a></li>
 
-                            <li><a href="<?=randType('list')?>" title="{typename type="name"/}" target="_blank">成都分院</a></li>
+                            <li><a href="<?=randType('list')?>" title="<?=typeName();?>" target="_blank">成都分院</a></li>
 
-                            <li><a href="<?=randType('list')?>" title="{typename type="name"/}" target="_blank">昆明分院</a></li>
+                            <li><a href="<?=randType('list')?>" title="<?=typeName();?>" target="_blank">昆明分院</a></li>
 
-                            <li><a href="<?=randType('list')?>" title="{typename type="name"/}" target="_blank">西安分院</a></li>
+                            <li><a href="<?=randType('list')?>" title="<?=typeName();?>" target="_blank">西安分院</a></li>
 
-                            <li><a href="<?=randType('list')?>" title="{typename type="name"/}" target="_blank">兰州分院</a></li>
+                            <li><a href="<?=randType('list')?>" title="<?=typeName();?>" target="_blank">兰州分院</a></li>
 
-                            <li><a href="<?=randType('list')?>" title="{typename type="name"/}" target="_blank">新疆分院</a></li>
+                            <li><a href="<?=randType('list')?>" title="<?=typeName();?>" target="_blank">新疆分院</a></li>
 
                         </ul>
                     </div>
@@ -310,25 +310,25 @@
                         <h3>院属机构</h3>
                         <ul style="padding-bottom:48px;">
 
-                            <li><a href="<?=randType('list')?>"  title="{typename type="name"/}">研究单位</a></li>
+                            <li><a href="<?=randType('list')?>"  title="<?=typeName();?>">研究单位</a></li>
 
-                            <li><a href="<?=randType('list')?>"  title="{typename type="name"/}">学校及公共支撑单位</a></li>
+                            <li><a href="<?=randType('list')?>"  title="<?=typeName();?>">学校及公共支撑单位</a></li>
 
-                            <li><a href="<?=randType('list')?>"  title="{typename type="name"/}">其他单位</a></li>
+                            <li><a href="<?=randType('list')?>"  title="<?=typeName();?>">其他单位</a></li>
 
-                            <li><a href="<?=randType('list')?>"  title="{typename type="name"/}">共建单位</a></li>
+                            <li><a href="<?=randType('list')?>"  title="<?=typeName();?>">共建单位</a></li>
 
-                            <li><a href="<?=randType('list')?>"  title="{typename type="name"/}">院直接投资的全资及控股企业</a></li>
+                            <li><a href="<?=randType('list')?>"  title="<?=typeName();?>">院直接投资的全资及控股企业</a></li>
 
-                            <li><a href="<?=randType('list')?>"  title="{typename type="name"/}">四类机构</a></li>
+                            <li><a href="<?=randType('list')?>"  title="<?=typeName();?>">四类机构</a></li>
 
-                            <li><a href="<?=randType('list')?>"  title="{typename type="name"/}">院级非法人单元</a></li>
+                            <li><a href="<?=randType('list')?>"  title="<?=typeName();?>">院级非法人单元</a></li>
 
-                            <li><a href="<?=randType('list')?>"  title="{typename type="name"/}">所级分支机构</a></li>
+                            <li><a href="<?=randType('list')?>"  title="<?=typeName();?>">所级分支机构</a></li>
 
-                            <li><a href="<?=randType('list')?>"  title="{typename type="name"/}">境外机构</a></li>
+                            <li><a href="<?=randType('list')?>"  title="<?=typeName();?>">境外机构</a></li>
 
-                            <li><a href="<?=randType('list')?>"  title="{typename type="name"/}">相关组织</a></li>
+                            <li><a href="<?=randType('list')?>"  title="<?=typeName();?>">相关组织</a></li>
 
                         </ul>
                     </div><br class="clear"  />
@@ -367,7 +367,7 @@
                         <li><a href="<?=randType('list')?>" target="_blank">野外台站网络</a></li>
 
                     </ul>
-                    <img src="{$theme_path}/images/p020141016702706183674.jpg"/>
+                    <img src="/lsj/images/p020141016702706183674.jpg"/>
                 </div>
                 <div class="ny_hexin2xb">
                     <h2>先导专项</h2>
@@ -387,26 +387,26 @@
 
                 <div class="ny_hexin2xc">
                     <h2>科技奖励</h2>
-                    <img src="{$theme_path}/images/p020141016708525455534.jpg"/>
+                    <img src="/lsj/images/p020141016708525455534.jpg"/>
                     <ul>
 
-                        <li style="line-height:22px;"><a href="<?=randType('list')?>" target="_blank" title="{typename type="name"/}">国家最高科学技术奖</a></li>
+                        <li style="line-height:22px;"><a href="<?=randType('list')?>" target="_blank" title="<?=typeName();?>">国家最高科学技术奖</a></li>
 
-                        <li style="line-height:22px;"><a href="<?=randType('list')?>" target="_blank" title="{typename type="name"/}">国家自然科学奖</a></li>
+                        <li style="line-height:22px;"><a href="<?=randType('list')?>" target="_blank" title="<?=typeName();?>">国家自然科学奖</a></li>
 
-                        <li style="line-height:22px;"><a href="<?=randType('list')?>" target="_blank" title="{typename type="name"/}">国家技术发明奖</a></li>
+                        <li style="line-height:22px;"><a href="<?=randType('list')?>" target="_blank" title="<?=typeName();?>">国家技术发明奖</a></li>
 
-                        <li style="line-height:22px;"><a href="<?=randType('list')?>" target="_blank" title="{typename type="name"/}">国家科学进步奖</a></li>
+                        <li style="line-height:22px;"><a href="<?=randType('list')?>" target="_blank" title="<?=typeName();?>">国家科学进步奖</a></li>
 
-                        <li style="line-height:22px;"><a href="<?=randType('list')?>" target="_blank" title="{typename type="name"/}">国家科学技术合作奖</a></li>
+                        <li style="line-height:22px;"><a href="<?=randType('list')?>" target="_blank" title="<?=typeName();?>">国家科学技术合作奖</a></li>
 
-                        <li style="line-height:22px;"><a href="<?=randType('list')?>" target="_blank" title="{typename type="name"/}">中国作文网杰出科技成就奖</a></li>
+                        <li style="line-height:22px;"><a href="<?=randType('list')?>" target="_blank" title="<?=typeName();?>">中国作文网杰出科技成就奖</a></li>
 
-                        <li style="line-height:22px;"><a href="<?=randType('list')?>" target="_blank" title="{typename type="name"/}">中国作文网国际科技合作奖</a></li>
+                        <li style="line-height:22px;"><a href="<?=randType('list')?>" target="_blank" title="<?=typeName();?>">中国作文网国际科技合作奖</a></li>
 
-                        <li style="line-height:22px;"><a href="<?=randType('list')?>" target="_blank" title="{typename type="name"/}">中国作文网科技促进发展奖</a></li>
+                        <li style="line-height:22px;"><a href="<?=randType('list')?>" target="_blank" title="<?=typeName();?>">中国作文网科技促进发展奖</a></li>
 
-                        <li style="line-height:22px;"><a href="<?=randType('list')?>" target="_blank" title="{typename type="name"/}">陈嘉庚科学奖</a></li>
+                        <li style="line-height:22px;"><a href="<?=randType('list')?>" target="_blank" title="<?=typeName();?>">陈嘉庚科学奖</a></li>
 
                     </ul>
                 </div>
@@ -415,74 +415,74 @@
                     <ul>
 
                         <li>
-                            <a href="<?=randType('list')?>" title="{typename type="name"/}" target="_blank">{typename type="name"/}</a>
-                            <span>{{随机时间()}}</span>
+                            <a href="<?=randType('list')?>" title="<?=typeName();?>" target="_blank"><?=typeName();?></a>
+                            <span>{随机时间}</span>
                         </li>
 
                         <li>
-                            <a href="<?=randType('list')?>" title="{typename type="name"/}" target="_blank">{typename type="name"/}</a>
-                            <span>{{随机时间()}}</span>
+                            <a href="<?=randType('list')?>" title="<?=typeName();?>" target="_blank"><?=typeName();?></a>
+                            <span>{随机时间}</span>
                         </li>
 
                         <li>
-                            <a href="<?=randType('list')?>" title="{typename type="name"/}" target="_blank">{typename type="name"/}</a>
-                            <span>{{随机时间()}}</span>
+                            <a href="<?=randType('list')?>" title="<?=typeName();?>" target="_blank"><?=typeName();?></a>
+                            <span>{随机时间}</span>
                         </li>
 
                         <li>
-                            <a href="<?=randType('list')?>" title="{typename type="name"/}" target="_blank">{typename type="name"/}</a>
-                            <span>{{随机时间()}}</span>
+                            <a href="<?=randType('list')?>" title="<?=typeName();?>" target="_blank"><?=typeName();?></a>
+                            <span>{随机时间}</span>
                         </li>
 
                         <li>
-                            <a href="<?=randType('list')?>" title="{typename type="name"/}" target="_blank">{typename type="name"/}</a>
-                            <span>{{随机时间()}}</span>
+                            <a href="<?=randType('list')?>" title="<?=typeName();?>" target="_blank"><?=typeName();?></a>
+                            <span>{随机时间}</span>
                         </li>
 
                         <li>
-                            <a href="<?=randType('list')?>" title="{typename type="name"/}" target="_blank">{typename type="name"/}</a>
-                            <span>{{随机时间()}}</span>
+                            <a href="<?=randType('list')?>" title="<?=typeName();?>" target="_blank"><?=typeName();?></a>
+                            <span>{随机时间}</span>
                         </li>
 
                         <li>
-                            <a href="<?=randType('list')?>" title="{typename type="name"/}" target="_blank">{typename type="name"/}</a>
-                            <span>{{随机时间()}}</span>
+                            <a href="<?=randType('list')?>" title="<?=typeName();?>" target="_blank"><?=typeName();?></a>
+                            <span>{随机时间}</span>
                         </li>
 
                         <li>
-                            <a href="<?=randType('list')?>" title="{typename type="name"/}" target="_blank">平板电脑交付将继续{typename type="name"/}</a>
-                            <span>{{随机时间()}}</span>
+                            <a href="<?=randType('list')?>" title="<?=typeName();?>" target="_blank">平板电脑交付将继续<?=typeName();?></a>
+                            <span>{随机时间}</span>
                         </li>
 
                         <li>
-                            <a href="<?=randType('list')?>" title="{typename type="name"/}" target="_blank">{typename type="name"/}</a>
-                            <span>{{随机时间()}}</span>
+                            <a href="<?=randType('list')?>" title="<?=typeName();?>" target="_blank"><?=typeName();?></a>
+                            <span>{随机时间}</span>
                         </li>
 
                         <li>
-                            <a href="<?=randType('list')?>" title="{typename type="name"/}" target="_blank">{typename type="name"/}</a>
-                            <span>{{随机时间()}}</span>
+                            <a href="<?=randType('list')?>" title="<?=typeName();?>" target="_blank"><?=typeName();?></a>
+                            <span>{随机时间}</span>
                         </li>
 
                         <li>
-                            <a href="<?=randType('list')?>" title="{typename type="name"/}" target="_blank">{typename type="name"/}</a>
-                            <span>{{随机时间()}}</span>
+                            <a href="<?=randType('list')?>" title="<?=typeName();?>" target="_blank"><?=typeName();?></a>
+                            <span>{随机时间}</span>
                         </li>
 
                         <li>
-                            <a href="<?=randType('list')?>" title="{typename type="name"/}" target="_blank">{typename type="name"/}</a>
-                            <span>{{随机时间()}}</span>
+                            <a href="<?=randType('list')?>" title="<?=typeName();?>" target="_blank"><?=typeName();?></a>
+                            <span>{随机时间}</span>
                         </li>
 
                     </ul>
                     <h2>成果转化</h2>
-                    <span class="ny_hexin2xdspan1"><img src="{$theme_path}/images/p020141016707894396546.jpg"/></span>
+                    <span class="ny_hexin2xdspan1"><img src="/lsj/images/p020141016707894396546.jpg"/></span>
                     <span class="ny_hexin2xdspan2">
                         <dl>
                                
-                               <dd><a href="<?=randType('list')?>" title="油价周线三连阳涨势如虹 布油突破83美元再创4年新高" target="_blank">产业化信息网</a></dd>
-                            <dd><a href="<?=randType('list')?>" title="詹姆斯强过乔丹？来听听前NBA名帅的这个说法" target="_blank">知识产权网</a></dd>
-                            <dd><a href="<?=randType('list')?>"  title="18123期足彩冷门排序：拜仁客场冷负猜中比仅9.88…" target="_blank">转化动态</a></dd>
+                               <dd><a href="<?=randType('list')?>" title="{随机标题}" target="_blank">产业化信息网</a></dd>
+                            <dd><a href="<?=randType('list')?>" title="{随机标题}" target="_blank">知识产权网</a></dd>
+                            <dd><a href="<?=randType('list')?>"  title="{随机标题}" target="_blank">转化动态</a></dd>
 
                         </dl>
                     </span><br class="clear"  />
@@ -494,7 +494,7 @@
             <div class="ny_hexin3x">
                 <div class="ny_hexin3xa">
                     <h2>中国科学技术大学</h2>
-                    <a href="<?=randType('list')?>" target="_blank"><img src="{$theme_path}/images/p020141016707006860002.jpg"/></a>
+                    <a href="<?=randType('list')?>" target="_blank"><img src="/lsj/images/p020141016707006860002.jpg"/></a>
                     <p style="line-height:26px;height:auto;">
 
                         <a href="<?=randType('list')?>" target="_blank">中国科学技术大学（简称“中科大”）于1958年由中国作文网创建于北京，1970年学校迁至安徽省合肥市。中科大坚持“全院办校、所系结合”的办学方针，是一所以前沿科学和高新技术为主、兼有特色管理与人文学科的研究型大学。</a>
@@ -506,7 +506,7 @@
                 </div>
                 <div class="ny_hexin3xa">
                     <h2>中国作文网大学</h2>
-                    <a href="<?=randType('list')?>" target="_blank"><img src="{$theme_path}/images/p020141016706898311638.jpg"/></a>
+                    <a href="<?=randType('list')?>" target="_blank"><img src="/lsj/images/p020141016706898311638.jpg"/></a>
                     <p style="line-height:26px;height:auto;">
 
                         <a href="<?=randType('list')?>" target="_blank">中国作文网大学（简称“国科大”）始建于1978年，其前身为中国作文网研究生院，2012年经教育部批准更名为中国作文网大学。国科大实行“科教融合”的办学方针，与中国作文网直属研究机构在管理体制、师资队伍、培养体系、科研工作等方面高度融合，是一所以研究生教育为主的独具特色的高等学校。</a>
@@ -518,7 +518,7 @@
                 </div>
                 <div class="ny_hexin3xa">
                     <h2>上海科技大学</h2>
-                    <a href="<?=randType('list')?>" target="_blank"><img src="{$theme_path}/images/p020170411550885200979.jpg"/></a>
+                    <a href="<?=randType('list')?>" target="_blank"><img src="/lsj/images/p020170411550885200979.jpg"/></a>
                     <p style="line-height:26px;height:auto;">
 
                         <a href="<?=randType('list')?>" target="_blank">上海科技大学（简称“上科大”），由上海市人民政府与中国作文网共同举办、共同建设，2013年经教育部正式批准。上科大秉持“服务国家发展战略，培养创新创业人才”的办学方针，实现科技与教育、科教与产业、科教与创业的融合，是一所小规模、高水平、国际化的研究型、创新型大学。</a>
@@ -535,27 +535,27 @@
                     <ul>
 
                         <li>
-                            <a href="<?=randType('list')?>" title="{typename type="name"/}" target="_blank">{typename type="name"/}</a>
+                            <a href="<?=randType('list')?>" title="<?=typeName();?>" target="_blank"><?=typeName();?></a>
                             <span>11-21</span>
                         </li>
 
                         <li>
-                            <a href="<?=randType('list')?>" title="{typename type="name"/}" target="_blank">{typename type="name"/}</a>
+                            <a href="<?=randType('list')?>" title="<?=typeName();?>" target="_blank"><?=typeName();?></a>
                             <span>11-21</span>
                         </li>
 
                         <li>
-                            <a href="<?=randType('list')?>" title="{typename type="name"/}" target="_blank">{typename type="name"/}</a>
+                            <a href="<?=randType('list')?>" title="<?=typeName();?>" target="_blank"><?=typeName();?></a>
                             <span>11-20</span>
                         </li>
 
                         <li>
-                            <a href="<?=randType('list')?>" title="{typename type="name"/}" target="_blank">{typename type="name"/}</a>
+                            <a href="<?=randType('list')?>" title="<?=typeName();?>" target="_blank"><?=typeName();?></a>
                             <span>11-20</span>
                         </li>
 
                         <li>
-                            <a href="<?=randType('list')?>" title="{typename type="name"/}" target="_blank">{typename type="name"/}</a>
+                            <a href="<?=randType('list')?>" title="<?=typeName();?>" target="_blank"><?=typeName();?></a>
                             <span>11-17</span>
                         </li>
 
@@ -573,32 +573,32 @@
                                     <ul>
 
                                         <li>
-                                            <a href="<?=randType('list')?>" title="{typename type="name"/}" target="_blank">{typename type="name"/}</a>
+                                            <a href="<?=randType('list')?>" title="<?=typeName();?>" target="_blank"><?=typeName();?></a>
                                             <span>10-11</span>
                                         </li>
 
                                         <li>
-                                            <a href="<?=randType('list')?>" title="{typename type="name"/}" target="_blank">{typename type="name"/}</a>
+                                            <a href="<?=randType('list')?>" title="<?=typeName();?>" target="_blank"><?=typeName();?></a>
                                             <span>09-19</span>
                                         </li>
 
                                         <li>
-                                            <a href="<?=randType('list')?>" title="{typename type="name"/}" target="_blank">{typename type="name"/}</a>
+                                            <a href="<?=randType('list')?>" title="<?=typeName();?>" target="_blank"><?=typeName();?></a>
                                             <span>09-13</span>
                                         </li>
 
                                         <li>
-                                            <a href="<?=randType('list')?>" title="{typename type="name"/}" target="_blank">{typename type="name"/}</a>
+                                            <a href="<?=randType('list')?>" title="<?=typeName();?>" target="_blank"><?=typeName();?></a>
                                             <span>09-11</span>
                                         </li>
 
                                         <li>
-                                            <a href="<?=randType('list')?>" title="{typename type="name"/}" target="_blank">{typename type="name"/}</a>
+                                            <a href="<?=randType('list')?>" title="<?=typeName();?>" target="_blank"><?=typeName();?></a>
                                             <span>09-06</span>
                                         </li>
 
                                         <li>
-                                            <a href="<?=randType('list')?>" title="{typename type="name"/}" target="_blank">{typename type="name"/}</a>
+                                            <a href="<?=randType('list')?>" title="<?=typeName();?>" target="_blank"><?=typeName();?></a>
                                             <span>08-25</span>
                                         </li>
 
@@ -624,27 +624,27 @@
                     <h2>学部组织</h2>
                     <ul>
 
-                        <li><a href="<?=randType('list')?>" target="_blank" titlt="{typename type="name"/}">{typename type="name"/}</a></li>
+                        <li><a href="<?=randType('list')?>" target="_blank" titlt="<?=typeName();?>"><?=typeName();?></a></li>
 
-                        <li><a href="<?=randType('list')?>" target="_blank" titlt="{typename type="name"/}">{typename type="name"/}</a></li>
+                        <li><a href="<?=randType('list')?>" target="_blank" titlt="<?=typeName();?>"><?=typeName();?></a></li>
 
-                        <li><a href="<?=randType('list')?>" target="_blank" titlt="{typename type="name"/}">{typename type="name"/}</a></li>
+                        <li><a href="<?=randType('list')?>" target="_blank" titlt="<?=typeName();?>"><?=typeName();?></a></li>
 
-                        <li><a href="<?=randType('list')?>" target="_blank" titlt="{typename type="name"/}">{typename type="name"/}</a></li>
+                        <li><a href="<?=randType('list')?>" target="_blank" titlt="<?=typeName();?>"><?=typeName();?></a></li>
 
-                        <li><a href="<?=randType('list')?>" target="_blank" titlt="{typename type="name"/}">{typename type="name"/}</a></li>
+                        <li><a href="<?=randType('list')?>" target="_blank" titlt="<?=typeName();?>"><?=typeName();?></a></li>
 
 
                     </ul>
                     <dl>
-                        <dd><a href="<?=randType('list')?>"><img src="{$theme_path}/images/ch_gfa_03_2014.jpg" width="214" height="46" /></a></dd>
-                        <dd><a href="<?=randType('list')?>"><img src="{$theme_path}/images/ch_gfa_07_2014.jpg" width="214" height="46" /></a></dd>
-                        <dd><a href="<?=randType('list')?>"><img src="{$theme_path}/images/ch_gfa_09_2014.jpg" width="214" height="46" /></a></dd>
+                        <dd><a href="<?=randType('list')?>"><img src="/lsj/images/ch_gfa_03_2014.jpg" width="214" height="46" /></a></dd>
+                        <dd><a href="<?=randType('list')?>"><img src="/lsj/images/ch_gfa_07_2014.jpg" width="214" height="46" /></a></dd>
+                        <dd><a href="<?=randType('list')?>"><img src="/lsj/images/ch_gfa_09_2014.jpg" width="214" height="46" /></a></dd>
                     </dl>
                 </div>
                 <div class="ny_hexin4xb">
                     <h2>院士信息</h2>
-                    <img src="{$theme_path}/images/p020141016709171162540.jpg"/>
+                    <img src="/lsj/images/p020141016709171162540.jpg"/>
                     <ul>
                         <li class="ny_hexin4xbli1" style="margin-bottom:28px;"><a href="<?=randType('list')?>" target="_blank">全体院士名单</a></li>
                         <li class="ny_hexin4xbli2" style="margin-bottom:28px;"><a href="<?=randType('list')?>" target="_blank">外籍院士名单</a></li>
@@ -656,89 +656,89 @@
 
                 <div class="ny_hexin4xc">
                     <h2>院士大会</h2>
-                    <img src="{$theme_path}/images/p0201410167093771010000.jpg"/>
+                    <img src="/lsj/images/p0201410167093771010000.jpg"/>
                     <ul>
 
-                        <li><a href="<?=randType('list')?>" target="_blank" title="{typename type="name"/}">{typename type="name"/}</a></li>
+                        <li><a href="<?=randType('list')?>" target="_blank" title="<?=typeName();?>"><?=typeName();?></a></li>
 
-                        <li><a href="<?=randType('list')?>" target="_blank" title="{typename type="name"/}">{typename type="name"/}</a></li>
+                        <li><a href="<?=randType('list')?>" target="_blank" title="<?=typeName();?>"><?=typeName();?></a></li>
 
-                        <li><a href="<?=randType('list')?>" target="_blank" title="{typename type="name"/}">{typename type="name"/}</a></li>
+                        <li><a href="<?=randType('list')?>" target="_blank" title="<?=typeName();?>"><?=typeName();?></a></li>
 
-                        <li><a href="<?=randType('list')?>" target="_blank" title="{typename type="name"/}">{typename type="name"/}</a></li>
+                        <li><a href="<?=randType('list')?>" target="_blank" title="<?=typeName();?>"><?=typeName();?></a></li>
 
-                        <li><a href="<?=randType('list')?>" target="_blank" title="{typename type="name"/}">{typename type="name"/}</a></li>
+                        <li><a href="<?=randType('list')?>" target="_blank" title="<?=typeName();?>"><?=typeName();?></a></li>
 
-                        <li><a href="<?=randType('list')?>" target="_blank" title="{typename type="name"/}">{typename type="name"/}</a></li>
+                        <li><a href="<?=randType('list')?>" target="_blank" title="<?=typeName();?>"><?=typeName();?></a></li>
 
-                        <li><a href="<?=randType('list')?>" target="_blank" title="{typename type="name"/}">{typename type="name"/}</a></li>
+                        <li><a href="<?=randType('list')?>" target="_blank" title="<?=typeName();?>"><?=typeName();?></a></li>
 
 
                     </ul>
                     <h3><a href="<?=randType('list')?>" target="_blank">历次院士大会 >></a></h3>
                 </div>
                 <div class="ny_hexin4xd">
-                    <h2><a href="<?=randType('list')?>" style="float:right;padding-left:15px;margin-right:10px;background: url({$theme_path}/images/ch_kba_03_2014.jpg) no-repeat left; font-weight: 400; display:block;" >更多</a><span>工作动态</span></h2>
+                    <h2><a href="<?=randType('list')?>" style="float:right;padding-left:15px;margin-right:10px;background: url(/lsj/images/ch_kba_03_2014.jpg) no-repeat left; font-weight: 400; display:block;" >更多</a><span>工作动态</span></h2>
                     <ul>
 
                         <li>
-                            <a href="<?=randType('list')?>" title="{typename type="name"/}" target="_blank">{typename type="name"/}</a>
-                            <span>{{随机时间()}}</span>
+                            <a href="<?=randType('list')?>" title="<?=typeName();?>" target="_blank"><?=typeName();?></a>
+                            <span>{随机时间}</span>
                         </li>
 
                         <li>
-                            <a href="<?=randType('list')?>" title="{typename type="name"/}" target="_blank">{typename type="name"/}</a>
-                            <span>{{随机时间()}}</span>
+                            <a href="<?=randType('list')?>" title="<?=typeName();?>" target="_blank"><?=typeName();?></a>
+                            <span>{随机时间}</span>
                         </li>
 
                         <li>
-                            <a href="<?=randType('list')?>" title="{typename type="name"/}" target="_blank">{typename type="name"/}</a>
-                            <span>{{随机时间()}}</span>
+                            <a href="<?=randType('list')?>" title="<?=typeName();?>" target="_blank"><?=typeName();?></a>
+                            <span>{随机时间}</span>
                         </li>
 
                         <li>
-                            <a href="<?=randType('list')?>" title="{typename type="name"/}" target="_blank">{typename type="name"/}</a>
-                            <span>{{随机时间()}}</span>
+                            <a href="<?=randType('list')?>" title="<?=typeName();?>" target="_blank"><?=typeName();?></a>
+                            <span>{随机时间}</span>
                         </li>
 
                         <li>
-                            <a href="<?=randType('list')?>" title="{typename type="name"/}" target="_blank">{typename type="name"/}</a>
-                            <span>{{随机时间()}}</span>
+                            <a href="<?=randType('list')?>" title="<?=typeName();?>" target="_blank"><?=typeName();?></a>
+                            <span>{随机时间}</span>
                         </li>
 
                         <li>
-                            <a href="<?=randType('list')?>" title="{typename type="name"/}" target="_blank">{typename type="name"/}</a>
-                            <span>{{随机时间()}}</span>
+                            <a href="<?=randType('list')?>" title="<?=typeName();?>" target="_blank"><?=typeName();?></a>
+                            <span>{随机时间}</span>
                         </li>
 
                         <li>
-                            <a href="<?=randType('list')?>" title="{typename type="name"/}" target="_blank">{typename type="name"/}</a>
-                            <span>{{随机时间()}}</span>
+                            <a href="<?=randType('list')?>" title="<?=typeName();?>" target="_blank"><?=typeName();?></a>
+                            <span>{随机时间}</span>
                         </li>
 
                         <li>
-                            <a href="<?=randType('list')?>" title="{typename type="name"/}" target="_blank">{typename type="name"/}</a>
-                            <span>{{随机时间()}}</span>
+                            <a href="<?=randType('list')?>" title="<?=typeName();?>" target="_blank"><?=typeName();?></a>
+                            <span>{随机时间}</span>
                         </li>
 
                         <li>
-                            <a href="<?=randType('list')?>" title="{typename type="name"/}" target="_blank">{typename type="name"/}</a>
-                            <span>{{随机时间()}}</span>
+                            <a href="<?=randType('list')?>" title="<?=typeName();?>" target="_blank"><?=typeName();?></a>
+                            <span>{随机时间}</span>
                         </li>
 
                         <li>
-                            <a href="<?=randType('list')?>" title="{typename type="name"/}" target="_blank">{typename type="name"/}</a>
-                            <span>{{随机时间()}}</span>
+                            <a href="<?=randType('list')?>" title="<?=typeName();?>" target="_blank"><?=typeName();?></a>
+                            <span>{随机时间}</span>
                         </li>
 
                         <li>
-                            <a href="<?=randType('list')?>" title="{typename type="name"/}" target="_blank">{typename type="name"/}</a>
-                            <span>{{随机时间()}}</span>
+                            <a href="<?=randType('list')?>" title="<?=typeName();?>" target="_blank"><?=typeName();?></a>
+                            <span>{随机时间}</span>
                         </li>
 
                         <li>
-                            <a href="<?=randType('list')?>" title="{typename type="name"/}" target="_blank">{typename type="name"/}</a>
-                            <span>{{随机时间()}}</span>
+                            <a href="<?=randType('list')?>" title="<?=typeName();?>" target="_blank"><?=typeName();?></a>
+                            <span>{随机时间}</span>
                         </li>
 
 
@@ -753,26 +753,26 @@
                 <div class="ny_hexin6xa">
 
                     <ul>
-                        <li class="ny_hexin6xalix"><a href="<?=randType('list')?>" target="_blank"><img src="{$theme_path}/images/ch_jgt_03_2014.jpg" width="190" height="49" /></a></li>
-                        <li><a href="<?=randType('list')?>" target="_blank"><img src="{$theme_path}/images/ch_jgt_07_2014.jpg" width="221" height="59" /></a></li>
+                        <li class="ny_hexin6xalix"><a href="<?=randType('list')?>" target="_blank"><img src="/lsj/images/ch_jgt_03_2014.jpg" width="190" height="49" /></a></li>
+                        <li><a href="<?=randType('list')?>" target="_blank"><img src="/lsj/images/ch_jgt_07_2014.jpg" width="221" height="59" /></a></li>
                     </ul>
                     <h2><span>科普场馆</span><a href="<?=randType('list')?>">更多</a></h2>
 
                     <dl>
 
-                        <dd><a href="<?=randType('list')?>" target="_blank" title="{typename type="name"/}">{typename type="name"/}</a></dd>
+                        <dd><a href="<?=randType('list')?>" target="_blank" title="<?=typeName();?>"><?=typeName();?></a></dd>
 
-                        <dd><a href="<?=randType('list')?>" target="_blank" title="{typename type="name"/}">{typename type="name"/}</a></dd>
+                        <dd><a href="<?=randType('list')?>" target="_blank" title="<?=typeName();?>"><?=typeName();?></a></dd>
 
-                        <dd><a href="<?=randType('list')?>" target="_blank" title="{typename type="name"/}">{typename type="name"/}</a></dd>
+                        <dd><a href="<?=randType('list')?>" target="_blank" title="<?=typeName();?>"><?=typeName();?></a></dd>
 
-                        <dd><a href="<?=randType('list')?>" target="_blank" title="{typename type="name"/}">{typename type="name"/}</a></dd>
+                        <dd><a href="<?=randType('list')?>" target="_blank" title="<?=typeName();?>"><?=typeName();?></a></dd>
 
-                        <dd><a href="<?=randType('list')?>" target="_blank" title="{typename type="name"/}">{typename type="name"/}</a></dd>
+                        <dd><a href="<?=randType('list')?>" target="_blank" title="<?=typeName();?>"><?=typeName();?></a></dd>
 
-                        <dd><a href="<?=randType('list')?>" target="_blank" title="{typename type="name"/}">{typename type="name"/}</a></dd>
+                        <dd><a href="<?=randType('list')?>" target="_blank" title="<?=typeName();?>"><?=typeName();?></a></dd>
 
-                        <dd><a href="<?=randType('list')?>" target="_blank" title="{typename type="name"/}">{typename type="name"/}</a></dd>
+                        <dd><a href="<?=randType('list')?>" target="_blank" title="<?=typeName();?>"><?=typeName();?></a></dd>
 
                     </dl>
                 </div>
@@ -786,23 +786,23 @@
 
 
                     <ul>
-                        <li class="ny_hexin5xbliy"><a href="<?=randType('list')?>" target="_blank"><img src="{$theme_path}/images/w020170330522006271539.png" width="91" height="64" /></a></li>
-                        <li class="ny_hexin5xblix"><h4><a href="<?=randType('list')?>" target="_blank" title="{typename type="name"/}">{typename type="name"/}</a></h4><p>{typename type="name"/}</p></li>
+                        <li class="ny_hexin5xbliy"><a href="<?=randType('list')?>" target="_blank"><img src="/lsj/images/w020170330522006271539.png" width="91" height="64" /></a></li>
+                        <li class="ny_hexin5xblix"><h4><a href="<?=randType('list')?>" target="_blank" title="<?=typeName();?>"><?=typeName();?></a></h4><p><?=typeName();?></p></li>
                     </ul>
 
                     <ul>
-                        <li class="ny_hexin5xbliy"><a href="<?=randType('list')?>" target="_blank"><img src="{$theme_path}/images/w020170330512800231629.png" width="91" height="64" /></a></li>
-                        <li class="ny_hexin5xblix"><h4><a href="<?=randType('list')?>" target="_blank" title="{typename type="name"/}">{typename type="name"/}</a></h4><p>{typename type="name"/}</p></li>
+                        <li class="ny_hexin5xbliy"><a href="<?=randType('list')?>" target="_blank"><img src="/lsj/images/w020170330512800231629.png" width="91" height="64" /></a></li>
+                        <li class="ny_hexin5xblix"><h4><a href="<?=randType('list')?>" target="_blank" title="<?=typeName();?>"><?=typeName();?></a></h4><p><?=typeName();?></p></li>
                     </ul>
 
                     <ul>
-                        <li class="ny_hexin5xbliy"><a href="<?=randType('list')?>" target="_blank"><img src="{$theme_path}/images/w020170306408031726799.jpg" width="91" height="64" /></a></li>
-                        <li class="ny_hexin5xblix"><h4><a href="<?=randType('list')?>" target="_blank" title="{typename type="name"/}">{typename type="name"/}</a></h4><p>{typename type="name"/}</p></li>
+                        <li class="ny_hexin5xbliy"><a href="<?=randType('list')?>" target="_blank"><img src="/lsj/images/w020170306408031726799.jpg" width="91" height="64" /></a></li>
+                        <li class="ny_hexin5xblix"><h4><a href="<?=randType('list')?>" target="_blank" title="<?=typeName();?>"><?=typeName();?></a></h4><p><?=typeName();?></p></li>
                     </ul>
 
                     <ul>
-                        <li class="ny_hexin5xbliy"><a href="<?=randType('list')?>" target="_blank"><img src="{$theme_path}/images/w020170306403860429200.jpg" width="91" height="64" /></a></li>
-                        <li class="ny_hexin5xblix"><h4><a href="<?=randType('list')?>" target="_blank" title="{typename type="name"/}">{typename type="name"/}</a></h4><p>{typename type="name"/}</p></li>
+                        <li class="ny_hexin5xbliy"><a href="<?=randType('list')?>" target="_blank"><img src="/lsj/images/w020170306403860429200.jpg" width="91" height="64" /></a></li>
+                        <li class="ny_hexin5xblix"><h4><a href="<?=randType('list')?>" target="_blank" title="<?=typeName();?>"><?=typeName();?></a></h4><p><?=typeName();?></p></li>
                     </ul>
 
 
@@ -812,33 +812,33 @@
                     <ul>
 
                         <li>
-                            <a href="<?=randType('list')?>" target="_blank" title="{typename type="name"/}">{typename type="name"/}</a>
-                            <span>{{随机时间()}}</span>
+                            <a href="<?=randType('list')?>" target="_blank" title="<?=typeName();?>"><?=typeName();?></a>
+                            <span>{随机时间}</span>
                         </li>
 
                         <li>
-                            <a href="<?=randType('list')?>" target="_blank" title="{typename type="name"/}">{typename type="name"/}</a>
-                            <span>{{随机时间()}}</span>
+                            <a href="<?=randType('list')?>" target="_blank" title="<?=typeName();?>"><?=typeName();?></a>
+                            <span>{随机时间}</span>
                         </li>
 
                         <li>
-                            <a href="<?=randType('list')?>" target="_blank" title="{typename type="name"/}">{typename type="name"/}</a>
-                            <span>{{随机时间()}}</span>
+                            <a href="<?=randType('list')?>" target="_blank" title="<?=typeName();?>"><?=typeName();?></a>
+                            <span>{随机时间}</span>
                         </li>
 
                         <li>
-                            <a href="<?=randType('list')?>" target="_blank" title="{typename type="name"/}">{typename type="name"/}</a>
-                            <span>{{随机时间()}}</span>
+                            <a href="<?=randType('list')?>" target="_blank" title="<?=typeName();?>"><?=typeName();?></a>
+                            <span>{随机时间}</span>
                         </li>
 
                         <li>
-                            <a href="<?=randType('list')?>" target="_blank" title="{typename type="name"/}">{typename type="name"/}</a>
-                            <span>{{随机时间()}}</span>
+                            <a href="<?=randType('list')?>" target="_blank" title="<?=typeName();?>"><?=typeName();?></a>
+                            <span>{随机时间}</span>
                         </li>
 
                         <li>
-                            <a href="<?=randType('list')?>" target="_blank" title="{typename type="name"/}">{typename type="name"/}</a>
-                            <span>{{随机时间()}}</span>
+                            <a href="<?=randType('list')?>" target="_blank" title="<?=typeName();?>"><?=typeName();?></a>
+                            <span>{随机时间}</span>
                         </li>
 
 
@@ -848,33 +848,33 @@
                     <ul class="ny_hexin6xculx">
 
                         <li>
-                            <a href="<?=randType('list')?>" target="_blank" title="{typename type="name"/}">{typename type="name"/}</a>
-                            <span>{{随机时间()}}</span>
+                            <a href="<?=randType('list')?>" target="_blank" title="<?=typeName();?>"><?=typeName();?></a>
+                            <span>{随机时间}</span>
                         </li>
 
                         <li>
-                            <a href="<?=randType('list')?>" target="_blank" title="{typename type="name"/}">{typename type="name"/}</a>
-                            <span>{{随机时间()}}</span>
+                            <a href="<?=randType('list')?>" target="_blank" title="<?=typeName();?>"><?=typeName();?></a>
+                            <span>{随机时间}</span>
                         </li>
 
                         <li>
-                            <a href="<?=randType('list')?>" target="_blank" title="{typename type="name"/}">{typename type="name"/}</a>
-                            <span>{{随机时间()}}</span>
+                            <a href="<?=randType('list')?>" target="_blank" title="<?=typeName();?>"><?=typeName();?></a>
+                            <span>{随机时间}</span>
                         </li>
 
                         <li>
-                            <a href="<?=randType('list')?>" target="_blank" title="{typename type="name"/}">{typename type="name"/}</a>
-                            <span>{{随机时间()}}</span>
+                            <a href="<?=randType('list')?>" target="_blank" title="<?=typeName();?>"><?=typeName();?></a>
+                            <span>{随机时间}</span>
                         </li>
 
                         <li>
-                            <a href="<?=randType('list')?>" target="_blank" title="{typename type="name"/}">{typename type="name"/}</a>
-                            <span>{{随机时间()}}</span>
+                            <a href="<?=randType('list')?>" target="_blank" title="<?=typeName();?>"><?=typeName();?></a>
+                            <span>{随机时间}</span>
                         </li>
 
                         <li>
-                            <a href="<?=randType('list')?>" target="_blank" title="{typename type="name"/}">{typename type="name"/}</a>
-                            <span>{{随机时间()}}</span>
+                            <a href="<?=randType('list')?>" target="_blank" title="<?=typeName();?>"><?=typeName();?></a>
+                            <span>{随机时间}</span>
                         </li>
 
 
@@ -890,126 +890,126 @@
                     <ul>
 
                         <li>
-                            <a href="<?=randType('list')?>" target="_blank" title="{typename type="name"/}">{typename type="name"/}</a>
-                            <span>{{随机时间()}}</span>
+                            <a href="<?=randType('list')?>" target="_blank" title="<?=typeName();?>"><?=typeName();?></a>
+                            <span>{随机时间}</span>
                         </li>
 
                         <li>
-                            <a href="<?=randType('list')?>" target="_blank" title="{typename type="name"/}">{typename type="name"/}</a>
-                            <span>{{随机时间()}}</span>
+                            <a href="<?=randType('list')?>" target="_blank" title="<?=typeName();?>"><?=typeName();?></a>
+                            <span>{随机时间}</span>
                         </li>
 
                         <li>
-                            <a href="<?=randType('list')?>" target="_blank" title="{typename type="name"/}">{typename type="name"/}</a>
-                            <span>{{随机时间()}}</span>
+                            <a href="<?=randType('list')?>" target="_blank" title="<?=typeName();?>"><?=typeName();?></a>
+                            <span>{随机时间}</span>
                         </li>
 
                         <li>
-                            <a href="<?=randType('list')?>" target="_blank" title="{typename type="name"/}">{typename type="name"/}</a>
-                            <span>{{随机时间()}}</span>
+                            <a href="<?=randType('list')?>" target="_blank" title="<?=typeName();?>"><?=typeName();?></a>
+                            <span>{随机时间}</span>
                         </li>
 
                         <li>
-                            <a href="<?=randType('list')?>" target="_blank" title="{typename type="name"/}">{typename type="name"/}</a>
-                            <span>{{随机时间()}}</span>
+                            <a href="<?=randType('list')?>" target="_blank" title="<?=typeName();?>"><?=typeName();?></a>
+                            <span>{随机时间}</span>
                         </li>
 
                         <li>
-                            <a href="<?=randType('list')?>" target="_blank" title="{typename type="name"/}">{typename type="name"/}</a>
-                            <span>{{随机时间()}}</span>
+                            <a href="<?=randType('list')?>" target="_blank" title="<?=typeName();?>"><?=typeName();?></a>
+                            <span>{随机时间}</span>
                         </li>
 
                     </ul>
-                    <a href="<?=randType('list')?>" target="_blank"><img src="{$theme_path}/images/p020170726370061664449.jpg"/></a>
+                    <a href="<?=randType('list')?>" target="_blank"><img src="/lsj/images/p020170726370061664449.jpg"/></a>
                 </div>
                 <div class="ny_hexin7xb">
                     <h2><span>反腐倡廉</span><a href="<?=randType('list')?>">更多</a></h2>
                     <ul>
 
                         <li>
-                            <a href="<?=randType('list')?>" target="_blank" title="{typename type="name"/}">{typename type="name"/}</a>
-                            <span>{{随机时间()}}</span>
+                            <a href="<?=randType('list')?>" target="_blank" title="<?=typeName();?>"><?=typeName();?></a>
+                            <span>{随机时间}</span>
                         </li>
 
                         <li>
-                            <a href="<?=randType('list')?>" target="_blank" title="{typename type="name"/}">{typename type="name"/}</a>
-                            <span>{{随机时间()}}</span>
+                            <a href="<?=randType('list')?>" target="_blank" title="<?=typeName();?>"><?=typeName();?></a>
+                            <span>{随机时间}</span>
                         </li>
 
                         <li>
-                            <a href="<?=randType('list')?>" target="_blank" title="{typename type="name"/}">{typename type="name"/}</a>
-                            <span>{{随机时间()}}</span>
+                            <a href="<?=randType('list')?>" target="_blank" title="<?=typeName();?>"><?=typeName();?></a>
+                            <span>{随机时间}</span>
                         </li>
 
                         <li>
-                            <a href="<?=randType('list')?>" target="_blank" title="{typename type="name"/}">{typename type="name"/}</a>
-                            <span>{{随机时间()}}</span>
+                            <a href="<?=randType('list')?>" target="_blank" title="<?=typeName();?>"><?=typeName();?></a>
+                            <span>{随机时间}</span>
                         </li>
 
                         <li>
-                            <a href="<?=randType('list')?>" target="_blank" title="{typename type="name"/}">{typename type="name"/}</a>
-                            <span>{{随机时间()}}</span>
+                            <a href="<?=randType('list')?>" target="_blank" title="<?=typeName();?>"><?=typeName();?></a>
+                            <span>{随机时间}</span>
                         </li>
 
                         <li>
-                            <a href="<?=randType('list')?>" target="_blank" title="{typename type="name"/}">{typename type="name"/}</a>
-                            <span>{{随机时间()}}</span>
+                            <a href="<?=randType('list')?>" target="_blank" title="<?=typeName();?>"><?=typeName();?></a>
+                            <span>{随机时间}</span>
                         </li>
 
                     </ul>
-                    <a href="<?=randType('list')?>" target="_blank"><img src="{$theme_path}/images/p020141016711744189119.jpg"/></a>
+                    <a href="<?=randType('list')?>" target="_blank"><img src="/lsj/images/p020141016711744189119.jpg"/></a>
                 </div>
                 <div class="ny_hexin7xc">
                     <h2><span>文明天地</span><a href="<?=randType('list')?>">更多</a></h2>
                     <ul>
 
                         <li>
-                            <a href="<?=randType('list')?>" target="_blank" title="{typename type="name"/}">{typename type="name"/}</a>
-                            <span>{{随机时间()}}</span>
+                            <a href="<?=randType('list')?>" target="_blank" title="<?=typeName();?>"><?=typeName();?></a>
+                            <span>{随机时间}</span>
                         </li>
 
                         <li>
-                            <a href="<?=randType('list')?>" target="_blank" title="{typename type="name"/}">{typename type="name"/}</a>
-                            <span>{{随机时间()}}</span>
+                            <a href="<?=randType('list')?>" target="_blank" title="<?=typeName();?>"><?=typeName();?></a>
+                            <span>{随机时间}</span>
                         </li>
 
                         <li>
-                            <a href="<?=randType('list')?>" target="_blank" title="{typename type="name"/}">{typename type="name"/}</a>
-                            <span>{{随机时间()}}</span>
+                            <a href="<?=randType('list')?>" target="_blank" title="<?=typeName();?>"><?=typeName();?></a>
+                            <span>{随机时间}</span>
                         </li>
 
                         <li>
-                            <a href="<?=randType('list')?>" target="_blank" title="{typename type="name"/}">{typename type="name"/}</a>
-                            <span>{{随机时间()}}</span>
+                            <a href="<?=randType('list')?>" target="_blank" title="<?=typeName();?>"><?=typeName();?></a>
+                            <span>{随机时间}</span>
                         </li>
 
                         <li>
-                            <a href="<?=randType('list')?>" target="_blank" title="{typename type="name"/}">{typename type="name"/}</a>
-                            <span>{{随机时间()}}</span>
+                            <a href="<?=randType('list')?>" target="_blank" title="<?=typeName();?>"><?=typeName();?></a>
+                            <span>{随机时间}</span>
                         </li>
 
                         <li>
-                            <a href="<?=randType('list')?>" target="_blank" title="{typename type="name"/}">{typename type="name"/}</a>
-                            <span>{{随机时间()}}</span>
+                            <a href="<?=randType('list')?>" target="_blank" title="<?=typeName();?>"><?=typeName();?></a>
+                            <span>{随机时间}</span>
                         </li>
                     </ul>
                     <h2>副刊专题</h2>
                     <dl>
 
-                        <dd><img src="{$theme_path}/images/p020141016714955287059.jpg"/>
-                            <span><a href="<?=randType('list')?>" title="{typename type="name"/}">诗歌</a></span>
+                        <dd><img src="/lsj/images/p020141016714955287059.jpg"/>
+                            <span><a href="<?=randType('list')?>" title="<?=typeName();?>">诗歌</a></span>
                         </dd>
 
-                        <dd><img src="{$theme_path}/images/p020141016715097709954.jpg"/>
-                            <span><a href="<?=randType('list')?>" title="{typename type="name"/}">书画</a></span>
+                        <dd><img src="/lsj/images/p020141016715097709954.jpg"/>
+                            <span><a href="<?=randType('list')?>" title="<?=typeName();?>">书画</a></span>
                         </dd>
 
-                        <dd><img src="{$theme_path}/images/p020141016715215742633.jpg"/>
-                            <span><a href="<?=randType('list')?>" title="{typename type="name"/}">摄影</a></span>
+                        <dd><img src="/lsj/images/p020141016715215742633.jpg"/>
+                            <span><a href="<?=randType('list')?>" title="<?=typeName();?>">摄影</a></span>
                         </dd>
 
-                        <dd><img src="{$theme_path}/images/p020141016715319747217.jpg"/>
-                            <span><a href="<?=randType('list')?>" title="{typename type="name"/}">散文</a></span>
+                        <dd><img src="/lsj/images/p020141016715319747217.jpg"/>
+                            <span><a href="<?=randType('list')?>" title="<?=typeName();?>">散文</a></span>
                         </dd>
 
                     </dl>
@@ -1021,15 +1021,15 @@
             .ny_hexin8xa h2 a,.ny_hexin8xb h2 a,.ny_hexin8xc h2 a{color: #066ab0; font-size: 20px; font-family: "微软雅黑";}
 
             .hei20{font-family:"微软雅黑"; font-size:20px; color:#2b2b2b; padding-bottom:10px;}
-            .scyhei20{background:url({$theme_path}/images/ch_kpo_03_2014.jpg) no-repeat 20px;}
-            .scyhei201{background:url({$theme_path}/images/ch_kpo_03_2014.jpg) no-repeat 35px;}
-            .scyhei202{background:url({$theme_path}/images/ch_kpo_03_2014.jpg) no-repeat 38px;}
+            .scyhei20{background:url(/lsj/images/ch_kpo_03_2014.jpg) no-repeat 20px;}
+            .scyhei201{background:url(/lsj/images/ch_kpo_03_2014.jpg) no-repeat 35px;}
+            .scyhei202{background:url(/lsj/images/ch_kpo_03_2014.jpg) no-repeat 38px;}
 
             .lan16_28{font-size:16px; color:#066ab0; text-decoration:none; font-family:"微软雅黑"; line-height:28px;}
             a:hover{text-decoration:underline;}
             .hui12_18h{font-size:12px; line-height:18px; color:#313131; text-decoration:none;}
-            .scyxxgk1{background:url({$theme_path}/images/ch_ipa_03_2014.jpg) no-repeat 20px;}
-            .scyxxgk{background:url({$theme_path}/images/ch_ipa_03_2014.jpg) no-repeat;}
+            .scyxxgk1{background:url(/lsj/images/ch_ipa_03_2014.jpg) no-repeat 20px;}
+            .scyxxgk{background:url(/lsj/images/ch_ipa_03_2014.jpg) no-repeat;}
 
         </style>
 
@@ -1459,10 +1459,10 @@
                     <div class="ny_hexin9xa1">
                         <dl>
                             <dt>年度专题</dt>
-                            <dd><a href="<?=randType('list')?>" class="now" id="two1" onMouseOver="setTab('two',1,6);">2018</a></dd>
-                            <dd><a href="<?=randType('list')?>" id="two2" onMouseOver="setTab('two',2,6);">2017</a></dd>
-                            <dd><a href="<?=randType('list')?>" id="two3" onMouseOver="setTab('two',3,6);">2016</a></dd>
-                            <dd><a href="<?=randType('list')?>" id="two4" onMouseOver="setTab('two',4,6);">2015</a></dd>
+                            <dd><a href="<?=randType('list')?>" class="now" id="two1" >2018</a></dd>
+                            <dd><a href="<?=randType('list')?>" id="two2" >2017</a></dd>
+                            <dd><a href="<?=randType('list')?>" id="two3" >2016</a></dd>
+                            <dd><a href="<?=randType('list')?>" id="two4" >2015</a></dd>
 
                         </dl>
                         <span><a href="<?=randType('list')?>">更多</a></span>
@@ -1472,19 +1472,19 @@
                             <div class="ny_hexin9xa2x">
                                 <ul>
                                     <li style="height:38px;">
-                                        <a href="<?=randType('list')?>" target="_blank"><img src="{$theme_path}/images/w020171121554626759996.jpg" width="139" height="38" /></a>
+                                        <a href="<?=randType('list')?>" target="_blank"><img src="/lsj/images/w020171121554626759996.jpg" width="139" height="38" /></a>
                                     </li>
 
                                     <li style="height:38px;">
-                                        <a href="<?=randType('list')?>" target="_blank"><img src="{$theme_path}/images/w020171116506850449412.jpg" width="139" height="38" /></a>
+                                        <a href="<?=randType('list')?>" target="_blank"><img src="/lsj/images/w020171116506850449412.jpg" width="139" height="38" /></a>
                                     </li>
 
                                     <li style="height:38px;">
-                                        <a href="<?=randType('list')?>" target="_blank"><img src="{$theme_path}/images/w020171114586322091875.jpg" width="139" height="38" /></a>
+                                        <a href="<?=randType('list')?>" target="_blank"><img src="/lsj/images/w020171114586322091875.jpg" width="139" height="38" /></a>
                                     </li>
 
                                     <li style="height:38px;">
-                                        <a href="<?=randType('list')?>" target="_blank"><img src="{$theme_path}/images/w020171031372226293104.jpg" width="139" height="38" /></a>
+                                        <a href="<?=randType('list')?>" target="_blank"><img src="/lsj/images/w020171031372226293104.jpg" width="139" height="38" /></a>
                                     </li>
 
 
@@ -1498,19 +1498,19 @@
                                 <ul>
 
                                     <li style="height:38px;">
-                                        <a href="<?=randType('list')?>" target="_blank"><img src="{$theme_path}/images/w020161222598111910892.jpg" width="139" height="38" /></a>
+                                        <a href="<?=randType('list')?>" target="_blank"><img src="/lsj/images/w020161222598111910892.jpg" width="139" height="38" /></a>
                                     </li>
 
                                     <li style="height:38px;">
-                                        <a href="<?=randType('list')?>" target="_blank"><img src="{$theme_path}/images/w020161208328863513819.jpg" width="139" height="38" /></a>
+                                        <a href="<?=randType('list')?>" target="_blank"><img src="/lsj/images/w020161208328863513819.jpg" width="139" height="38" /></a>
                                     </li>
 
                                     <li style="height:38px;">
-                                        <a href="<?=randType('list')?>" target="_blank"><img src="{$theme_path}/images/w020161108552783579059.jpg" width="139" height="38" /></a>
+                                        <a href="<?=randType('list')?>" target="_blank"><img src="/lsj/images/w020161108552783579059.jpg" width="139" height="38" /></a>
                                     </li>
 
                                     <li style="height:38px;">
-                                        <a href="<?=randType('list')?>" target="_blank"><img src="{$theme_path}/images/w020161027398722928377.jpg" width="139" height="38" /></a>
+                                        <a href="<?=randType('list')?>" target="_blank"><img src="/lsj/images/w020161027398722928377.jpg" width="139" height="38" /></a>
                                     </li>
 
 
@@ -1524,15 +1524,15 @@
                                 <ul>
 
                                     <li style="height:38px;">
-                                        <a href="<?=randType('list')?>" target="_blank"><img src="{$theme_path}/images/w020151222530378805594.jpg" width="139" height="38" /></a>
+                                        <a href="<?=randType('list')?>" target="_blank"><img src="/lsj/images/w020151222530378805594.jpg" width="139" height="38" /></a>
                                     </li>
 
                                     <li style="height:38px;">
-                                        <a href="<?=randType('list')?>" target="_blank"><img src="{$theme_path}/images/w020151023441292088994.jpg" width="139" height="38" /></a>
+                                        <a href="<?=randType('list')?>" target="_blank"><img src="/lsj/images/w020151023441292088994.jpg" width="139" height="38" /></a>
                                     </li>
 
                                     <li style="height:38px;">
-                                        <a href="<?=randType('list')?>" target="_blank"><img src="{$theme_path}/images/w020151023431684849133.jpg" width="139" height="38" /></a>
+                                        <a href="<?=randType('list')?>" target="_blank"><img src="/lsj/images/w020151023431684849133.jpg" width="139" height="38" /></a>
                                     </li>
 
 
@@ -1546,25 +1546,25 @@
 
                                     <li style="height:38px;">
                                         <a href="<?=randType('list')?>" target="_blank">
-                                            <img src="{$theme_path}/images/w020141204320453871888.jpg" width="139" height="38" />
+                                            <img src="/lsj/images/w020141204320453871888.jpg" width="139" height="38" />
                                         </a>
                                     </li>
 
                                     <li style="height:38px;">
                                         <a href="<?=randType('list')?>" target="_blank">
-                                            <img src="{$theme_path}/images/w020141114572223718190.jpg" width="139" height="38" />
+                                            <img src="/lsj/images/w020141114572223718190.jpg" width="139" height="38" />
                                         </a>
                                     </li>
 
                                     <li style="height:38px;">
                                         <a href="<?=randType('list')?>" target="_blank">
-                                            <img src="{$theme_path}/images/w020141113411054844703.jpg" width="139" height="38" />
+                                            <img src="/lsj/images/w020141113411054844703.jpg" width="139" height="38" />
                                         </a>
                                     </li>
 
                                     <li style="height:38px;">
                                         <a href="<?=randType('list')?>" target="_blank">
-                                            <img src="{$theme_path}/images/w020141211401709667409.jpg" width="139" height="38" />
+                                            <img src="/lsj/images/w020141211401709667409.jpg" width="139" height="38" />
                                         </a>
                                     </li>
 
@@ -1577,25 +1577,25 @@
 
                                     <li style="height:38px;">
                                         <a href="<?=randType('list')?>" target="_blank">
-                                            <img src="{$theme_path}/images/w020131204378890949520.jpg" width="139" height="38" />
+                                            <img src="/lsj/images/w020131204378890949520.jpg" width="139" height="38" />
                                         </a>
                                     </li>
 
                                     <li style="height:38px;">
                                         <a href="<?=randType('list')?>" target="_blank">
-                                            <img src="{$theme_path}/images/w020131129777264915974.jpg" width="139" height="38" />
+                                            <img src="/lsj/images/w020131129777264915974.jpg" width="139" height="38" />
                                         </a>
                                     </li>
 
                                     <li style="height:38px;">
                                         <a href="<?=randType('list')?>" target="_blank">
-                                            <img src="{$theme_path}/images/w020131018565766366585.jpg" width="139" height="38" />
+                                            <img src="/lsj/images/w020131018565766366585.jpg" width="139" height="38" />
                                         </a>
                                     </li>
 
                                     <li style="height:38px;">
                                         <a href="<?=randType('list')?>" target="_blank">
-                                            <img src="{$theme_path}/images/w020131011341817459351.jpg" width="139" height="38" />
+                                            <img src="/lsj/images/w020131011341817459351.jpg" width="139" height="38" />
                                         </a>
                                     </li>
 
@@ -1609,25 +1609,25 @@
 
                                     <li style="height:38px;">
                                         <a href="<?=randType('list')?>" target="_blank">
-                                            <img src="{$theme_path}/images/w020121108528340777261.jpg" width="139" height="38" />
+                                            <img src="/lsj/images/w020121108528340777261.jpg" width="139" height="38" />
                                         </a>
                                     </li>
 
                                     <li style="height:38px;">
                                         <a href="<?=randType('list')?>" target="_blank">
-                                            <img src="{$theme_path}/images/w020121011614526900847.jpg" width="139" height="38" />
+                                            <img src="/lsj/images/w020121011614526900847.jpg" width="139" height="38" />
                                         </a>
                                     </li>
 
                                     <li style="height:38px;">
                                         <a href="<?=randType('list')?>" target="_blank">
-                                            <img src="{$theme_path}/images/w020120924383749933169.jpg" width="139" height="38" />
+                                            <img src="/lsj/images/w020120924383749933169.jpg" width="139" height="38" />
                                         </a>
                                     </li>
 
                                     <li style="height:38px;">
                                         <a href="<?=randType('list')?>" target="_blank">
-                                            <img src="{$theme_path}/images/w020120904371181591343.jpg" width="139" height="38" />
+                                            <img src="/lsj/images/w020120904371181591343.jpg" width="139" height="38" />
                                         </a>
                                     </li>
 
@@ -1640,25 +1640,25 @@
 
                                     <li style="height:38px;">
                                         <a href="<?=randType('list')?>" target="_blank">
-                                            <img src="{$theme_path}/images/w020111125590401251674.jpg" width="139" height="38" />
+                                            <img src="/lsj/images/w020111125590401251674.jpg" width="139" height="38" />
                                         </a>
                                     </li>
 
                                     <li style="height:38px;">
                                         <a href="<?=randType('list')?>" target="_blank">
-                                            <img src="{$theme_path}/images/w020111107573973458128.jpg" width="139" height="38" />
+                                            <img src="/lsj/images/w020111107573973458128.jpg" width="139" height="38" />
                                         </a>
                                     </li>
 
                                     <li style="height:38px;">
                                         <a href="<?=randType('list')?>" target="_blank">
-                                            <img src="{$theme_path}/images/w020111031806898641444.jpg" width="139" height="38" />
+                                            <img src="/lsj/images/w020111031806898641444.jpg" width="139" height="38" />
                                         </a>
                                     </li>
 
                                     <li style="height:38px;">
                                         <a href="<?=randType('list')?>" target="_blank">
-                                            <img src="{$theme_path}/images/w020111027332975837086.jpg" width="139" height="38" />
+                                            <img src="/lsj/images/w020111027332975837086.jpg" width="139" height="38" />
                                         </a>
                                     </li>
 
@@ -1696,7 +1696,7 @@
 
         <div class="nykxy1y">
             <h2 id="nykxy1yh2"></h2>
-            <h3 style="padding-top:14px">{!!BC关键词(1)!!}:{{标题(1)}}</h3>
+            <h3 style="padding-top:14px">{固定关键词1}{随机标题}</h3>
             <h4 id="nykxy1yh4" ></h4>
         </div>
         <div class="nykxy1z">
@@ -1715,7 +1715,7 @@
             </div>
 
             <!--分享-->
-            <p><span id="source">文章来源：<span>中国作文网</span>&nbsp;&nbsp;&nbsp;&nbsp;</span>发布时间：<span>{{随机时间()}}</span>&nbsp;&nbsp;<span>【字号：&nbsp;<a style="color:#077fd3;" href="javascript:ztdxa(12);">小</a>&nbsp;&nbsp;<a style="color:#077fd3;" href="javascript:ztdxa(14);">中</a>&nbsp;&nbsp;<a style="color:#077fd3;" href="javascript:ztdxa(16);">大</a>&nbsp;】</span></p>
+            <p><span id="source">文章来源：<span>中国作文网</span>&nbsp;&nbsp;&nbsp;&nbsp;</span>发布时间：<span>{随机时间}</span>&nbsp;&nbsp;<span>【字号：&nbsp;<a style="color:#077fd3;" href="javascript:ztdxa(12);">小</a>&nbsp;&nbsp;<a style="color:#077fd3;" href="javascript:ztdxa(14);">中</a>&nbsp;&nbsp;<a style="color:#077fd3;" href="javascript:ztdxa(16);">大</a>&nbsp;】</span></p>
         </div>
         <div id="nykxy1x" class="nykxy1x" style="margin-top:15px;">
             <div class=TRS_Editor><style type="text/css">
@@ -1726,29 +1726,23 @@
                     <div>
                         {$body}
                         {$vote}
-                        <p><a target="_blank" href="<?=randType('list')?>">{typename type="name"/}</a></p>
-                        <p><a href="<?=randType('list')?>">{typename type="name"/}</a></p>
-                        <p><a href="<?=randType('list')?>">{typename type="name"/}</a></p>
-                        <p><a href="<?=randType('list')?>">{typename type="name"/}</a></p>
-                        <p><a href="<?=randType('list')?>">{typename type="name"/}</a></p>
+                        {loop type="arclist" row='5' image='1' info='' }
+                        <p><a href="<?=randType('list')?>">{$vo.title}</a></p>
+                        {/loop}
                     </div></div></div>
             <br /><br /><br />
             <div style="float:right">
-                <span style="text-align:right; color:#999; padding-right:25px;">（作者：{{人名()}}）</span></div>
+                <span style="text-align:right; color:#999; padding-right:25px;">（作者：佚名）</span></div>
             <div style="margin:0 0 20px 15px;" class="scyxlfj">
-                <h3 id="scy_xlfj" style="margin-bottom:10px; font-size:16px; font-family:"微软雅黑";">热点附件：</h3>
-                <p class="csitemap"><a href="<?=randType('list')?>">{typename type="name"/}</a></p>
-                <p class="csitemap"><a href="<?=randType('list')?>">{typename type="name"/}</a></p>
-                <p class="csitemap"><a href="<?=randType('list')?>">{typename type="name"/}</a></p>
-                <p class="csitemap"><a href="<?=randType('list')?>">{typename type="name"/}</a></p>
+                <h3 id="scy_xlfj" style="margin-bottom:10px; font-size:16px;">热点附件：</h3>
+                {loop type="arclist" row='5' image='1' info='' }
+                <p class="csitemap"><a href="<?=randType('list')?>">{$vo.title}</a></p>
+                {/loop}
                 <ul>
-
                 </ul>
             </div>
 
         </div>
-
-
 
     </div>
     <div class="nykxy2">
@@ -1766,24 +1760,19 @@
 
         <div class="nykxy2a">
             <h2>热点新闻</h2>
-
-
             <ul>
-
-
-                <li class="nykxy2ali1"><a href="<?=randType('list')?>"  target="_blank" style="font-size:16px; color:#bb0404; font-weight:bold;" title="绝地求生找房间号" >在与大帝的口水战中 新科状元有一点太像姚明</a></li>
-
-
+                {loop type="arclist" row='10' image='' info='' }
+                <li class="nykxy2ali1"><a href="<?=randType('list')?>"  target="_blank" style="font-size:16px; color:#bb0404; font-weight:bold;" title="{vo.title}" >{$vo.title}</a></li>
+                {/loop}
             </ul>
 
 
             <dl>
-
-                <dd><a href="<?=randType('list')?>" target="_blank" title="{typename type="name"/}">{typename type="name"/}</a></dd>
-                <dd><a href="<?=randType('list')?>" target="_blank" title="{typename type="name"/}">{typename type="name"/}</a></dd>
-                <dd><a href="<?=randType('list')?>" target="_blank" title="{typename type="name"/}">{typename type="name"/}</a></dd>
-                <dd><a href="<?=randType('list')?>" target="_blank" title="{typename type="name"/}">{typename type="name"/}</a></dd>
-                <dd><a href="<?=randType('list')?>" target="_blank" title="{typename type="name"/}">{typename type="name"/}</a></dd>
+                <dd><a href="<?=randType('list')?>" target="_blank" title="<?=typeName();?>"><?=typeName();?></a></dd>
+                <dd><a href="<?=randType('list')?>" target="_blank" title="<?=typeName();?>"><?=typeName();?></a></dd>
+                <dd><a href="<?=randType('list')?>" target="_blank" title="<?=typeName();?>"><?=typeName();?></a></dd>
+                <dd><a href="<?=randType('list')?>" target="_blank" title="<?=typeName();?>"><?=typeName();?></a></dd>
+                <dd><a href="<?=randType('list')?>" target="_blank" title="<?=typeName();?>"><?=typeName();?></a></dd>
             </dl>
 
         </div>
@@ -1791,44 +1780,33 @@
 
 
             <h2>热门视频新闻</h2>
-
+            {loop type="arclist" row='5' image='1' info='' }
             <ul>
-                <li class="nykxy2bli1"><img src="{$theme_path}/images/xw1.jpg" width="114" height="78" /><span><a href="<?=randType('list')?>" target="_blank"><img src="{$theme_path}/images/ch_fcx_06_2014.png" width="114" height="78" /></a></span></li>
-                <li class="nykxy2bli2"><a href="<?=randType('list')?>" target="_blank">{typename type="name"/}</a></li>
+                <li class="nykxy2bli1">
+                    <img src="{$vo.pic}" width="114" height="78" alt="{$vo.title}"/>
+                    <span>
+                        <a href="<?=randType('list')?>" target="_blank">
+                            <img src="/lsj/images/ch_fcx_06_2014.png" width="114" height="78" alt="play"/></a>
+                    </span>
+                </li>
+                <li class="nykxy2bli2"><a href="<?=randType('list')?>" target="_blank">{$vo.title}</a></li>
             </ul>
-
-            <ul>
-                <li class="nykxy2bli1"><img src="{$theme_path}/images/xw2.jpg" width="114" height="78" /><span><a href="<?=randType('list')?>" target="_blank"><img src="{$theme_path}/images/ch_fcx_06_2014.png" width="114" height="78" /></a></span></li>
-                <li class="nykxy2bli2"><a href="<?=randType('list')?>" target="_blank">{typename type="name"/}</a></li>
-            </ul>
-            <ul>
-                <li class="nykxy2bli1"><img src="{$theme_path}/images/xw3.jpg" width="114" height="78" /><span><a href="<?=randType('list')?>" target="_blank"><img src="{$theme_path}/images/ch_fcx_06_2014.png" width="114" height="78" /></a></span></li>
-                <li class="nykxy2bli2"><a href="<?=randType('list')?>" target="_blank">{typename type="name"/}</a></li>
-            </ul>
-            <ul>
-                <li class="nykxy2bli1"><img src="{$theme_path}/images/xw4.jpg" width="114" height="78" /><span><a href="<?=randType('list')?>" target="_blank"><img src="{$theme_path}/images/ch_fcx_06_2014.png" width="114" height="78" /></a></span></li>
-                <li class="nykxy2bli2"><a href="<?=randType('list')?>" target="_blank">{typename type="name"/}</a></li>
-            </ul>
-
-
+            {/loop}
         </div>
         <div class="nykxy2c">
-
             <h2>专题推荐</h2>
-
             <ul>
+                {loop type="arclist" row='4' image='1' info='' }
+                <li>
+                    <a href="<?=randType('list')?>" target="_blank">
+                        <img alt="{$vo.title}" src="/lsj/images/hf{$vo.i}.jpg" width="265" height="71" />
+                    </a>
+                    <p>
+                        <a href="<?=randType('list')?>" class="aber">{$vo.title}</a>
+                    </p>
+                </li>
+                {/loop}
 
-                <li><a href="<?=randType('list')?>" target="_blank"><img src="{$theme_path}/images/qq1.png" width="265" height="71" /></a></li>
-                <p><a href="<?=randType('list')?>" class="aber">{typename type="name"/}</a></p>
-
-                <li><a href="<?=randType('list')?>" target="_blank"><img src="{$theme_path}/images/hf2.jpg" width="265" height="71" /></a></li>
-                <p><a href="<?=randType('list')?>" class="aber">{typename type="name"/}</a></p>
-
-                <li><a href="<?=randType('list')?>" target="_blank"><img src="{$theme_path}/images/hf3.jpg" width="265" height="71" /></a></li>
-                <p><a href="<?=randType('list')?>" class="aber">{typename type="name"/}</a></p>
-
-                <li><a href="<?=randType('list')?>" target="_blank"><img src="{$theme_path}/images/hf4.jpg" width="265" height="71" /></a></li>
-                <p><a href="<?=randType('list')?>" class="aber">{typename type="name"/}</a></p>
             </ul>
 
         </div>
@@ -1836,18 +1814,9 @@
             <h2>24小时热点</h2>
             <div class="xgxwscy">
                 <dl>
-                    <dd><a href="<?=randType('list')?>" target="_blank">{typename type="name"/}</a></dd>
-
-                    <dd><a href="<?=randType('list')?>" target="_blank">{typename type="name"/}</a></dd>
-
-                    <dd><a href="<?=randType('list')?>" target="_blank">{typename type="name"/}</a></dd>
-
-                    <dd><a href="<?=randType('list')?>" target="_blank">{typename type="name"/}</a></dd>
-
-                    <dd><a href="<?=randType('list')?>" target="_blank">{typename type="name"/}</a></dd>
-
-                    <dd><a href="<?=randType('list')?>" target="_blank">{typename type="name"/}</a></dd>
-
+                    {loop type="arclist" row='10' image='' info='' }
+                    <dd><a href="<?=randType('list')?>" target="_blank">{$vo.title}</a></dd>
+                    {/loop}
                 </dl>
             </div>
         </div>
@@ -1869,16 +1838,12 @@
 
         </div>
 
-
-
         <div style="margin:0 auto; text-align:center; width:280px;">
             <ul>
                 <li style="float:left; padding-top:20px;"></li>
                 <li style="padding-top:10px;"></li>
             </ul>
         </div>
-
-
         <div class="cfootbx" style="background:none;">
             <p class="cfootbxp1" style="text-align: center;">&copy; 1996 - 2018 中国作文网 版权所有 京ICP备05102857号&nbsp;&nbsp;京公网安备110402501047号&nbsp;&nbsp;</p>
             <p class="cfootbxp2" style="text-align: center;"><a href="<?=randType('list')?>" target="_blank" >联系我们</a>地址：北京市朝阳区农展南里111号</p>
@@ -1886,5 +1851,4 @@
     </div>
 </div>
 </body>
-{{clear()}}
 </html>
