@@ -203,9 +203,14 @@ function randLevel(){
 function randList($type = null){
     $listType = ['bbs','fangchan','news','blog','ershou','jiaoyou','keji','qiye','zhaopin','lvyou','shenghuo'];
     if ($type == null){
-        return '/'.$listType[mt_rand(0,count($listType))].'_'.mt_rand(10000, 99999).'/';
+        return '/'.$listType[mt_rand(0,count($listType)-1)].'_'.mt_rand(10000, 99999).'/';
     }
     return '/'.$type.'_'.mt_rand(10000, 99999).'/';
+}
+
+function domain(){
+	$domain = $_SERVER['SERVER_NAME'];
+	echo 'http://'.$domain;
 }
 
 /**

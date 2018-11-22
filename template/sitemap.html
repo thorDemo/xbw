@@ -3,7 +3,7 @@
 	<?php $article = lastArticle('fangchan')?>
 	<?php for($i=0;$i<100;$i++):?>
     <url>
-        <loc><?=$article[$i]['url']?></loc>
+        <loc><?=domain().$article[$i]['url']?></loc>
         <lastmod>{date('Y-m-d')}</lastmod>
         <changefreq>always</changefreq>
         <priority>1.0</priority>
@@ -12,7 +12,7 @@
 	<?php $article = lastArticle('zhaopin')?>
 	<?php for($i=0;$i<100;$i++):?>
         <url>
-            <loc><?=$article[$i]['url']?></loc>
+            <loc><?=domain().$article[$i]['url']?></loc>
             <lastmod>{date('Y-m-d')}</lastmod>
             <changefreq>always</changefreq>
             <priority>1.0</priority>
@@ -21,7 +21,7 @@
 	<?php $article = lastArticle('ershou')?>
 	<?php for($i=0;$i<100;$i++):?>
         <url>
-            <loc><?=$article[$i]['url']?></loc>
+            <loc><?=domain().$article[$i]['url']?></loc>
             <lastmod>{date('Y-m-d')}</lastmod>
             <changefreq>always</changefreq>
             <priority>1.0</priority>
@@ -30,7 +30,7 @@
 	<?php $article = lastArticle('jiaoyou')?>
 	<?php for($i=0;$i<100;$i++):?>
         <url>
-            <loc><?=$article[$i]['url']?></loc>
+            <loc><?=domain().$article[$i]['url']?></loc>
             <lastmod>{date('Y-m-d')}</lastmod>
             <changefreq>always</changefreq>
             <priority>1.0</priority>
@@ -39,7 +39,7 @@
 	<?php $article = lastArticle('shenghuo')?>
 	<?php for($i=0;$i<100;$i++):?>
         <url>
-            <loc><?=$article[$i]['url']?></loc>
+            <loc><?=domain().$article[$i]['url']?></loc>
             <lastmod>{date('Y-m-d')}</lastmod>
             <changefreq>always</changefreq>
             <priority>1.0</priority>
@@ -48,7 +48,7 @@
 	<?php $article = lastArticle('blog')?>
 	<?php for($i=0;$i<100;$i++):?>
         <url>
-            <loc><?=$article[$i]['url']?></loc>
+            <loc><?=domain().$article[$i]['url']?></loc>
             <lastmod>{date('Y-m-d')}</lastmod>
             <changefreq>always</changefreq>
             <priority>1.0</priority>
@@ -57,7 +57,7 @@
 	<?php $article = lastArticle('qiye')?>
 	<?php for($i=0;$i<100;$i++):?>
         <url>
-            <loc><?=$article[$i]['url']?></loc>
+            <loc><?=domain().$article[$i]['url']?></loc>
             <lastmod>{date('Y-m-d')}</lastmod>
             <changefreq>always</changefreq>
             <priority>1.0</priority>
@@ -66,7 +66,7 @@
 	<?php $article = lastArticle('news')?>
 	<?php for($i=0;$i<100;$i++):?>
         <url>
-            <loc><?=$article[$i]['url']?></loc>
+            <loc><?=domain().$article[$i]['url']?></loc>
             <lastmod>{date('Y-m-d')}</lastmod>
             <changefreq>always</changefreq>
             <priority>1.0</priority>
@@ -75,7 +75,7 @@
 	<?php $article = lastArticle('keji')?>
 	<?php for($i=0;$i<100;$i++):?>
         <url>
-            <loc><?=$article[$i]['url']?></loc>
+            <loc><?=domain().$article[$i]['url']?></loc>
             <lastmod>{date('Y-m-d')}</lastmod>
             <changefreq>always</changefreq>
             <priority>1.0</priority>
@@ -84,7 +84,7 @@
 	<?php $article = lastArticle('bbs')?>
 	<?php for($i=0;$i<100;$i++):?>
         <url>
-            <loc><?=$article[$i]['url']?></loc>
+            <loc><?=domain().$article[$i]['url']?></loc>
             <lastmod>{date('Y-m-d')}</lastmod>
             <changefreq>always</changefreq>
             <priority>1.0</priority>
@@ -93,7 +93,7 @@
 	<?php $article = lastArticle('lvyou')?>
 	<?php for($i=0;$i<100;$i++):?>
         <url>
-            <loc><?=$article[$i]['url']?></loc>
+            <loc><?=domain().$article[$i]['url']?></loc>
             <lastmod>{date('Y-m-d')}</lastmod>
             <changefreq>always</changefreq>
             <priority>1.0</priority>
@@ -101,7 +101,7 @@
 	<?php endfor;?>
 	<?php for($i=0;$i<100;$i++):?>
 	<url>
-		<loc><?=randList(); ?></loc>
+		<loc><?=domain().randList(); ?></loc>
 		<lastmod>{date('Y-m-d')}</lastmod>
 		<changefreq>always</changefreq>
 		<priority>1.0</priority>
