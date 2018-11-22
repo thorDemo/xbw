@@ -6,5 +6,11 @@ return array (
     'cid' => '64',
     'dirname' => 'news',
   ),
+  'www.example2.com' => 
+  array (
+    'id' => 5,
+    'cid' => '64',
+    'dirname' => 'news',
+  ),
 );
 ?>

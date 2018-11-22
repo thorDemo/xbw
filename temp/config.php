@@ -82,7 +82,7 @@ return array (
   'web_close' => '0',
   'web_closecon' => 'xxx',
   'web_collect_debug' => '0',
-  'web_debug' => '0',
+  'web_debug' => '1',
   'web_default_theme' => 'default',
   'web_gzip_open' => '1',
   'web_inserttop' => '0',
