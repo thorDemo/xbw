@@ -106,7 +106,7 @@ function randTime($format='Y-m-d'){
 /**
  * 获取随机栏目名
  * 可指定类型 bbs news ...
- * @param null $type
+ * @param $type
  * @param $num
  * @return mixed
  */
@@ -119,7 +119,7 @@ function typeName($type='company', $num=1){
     }
     return $data;
 }
-print_r(typeName());
+//print_r(typeName());
 /**
  * 获取随机人名
  * @param $num
@@ -250,11 +250,11 @@ function randType($type='show'){
         $chars1 = randChars(5);
         $chars2 = randChars(5);
         $times = randTime('Ymd');
-        return 'http://www.61k.com/clu'.$chars1.'/'.$times.$chars2.'.html';
+        return '/lsj'.$chars1.'/'.$times.$chars2.'.html';
     }
     else{
         $chars1 = randChars(5);
-        return 'http://www.61k.com/clu'.$chars1.'/';
+        return '/lsj'.$chars1.'/';
     }
 }
 

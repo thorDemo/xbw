@@ -2,27 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0f6a54be-2130-45b3-95e4-cc0b0850bcf3" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/template/SPath/template/bbk.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/mylib/tag.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/mylib/tag.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/temp/arctype_config.php" beforeDir="false" afterPath="$PROJECT_DIR$/temp/arctype_config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/cache/tags/tkd/example1.com/75/82/2ae54269c1e69698089c1c43d1e0dd32.txt" beforeDir="false" afterPath="$PROJECT_DIR$/temp/cache/tags/tkd/example1.com/75/82/2ae54269c1e69698089c1c43d1e0dd32.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/temp/cache/tplcache/admin/md5.php" beforeDir="false" afterPath="$PROJECT_DIR$/temp/cache/tplcache/admin/md5.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/cache_filelist/SPath/content.php" beforeDir="false" afterPath="$PROJECT_DIR$/temp/cache_filelist/SPath/content.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/cache_filelist/SPath/title.php" beforeDir="false" afterPath="$PROJECT_DIR$/temp/cache_filelist/SPath/title.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/cache_filelist/SPath/typename.php" beforeDir="false" afterPath="$PROJECT_DIR$/temp/cache_filelist/SPath/typename.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/cache_filelist/SPath/urlidkey_title.php" beforeDir="false" afterPath="$PROJECT_DIR$/temp/cache_filelist/SPath/urlidkey_title.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/cache_filelist/SPath/video.php" beforeDir="false" afterPath="$PROJECT_DIR$/temp/cache_filelist/SPath/video.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/cache_filelist/SPath/webname.php" beforeDir="false" afterPath="$PROJECT_DIR$/temp/cache_filelist/SPath/webname.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/temp/collect-run.lock" beforeDir="false" afterPath="$PROJECT_DIR$/temp/collect-run.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/temp/db/aclogs.FRM" beforeDir="false" afterPath="$PROJECT_DIR$/temp/db/aclogs.FRM" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/temp/db/aclogs.MYD" beforeDir="false" afterPath="$PROJECT_DIR$/temp/db/aclogs.MYD" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/temp/db/arctype.MYD" beforeDir="false" afterPath="$PROJECT_DIR$/temp/db/arctype.MYD" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/db/domain.MYD" beforeDir="false" afterPath="$PROJECT_DIR$/temp/db/domain.MYD" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/db/master.MYD" beforeDir="false" afterPath="$PROJECT_DIR$/temp/db/master.MYD" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/domaindb_config.php" beforeDir="false" afterPath="$PROJECT_DIR$/temp/domaindb_config.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/temp/logs/scantheme.log" beforeDir="false" afterPath="$PROJECT_DIR$/temp/logs/scantheme.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/temp/temp/ee7f54a6d7785d0733147c763c04cb86.log" beforeDir="false" afterPath="$PROJECT_DIR$/temp/temp/ee7f54a6d7785d0733147c763c04cb86.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/temp/temp/typecount.txt" beforeDir="false" afterPath="$PROJECT_DIR$/temp/temp/typecount.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/SPath/template/images/ch_dck_03_2014.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/template/SPath/template/images/ch_dck_03_2014.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/SPath/template/images/ch_fxz_03_2014.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/template/SPath/template/images/ch_fxz_03_2014.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/SPath/template/images/ch_gbc_03_2014.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/template/SPath/template/images/ch_gbc_03_2014.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/SPath/template/images/ch_gbc_06_2014.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/template/SPath/template/images/ch_gbc_06_2014.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/SPath/template/images/ch_kcb_03_2014.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/template/SPath/template/images/ch_kcb_03_2014.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/SPath/template/images/ch_klb_03_2014.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/template/SPath/template/images/ch_klb_03_2014.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/SPath/template/images/ch_klc_03_2014.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/template/SPath/template/images/ch_klc_03_2014.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/SPath/template/images/ch_lpw_03_2014.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/template/SPath/template/images/ch_lpw_03_2014.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/SPath/template/images/ch_plo_03_2014.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/template/SPath/template/images/ch_plo_03_2014.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/SPath/template/images/p020141016707894396546.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/template/SPath/template/images/p020141016707894396546.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/SPath/template/images/w020141124361316748748.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/template/SPath/template/images/w020141124361316748748.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/SPath/template/images/w020150305464536833819.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/template/SPath/template/images/w020150305464536833819.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/SPath/template/images/w020170302603341713607.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/template/SPath/template/images/w020170302603341713607.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/template/SPath/template/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/SPath/template/show.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -47,23 +51,7 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="xbw@localhost" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="xbw@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="xbw@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="xbw: schema" type="c314c289:MysqlImplModel$Schema" />
-      </path>
-    </expand>
+    <expand />
     <select />
   </component>
   <component name="FileEditorManager">
@@ -71,11 +59,13 @@
       <file leaf-file-name="show.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/template/SPath/template/show.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="23" column="30" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
+            <state relative-caret-position="744">
+              <caret line="231" column="58" selection-start-line="231" selection-start-column="58" selection-end-line="231" selection-end-column="58" />
               <folding>
+                <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -148,7 +138,6 @@
                 <element signature="n#style#0;n#li#1;n#ul#0;n#div#0;n#div#6;n#div#1;n#div#0;n#div#0;n#div#9;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#li#2;n#ul#0;n#div#0;n#div#6;n#div#1;n#div#0;n#div#0;n#div#9;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#li#3;n#ul#0;n#div#0;n#div#6;n#div#1;n#div#0;n#div#0;n#div#9;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="e#91036#91042#0#HTML" expanded="true" />
@@ -196,42 +185,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="blog.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/template/liaocheng/liaocheng/blog.html">
+      <file leaf-file-name="sitemap.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/template/sitemap.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="6" selection-start-line="6" selection-end-line="6" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bbk.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/template/SPath/template/bbk.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="535">
-              <caret line="148" column="99" selection-start-line="148" selection-start-column="83" selection-end-line="148" selection-end-column="99" />
-              <folding>
-                <element signature="e#1114#2136#0#HTML" />
-                <element signature="n#style#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#style#0;n#div#0;n#div#3;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#26668#26674#1#HTML" expanded="true" />
-                <element signature="e#26904#26910#1#HTML" expanded="true" />
-                <element signature="n#style#0;n#table#1;n#td#1;n#tr#1;n#table#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#div#3;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#table#2;n#td#1;n#tr#1;n#table#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#div#3;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#31317#31323#1#HTML" expanded="true" />
-                <element signature="e#31549#31555#1#HTML" expanded="true" />
-                <element signature="n#style#0;n#table#1;n#td#1;n#tr#1;n#table#0;n#td#1;n#tr#0;n#table#0;n#div#0;n#div#3;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#table#2;n#td#1;n#tr#1;n#table#0;n#td#1;n#tr#0;n#table#0;n#div#0;n#div#3;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#table#1;n#td#2;n#tr#1;n#table#0;n#td#1;n#tr#0;n#table#0;n#div#0;n#div#3;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#38305#38311#1#HTML" expanded="true" />
-                <element signature="e#38537#38543#1#HTML" expanded="true" />
-                <element signature="n#style#0;n#table#1;n#td#1;n#tr#1;n#table#0;n#td#2;n#tr#0;n#table#0;n#div#0;n#div#3;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#table#2;n#td#1;n#tr#1;n#table#0;n#td#2;n#tr#0;n#table#0;n#div#0;n#div#3;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#table#1;n#td#2;n#tr#1;n#table#0;n#td#2;n#tr#0;n#table#0;n#div#0;n#div#3;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#table#2;n#td#2;n#tr#1;n#table#0;n#td#2;n#tr#0;n#table#0;n#div#0;n#div#3;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#table#1;n#td#3;n#tr#1;n#table#0;n#td#2;n#tr#0;n#table#0;n#div#0;n#div#3;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#table#2;n#td#3;n#tr#1;n#table#0;n#td#2;n#tr#0;n#table#0;n#div#0;n#div#3;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="152">
+              <caret line="8" column="32" lean-forward="true" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -239,8 +197,8 @@
       <file leaf-file-name="tag.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/mylib/tag.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1171">
-              <caret line="112" column="32" selection-start-line="112" selection-start-column="32" selection-end-line="112" selection-end-column="32" />
+            <state relative-caret-position="194">
+              <caret line="229" lean-forward="true" selection-start-line="229" selection-end-line="229" />
             </state>
           </provider>
         </entry>
@@ -257,9 +215,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>&lt;/li&gt;</find>
-      <find>foreach</find>
-      <find>replace</find>
       <find>type</find>
       <find>xxx</find>
       <find>typename</find>
@@ -287,6 +242,9 @@
       <find>{typename type='title'/}</find>
       <find>{typename type='name'/}</find>
       <find>{typename type=&quot;name&quot;/}</find>
+      <find>nykxy2bli1</find>
+      <find>url(../</find>
+      <find>clu</find>
     </findStrings>
     <replaceStrings>
       <replace>let</replace>
@@ -301,6 +259,8 @@
       <replace>{typename type='name'/}</replace>
       <replace>{随机时间}</replace>
       <replace>&lt;?=typeName();?&gt;</replace>
+      <replace>url(/lsj/</replace>
+      <replace>lsj</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -312,8 +272,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/core/tpltags/function.typename.php" />
-        <option value="$PROJECT_DIR$/core/mylib/test_getone.php" />
         <option value="$PROJECT_DIR$/core/mylib/DBtools_3.php" />
         <option value="$PROJECT_DIR$/template/liaocheng/readme.txt" />
         <option value="$PROJECT_DIR$/template/SPath/template/index.html" />
@@ -360,8 +318,10 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/8067b27d-35d0-40d2-9c87-1aa0488537d5/console.sql" />
         <option value="$PROJECT_DIR$/template/liaocheng/liaocheng/sitemapp.html" />
         <option value="$PROJECT_DIR$/template/sitemap.html" />
-        <option value="$PROJECT_DIR$/core/mylib/tag.php" />
         <option value="$PROJECT_DIR$/template/SPath/template/bbk.html" />
+        <option value="$PROJECT_DIR$/lsj/css/mzxw.css" />
+        <option value="$PROJECT_DIR$/core/mylib/mltag.php" />
+        <option value="$PROJECT_DIR$/core/mylib/tag.php" />
         <option value="$PROJECT_DIR$/template/SPath/template/show.html" />
       </list>
     </option>
@@ -409,6 +369,29 @@
               <item name="xbw" type="b2602c69:ProjectViewProjectNode" />
               <item name="xbw" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="xbw" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xbw" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xbw" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xbw" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xbw" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xbw" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
+              <item name="SPath" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xbw" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xbw" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
+              <item name="SPath" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -430,21 +413,21 @@
     <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/template/liaocheng/liaocheng/images" />
+      <recent name="$PROJECT_DIR$/template/liaocheng/liaocheng" />
+      <recent name="$PROJECT_DIR$/template/liaocheng/liaocheng/img/ico" />
+      <recent name="$PROJECT_DIR$/core/mylib" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\workspace\xbw\core\mylib" />
       <recent name="$PROJECT_DIR$/core/mylib" />
       <recent name="$PROJECT_DIR$/template/liaocheng/liaocheng/img/profile" />
       <recent name="$PROJECT_DIR$/temp/data/title/liaocheng" />
       <recent name="$PROJECT_DIR$/template/liaocheng/liaocheng" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/template/liaocheng/liaocheng/images" />
-      <recent name="$PROJECT_DIR$/template/liaocheng/liaocheng" />
-      <recent name="$PROJECT_DIR$/template/liaocheng/liaocheng/img/ico" />
-      <recent name="$PROJECT_DIR$/core/mylib" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -501,7 +484,7 @@
       <workItem from="1541819967346" duration="1663000" />
       <workItem from="1541844702999" duration="1530000" />
       <workItem from="1542266640930" duration="22052000" />
-      <workItem from="1542872747067" duration="5551000" />
+      <workItem from="1542872747067" duration="9763000" />
     </task>
     <task id="LOCAL-00001" summary="基本功能实现">
       <created>1540478539870</created>
@@ -601,11 +584,18 @@
       <option name="project" value="LOCAL" />
       <updated>1542873604168</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="SPath">
+      <created>1542887388240</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1542887388240</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="166261000" />
+    <option name="totallyTimeSpent" value="170473000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -620,7 +610,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49928468" weight="0.32969698" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5028612" side_tool="true" weight="0.28969696" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5028612" side_tool="true" weight="0.2885906" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49713877" weight="0.40715882" />
       <window_info anchor="bottom" id="Version Control" order="9" />
@@ -679,7 +669,8 @@
     <MESSAGE value="blog内容页 添加链轮 去除部分URL" />
     <MESSAGE value="更新随机算法 无限页面 随机内容会取keywords类似的文章" />
     <MESSAGE value="sitemap.xml 更新" />
-    <option name="LAST_COMMIT_MESSAGE" value="sitemap.xml 更新" />
+    <MESSAGE value="SPath" />
+    <option name="LAST_COMMIT_MESSAGE" value="SPath" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -687,34 +678,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/template/liaocheng/liaocheng/bbs_news_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="46" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template/liaocheng/liaocheng/ershou.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="71">
-          <caret line="49" column="121" lean-forward="true" selection-start-line="49" selection-start-column="95" selection-end-line="49" selection-end-column="121" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template/liaocheng/liaocheng/ershou_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="34" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template/liaocheng/liaocheng/shenhuo_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="6" lean-forward="true" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/template/liaocheng/liaocheng/jiaoyou.html">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -951,13 +914,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template/sitemap.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="19" selection-end-line="109" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/template/SPath/template/index.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -982,10 +938,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lsj/images/ch_dck_03_2014.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lsj/css/mzxw.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18636">
+          <caret line="1005" column="60" selection-start-line="1005" selection-start-column="60" selection-end-line="1005" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/template/SPath/template/bbk.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="535">
-          <caret line="148" column="99" selection-start-line="148" selection-start-column="83" selection-end-line="148" selection-end-column="99" />
+        <state relative-caret-position="69">
+          <caret line="649" column="18" selection-start-line="649" selection-start-column="18" selection-end-line="649" selection-end-column="18" />
           <folding>
             <element signature="e#1114#2136#0#HTML" />
             <element signature="n#style#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
@@ -1011,27 +977,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/template/sitemap.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="32" lean-forward="true" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lsj/js/888.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/template/liaocheng/liaocheng/blog.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" selection-start-line="6" selection-end-line="6" selection-end-column="36" />
+        <state relative-caret-position="251">
+          <caret line="52" column="19" lean-forward="true" selection-start-line="52" selection-start-column="19" selection-end-line="52" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/mylib/mltag.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="231" column="13" lean-forward="true" selection-start-line="231" selection-start-column="13" selection-end-line="231" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/mylib/tag.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1171">
-          <caret line="112" column="32" selection-start-line="112" selection-start-column="32" selection-end-line="112" selection-end-column="32" />
+        <state relative-caret-position="194">
+          <caret line="229" lean-forward="true" selection-start-line="229" selection-end-line="229" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/template/SPath/template/show.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="23" column="30" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
+        <state relative-caret-position="744">
+          <caret line="231" column="58" selection-start-line="231" selection-start-column="58" selection-end-line="231" selection-end-column="58" />
           <folding>
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
             <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1104,7 +1089,6 @@
             <element signature="n#style#0;n#li#1;n#ul#0;n#div#0;n#div#6;n#div#1;n#div#0;n#div#0;n#div#9;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#li#2;n#ul#0;n#div#0;n#div#6;n#div#1;n#div#0;n#div#0;n#div#9;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#li#3;n#ul#0;n#div#0;n#div#6;n#div#1;n#div#0;n#div#0;n#div#9;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="e#91036#91042#0#HTML" expanded="true" />
