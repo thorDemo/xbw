@@ -3,30 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="0f6a54be-2130-45b3-95e4-cc0b0850bcf3" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/mylib/tag.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/mylib/tag.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/arctype_config.php" beforeDir="false" afterPath="$PROJECT_DIR$/temp/arctype_config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/cache/tags/tkd/example1.com/75/82/2ae54269c1e69698089c1c43d1e0dd32.txt" beforeDir="false" afterPath="$PROJECT_DIR$/temp/cache/tags/tkd/example1.com/75/82/2ae54269c1e69698089c1c43d1e0dd32.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/cache/tplcache/admin/md5.php" beforeDir="false" afterPath="$PROJECT_DIR$/temp/cache/tplcache/admin/md5.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/temp/collect-run.lock" beforeDir="false" afterPath="$PROJECT_DIR$/temp/collect-run.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/db/aclogs.FRM" beforeDir="false" afterPath="$PROJECT_DIR$/temp/db/aclogs.FRM" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/db/aclogs.MYD" beforeDir="false" afterPath="$PROJECT_DIR$/temp/db/aclogs.MYD" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/db/arctype.MYD" beforeDir="false" afterPath="$PROJECT_DIR$/temp/db/arctype.MYD" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/temp/logs/scantheme.log" beforeDir="false" afterPath="$PROJECT_DIR$/temp/logs/scantheme.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/temp/ee7f54a6d7785d0733147c763c04cb86.log" beforeDir="false" afterPath="$PROJECT_DIR$/temp/temp/ee7f54a6d7785d0733147c763c04cb86.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/temp/typecount.txt" beforeDir="false" afterPath="$PROJECT_DIR$/temp/temp/typecount.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/SPath/template/images/ch_dck_03_2014.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/template/SPath/template/images/ch_dck_03_2014.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/SPath/template/images/ch_fxz_03_2014.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/template/SPath/template/images/ch_fxz_03_2014.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/SPath/template/images/ch_gbc_03_2014.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/template/SPath/template/images/ch_gbc_03_2014.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/SPath/template/images/ch_gbc_06_2014.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/template/SPath/template/images/ch_gbc_06_2014.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/SPath/template/images/ch_kcb_03_2014.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/template/SPath/template/images/ch_kcb_03_2014.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/SPath/template/images/ch_klb_03_2014.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/template/SPath/template/images/ch_klb_03_2014.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/SPath/template/images/ch_klc_03_2014.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/template/SPath/template/images/ch_klc_03_2014.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/SPath/template/images/ch_lpw_03_2014.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/template/SPath/template/images/ch_lpw_03_2014.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/SPath/template/images/ch_plo_03_2014.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/template/SPath/template/images/ch_plo_03_2014.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/SPath/template/images/p020141016707894396546.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/template/SPath/template/images/p020141016707894396546.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/SPath/template/images/w020141124361316748748.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/template/SPath/template/images/w020141124361316748748.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/SPath/template/images/w020150305464536833819.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/template/SPath/template/images/w020150305464536833819.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/SPath/template/images/w020170302603341713607.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/template/SPath/template/images/w020170302603341713607.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/template/SPath/template/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/SPath/template/show.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -56,11 +34,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="show.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="show.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/template/SPath/template/show.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="744">
-              <caret line="231" column="58" selection-start-line="231" selection-start-column="58" selection-end-line="231" selection-end-column="58" />
+            <state relative-caret-position="304">
+              <caret line="1778" column="41" selection-start-line="1778" selection-start-column="41" selection-end-line="1778" selection-end-column="41" />
               <folding>
                 <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -185,11 +163,29 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="mzxw.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lsj/css/mzxw.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mzxw.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/template/SPath/template/css/mzxw.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="8" column="71" selection-start-line="8" selection-start-column="71" selection-end-line="8" selection-end-column="71" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="sitemap.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/template/sitemap.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="152">
-              <caret line="8" column="32" lean-forward="true" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+              <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -197,8 +193,8 @@
       <file leaf-file-name="tag.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/mylib/tag.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="229" lean-forward="true" selection-start-line="229" selection-end-line="229" />
+            <state relative-caret-position="1277">
+              <caret line="229" selection-start-line="229" selection-end-line="229" />
             </state>
           </provider>
         </entry>
@@ -215,9 +211,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>type</find>
-      <find>xxx</find>
-      <find>typename</find>
       <find>tyoe</find>
       <find>{geturl type=&quot;show_list&quot; tpl=&quot;show_list&quot; fan=&quot;&quot;/}</find>
       <find>ershou</find>
@@ -242,9 +235,12 @@
       <find>{typename type='title'/}</find>
       <find>{typename type='name'/}</find>
       <find>{typename type=&quot;name&quot;/}</find>
-      <find>nykxy2bli1</find>
       <find>url(../</find>
       <find>clu</find>
+      <find>nykxy2bli1</find>
+      <find>vo.pic</find>
+      <find>xw4</find>
+      <find>xw5</find>
     </findStrings>
     <replaceStrings>
       <replace>let</replace>
@@ -272,7 +268,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/core/mylib/DBtools_3.php" />
         <option value="$PROJECT_DIR$/template/liaocheng/readme.txt" />
         <option value="$PROJECT_DIR$/template/SPath/template/index.html" />
         <option value="$PROJECT_DIR$/core/mylib/randtest.php" />
@@ -319,10 +314,11 @@
         <option value="$PROJECT_DIR$/template/liaocheng/liaocheng/sitemapp.html" />
         <option value="$PROJECT_DIR$/template/sitemap.html" />
         <option value="$PROJECT_DIR$/template/SPath/template/bbk.html" />
-        <option value="$PROJECT_DIR$/lsj/css/mzxw.css" />
         <option value="$PROJECT_DIR$/core/mylib/mltag.php" />
         <option value="$PROJECT_DIR$/core/mylib/tag.php" />
         <option value="$PROJECT_DIR$/template/SPath/template/show.html" />
+        <option value="$PROJECT_DIR$/template/SPath/template/css/mzxw.css" />
+        <option value="$PROJECT_DIR$/lsj/css/mzxw.css" />
       </list>
     </option>
   </component>
@@ -351,10 +347,8 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="312" />
-    <option name="y" value="39" />
-    <option name="width" value="1369" />
-    <option name="height" value="1026" />
+    <option name="width" value="960" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -372,7 +366,7 @@
             <path>
               <item name="xbw" type="b2602c69:ProjectViewProjectNode" />
               <item name="xbw" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="lsj" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="xbw" type="b2602c69:ProjectViewProjectNode" />
@@ -391,6 +385,14 @@
               <item name="template" type="462c0819:PsiDirectoryNode" />
               <item name="SPath" type="462c0819:PsiDirectoryNode" />
               <item name="template" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xbw" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xbw" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
+              <item name="SPath" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -484,7 +486,7 @@
       <workItem from="1541819967346" duration="1663000" />
       <workItem from="1541844702999" duration="1530000" />
       <workItem from="1542266640930" duration="22052000" />
-      <workItem from="1542872747067" duration="9763000" />
+      <workItem from="1542872747067" duration="11744000" />
     </task>
     <task id="LOCAL-00001" summary="基本功能实现">
       <created>1540478539870</created>
@@ -591,11 +593,18 @@
       <option name="project" value="LOCAL" />
       <updated>1542887388240</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="SPath">
+      <created>1542944657366</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1542944657366</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="170473000" />
+    <option name="totallyTimeSpent" value="172454000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -608,6 +617,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49928468" weight="0.32969698" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5028612" side_tool="true" weight="0.2885906" />
@@ -615,7 +625,7 @@
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49713877" weight="0.40715882" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32885906" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20225322" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19903433" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" weight="0.17650215" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -678,13 +688,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/template/liaocheng/liaocheng/jiaoyou.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="14" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/template/liaocheng/liaocheng/jiaoyou_list.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="376">
@@ -941,13 +944,6 @@
     <entry file="file://$PROJECT_DIR$/lsj/images/ch_dck_03_2014.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/lsj/css/mzxw.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18636">
-          <caret line="1005" column="60" selection-start-line="1005" selection-start-column="60" selection-end-line="1005" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/template/SPath/template/bbk.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
@@ -980,7 +976,7 @@
     <entry file="file://$PROJECT_DIR$/template/sitemap.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
-          <caret line="8" column="32" lean-forward="true" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -1003,15 +999,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/mylib/tag.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="229" lean-forward="true" selection-start-line="229" selection-end-line="229" />
+        <state relative-caret-position="1277">
+          <caret line="229" selection-start-line="229" selection-end-line="229" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/template/SPath/template/show.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="744">
-          <caret line="231" column="58" selection-start-line="231" selection-start-column="58" selection-end-line="231" selection-end-column="58" />
+        <state relative-caret-position="304">
+          <caret line="1778" column="41" selection-start-line="1778" selection-start-column="41" selection-end-line="1778" selection-end-column="41" />
           <folding>
             <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1132,6 +1128,20 @@
             <element signature="e#101168#101174#0#HTML" expanded="true" />
             <element signature="n#style#0;n#p#1;n#div#2;n#div#1;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/SPath/template/css/mzxw.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="71" selection-start-line="8" selection-start-column="71" selection-end-line="8" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lsj/css/mzxw.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
         </state>
       </provider>
     </entry>
